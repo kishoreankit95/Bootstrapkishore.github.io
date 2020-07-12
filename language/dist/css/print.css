@@ -1,0 +1,182 @@
+
+@media print {
+  
+body {
+  font: 12pt Georgia, "Times New Roman", Times, serif;
+}
+
+/* certificate modal css */
+
+.customModal .modal .modal-content .modal-head{
+  border-bottom: 1px solid #C8C8C8;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.customModal .modal .modal-content .modal-head h4{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #444444;
+  }
+
+.customModal .modal .modal-content .modal-body{
+  border: 1px solid #C8C8C8;
+}
+
+.certificateWrap{
+  padding-top: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+}
+.certificateWrap h4 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 25px;
+  color: #333333;
+  margin-top: 65px;
+  text-align: center;
+}
+.certificateWrap .labelRight {
+  text-align: right;
+}
+.certificateWrap .labelRight h5 {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 25px;
+  color: #999999;
+  padding-bottom: 9px;
+  margin: 0;
+  width: 100%;
+}
+.certificateWrap .certificatetableType {
+  padding: 0 25px;
+  border-top: 3px solid #333333;
+  border-bottom: 3px solid #333333;
+}
+
+.certificateWrap .certificatetableType .tableRow {
+  border-top: solid 1px #C8C8C8;
+  margin: 25px 0;
+  padding-top: 25px;
+}
+
+.certificateWrap .certificatetableType .tableRow:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+.certificateWrap .certificatetableType .tableRow .smallRow {
+  display: table;
+}
+.certificateWrap .certificatetableType .tableRow .smallRow:first-child {
+  border-top: none;
+  margin-top: 0;
+}
+
+.certificateWrap .certificatetableType .tableRow .smallRow label {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 50px;
+  color: #999999;
+  min-width: 105px;
+  text-align: left;
+  border-right: solid 1px #C8C8C8;
+  padding-right: 10px;
+  display: table-cell;
+}
+.certificateWrap .certificatetableType .tableRow .smallRow p {
+  font-weight: 300;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  margin: 0;
+  text-align: left;
+  display: table-cell;
+}
+.certificateFooter {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.certificateFooter h6 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 50px;
+  color: #444444;
+}
+
+.certificateFooter p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.certificateFooter .cyber {
+  display: table;
+  text-align: center;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+.certificateFooter .cyber span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.certificateFooter .cyber img{
+  display: table-cell;
+  vertical-align: middle;
+  width: 59px;
+  height: 68px;
+}
+
+.modal-footer {
+  background: #FFFFFF;
+  text-align: center;
+}
+
+.modal-footer .btnWrap {
+  margin: 25px 0 50px;
+}
+
+/* atterndance modal css */
+
+.certificateWrap .attendanceTable {
+  border-bottom: 3px solid #333333;
+  margin: 9px 0;
+  width: 100%;
+}
+
+.certificateWrap .attendanceTable thead {
+  background: #EAF3FA;
+}
+
+.certificateWrap .attendanceTable thead th {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 30px;
+  color: #777777;
+  text-align: center;
+  min-width: 60px;
+}
+
+.certificateWrap .attendanceTable tbody tr td {
+  text-align: center;
+  min-width: 60px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 48px;
+  color: #222222;
+  padding: 0 15px;
+}
+
+.certificateWrap .attendanceTable tbody tr td:first-child {
+  text-align: left;
+}
+}
