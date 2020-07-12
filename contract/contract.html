@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contracts</title>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+        <link type="text/css" rel="stylesheet" href="dist/css/contract.css"
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    </head>
+    <body>
+        <div class="full-width-bg">
+            <div class="container"> 
+                <h1 class="section-title">Contracts</h1>
+                <!-- Search bar -->
+                <div class="contrac-searchbar">
+                    <form action="">
+                        <div class="default-flex-start">
+                        <!-- 1 -->
+                        <div class="con-search-box">
+                            <label >Contract Number</label> 
+                            <input type="text" placeholder="Input Contract Number">
+                        </div>
+                         <!-- 2 -->
+                        <div class="con-search-box">
+                            <label >Contract Date</label> 
+                            <div class="con-search-input">
+                                <input type="text" placeholder="Start Date"  id="datepicker">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div>
+                            
+                        </div>
+                         <!-- 3-->
+                        <div class="con-search-box">
+                            <label >End Date</label> 
+                            <div class="con-search-input">
+                                <input type="text" placeholder="Start Date"  id="datepickertwo">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                         <!-- 4 -->
+                        <div class="con-search-box">
+                            <label >Customer</label> 
+                            <div class="customer-submit default-flex-center">
+                                <input type="text" placeholder="Customer ID / Name/Phone">
+                                <button type="button" class="cus-submit">Search</button>
+                            </div>
+                        </div>
+                        </div>
+                       
+                        <ul class="customer-details">
+                            <!-- 1 -->
+                            <li class="default-flex-start">
+                                <div class="customer-image">
+                                    <img src="placeholder.png" alt="">
+                                </div>
+                                <ul class="customer-text default-flex-start txt-control">
+                                    <li>
+                                        <strong>Customer no </strong>
+                                        <span>: 542897123521</span>
+                                    </li>
+                                    <li>
+                                        <strong>Order placed </strong>
+                                        <span>: 10 Jan,32020</span>
+                                    </li>
+                                    <li>
+                                        <strong>Current Statuse </strong>
+                                        <span>: Deposit received</span>
+                                    </li>
+                                    <li>
+                                        <strong>Estimated Date </strong>
+                                        <span>: 25 Jan,2020</span>
+                                    </li>
+                                </ul>
+                                <ul class="customer-text default-flex-start no-padding-gutter txt-control">
+                                    <li>
+                                        <strong>Product name </strong>
+                                        <div class="cus-product-name">
+                                          <span>: Blala bla 1</span>  
+                                          <span>: Blala bla 2</span> 
+                                          <span>: Blala bla 3</span>   
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>Customer :</strong>
+                                        <div class="cus-product-name">
+                                            <span>: Avinandan 1</span>  
+                                            <span>: Avinandan 2</span> 
+                                            <span>: Avinandan 3</span>
+                                            <span>: Avinandan 2</span> 
+                                            <span>: Avinandan 3</span>    
+                                          </div>
+                                    </li>
+                                </ul>
+                                <ul class="customer-text justify-center li-btn">
+                                    <li>
+                                        <button type="button">Change Status</button>
+                                    </li>
+                                    <li>
+                                        <button type="button">Download Contract</button>
+                                    </li>
+                                </ul>
+                            </li>
+                             <!-- 2 -->
+                             <li class="default-flex-start">
+                                <div class="customer-image">
+                                    <img src="placeholder.png" alt="">
+                                </div>
+                                <ul class="customer-text default-flex-start txt-control">
+                                    <li>
+                                        <strong>Customer no </strong>
+                                        <span>: 542897123521</span>
+                                    </li>
+                                    <li>
+                                        <strong>Order placed </strong>
+                                        <span>: 10 Jan,32020</span>
+                                    </li>
+                                    <li>
+                                        <strong>Current Statuse </strong>
+                                        <span>: Deposit received</span>
+                                    </li>
+                                    <li>
+                                        <strong>Estimated Date </strong>
+                                        <span>: 25 Jan,2020</span>
+                                    </li>
+                                </ul>
+                                <ul class="customer-text default-flex-start no-padding-gutter txt-control">
+                                    <li>
+                                        <strong>Product name </strong>
+                                        <div class="cus-product-name">
+                                          <span>: Blala bla 1</span>  
+                                          <span>: Blala bla 2</span> 
+                                          <span>: Blala bla 3</span>   
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>Customer </strong>
+                                        <div class="cus-product-name">
+                                            <span>: Avinandan 1</span>  
+                                            <span>: Avinandan 2</span> 
+                                            <span>: Avinandan 3</span>
+                                            <span>: Avinandan 2</span> 
+                                            <span>: Avinandan 3</span>    
+                                          </div>
+                                    </li>
+                                </ul>
+                                <ul class="customer-text justify-center li-btn">
+                                    <li>
+                                        <button type="button">Change Status</button>
+                                    </li>
+                                    <li>
+                                        <button type="button">Download Contract</button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://use.fontawesome.com/88e244645c.js"></script>
+  <script>
+    $( function() {
+      $( "#datepicker" ).datepicker({ dateFormat: 'dd-mm-yy' });
+      $( "#datepickertwo" ).datepicker({ dateFormat: 'dd-mm-yy' });
+    } );
+    </script>
+    </body>
+</html>

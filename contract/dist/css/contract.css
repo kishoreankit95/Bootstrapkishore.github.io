@@ -1,0 +1,80 @@
+@media screen and (min-width: 769px) {
+  .container {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .contrac-searchbar .customer-details li .customer-image {
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+  }
+  .contrac-searchbar .customer-details li .customer-image img {
+    width: 126px;
+    height: 126px;
+  }
+}
+
+@media screen and (min-width: 1041px) {
+  .contrac-searchbar .customer-details li .txt-control {
+    width: 25%;
+  }
+  .contrac-searchbar .customer-details li .txt-control li {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+  .contrac-searchbar .customer-details li .txt-control li span {
+    width: calc(100% - 125px);
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .contrac-searchbar .customer-details li .txt-control {
+    width: calc(50% - 10px);
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .contrac-searchbar .customer-details li .txt-control {
+    width: 100%;
+  }
+  .contrac-searchbar .customer-details li .txt-control li {
+    width: 100%;
+  }
+  .contrac-searchbar .customer-details li .txt-control li span {
+    width: calc(100% - 125px);
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contrac-searchbar .customer-details li .txt-control li span {
+    width: calc(100% - 125px);
+  }
+}
+
+.contrac-searchbar .customer-details li .txt-control.no-padding-gutter div.cus-product-name {
+  width: calc(100% - 125px);
+  overflow-wrap: break-word;
+}
+
+.contrac-searchbar .customer-details li .txt-control.no-padding-gutter div.cus-product-name span {
+  width: 100%;
+}
+
+@media screen and (max-width: 1040px) {
+  .contrac-searchbar .customer-details li .li-btn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .contrac-searchbar .customer-details li .li-btn li {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=contract.css.map */
