@@ -1,0 +1,389 @@
+.join-finish {
+  .join-finish-title {
+    font-size: 35px;
+    font-weight: 200;
+  }
+  h6 {
+    font-size: 15px;
+    color: #ababab;
+  }
+  .join-finish-form {
+    padding: 40px 60px;
+    margin-top: 25px;
+    border-top: 1px solid #c8c8c8;
+    @media screen and (max-width:$screen-sm-min){
+      padding-left: 0;
+      padding-right: 0;
+    }
+    h4 {
+      font-size: 25px;
+      letter-spacing: -0.5px;
+      color: #3e3e3e;
+      font-weight: 600;
+      margin-top: 0;
+    }
+    p {
+      font-size: 12px;
+      color: #a9a9a9;
+    }
+    form {
+      .radio {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        label {
+          display: inline-flex;
+          width: 120px;
+        }
+      }
+      .label-text {
+        p {
+          width: 100%;
+          font-size: 10px;
+        }
+      }
+      .join-coupon {
+        .join-coupon-alignment {
+          display: flex;
+          justify-content: center;
+          .join-coupon-box {
+            border-radius: 10px;
+            background: linear-gradient(
+              to right,
+              rgba(122, 203, 238, 1) 0%,
+              rgba(6, 58, 136, 1) 100%
+            );
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7acbee', endColorstr='#063a88', GradientType=1 );
+            box-sizing: border-box;
+            padding: 42px 0;
+            margin: 0;
+            position: relative;
+            width: 31%;
+            > h6 {
+              color: $button-white;
+              font-size: 1.063rem;
+              margin: 0 0 10px 0;
+            }
+            > h1 {
+              color: $button-white;
+              font-size: 2.375rem;
+              margin-bottom: 0;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              top: calc(50% - 35px);
+              left: -35px;
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              background: $button-white;
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              top: calc(50% - 35px);
+              right: -35px;
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              background: $button-white;
+            }
+            .coupon-download {
+              display: inline-flex;
+              margin-top: -28px;
+              background: $text-black-2;
+              box-sizing: border-box;
+              padding: 15px 50px;
+              position: absolute;
+              z-index: 4;
+              bottom: -28px;
+              left: calc(50% - 92px);
+              color: $button-white;
+              font-size: 0.813rem;
+              align-items: center;
+              > i {
+                margin-right: 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.signup-coupon {
+  .signup-coupon-alignment {
+    display: flex;
+    justify-content: center;
+    .signup-coupon-box {
+      border-radius: 10px;
+      background: rgba(122, 203, 238, 1);
+      background: -moz-linear-gradient(
+        left,
+        rgba(122, 203, 238, 1) 0%,
+        rgba(6, 58, 136, 1) 100%
+      );
+      background: -webkit-gradient(
+        left top,
+        right top,
+        color-stop(0%, rgba(122, 203, 238, 1)),
+        color-stop(100%, rgba(6, 58, 136, 1))
+      );
+      background: -webkit-linear-gradient(
+        left,
+        rgba(122, 203, 238, 1) 0%,
+        rgba(6, 58, 136, 1) 100%
+      );
+      background: -o-linear-gradient(
+        left,
+        rgba(122, 203, 238, 1) 0%,
+        rgba(6, 58, 136, 1) 100%
+      );
+      background: -ms-linear-gradient(
+        left,
+        rgba(122, 203, 238, 1) 0%,
+        rgba(6, 58, 136, 1) 100%
+      );
+      background: linear-gradient(
+        to right,
+        rgba(122, 203, 238, 1) 0%,
+        rgba(6, 58, 136, 1) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7acbee', endColorstr='#063a88', GradientType=1 );
+      box-sizing: border-box;
+      padding: 42px 0;
+      margin: 0;
+      position: relative;
+      width: 41%;
+      @media screen and (max-width: 1200px) {
+        width: 57%;
+      }
+      @media screen and (max-width: 993px) {
+        width: 36%;
+      }
+      @media screen and (max-width: 793px) {
+        width: 40%;
+      }
+      @media screen and (max-width: 500px) {
+        width: 65%;
+      }
+      > h6 {
+        color: $button-white;
+        font-size: 1.063rem;
+        margin: 0 0 10px 0;
+        text-align: center;
+      }
+      > h1 {
+        color: $button-white;
+        font-size: 3.375rem;
+        margin: 10px 0 0 0;
+        text-align: center;
+        @media screen and (max-width: 1400px) {
+          font-size: 2.375rem;
+        }
+        @media screen and (max-width: 793px) {
+          font-size: 2rem;
+        }
+        @media screen and (max-width: 500px) {
+          font-size: 1.5rem;
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 35px);
+        left: -35px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: $button-white;
+        @media screen and (max-width: 793px) {
+          width: 45px;
+          height: 45px;
+          left: -22.5px;
+          top: calc(50% - 22.5px);
+        }
+        @media screen and (max-width: 500px) {
+          width: 35px;
+          height: 35px;
+          left: -17.5px;
+          top: calc(50% - 17.5px);
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 35px);
+        right: -35px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: $button-white;
+        @media screen and (max-width: 793px) {
+          width: 45px;
+          height: 45px;
+          right: -22.5px;
+          top: calc(50% - 22.5px);
+        }
+        @media screen and (max-width: 500px) {
+          width: 35px;
+          height: 35px;
+          right: -17.5px;
+          top: calc(50% - 17.5px);
+        }
+      }
+    }
+  }
+}
+.jf-chekbox {
+  width: 80%;
+  margin: 30px auto;
+  text-align: left;
+  @media screen and (max-width:$screen-md-min){
+    width: 100%;
+  }
+  .jf-text {
+    h5 {
+      font-size: 1.125rem;
+      color: $text-black-2;
+    }
+    h6 {
+      font-size: 0.875rem;
+      color: $text-black-4;
+    }
+  }
+  .jf-redio-btn {
+    margin: 4px 0;
+    .radio {
+      label {
+        width: 120px;
+        display: inline-flex;
+        white-space: nowrap;
+        @media screen and (max-width: 1500px) {
+          width: 100px !important;
+        }
+        [type="radio"]:checked + span:after,
+        [type="radio"].with-gap:checked + span:after {
+          background-color: $primary-deep-blue;
+          border: 0;
+        }
+        [type="radio"].with-gap:checked + span:before {
+          border: 1px solid $text-black-4;
+        }
+        [type="radio"] + span:before,
+        [type="radio"] + span:after {
+          margin: 4px 4px 4px 0;
+        }
+        [type="radio"]:not(:checked) + span,
+        [type="radio"]:checked + span {
+          padding-left: 25px;
+        }
+        [type="radio"]:not(:checked) + span:before,
+        [type="radio"]:not(:checked) + span:after {
+          border: 1px solid $text-black-4;
+        }
+        [type="radio"].with-gap:checked + span:after {
+          transform: scale(0.6);
+        }
+        span {
+          font-size: 1rem;
+          letter-spacing: -1px;
+          color: #3e3e3e;
+          font-weight: normal;
+          //font-weight: bold;
+          @media screen and (max-width: 1500px) {
+            font-size: 0.98rem;
+          }
+        }
+      }
+    }
+  }
+  .jf-redio-btn {
+    margin: 0;
+    label {
+      width: 100px;
+      display: inline-flex;
+      [type="checkbox"]:checked + span:after,
+      [type="checkbox"].with-gap:checked + span:after {
+        background-color: $primary-deep-blue;
+        border: 0;
+      }
+      [type="checkbox"].with-gap:checked + span:before {
+        border: 1px solid $text-black-4;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+      }
+      [type="checkbox"] + span:before,
+      [type="checkbox"] + span:after {
+        margin: 4px 4px 4px 0;
+        transform: rotate(0deg);
+        top: 0;
+        left: 0;
+      }
+      [type="checkbox"]:not(:checked) + span,
+      [type="checkbox"]:checked + span {
+        padding-left: 25px;
+        margin-bottom: 8px;
+      }
+      [type="checkbox"]:not(:checked) + span:before,
+      [type="checkbox"]:not(:checked) + span:after {
+        border: 1px solid $text-black-4;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+      }
+      [type="checkbox"].with-gap:checked + span:after {
+        transform: scale(0.6);
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+      }
+      span {
+        font-size: 1rem;
+        color: $text-black-1;
+        font-weight: bold;
+      }
+    }
+  }
+  .finish-coupon {
+    margin-top: 35px;
+    @media screen and (max-width:$screen-sm-min){
+      display: flex;
+      justify-content: center;
+    }
+    .coupon-box{
+      position: relative;
+      width: 262px;
+      .coupon-download {
+        display: inline-flex;
+        margin-top: -28px;
+        background: $text-black-2;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 15px 50px;
+        position: absolute;
+        z-index: 4;
+        bottom: -28px;
+        left: calc(50% - 92px);
+        color: $button-white;
+        font-size: 0.813rem;
+        align-items: center;
+        @media screen and (max-width: 670px) {
+          padding: 15px 32px;
+          left: calc(50% - 75px);
+        }
+        @media screen and (max-width: 670px) {
+          padding: 9px 21px;
+          left: calc(50% - 65px);
+          bottom: -12px;
+        }
+        > i {
+          margin-right: 9px;
+        }
+      }
+    }
+    
+  }
+}

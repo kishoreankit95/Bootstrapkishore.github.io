@@ -1,0 +1,72 @@
+.customer-title {
+  border-bottom: 4px solid #ddd;
+  margin-bottom: 25px;
+  margin-top: 70px;
+  h3 {
+    font-size: 25px;
+    letter-spacing: -0.3px;
+    color: #444;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+}
+.pdf-title{
+  h3{
+    color: #0C5DA7;
+  }
+}
+.align-center{
+    .input-field{
+        .info{
+            display: flex;
+            align-items: center;
+            color: #aaa;
+            font-size: 13px;
+            letter-spacing: -0.3px;
+        }
+    }
+}
+.next-line {
+  align-items: flex-start !important;
+  >span{
+    line-height: 42px;
+  }
+  .input-field {
+    flex-direction: column;
+    .info{
+        font-size: 13px;
+        letter-spacing: -0.3px;
+        color: #aaa;
+        margin-top: 13px;
+    }
+  }
+}
+.agreement{
+  margin-top: 100px;
+  h3{
+    margin: 0;
+    font-size: 23px;
+    letter-spacing: -0.3px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 25px;
+  }
+  .details{
+    background-color: #F9F9F9;
+    border-top: 3px solid #ddd;
+    padding: 30px 60px;
+    p{
+      font-size: 14px;
+      letter-spacing: -0.5px;
+      line-height: 20px;
+      color: #666;
+      margin: 0;
+      margin-bottom: 35px;
+    }
+    .agreement-chkbox{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

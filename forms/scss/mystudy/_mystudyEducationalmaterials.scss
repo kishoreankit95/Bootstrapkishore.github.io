@@ -1,0 +1,471 @@
+.ms-education-minheight {
+    min-height: 501px!important;
+}
+h1.ms-educationmatirial-title {
+    font-size: 2.357rem;
+    color: $text-black-8;
+    font-weight: bold;
+    line-height: 33px;
+    margin: 0 0 50px 0;
+    > span {
+        font-weight: 300;
+    }
+}
+.ms-educationmatirial-content {
+    position: relative;
+    padding-top:50px;
+    box-sizing:border-box;
+    margin-bottom: 50px;
+    > .ms-education-search {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+        padding: 23px 50px;
+        top: 0;
+        width: 65%;
+        z-index: 99;
+        background: #3F3F3F;
+        box-shadow: -4px 8px 10px rgba(0, 0, 0, 0.05), 4px 8px 10px rgba(0, 0, 0, 0.05);
+        @media screen and (max-width:$screen-xl-min) {
+            width: 90%;
+        }
+        @media screen and (max-width:$screen-sm-min) {
+            width: 100%!important;
+            padding: 10px;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 20px;
+        }
+        > .input-field {
+            display: flex;
+            align-items: center;
+            > span {
+                white-space: nowrap;
+                text-align: left;
+                border-right: 1px solid #ffffff;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                font-size: 1.571rem;
+                line-height: 13px;
+                color: $text-white-1;
+                min-width: 60px;
+                @media screen and (max-width: 576px) {
+                    min-width: auto;
+                    font-size: 1rem;
+                }
+            }
+            > input {
+                margin: 0 0 0 20px;
+                border:none!important;
+                box-shadow: none!important;
+                font-size: 1.2rem;
+                color: #777777 !important;
+                @media screen and (max-width: 767px) {
+                    width: 90%;
+                }
+                &::placeholder {
+                    color: #777777 !important;
+                    font-size: 1.414rem;
+                    font-weight: bold;
+                    @media screen and (max-width:$screen-sm-min) {
+                        font-size: 0.94rem;
+                    }
+                  }
+            }
+            > a {
+                background: none!important;
+                box-shadow: none!important;
+                border: 0!important;
+                @include default-flex-center;
+                width: 75px;
+                @media screen and (max-width: 576px) {
+                    padding: 0;
+                    overflow: visible;
+                    width: 42px;
+                }
+                i {
+                   // padding-left: 26px;
+                    box-sizing: border-box;
+                    height: 35px!important;
+                    width: 42px!important;
+                    background-size: auto 35px !important;
+                    @media screen and (max-width: 767px) {
+                        background-size: 32px auto !important;
+                    }
+                    @media screen and (max-width: 576px) {
+                        background-size: 30px auto !important;
+                    }
+                }
+            } 
+        }
+    }
+    > .mystudy-em {
+        background: #FFFFFF;
+        box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.08), 5px 8px 10px rgba(0, 0, 0, 0.15);
+        box-sizing: border-box;
+        box-sizing:border-box;
+        padding: 90px 0 0;
+        overflow: hidden;
+        > .mystudy-em-header {
+            border-bottom: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            padding: 0 30px;
+            position: relative;
+            > .input-field {
+                @include default-flex-between;
+                align-items: flex-start;
+                margin-bottom: 20px;
+                @media screen and (max-width:$screen-lg-min) {
+                    flex-direction:row!important;
+                    align-items: center!important;
+                    margin-bottom: 15px;
+                    > .select-wrapper {
+                        width: 190px;
+                        position: absolute;
+                        z-index: 999;
+                        margin-bottom: 0!important;
+                    }
+                    > ul {
+                        position: relative;
+                        height: 42px;
+                        background: url(../assets/icons/study-menu.svg) no-repeat center right;
+                        background-size: auto 22px;
+                        display: inline-block;
+                        margin: 0!important;
+                        > li {
+                            position: absolute;
+                            top: 40px;
+                            visibility:hidden;
+                            z-index: 999;
+                            background: #fff;
+                            border-radius: 5px;
+                            border: 1px solid #DDDDDD;
+                            box-sizing: border-box;
+                            padding: 20px;
+                            > a {
+                                display: flex;
+                            }
+                        }
+                        &:hover {
+                            > li { 
+                                visibility:visible;
+                            }
+                        }
+                    }
+                }
+                @media screen and (max-width:$screen-xl-min) {
+                    flex-direction: column;
+                    > .select-wrapper {
+                        margin-bottom: 25px;
+                    }
+                }
+                > .select-wrapper {
+                    border: 1px solid #888888;
+                    box-sizing: border-box;
+                    border-radius: 30px;
+                    box-sizing: border-box;
+                    padding: 0;
+                    > input {
+                        border: none;
+                        margin: 0;
+                        height: 2.357rem;
+                        line-height: 2.357rem;
+                        font-weight: 300;
+                        font-size: 0.929rem;
+                        color: $text-black-8;
+                        box-sizing: border-box;
+                        padding-left: 19px;
+                    }
+                    > ul {
+                        border: 0;
+                        height: initial;
+                        box-shadow: 0 4px 3px 1px rgba(0,0,0, 0.2);
+                        border-radius: 19px;
+                        > li {
+                            > span {
+                                font-size: 0.929rem;
+                                color: $text-black-8;
+                                padding: 5px 16px;
+                            }
+                        }
+                    }
+                    > .caret {
+                        right: 14px;
+                        fill: #888888;
+                    }
+                }
+                > ul {
+                    margin: 0 0 0 27px;
+                    width: 100%;
+                    > li {
+                        > a {
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 40px;
+                            color: #555555;
+                            min-width: 89px;
+                            display: inline-block;
+                            text-align: center;
+                            box-sizing: border-box;
+                            padding: 0 14px;
+                            &:hover , &.active {
+                                background: #F9F9F9;
+                                box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 20px;
+                                color: #E46442;
+                               // display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        > .mystudy-em-content {
+            > ul.collapsible {
+                margin: 0;
+                box-shadow:none;
+                border: 0;
+                > li {
+                    > .collapsible-header-wrap {
+                        padding: 16px 30px;
+                        display: flex;
+                        background-color: #fff;
+                        border-bottom: 1px solid #ddd;
+                        > .msem-head {
+                            @media screen and (max-width:$screen-lg-min) {
+                                flex-direction: row!important;
+                                
+                            }
+                            @media screen and (max-width:$screen-xl-min) {
+                                align-items: flex-start;
+                            }
+                            > .msem-left {
+                                display: flex;
+                                align-items: center;
+                                width: 100%;
+                                @media screen and (max-width:$screen-xl-min) {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    > span {
+                                        min-width: auto!important;
+                                        margin-bottom: 25px;
+                                    }
+                                    > .msem-content {
+                                        margin-left: 0!important;
+                                     }
+                                }
+                                > span {
+                                    font-weight: 300;
+                                    font-size: 13px;
+                                    line-height: 13px;
+                                    min-width: 155px;
+                                    text-align: center;
+                                }
+                                > .msem-content {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-left: 27px;
+                                    @media screen and (max-width:$screen-sm-min) {
+                                            flex-direction:column;
+                                            margin-left: 0;
+                                            align-items: flex-start;
+                                            > .msem-btn { 
+                                                margin-left: 0!important;
+                                            }
+                                    }
+                                    > .top {
+                                        display: flex;
+                                        align-items: center;
+                                        @media screen and (max-width:$screen-sm-min) {
+                                            width: 100%;
+                                            margin-bottom: 20px;
+                                        }
+                                        > .msem-image {
+                                            border: 1px solid #AAAAAA;
+                                            max-width: 50px;
+                                            margin-right: 20px;
+                                            > img {
+                                                width: 100%;
+                                            }
+                                        }
+                                        > h4 {
+                                            margin: 0;
+                                            font-weight: 500;
+                                            font-size: 1.143rem;
+                                            line-height: 26px;
+                                            color: $text-black-8;
+                                        }
+                                    }
+                                    > .msem-btn {
+                                        display: none;
+                                        margin-left: 20px;
+                                        > a {
+                                            background: #FFFFFF;
+                                            border: 1px solid #DDDDDD;
+                                            box-sizing: border-box;
+                                            border-radius: 10px;
+                                            min-width: 62px;
+                                            margin: 5px 5px 5px 0;
+                                            font-weight: 500;
+                                            font-size: 0.857rem;
+                                            line-height: 13px;
+                                            color: $text-gray-3;
+                                            display: inline-flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            padding: 0;
+                                            min-height: 27px;
+                                        }
+                                        > a.msed-blue-text {
+                                            background-color: #ffffff;
+                                            border: 1px solid #5997D0;
+                                            color: #5997D0;
+                                            padding: 5px 10px;
+                                            box-sizing: border-box;
+                                            min-width: auto;
+                                        }
+                                        > a.mp3B{
+                                            color: #E46442;
+                                        }
+                                    }
+                                }
+                            }
+                            .collapsible-header{
+                                border: 0;
+                                background-color: transparent;
+                                > i {
+                                    transition: all .5s linear;
+                                    transform: rotate(0deg);
+                                }
+                            }
+                        }
+                    }
+                }
+                > li.active {
+                   > .collapsible-header-wrap {
+                        background: #F8F8F8;
+                        box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.1);
+                        //box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.08), 5px 8px 10px rgba(0, 0, 0, 0.15);
+                        > .msem-head {
+                            .collapsible-header{
+                                > i {
+                                    transform:rotate(180deg);
+                                }
+                            }
+                         }
+                    }
+                    .collapsible-body{
+                        background: #F8F8F8;
+                    }
+                    .msem-btn {
+                        display: block!important;
+                    }
+                }
+            }
+        }
+    }
+}
+.em-full-width-row {
+  justify-content: space-between;
+  align-items:flex-start;
+  display: flex;
+  flex: 0 0 100%; 
+  @media screen and (max-width:$screen-xl-min) {
+      flex-direction: column;
+  }
+  .dropdown-tital {
+    width: 15%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 1.071rem;
+    line-height: 13px;
+    color: $text-black-8;
+    &.orangeTxt{
+        color: #E46442;
+    }
+  }
+  .em-dropdown-descrip {
+    width: 85%;
+    @media screen and (max-width:$screen-xl-min) {
+        width:100%;
+     }
+    > div.em-content {
+        @include default-flex-between;
+        margin-bottom: 15px;
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+        > p {
+            margin: 0;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            white-space: normal;
+            margin:0 10px;
+            font-size: 1.071rem;
+            color: $text-black-8;
+            @media screen and (max-width: 700px) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+          }
+    }
+  }
+  a.em-dropdown-btn {
+    display: flex;
+    align-items: center;
+    min-width: 111px;
+    justify-content: center;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 0.857rem;
+    line-height: 13px;
+    color: $text-gray-3;
+    @media screen and (max-width: 700px) {
+        margin-left: 10px;
+    }
+    > i {
+      margin-right: 7px;
+    }
+  }
+  .em-orange-text {
+    color: $text-orange-1;
+    font-weight: bold;
+  }
+  .em-blue-text {
+    color: $text-bl-blue-4;
+    font-weight: bold;
+  }
+  @media screen and (max-width:$screen-sm-min) {
+    display: block;
+  }
+}
+
+// infinite-spinning animation
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes infinite-sp {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

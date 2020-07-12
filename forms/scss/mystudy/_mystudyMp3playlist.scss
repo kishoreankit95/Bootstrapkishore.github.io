@@ -1,0 +1,462 @@
+// .mystudy-music-player {
+//     display: flex;
+//     background: #FFFFFF;
+//     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+//     border-radius: 20px;
+//     box-sizing: border-box;
+//     padding: 40px 80px;
+//     @media screen and (max-width:1450px) {
+//         padding: 45px 30px;
+//         > .ms-mp-right {
+//             margin-left: 26px!important;
+//         }
+//     }
+//     margin-top: 43px;
+//     @media screen and (max-width:$screen-md-min) { 
+//         flex-direction: column;
+//         align-items: center;
+//         > .ms-mp-right {
+//             width:100%!important;
+//             margin: 30px 0 0 0!important;
+//         }
+//         margin-top: 23px;
+//     }
+//     > .ms-mp-left {
+//        // display: flex;
+//        width: 20%;
+//        @media screen and (max-width:1250px) {
+//         width: auto;
+//     }
+//        > img {
+//            min-width: 150px;
+//            display: block;
+//            width: 100%;
+//        }
+//     }
+//     > .ms-mp-right {
+//         width: 100%;
+//         @media screen and (max-width:1250px) {
+//             width: 72%;
+//         }
+//         margin-left: 46px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         > .msmp-top {
+//             > nav {
+//                 background: none;
+//                 box-shadow: none;
+//                 height: initial;
+//                 line-height: initial;
+//                 display: flex;
+//                 align-items: center;
+//                 > span {
+//                     font-weight: bold;
+//                     font-size: 1rem;
+//                     //line-height: 35px;
+//                     color: #5997D0;
+//                 }
+//                 > .nav-wrapper {
+//                     display: flex;
+//                     margin: 0 6px;
+//                     height: initial;
+//                     line-height: initial;
+//                     > a {
+//                         color: #5997D0;
+//                         font-weight: bold;
+//                         font-size: 1rem;
+//                         line-height: 16px;
+//                         height: initial;
+//                         &::before {
+//                             color:#5997D0 ;
+//                             margin: 0;
+//                             font-size: 1.143rem;
+//                         }
+//                     }
+//                 }
+//             }
+//             > .mystudy-mp3-title {
+//                 @include default-flex-between;
+//                 flex-wrap: wrap;
+//                 > h4 {
+//                     font-weight: bold;
+//                     font-size: 1.5rem;
+//                     line-height: 35px;
+//                     color: $text-black-8;
+//                     margin: 0;
+//                     white-space: normal;
+//                     @media screen and (max-width:1250px) { 
+//                         font-size: 1.3rem;
+//                     }
+//                 }
+//                 > a {
+//                     background: none!important;
+//                     box-shadow: none!important;
+//                     border: 1px solid #5997D0;
+//                     box-sizing: border-box;
+//                     border-radius: 20px;
+//                     font-weight: 500;
+//                     font-size: 0.929rem;
+//                     line-height: 35px;
+//                     color: #5997D0;
+//                     white-space: nowrap;
+//                 }
+//             }
+//             .mystudy-play-link {
+//                 display: flex;
+//                 margin:8px 0 30px;
+//                 flex-wrap: wrap;
+//                 > span {
+//                     font-weight: normal;
+//                     font-size: 1rem;
+//                     line-height: 35px;
+//                     color: $text-gray-7;
+//                     white-space: nowrap;
+//                     @media screen and (max-width:1250px) { 
+//                         font-size: 0.93rem;
+//                     }
+//                 }
+//                 > span.ms-divid {
+//                     margin: 0 10px;
+//                 }
+//             }
+//         }
+//         > .msmp-bottom {
+//             > .progress {
+//                 background: #D2D2D2;
+//                 border-radius: 10px;
+//                 height: 6px;
+//                 margin: 0 0 5px 0;
+//                 > .determinate {
+//                     border-radius: 0 10px 10px 0;
+//                     background: rgba(77,154,227,1);
+// background: -moz-linear-gradient(left, rgba(77,154,227,1) 0%, rgba(3,80,162,1) 100%);
+// background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77,154,227,1)), color-stop(100%, rgba(3,80,162,1)));
+// background: -webkit-linear-gradient(left, rgba(77,154,227,1) 0%, rgba(3,80,162,1) 100%);
+// background: -o-linear-gradient(left, rgba(77,154,227,1) 0%, rgba(3,80,162,1) 100%);
+// background: -ms-linear-gradient(left, rgba(77,154,227,1) 0%, rgba(3,80,162,1) 100%);
+// background: linear-gradient(to right, rgba(77,154,227,1) 0%, rgba(3,80,162,1) 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d9ae3', endColorstr='#0350a2', GradientType=1 );
+//                 }
+//             }
+//             > .mystudy-time {
+//                 @include default-flex-between;
+//                 > span {
+//                     font-weight: 500;
+//                     font-size: 1rem;
+//                     line-height: 14px;
+//                     color: $text-black-8;
+//                 }
+//             }
+//             > .mystudy-mp3-btn {
+//                 @include default-flex-center;
+//                 > .msmp-margin {
+//                     width: 42.38px;
+//                     display: flex;
+//                     @media screen and (max-width:1250px) {
+//                         width: 22.38px;
+//                     }
+//                 }
+//                 > i.icon-em-repeat-one {
+//                     font-weight: 600;
+//                     font-size: 0.714rem;
+//                     line-height: 24px;
+//                     color: #C4C4C4;
+//                     font-style: normal;
+//                     text-align: center;
+//                     &.active-colour {
+//                         background: url(../assets/icons/icon-play-number-hover.svg) no-repeat center center;
+//                         color: #0D5092;
+//                     }
+//                 }
+//                 > a.mystudy-skip-btn {
+//                     width: 37.62px;
+//                     height: 37.62px;
+//                     background: #C4C4C4;
+//                     border-radius: 50%;
+//                     @include default-flex-center;
+//                     &.active-blue {
+//                         background: #0D5092;
+//                     }
+//                 }
+//                 > a.mystudy-play-btn {
+//                     width: 52.6px;
+//                     height: 52.6px;
+//                     background:#ccc;
+//                     border-radius: 50%;
+//                     margin: 0 12px;
+//                     @include default-flex-center;
+//                     &.active-gradient {
+//                         background: rgba(16,102,159,1);
+// background: -moz-linear-gradient(45deg, rgba(16,102,159,1) 0%, rgba(13,77,145,1) 100%);
+// background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(16,102,159,1)), color-stop(100%, rgba(13,77,145,1)));
+// background: -webkit-linear-gradient(45deg, rgba(16,102,159,1) 0%, rgba(13,77,145,1) 100%);
+// background: -o-linear-gradient(45deg, rgba(16,102,159,1) 0%, rgba(13,77,145,1) 100%);
+// background: -ms-linear-gradient(45deg, rgba(16,102,159,1) 0%, rgba(13,77,145,1) 100%);
+// background: linear-gradient(45deg, rgba(16,102,159,1) 0%, rgba(13,77,145,1) 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10669f', endColorstr='#0d4d91', GradientType=1 );
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// .ms-mp-listview {
+//     > .msmp-list-title {
+//        // @include default-flex-between;
+//         background: #F8F8F8;
+//         box-sizing: border-box;
+//         border-bottom: 2px solid #DFDFDF;
+//         box-sizing: border-box;
+//         padding: 20px 0;
+//         display: flex;
+//         justify-content: flex-start;
+//         align-items: center;
+//         > span {
+//             font-weight: 500;
+//             font-size: 1.071rem;
+//             line-height: 18px;
+//             color: $text-black-8;
+//             white-space: nowrap;
+//             width: 7%;
+//             text-align: center;
+//         }
+//         #msMusick-player-tab {
+//             position: relative;
+//             width: 88%;
+//             > .owl-stage-outer {
+//                // width: 95%;
+//                 margin: 0 auto;
+//                 .item {
+//                     text-align: center;
+//                     > a {
+//                         font-weight: 300;
+//                         font-size: 0.929rem;
+//                         line-height: 18px;
+//                         color: #AAAAAA;
+//                     }
+//                 }
+//             }
+//             > .owl-nav {
+//                 position: absolute;
+//                 width: 100%;
+//                 height: 19px;
+//                 margin: 0;
+//                 top:0;
+//                 > button.owl-prev, > button.owl-next {
+//                     width: 10px;
+//                     height: 10px;
+//                     margin: 0;
+//                     position: absolute;
+//                     > img {
+//                         width: 100%;
+//                     }
+//                 }
+//                 > button.owl-prev {
+//                     left: 0;
+//                 }
+//                 > button.owl-next {
+//                     right: 0;
+//                 }
+//             }
+//         }
+//     }
+//     > .msmp-list-content {
+//         margin: 0;
+//         > li {
+//             > .msmp-content-title {
+//                 @media screen and (max-width:$screen-md-min){
+//                     display: none;
+//                 }
+//                 box-sizing: border-box;
+//                 padding: 22px 0;
+//                 border-bottom: 1px solid #DDDDDD;
+//                 > label {
+//                     width: 7%;
+//                     padding: 0 20px 0 10px;
+//                     @media screen and (max-width:$screen-lg-min) {
+//                         min-width: 70px;
+//                     }
+//                     [type="checkbox"].filled-in:not(:checked) + span:not(.lever)::after {
+//                         background: none!important;
+//                     }
+//                     [type="checkbox"].filled-in:checked + span:not(.lever):after {
+//                         border: 1px solid #0E5494;
+//                         background-color: #fff;
+//                     }
+//                     [type="checkbox"].filled-in:checked + span:not(.lever):before {
+//                         border-right: 1px solid #0E5494;
+//                         border-bottom: 1px solid #0E5494;
+//                     }
+//                     [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+//                         border: 2px solid #CDCDCD;
+//                     }
+//                     [type="checkbox"].filled-in:checked + span:not(.lever):after, [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after, [type="checkbox"].filled-in:checked + span:not(.lever):before, [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before {
+//                         top:2px;
+//                     }
+//                     > span {
+//                         font-weight: 600;
+//                         font-size: 1rem;
+//                         line-height: 25px;
+//                         color: $text-black-8;
+//                     }
+//                 }
+//                 > strong {
+//                     font-weight: bold;
+//                     font-size: 1rem;
+//                     line-height: 13px;
+//                     color: $text-black-8;
+//                     width: 12%;
+//                     text-align: center;
+//                 }
+//                 > strong.smmp-description {
+//                     width: 45%;
+//                 }
+//             }
+//             > .msmp-content-description {
+//                 @media screen and (max-width:$screen-md-min){
+//                     flex-direction: row;
+//                     flex-wrap: wrap;
+//                     justify-content: flex-start;
+//                     > label {
+//                         min-width: 70px!important;
+//                     }
+//                     > div.msmp-third-box {
+//                         width: 25%!important;
+//                         text-align: left!important;
+//                         margin-top: 10px;
+//                         text-align: center!important;
+//                     }
+//                     > div.msmp-second-box {
+//                         width: 75%!important;
+//                     }
+//                 }
+//                 box-sizing: border-box;
+//                 padding: 25px 0;
+//                 > label {
+//                     width: 7%;
+//                     padding: 0 20px 0 10px;
+//                     @media screen and (max-width:$screen-lg-min) {
+//                         min-width: 70px;
+//                     }
+//                     [type="checkbox"].filled-in:checked + span:not(.lever):after {
+//                         border: 1px solid #0E5494;
+//                         background-color: #fff;
+//                     }
+//                     [type="checkbox"].filled-in:checked + span:not(.lever):before {
+//                         border-right: 1px solid #0E5494;
+//                         border-bottom: 1px solid #0E5494;
+//                     }
+//                     [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+//                         border: 1px solid #AAAAAA;
+//                     }
+//                     [type="checkbox"].filled-in:checked + span:not(.lever):after, [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after, [type="checkbox"].filled-in:checked + span:not(.lever):before, [type="checkbox"].filled-in:not(:checked) + span:not(.lever):before  {
+//                         top:2px;
+//                     }
+//                     [type="checkbox"].filled-in:not(:checked) + span:not(.lever)::after {
+//                         background: none!important;
+//                     }
+//                     > span {
+//                         font-weight: 500;
+//                         font-size: 1rem;
+//                         line-height: 25px;
+//                         color: $text-black-8;
+                        
+//                     }
+//                 }
+//                 > div.msmp-third-box {
+//                     font-weight: bold;
+//                     font-size: 1rem;
+//                     line-height: 13px;
+//                     color: $text-black-8;
+//                     width: 12%;
+//                     text-align: center;
+//                     font-weight: normal;
+//                     font-size: 0.929rem;
+//                     color: #919191;
+//                     line-height: 29px;
+//                     > button {
+//                         background: none!important;
+//                         box-shadow: none!important;
+//                         border: 0;
+//                         height: initial;
+//                         line-height:initial;
+//                     }
+//                 }
+//                 > div.msmp-second-box {
+//                     width: 45%;
+//                     > p {
+//                         margin: 0;
+//                         font-weight: normal;
+//                         font-size: 0.929rem;
+//                         line-height: 26px;
+//                         color: $text-black-8;
+//                         > a {
+//                             width: 25px;
+//                             height: 25px;
+//                             background: #dddddd;
+//                             border-radius: 50%;
+//                             display: inline-flex;
+//                             align-items: center;
+//                             justify-content: center;
+//                             margin-right: 16px;
+//                             > i.mstu-p-arw {
+//                                 background-size: auto 10px;
+//                                 height: 10px;
+//                                 width: 9px;
+//                             }
+//                             &.active {
+//                                 background: linear-gradient(222.02deg, #0D488D 7.3%, #1069A2 87.44%);
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// .msmp-botton-btn {
+//     display: flex;
+//     > button {
+//         background: #FFFFFF;
+//         box-shadow: none!important;
+//         border: 1px solid #888888;
+//         box-sizing: border-box;
+//         border-radius: 5px;
+//         font-weight: 500;
+//         font-size: 0.929rem;
+//         line-height: 18px;
+//         color: #888888;
+//         min-width: 120px;
+//         > i.mstu-p-arw {
+//             background-size: auto 10px;
+//             height: 10px;
+//             width: 9px;
+//             margin-right: 5px;
+//         }
+//         &:last-child {
+//           margin-left: 6px;  
+//         }
+        
+//         &.active {
+//             background: #888888;
+//             color: #fff;
+//         }
+//     }
+// }
+
+// .mystudyMp3btnGrp{
+//     justify-content: center;
+//     position: relative;
+//     @media screen and (max-width: 992px) {
+//         flex-direction: column;
+//     }
+//     .msmp-botton-btn{
+//         position: absolute;
+//         right: 0;
+//         @media screen and (max-width: 992px) {
+//             position: initial;
+//             margin-top: 20px;
+//         }
+//     }
+// }

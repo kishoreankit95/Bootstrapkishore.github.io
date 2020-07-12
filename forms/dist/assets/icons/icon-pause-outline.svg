@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" width="23" height="23">
+	<defs>
+		<image width="1" height="9" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAJAQMAAADJiNSnAAAAAXNSR0IB2cksfwAAAANQTFRFmZmZfOikFgAAAAtJREFUeJxjYEAHAAASAAF38foAAAAAAElFTkSuQmCC"/>
+		<image width="1" height="9" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAJAQMAAADJiNSnAAAAAXNSR0IB2cksfwAAAANQTFRFmZmZfOikFgAAAAtJREFUeJxjYEAHAAASAAF38foAAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #999999 } 
+	</style>
+	<use id="Layer 1" href="#img1" x="9" y="7" />
+	<use id="Layer 2" href="#img2" x="14" y="7" />
+	<path id="Layer" class="shp0" d="M11.5 22.5C5.42 22.5 0.5 17.58 0.5 11.5C0.5 5.42 5.42 0.5 11.5 0.5C17.58 0.5 22.5 5.42 22.5 11.5C22.5 17.58 17.58 22.5 11.5 22.5Z" />
+</svg>

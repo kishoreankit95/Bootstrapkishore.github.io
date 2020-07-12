@@ -1,0 +1,127 @@
+#dvbook-banner {
+  padding-bottom: 40px;
+  .breadcrumb {
+    justify-content: flex-end;
+    padding: 40px 0 20px 0;
+    @media screen and (max-width: $screen-sm-min) {
+      padding: 20px 0;
+    }
+  }
+}
+
+.dvbook-duble-banner {
+  padding-top: 40px;
+}
+
+.dvbook-top-books {
+  .top-book-left {
+
+    .card-image {
+      background: #fff !important;
+      padding: 30px !important;
+    }
+    .card-content {
+      h3 {
+        display: flex;
+        align-items: center;
+        i.icon-dvbook-logo {
+          background-size: 100% auto;
+          height: 20px;
+          width: 92px;
+          margin-right: 10px;
+        }
+      }
+      .book-top-price {
+        h3 {
+          padding-bottom: 0 !important;
+          font-weight: 600!important;
+          font-size: 17px!important;
+          line-height: 34px!important;
+          color: #E66148!important;
+          span {
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 34px;
+            color: #767575;
+            &:last-child {
+              text-decoration: line-through;
+              margin-right: 20px;
+              position: relative;
+              &::before {
+                position: absolute;
+                content: '';
+                height: 1px;
+                width: 20px;
+                right: -15px;
+                top:calc(52% - 0px);
+                background: #767575;
+              }
+              &::after {
+                position: absolute;
+                content: '';
+                height: 1px;
+                width: 10px;
+                right: -15px;
+                top:calc(49% - 0px);
+                background: #767575;
+                transform: rotate(20deg);
+              }
+            }
+            &:first-child {
+              text-decoration: none !important;
+              margin-right: 5px;
+            }
+          }
+          i {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+    .card-link-text.dvbook-card-link {
+      padding: 25px 33px;
+      > a {
+        font-weight: normal;
+        font-size: 14px!important;
+        line-height: 20px;
+        color: #242424!important;
+      }
+    }
+  }
+}
+
+.dvbook-recommendation {
+  #book-recommended-scroll {
+    .carousel-item {
+      .item-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        i.icon-dvbook-logo {
+          background-size: auto 16px;
+          height: 18px;
+          width: 76px;
+        }
+      }
+    }
+  }
+}
+.section-title.dv-sec-title {
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dvbook-leftSection {
+  box-shadow: none;
+  background-size: auto!important;
+}
+.top-book-item.dv-item {
+  > h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #242424;
+    margin: 5px 0;
+  }
+}

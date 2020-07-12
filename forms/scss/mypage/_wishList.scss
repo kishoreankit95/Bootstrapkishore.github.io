@@ -1,0 +1,195 @@
+
+.wish-submit {
+  box-sizing: border-box;
+  padding: 20px 0;
+  
+  .delete-btn-wish {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    // @media screen and (max-width: 992px) {
+    //   > a {
+    //     width: 150px;
+    //     margin-bottom: 10px;
+    //   }
+    // }
+    a {
+      background-color: #fff;
+      color: #000;
+      box-shadow: none;
+      font-size: 12px;
+      letter-spacing: -0.5px;
+      border: 1px solid #ddd;
+      border-radius: 7px;
+      white-space: nowrap;
+      
+      // &:hover {
+      //   background: #ddd;
+      //   box-shadow: none;
+      // }
+    }
+  }
+  .order-btn-wish {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media screen and (max-width:$screen-sm-min){
+      margin-top: 15px;
+    }
+    a {
+      background: #444444;
+      color: #fff;
+      border-radius: 30px;
+      box-shadow: none;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: -0.5px;
+      height: auto;
+      line-height: normal;
+      white-space: nowrap;
+      margin-left: 5px;
+      padding: 15px 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media screen and (max-width: 1200px) {
+        font-size: 14px;
+        height: 42px;
+      }
+      &:hover {
+        background: #444444;
+        box-shadow: none;
+      }
+      &:last-child {
+        background: #0c5da7;
+      }
+    }
+  }
+}
+
+.wish-content {
+  .wishlist-table{
+    .table-head{
+      display: flex;
+      align-items: center;
+      height: 50px;
+      border-bottom: 1px solid #ddd;
+      font-size: 15px;
+      letter-spacing: -0.3px;
+      font-weight: 500;
+      white-space: nowrap;
+      .chkbox{
+        min-width: 70px;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width:$screen-sm-min){
+          min-width: 40px;
+        }
+      }
+      .category{
+        min-width: 160px;
+        text-align: center;
+        @media screen and (max-width:$screen-sm-min){
+          display: none;
+        }
+      }
+      .product{
+        width: 100%;
+        text-align: center;
+      }
+      .status{
+        min-width: 100px;
+        text-align: center;
+      }
+    }
+    .table-body{
+      .item{
+        display: flex;
+        padding: 25px 0;
+        border-bottom: 1px solid #ddd;
+        &:last-child{
+          border-bottom: 4px solid #ddd;
+        }
+        .chkbox{
+          min-width: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @media screen and (max-width:$screen-sm-min){
+            min-width: 40px;
+          }
+        }
+        .category{
+          min-width: 160px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $text-bl-blue-4;
+          font-size: 12px;
+          white-space: nowrap;
+          @media screen and (max-width:$screen-sm-min){
+            display: none;
+          }
+        }
+        .product{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          .product-img{
+            min-width: 100px;
+            display: flex;
+            justify-content: center;
+            img{
+              max-width: 100px;
+            }
+          }
+          span{
+            margin-left: 25px;
+            font-size: 13px;
+            letter-spacing: -0.3px;
+            font-weight: 200;
+            color: #444;
+          }
+        }
+        .status{
+          min-width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          color: #4f4f4f;
+        }
+      }
+    }
+  }
+  
+}
+label.wl-checkbox {
+  display: flex;
+  height: 23px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  width: 34px;
+  vertical-align: middle;
+  [type="checkbox"].filled-in:checked + span:not(.lever):after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aaaaaa;
+    background-color: #fff;
+    z-index: 0;
+  }
+  [type="checkbox"].filled-in:checked + span:not(.lever):before {
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+  }
+  [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+    border: 1px solid #aaaaaa;
+  }
+}
+
+
+    

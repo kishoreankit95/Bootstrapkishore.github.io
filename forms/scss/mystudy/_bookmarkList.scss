@@ -1,0 +1,209 @@
+     h1.mystudy-title {
+    font-weight: bold;
+    font-size:2.5rem;
+    line-height: 35px;
+    letter-spacing: -0.5px;
+    color: $text-black-8;
+    border-bottom: 4px solid #dddddd;
+    margin:60px 0 0 0;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    display: flex;
+    @media screen and (max-width:$screen-sm-min){
+flex-direction: column;
+align-items: flex-start;
+    }
+    @media screen and (max-width:$screen-md-min) {
+        flex-wrap: wrap;
+        font-size:1.5rem;
+        padding-bottom: 12px;
+        > span {
+            font-size: 0.986rem!important;
+        }
+    }
+        > span {
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: -0.5px;
+            line-height: 35px;
+            color: #777;
+            margin-left: 20px;
+            @media screen and (max-width:$screen-sm-min){
+                margin-left: 0;
+            }
+        }
+    }
+    ul.mystudy-bookmark-wdth {
+        margin: 0;
+      >  li.item {
+            border-bottom: 1px solid #DDDDDD;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding:55px 30px;
+            &:last-child {
+                border: 0;
+            }
+            @media screen and (max-width:$screen-xl-min) {
+                flex-direction:column;
+                padding:30px 30px;
+                > .ms-left {
+                    width:100%!important;
+                }
+                > .ms-right {
+                    width:100%!important;
+                    margin-top: 20px;
+                }
+            }
+            > .ms-left {
+                display: flex;
+                width: 70%;
+                justify-content: space-between;
+                @media screen and (max-width:$screen-sm-min) {
+                    flex-direction:column;
+                    > .ms-bookmark-image {
+                        width: 70%;
+                        margin: 0 auto 20px!important;
+                     }
+                 }
+                 @media screen and (max-width:$screen-sm-min) {
+                    width: 90%;
+                    margin: 0 auto 20px!important;
+                 }
+                > .ms-bookmark-image {
+                   min-width: 210px;
+                   margin-right: 20px;
+                    > img {
+                        width: 210px;
+                        display: block;
+                    }
+                }
+                > .ms-bookmark-text {
+                    display: flex;
+                    flex-direction:column;
+                    justify-content:space-between;
+                    > .msbk-top {
+                        > h2 {
+                            margin: 0 0 9px 0;
+                            white-space: nowrap;
+                            display: flex;
+                            @include default-flex-start;
+                            @media screen and (max-width:$screen-md-min) {
+                                flex-wrap: wrap;
+                             }
+                            > strong {
+                                font-weight: bold;
+                                font-size: 21px;
+                                letter-spacing: -0.5px;
+                                line-height: 35px;
+                                color: $text-black-8;
+                                margin: 0 11px;
+                            }
+                            > span {
+                                font-weight: normal;
+                            font-size: 18px;
+                            letter-spacing: -0.5px;
+                            line-height: 35px;
+                            color: $text-black-8;
+                            }
+                        }
+                        > p {
+                            font-weight: 300;
+                            font-size: 1rem;
+                            letter-spacing: -0.5px;
+                            line-height: 22px;
+                            margin: 0;
+                            color: $text-black-8;
+                        }
+                    }
+                    > span {
+                        font-weight: normal;
+                        font-size: 12px;
+                        letter-spacing: -0.3px;
+                        line-height: 25px;
+                        color: #AAAAAA;
+                        margin-top: 12px;
+                    }
+                }  
+            }
+            > .ms-right {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 25%;
+                > a {
+                    background:none;
+                    box-shadow: none;
+                    color: #53A1E8;
+                    border: 1px solid #53A1E8;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    font-size: 13px;
+                    letter-spacing: -0.5px;
+                    font-weight: 500;
+                    line-height: 14px;
+                    @include default-flex-center;
+                    > i {
+                        color: #53A1E8;
+                        margin-right: 3px;
+                        font-size: 20px;
+                    }
+                    &:hover{
+                        background-color: #53A1E8;
+                        color: #fff;
+                        i{
+                            color: #fff;
+                        }
+                    }
+                }
+                > .ms-bookmark-list {
+                    margin: 0;
+                    @include default-flex-start;
+                    > a {
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 14px;
+                        color: $text-gray-3;
+                        white-space: nowrap;
+                    }
+                    > span {
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #c3c3c3;
+                        margin: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+    .icon-wishlist {
+        cursor: pointer;
+        width: 22px;
+        height: 21px;
+        opacity: .5;
+        background: 
+        // DON't use a base64 encoded svg this is just for this prototype, use a normal external link to a svg file
+       url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjI1IDQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuMjUgNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik0yLjEyLDRDMi4xLDQsMi4wNywzLjk5LDIuMDUsMy45OEMxLjk4LDMuOTIsMC4zLDIuNjgsMC4wNCwxLjYyYy0wLjEtMC40My0wLjAxLTAuODgsMC4yNC0xLjJDMC41LDAuMTUsMC44MSwwLDEuMTYsMAoJCWMwLjUsMCwwLjgsMC4yNiwwLjk2LDAuNTFDMi4yOCwwLjI2LDIuNTksMCwzLjA4LDBjMC4zNSwwLDAuNjYsMC4xNSwwLjg4LDAuNDNjMC4yNSwwLjMyLDAuMzQsMC43NywwLjI0LDEuMgoJCUMzLjk1LDIuNjgsMi4yNywzLjkyLDIuMiwzLjk4QzIuMTgsMy45OSwyLjE1LDQsMi4xMiw0eiBNMS4xNiwwLjI1Yy0wLjM1LDAtMC41NywwLjE4LTAuNjgsMC4zM0MwLjI4LDAuODQsMC4yLDEuMjIsMC4yOSwxLjU3CgkJYzAuMjEsMC44NSwxLjUxLDEuOSwxLjg0LDIuMTVjMC4zMy0wLjI1LDEuNjMtMS4zMSwxLjg0LTIuMTVjMC4wOC0wLjM1LDAuMDEtMC43My0wLjE5LTAuOThDMy42NSwwLjQzLDMuNDMsMC4yNSwzLjA4LDAuMjUKCQljLTAuNjcsMC0wLjg0LDAuNTctMC44NCwwLjU4QzIuMjMsMC44OCwyLjE4LDAuOTIsMi4xMiwwLjkyaDBjLTAuMDYsMC0wLjEtMC4wNC0wLjEyLTAuMDlDMiwwLjgxLDEuODMsMC4yNSwxLjE2LDAuMjV6Ii8+CjwvZz4KPC9zdmc+Cg==');
+        
+        &:hover {
+          opacity: 1;
+        }
+        
+        &.in-wishlist {
+          opacity: 1;
+          animation-name: wishlist-ani;
+          animation-duration: 1000ms;
+          background: 
+            // DON't use a base64 encoded svg this is just for this prototype, use a normal external link to a svg file
+        url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjE5NyAtODYuNzIgODE0LjA5NSA3NjgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMTk3IC04Ni43MiA4MTQuMDk1IDc2ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6IzIwMjAyMDt9DQoJLnN0MXtmaWxsOiNDQUQ3NDc7fQ0KPC9zdHlsZT4NCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02MDQuMDQ3LDY4MS4yOGMtMy44NCwwLTkuNi0xLjkyLTEzLjQ0LTMuODRjLTEzLjQ0LTExLjUyLTMzNi0yNDkuNi0zODUuOTItNDUzLjEyDQoJYy0xOS4yLTgyLjU2LTEuOTItMTY4Ljk2LDQ2LjA4LTIzMC40YzQyLjI0LTUxLjg0LDEwMS43Ni04MC42NCwxNjguOTYtODAuNjRjOTYsMCwxNTMuNiw0OS45MiwxODQuMzIsOTcuOTINCgljMzAuNzItNDgsOTAuMjQtOTcuOTIsMTg0LjMyLTk3LjkyYzY3LjIsMCwxMjYuNzIsMjguOCwxNjguOTYsODIuNTZjNDgsNjEuNDQsNjUuMjgsMTQ3Ljg0LDQ2LjA4LDIzMC40DQoJYy00OCwyMDEuNi0zNzAuNTYsNDM5LjY4LTM4NCw0NTEuMkM2MTUuNTY4LDY3OS4zNiw2MDkuODA3LDY4MS4yOCw2MDQuMDQ3LDY4MS4yOHoiLz4NCjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik00MTkuNzI4LTM4LjcyYy02Ny4yLDAtMTA5LjQ0LDM0LjU2LTEzMC41Niw2My4zNmMtMzguNCw0OS45Mi01My43NiwxMjIuODgtMzYuNDgsMTkwLjA4DQoJYzQwLjMyLDE2My4yLDI4OS45MiwzNjQuOCwzNTMuMjgsNDEyLjhjNjMuMzYtNDgsMzEyLjk2LTI1MS41MiwzNTMuMjgtNDEyLjhjMTUuMzYtNjcuMiwxLjkyLTE0MC4xNi0zNi40OC0xODguMTYNCgljLTI0Ljk2LTMwLjcyLTY3LjItNjUuMjgtMTM0LjQtNjUuMjhjLTEyOC42NCwwLTE2MS4yOCwxMDkuNDQtMTYxLjI4LDExMS4zNmMtMS45Miw5LjYtMTEuNTIsMTcuMjgtMjMuMDQsMTcuMjhsMCwwDQoJYy0xMS41MiwwLTE5LjItNy42OC0yMy4wNC0xNy4yOEM1ODEuMDA4LDY4LjgsNTQ4LjM2Ny0zOC43Miw0MTkuNzI4LTM4LjcyeiIvPg0KPC9zdmc+DQo=');
+          
+        }
+      }
+      
+      @keyframes wishlist-ani {
+          0%   {transform: scale(1);}
+          25%  {transform: scale(.5);}
+          50%  {transform: scale(1.2);}
+          100% {transform: scale(1);}
+      }

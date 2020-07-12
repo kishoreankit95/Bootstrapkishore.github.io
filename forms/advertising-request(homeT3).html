@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Advertising Request</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="dist/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    rel="stylesheet" />
+
+    <!-- Google font css -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <section class="advertisingReq">
+        <div class="container">
+            <div class="headTop top-txt">
+                <h2>광고상품 신청문의</h2>
+                <h3>* 필수 입력 사항</h3>
+            </div>
+            <div class="midForm">
+                
+                    <div class="row">
+                        <div class="col m3 12">
+                            <span class="labelH">월간지선택</span>
+                        </div>
+                        <div class="col m9 12">
+                            <div class="inputWrap chckbox">
+                                <div class="inputGroup checkWrap">
+                                    <label>
+                                        <input type="checkbox" class="filled-in" checked="checked" />
+                                        <span>일본어저널</span>
+                                    </label>
+                                </div>
+                                <div class="inputGroup checkWrap">
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>낚시춘추</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m3 12">
+                            <span class="labelH">고객명*</span>
+                        </div>
+                        <div class="col m9 12">
+                            <div class="inputWrap ">
+                            <div class="inputGroup">
+                                <input type="text" class="formControl" placeholder=""/>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col m3 12">
+                            <span class="labelH">핸드폰*</span>
+                        </div>
+                        <div class="col m9 12">
+                            <div class="inputWrap">
+                                <div class="inputGroup width-130">
+                                    <select class="customSelect">
+                                        <option value="" selected>010</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                </div>
+                                <div class="inputGroup width-130">
+                                    <input type="text" class="formControl" placeholder=""/>
+                                </div>
+                                <div class="inputGroup width-130">
+                                    <input type="text" class="formControl" placeholder=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col m3 12">
+                            <span class="labelH">이메일</span>
+                        </div>
+                        <div class="col m9 12">
+                            <div class="inputWrap">
+                                <div class="inputGroup">
+                                    <input type="text" class="formControl" placeholder=""/>
+                                </div>
+                                <span class="dividerH">@</span>
+                                <div class="inputGroup">
+                                    <input type="text" class="formControl" placeholder=""/>
+                                </div>
+                                <div class="inputGroup">
+                                    <select class="customSelect">
+                                        <option value="" selected>직접입력</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col m3 12">
+                            <span class="labelH">제목</span>
+                        </div>
+                        <div class="col m9 12">
+                            <div class="inputWrap">
+                                <div class="inputGroup full-width">
+                                    <input type="text" class="formControl" placeholder=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col m3 12">
+                            <span class="labelH">내용</span>
+                        </div>
+                        <div class="col m9 12">
+                            <div class="inputWrap">
+                                <div class="inputGroup full-width">
+                                    <textarea class="formControl"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- file input -->
+                    <div class="row">
+                        <div class="col m3 12">
+                            <span class="labelH">첨부파일</span>
+                        </div>
+                        <div class="col m9 12">
+                            <div class="inputWrap">
+                                <div class="file-field inputGroup">
+                                    <div class="file-path-wrapper">
+                                      <input class="file-path formControl" type="text">
+                                    </div>
+                                    <div class="btn btn-dark fileBtn">
+                                      <span>파일찾기</span>
+                                      <input type="file">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <span><img src="dist/assets/icons/icon-zip.svg"/></span>
+                                *.zip 파일 형식의 5MB 이하 파일만 등록가능합니다. .exe 첨부 불가 
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="tabSection personalInfoWrap">
+                <div class="headTop top-txt">
+                    <h2>개인정보처리방침 <span>개인정보 수집 및 이용 동의</span></h2>
+                    <h3>+ 전체보기</h3>
+                </div>
+
+                <div class="personalInfoPolicy">
+                    <ul class="collapsible expandable">
+                        <li>
+                        <div class="collapsible-header">
+                            ・개인정보의 수집 목적
+                            <i class="material-icons">expand_more</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Ut enim ad minima veniam, quis nostrum exercitationem 
+                                ullam corporis suscipit laboriosam, nisi ut aliquid ex 
+                                ea commodi consequatur? Quis autem vel eum 
+                                iure reprehenderit qui in ea voluptate .</span>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="collapsible-header">
+                            ・수집하는 개인정보의 항목
+                            <i class="material-icons">expand_more</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Sed ut perspiciatis unde omnis iste natus error sit 
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                 eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                  beatae vitae dicta sunt explicabo.</span>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="collapsible-header">
+                            ・개인정보의 수집 및 보유 기간
+                            <i class="material-icons">expand_more</i>
+                        </div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat.</span>
+                        </div>
+                        </li>
+                    </ul>
+
+                    <div class="personalInfoFooter">
+                        <label>
+                            <input type="checkbox" class="filled-in" checked="checked">
+                            <span>개인정보 수집 및 이용에 동의합니다.</span>
+                        </label>
+                        <div class="btnHolder">
+                            <a href="#" class="btn btn-round btn-dark">등록</a>
+                            <a href="#" class="btn btn-round btn-white">취소</a>
+                        </div>
+                    </div>
+
+                    <div class="phoneNumber">
+                        <p>더 궁금한 사항은 전화주세요. 
+                        <span>
+                            <img src="dist/assets/icons/icon-phone.svg"/>
+                            02-736-2031</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like
+                        it's our
+                        full time job. Any amount would help support and continue development on this project and is
+                        greatly
+                        appreciated.</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="#">DvConsulting</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

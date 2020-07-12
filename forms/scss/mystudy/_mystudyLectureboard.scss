@@ -1,0 +1,349 @@
+.ms-lecture-board {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 36px 65px;
+    margin: 47px auto 70px;
+    width: 75%;
+    @media screen and (max-width:$screen-xl-min) {
+        width: 100%;
+    }
+    @media screen and (max-width:$screen-md-min) {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 27px auto 30px;
+        padding: 26px 45px;
+        > .mslb-image {
+            width: 50%!important;
+            min-width: 180px;
+            margin: 0 auto;
+         }
+        > .mslb-content {
+            width: 100%!important;
+            margin:20px 0 0 0!important;
+            align-items: center;
+            .mslb-breadcrumb {
+                justify-content: center;
+            }
+            > .msld-top {
+                text-align: center;
+            }
+        }
+    }
+    @media screen and (max-width:$screen-sm-min) {
+        width: 100%!important;
+        padding: 20px;
+    }
+    > .mslb-image {
+        width: 33%;
+        > img {
+            width: 100%;
+            display:inline-block;
+            vertical-align:text-bottom
+        }
+    }
+     > .mslb-content {
+         width: 67%;
+         margin-left: 50px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+        > .msld-top {
+        > h3 {
+            font-weight: bold;
+            font-size: 22px;
+            letter-spacing: -0.5px;
+            line-height: 35px;
+            margin: 0;
+            color: $text-black-8;
+         }
+         > h6 {
+            font-weight: normal;
+            font-size: 13px;
+            letter-spacing: -1px;
+            line-height: 48px;
+            color: $text-black-8;
+            margin: 0;
+            > span {
+                margin: 0 7px;
+                font-size: 0.95rem;
+            }
+         } 
+         }
+ 
+         > .mslb-btn-group {
+             display: flex;
+             > a {
+                 background:none!important;
+                 box-shadow: none!important;
+                 margin-right: 6px;
+                 font-size: 12px;
+                 letter-spacing: -0.5px;
+             }
+         }
+     }
+}
+.mslb-minheight {
+    min-height: 309px!important;
+}
+nav.mystudy-nav {
+    background: none;
+    box-shadow: none;
+    line-height: initial;
+    height: initial;
+    
+    > .mslb-breadcrumb {
+        display: flex;
+        > a.breadcrumb {
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: -1px;
+            line-height: 20px;
+            color: $text-black-8;
+            &::before {
+                color: $text-black-8 ;
+                font-size: 1rem;
+                line-height: 20px;
+                margin: 0;
+            }
+            &:last-child {
+                color: $text-bl-blue-4;
+            }
+        }
+    }
+}
+.cfl-second-box {
+   > p {
+        > span {
+            color: #5997D0;
+            margin-left: 10px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+    }
+}
+.ms-notice-description {
+    @media screen and (max-width:$screen-sm-min){
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    > .msnd-left {
+        @media screen and (max-width:$screen-md-min) {
+           // flex-direction: row;
+           > a {
+            margin-left: 18px;
+            flex-wrap: wrap;
+           }
+        }
+        > span {
+            font-weight: 600;
+                font-size: 16px;
+                letter-spacing: -0.3px;
+                line-height: 20px;
+                color: #000;
+                border-left: 2px solid #53A1E8;
+                box-sizing: border-box;
+                padding:6px 17px;
+                white-space: nowrap;
+        }
+        > a {
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: -0.3px;
+            line-height: 23px;
+            color: $text-black-8;
+            // display: flex;
+            // align-items: center;
+            > span {
+                font-weight: 500;
+                font-size: 13px;
+                letter-spacing: -0.3px;
+                line-height: 18px;
+                color: #5997D0;
+                margin-left: 10px;
+                white-space: nowrap;
+            }
+        }
+    }
+   > span {
+    font-weight: 200;
+    font-size: 1rem;
+    letter-spacing: -0.3px;
+    line-height: 14px;
+    color: $text-gray-3;
+    @media screen and (max-width:$screen-sm-min){
+        width: 100%;
+        text-align: right;
+        margin: 0;
+        margin-top: 10px;
+    }
+    // @media screen and (max-width:$screen-md-min) {
+    //     margin-left: 19px;
+    //     margin-top: 10px;
+    //  }
+   }
+}
+.msnd-details {
+    //width: 80%;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    padding: 40px 75px;
+    margin: 25px 0 10px 0;
+    @media screen and (max-width:$screen-sm-min){
+        padding: 40px;
+    }
+    > p {
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    line-height: 24px;
+    color: $text-black-8;
+    margin: 0;
+    }
+
+}
+ .msnd-subdetails {
+    // margin-bottom: 20px;
+     position: relative;
+     box-sizing: border-box;
+     padding:23px 0;
+     border-bottom:1px solid #DDDDDD;
+     
+     .msnd-left {
+         margin-left: 64px;
+         position: relative;
+         box-sizing: border-box;
+         padding-left: 27px;
+         @media screen and (max-width:$screen-sm-min){
+             margin-left: 40px;
+         }
+         @media screen and (max-width:$screen-md-min) {
+             flex-direction: row;
+         }
+         &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -5px;
+            border: solid #777777;
+            border-width: 0 0 1px 1px;
+            width: 12px;
+            height: 18px;
+        }
+         > span {
+             font-weight: 500;
+             font-size: 16px;
+             letter-spacing: -0.3px;
+             line-height: 24px;
+             color: $text-black-8;
+         }
+         > p {
+             margin: 0 0 0 30px;
+             font-weight: 200;
+             font-size: 15px;
+             letter-spacing: -0.5px;
+             line-height: 24px;
+             color: #444444;
+         }
+     }
+     > .time {
+         font-weight: 200;
+         font-size: 12px;
+         line-height: 24px;
+         color: $text-gray-3;
+         margin-right: 30px;
+         white-space: nowrap;
+         span{
+             a{
+                 color: #444;
+                 margin-left: 10px;
+             }
+         }
+     }
+ }
+.msnd-line-border-btn {
+    background: none!important;
+    box-shadow: none!important;
+    border: 1px solid #444444;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 1.071rem;
+    line-height: 36px;
+    color: #444444;
+    padding:0 20px;
+    min-width: 88px;
+}
+ul.mslbd-list {
+    margin: 23px 0;
+}
+.mystudy-board-comment {
+    border: solid #DDDDDD;
+    border-width: 4px 0 4px 0;
+    box-sizing: border-box;
+    padding:33px 40px;
+    margin-bottom: 50px;
+    > form {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:$screen-sm-min) {
+            flex-direction: column;
+            > .comment-box-right {
+                margin:20px 0 0 0!important;
+             }
+        }
+        > .comment-box-left {
+            > a {
+            background: #FFFFFF!important;
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            border-radius: 3px;
+            min-width: 155px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: none!important;
+            font-weight: 300;
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            line-height: 38px;
+            color: $text-gray-3;
+            text-transform:lowercase;
+            height: 38px;
+        } 
+        }
+        > .comment-box-right {
+            width: 100%;
+            margin-left: 40px;
+            text-align: right;
+            > textarea {
+                background: #FFFFFF;
+                border: 1px solid #DDDDDD;
+                box-sizing: border-box;
+                border-radius: 3px;
+                min-height: 114px;
+                padding: 10px;
+                color:$text-black-8;
+                font-weight: 500;
+                font-size: 0.857rem;
+                outline: none;
+            }
+            > a {
+                background: #AAAAAA;
+                border-radius: 3px;
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: -0.5px;
+                line-height: 28px;
+                height: 28px;
+                margin-top: 12px;
+                min-width: 88px;
+                box-shadow: none;
+                color: #fff;
+            }
+        }
+    }
+}

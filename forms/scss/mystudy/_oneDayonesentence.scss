@@ -1,0 +1,111 @@
+ul.mystudy-onesentence {
+    > li.item {
+        display: flex;
+        background: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding:30px 10px ;
+        margin-bottom: 15px;
+        @media screen and (max-width:$screen-sm-min) {
+            flex-direction: column;
+            padding:20px 10px ;
+            > span {
+                margin-bottom: 10px;
+             }
+        }
+        .index {
+            font-family: "Noto Sans KR", sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: -0.3px;
+            line-height: 50px;
+            color: #53A1E8;
+            text-align: center;
+            box-sizing: border-box;
+            //padding-top: 7px;
+        }
+        > .mysyudy-onedayone {
+            > h3 {
+                margin: 0 0 20px 0;
+                font-weight: normal;
+                font-size: 17px;
+                letter-spacing: -0.3px;
+                line-height: 13px;
+                color: $text-black-8;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                > a {
+                    background: #5997D0!important;
+                    box-shadow: none!important;
+                    border-radius: 30px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 30px;
+                    height: 30px;
+                    color: $text-white-1;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 7px 7px 7px 0;
+                    @media screen and (max-width:$screen-lg-min) { 
+                        margin: 7px 7px 18px 0;
+                    }
+                    > i {
+                        background-size: auto 14px;
+                        height: 14px;
+                        width: 20px;
+                        margin-left: 3px;
+                    }
+                }
+            }
+            > ul.list-items {
+                box-sizing: border-box;
+                > li {
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    @media screen and (max-width:$screen-sm-min) { 
+                        align-items: flex-start;
+                        > i.mystudy-gray-volume { 
+                            width: 40px;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    > a {
+                        display: flex;
+                        i.mystudy-gray-volume {
+                            margin-right: 10px;
+                        }
+                        &:hover{
+                            i.mystudy-gray-volume {
+                                background: url(../assets/icons/mystudy-blue-volume.svg) no-repeat center center;  
+                                background-size: auto 16px;
+                              }
+                        }
+                    } 
+                    > span {
+                    font-family: "Noto Sans KR", sans-serif;
+                    font-weight: normal;
+                    font-size: 1rem;
+                    letter-spacing: -0.5px;
+                    line-height: 13.5px;
+                    color: #666666;
+                    }
+                    &.active {
+                       > a {
+                         > i.mystudy-gray-volume {
+                          background: url(../assets/icons/mystudy-blue-volume.svg) no-repeat center center;  
+                          background-size: auto 16px;
+                        }   
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

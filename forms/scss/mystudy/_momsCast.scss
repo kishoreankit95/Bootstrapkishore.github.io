@@ -1,0 +1,110 @@
+.moms-cast {
+  border-bottom: 1px solid #aaa;
+  padding: 65px 20px;
+  h2 {
+    font-size: 27px;
+    letter-spacing: -0.8px;
+    font-weight: 500;
+    color: #444;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 16px;
+    letter-spacing: -0.3px;
+    font-weight: 200;
+    line-height: 28px;
+    color: #444;
+    margin: 0;
+    margin-bottom: 30px;
+    span {
+      color: #777;
+    }
+  }
+  a {
+    display: inline-block;
+    background-color: #5ac527;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: -0.8px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+  }
+}
+.moms-cast-mail {
+  padding: 65px 20px;
+  h2 {
+    font-size: 23px;
+    letter-spacing: -0.8px;
+    font-weight: 500;
+    color: #2c5a84;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .mailbox {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $screen-sm-min){
+      flex-direction: column;
+    }
+    .left {
+        display: flex;
+      i {
+        background: url(../assets/icons/icon-mail-open.svg) no-repeat;
+        background-size: 16px;
+        min-width: 16px;
+        height: 17px;
+        display: inline-block;
+      }
+      .middle {
+          margin-left: 10px;
+        h4,
+        p {
+          margin: 0;
+        }
+        h4{
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: -1px;
+            color: #444;
+            margin-bottom: 25px;
+        }
+        p{
+            font-size: 14px;
+            letter-spacing: -0.5px;
+            font-weight: 200;
+            line-height: 16px;
+            color: #444;
+        }
+      }
+    }
+   
+    .right {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 15px;
+        @media screen and (max-width: $screen-sm-min){
+          margin-top: 15px;
+          justify-content: flex-end;
+        }
+        a {
+            display: inline-block;
+            background-color: #444;
+            color: #fff;
+            font-size: 12px;
+            letter-spacing: -0.5px;
+            font-weight: normal;
+            padding: 10px 20px;
+            border-radius: 5px;
+            white-space: nowrap;
+          }
+    }
+  }
+}
+
+// icon-mail-open.svg

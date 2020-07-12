@@ -1,0 +1,629 @@
+.blue-border-button {
+  background: #FFFFFF!important;
+  border: 1px solid #5997D0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-size: 0.83rem;
+  color: $text-bl-blue-4;
+  box-shadow: none!important;
+  white-space: nowrap;
+  @media screen and (max-width:$screen-lg-min) {
+    font-size: 0.63rem;
+    min-width: 100px;
+    margin-top: 10px;
+  }
+}
+.next-prev {
+  background: #0D5092!important;
+}
+.mp3-gray-btn {
+  background: #888888!important;
+  box-shadow: none!important;
+  border: 1px solid #888888;
+  border-radius: 5px;
+  white-space: nowrap;
+  display: flex;
+  font-size: 0.813rem;
+  color: $text-white-1;
+  flex: 1;
+  justify-content: center;
+}
+.mp3-white-btn {
+  background: none!important;
+  box-shadow: none!important;
+  border: 1px solid #888888;
+  border-radius: 5px;
+  white-space: nowrap;
+  display: flex;
+  color: $text-black-6;
+  font-size: 0.813rem;
+  flex: 1;
+  justify-content: center;
+}
+.mp3-paly-box {
+  box-sizing: border-box;
+  padding: 4% 5%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  .mp3-play-img {
+    @media screen and (max-width: 600px) {
+      margin-bottom: 25px;
+      img {
+        width: 50%;
+        margin: 20px auto 0;
+      }
+    }
+  }
+  .mp3-play-content {
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    box-sizing: border-box;
+    @media screen and (max-width:$screen-sm-min) {
+      padding-left: 0;
+    }
+    h5 {
+      font-size: 0.875rem;
+      color:$text-bl-blue-4;
+      margin: 0;
+      @media screen and (max-width: 600px) { 
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+    div.conversation-training {
+      border: 0;
+      margin: 0;
+      @media screen and (max-width: 600px) {
+        .collection-item {
+          justify-content: center!important;
+          text-align: center;
+        }
+      }
+      div.collection-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 0;
+        padding: 0;
+        @media screen and (max-width: 600px) {
+          flex-direction: column;
+        }
+        > strong {
+          font-size: 1.313rem;
+          color: $text-black-8;
+          font-weight: 700;
+          @media screen and (max-width:$screen-xl-min) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .modal.mp3modal {
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      .modal-header {
+      display: flex;
+      justify-content: flex-end;
+        > a {
+          font-size: 1.214rem;
+          color: $text-gray-4;
+        }
+      }
+    }
+  .login-modal {
+    width: 20%;
+    .modal-content {
+      padding: 0 24px;
+      .yellow-text {
+        display: flex;
+        justify-content: space-between;
+        background: #161616;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 6px 12px;
+        margin-top: 20px;
+      }
+      .login-modal-tital {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 17px 0;
+        > h1 {
+          font-size: 1.5rem;
+          color:$text-blue-1;
+          margin: 0;
+          font-weight: 500;
+        }
+        > a {
+          color: #ddd;
+        }
+      }
+    }
+    .modal-footer {
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > a {
+        text-transform: capitalize;
+        background: none!important;
+        color:$text-white-1;
+        background: #0C5DA7!important;
+        border-radius: 3px;
+        font-weight: 100;
+        box-sizing: border-box;
+        padding: 1px 0;
+        font-size: 0.83rem;
+        width: 65px;
+        text-align: center;
+        &:first-child {
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+
+    ul.collection.mp3-file {
+      display: flex;
+      border: 0;
+      margin: 0;
+      flex-wrap: wrap;
+      @media screen and (max-width:$screen-sm-min) {
+        justify-content: center;
+      }
+      > li.collection-item {
+        border: 0;
+        background:none;
+        padding: 0;
+        position: relative;
+        
+        &::before {
+          border-right: 1px solid #ddd;
+          content: '';
+          position: absolute;
+          top:calc(50% - 7px);
+          right:12px;
+          height: 14px;
+          width: 1px;
+          background: #999;
+        }
+        &:last-child{
+          &::before {
+            display: none;
+            content: '';
+          }
+        }
+        > span {
+          font-size: 0.875rem;
+          color: $text-gray-7;
+          margin-right: 25px;
+          white-space: nowrap;
+          @media screen and (max-width:$screen-xl-min) {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+
+  }
+
+  .mp3-progre {
+    .progress {
+      margin: 0;
+      background: #D2D2D2;
+      border-radius: 4px;
+      height: 6px;
+      .determinate {
+        background: rgba(83,160,232,1);
+        background: -moz-linear-gradient(left, rgba(83,160,232,1) 0%, rgba(0,77,160,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(83,160,232,1)), color-stop(100%, rgba(0,77,160,1)));
+        background: -webkit-linear-gradient(left, rgba(83,160,232,1) 0%, rgba(0,77,160,1) 100%);
+        background: -o-linear-gradient(left, rgba(83,160,232,1) 0%, rgba(0,77,160,1) 100%);
+        background: -ms-linear-gradient(left, rgba(83,160,232,1) 0%, rgba(0,77,160,1) 100%);
+        background: linear-gradient(to right, rgba(83,160,232,1) 0%, rgba(0,77,160,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53a0e8', endColorstr='#004da0', GradientType=1 );
+        border-radius: 4px;
+      }
+    }
+    .mp3-time {
+      display: flex;
+      justify-content: space-between;
+       > span {
+         color: $text-black-8;
+         font-size: 0.83rem;
+         font-weight: 500;
+         margin-top: 7px;
+       }
+    }
+  }
+  .mp3-btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button.mp3-push-btn {
+        background: rgba(16,105,161,1);
+        background: -moz-linear-gradient(45deg, rgba(16,105,161,1) 0%, rgba(13,73,141,1) 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(16,105,161,1)), color-stop(100%, rgba(13,73,141,1)));
+        background: -webkit-linear-gradient(45deg, rgba(16,105,161,1) 0%, rgba(13,73,141,1) 100%);
+        background: -o-linear-gradient(45deg, rgba(16,105,161,1) 0%, rgba(13,73,141,1) 100%);
+        background: -ms-linear-gradient(45deg, rgba(16,105,161,1) 0%, rgba(13,73,141,1) 100%);
+        background: linear-gradient(45deg, rgba(16,105,161,1) 0%, rgba(13,73,141,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1069a1', endColorstr='#0d498d', GradientType=1 );
+        box-shadow: none;
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > i {
+          font-size: 2.6rem;
+          color: $text-white-1;
+        }
+        @media screen and (max-width:$screen-sm-min) {
+          height: 42px;
+          width: 42px;
+        }
+      }
+      div.mp3-repeat-btn {
+      i {
+        font-size: 0.65rem;
+        color: $text-gray-7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+      }
+      
+      }
+      div.mp3-repeat-btn.active {
+        > i {
+          background: url(../assets/icons/icon-play-number-hover.svg) no-repeat center center;
+          background-size: 100%;
+          height: 20px !important;
+          width: 21px !important;
+          > span {
+            color:$primary-color ;
+          }
+        }
+      }
+      button.mp3-next-btn {
+        height: 37px;
+        width: 37px;
+        background: #C4C4C4;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15px;
+        box-shadow: none;
+        > i {
+          color: $text-white-1;
+          font-size: 1.7rem;
+        }
+        @media screen and (max-width:$screen-sm-min) {
+          margin: 0 10px;
+        }
+      }
+      button.mp3-next-btn.next-prev {
+        background: #0D5092;
+      }
+  }
+}
+.mp3-paly-table {
+  .mp3-paly-table-title {
+    background: #F8F8F8;
+    box-sizing: border-box;
+    padding: 0 37px;
+    strong {
+      font-size: 0.938rem;
+      color: $text-black-8;
+      white-space: nowrap;
+      @media screen and (max-width:$screen-sm-min) {
+        margin-top: 15px;
+        display: block;
+      }
+    }
+    .mp3-owl-caresole {
+      height: 68px;
+      .owl-stage-outer {
+        top: calc(50% - 10px);
+        .owl-item {
+          text-align: center;
+          a {
+            margin: 0;
+            font-size: 0.83rem;
+            color: $text-gray-6;
+            text-align: center;
+            font-weight: 300;
+            &:hover, &.active {
+              color: $text-bl-blue-4;
+            }
+          }
+        }
+      }
+      .owl-nav {
+        position: absolute;
+        top:calc(50% - 10px);
+        width: 100%;
+        margin: 0;
+        .owl-prev {
+                width: 15px;
+                height: 20px;
+                position: absolute;
+                top: 0;
+                left: -20px;
+                display: block !important;
+                border:0px;
+                color: transparent;
+                background: url(../assets/icons/mp3-left-arrow.svg) no-repeat center center;
+                margin: 0;
+                @media screen and (max-width:$screen-md-min) {
+                  left: -10px;
+                }
+            }
+        .owl-next {
+            width: 15px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            right: -20px;
+            display: block !important;
+            border:0px;
+            color: transparent;
+            background: url(../assets/icons/mp3-right-arrow.svg) no-repeat center center;
+            margin: 0;
+            @media screen and (max-width:$screen-md-min) {
+              right: -10px;
+            }
+        }
+      }
+    }
+  }
+  label {
+    [type="checkbox"].filled-in:checked + span:not(.lever):before {
+      border-right: 1.5px solid #0E5494;
+      border-bottom: 1.5px solid #0E5494;
+    }
+    [type="checkbox"].filled-in:checked + span:not(.lever):after {
+      background: none;
+      border: 1px solid #0E5494;
+    }
+    [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+      border: 1px solid #aaaaaa;
+    }
+    > span {
+      font-size: 0.875rem;
+      color: $text-black-8;
+    }
+  }
+  button.table-line-btn {
+    background: none!important;
+    box-shadow: none!important;
+    height: initial!important;
+    line-height: initial;
+  }
+  button.table-play-btn {
+    background: #ddd;
+    box-shadow: none!important;
+    border-radius: 50%;
+    border: 0;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    > i {
+      font-size: 1.3rem;
+    }
+  }
+  .mp3-paly-table-content {
+    overflow-x: auto;
+    table {
+      border-bottom: 2px solid #DFDFDF;
+    thead,tbody {
+      tr {
+        th,td {
+          white-space: nowrap;
+          padding-left:20px;
+          padding-right:20px;
+          &:first-child {
+            padding-left: 20px;
+            width: 80px;
+          }
+          &:nth-child(n+3) {
+            width: 100px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        border: 0;
+      }
+    }
+  }
+  }
+  
+}
+.mp3-select-listening {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width:$screen-md-min) {
+    flex-direction:column-reverse;
+    flex-direction: column;
+    .row-reverse-1, .row-reverse-2 {
+      justify-content: center;
+    }
+    .mt-4 {
+      margin: 0;
+    }
+  }
+  button{
+    margin-left: 10px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
+
+// new structure css
+
+.myMp3List{
+  .myMp3Header{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    .mp3Col{
+      display: flex;
+      align-items: center;
+      &.one{
+        width: 60%;
+        @media screen and (max-width: 992px) {
+          width: 50%;
+        }
+        .check-1{
+          min-width: 70px;
+          padding: 20px 10px;
+          @media screen and (max-width: 768px) {
+            padding: 5px 10px;
+          }
+        }
+        .mp3Name{
+          padding: 20px 10px;
+          white-space: nowrap;
+          width: 80%;
+          @media screen and (max-width: 768px) {
+            padding: 5px 10px;
+          }
+        }
+      }
+      &.two{
+        width: 40%;
+        justify-content: space-between;
+        text-align: center;
+        @media screen and (max-width: 992px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+        .mp3Time{
+          padding: 20px 10px;
+          white-space: nowrap;
+          @media screen and (max-width: 768px) {
+            padding: 5px 10px;
+          }
+        }
+        .mp3Size{
+          padding: 20px 10px;
+          white-space: nowrap;
+          @media screen and (max-width: 768px) {
+            padding: 5px 10px;
+          }
+        }
+        .mp3Play{
+          padding: 20px 10px;
+          @media screen and (max-width: 768px) {
+            padding: 5px 10px;
+          }
+        }
+        .mp3Download{
+          padding: 20px 10px;
+          @media screen and (max-width: 768px) {
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .myMp3Body{
+    border-bottom: 2px solid #DFDFDF;
+    .mp3Body-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+      .mp3Col{
+        display: flex;
+        align-items: center;
+        &.one{
+          width: 60%;
+          @media screen and (max-width: 992px) {
+            width: 50%;
+          }
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+          .check-1{
+            min-width: 70px;
+            padding: 20px 10px;
+            @media screen and (max-width: 768px) {
+              padding: 5px 10px;
+            }
+          }
+          .mp3Name{
+            padding: 20px 10px;
+            width: 80%;
+            @media screen and (max-width: 768px) {
+              padding: 5px 10px;
+            }
+          }
+        }
+        &.two{
+          width: 40%;
+          justify-content: space-between;
+          text-align: center;
+          @media screen and (max-width: 992px) {
+            width: 50%;
+          }
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            justify-content: flex-end;
+          }
+          .mp3Time{
+            padding: 20px 10px;
+            white-space: nowrap;
+            @media screen and (max-width: 768px) {
+              padding: 5px 10px;
+            }
+          }
+          .mp3Size{
+            padding: 20px 10px;
+            white-space: nowrap;
+            @media screen and (max-width: 768px) {
+              padding: 5px 10px;
+            }
+          }
+          .mp3Play{
+            padding: 20px 10px;
+            @media screen and (max-width: 768px) {
+              padding: 5px 10px;
+            }
+          }
+          .mp3Download{
+            padding: 20px 10px;
+            @media screen and (max-width: 768px) {
+              padding: 5px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

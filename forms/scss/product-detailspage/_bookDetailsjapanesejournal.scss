@@ -1,0 +1,291 @@
+.border-top {
+    border-top: 3px solid #000000!important;
+}
+.tow-column-row {
+    @include default-flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding:15px 0 10px;
+    @media screen and (max-width:$screen-xl-min) {
+       flex-direction: column;
+    }
+    > div.first-column {
+        min-width: 60px;
+        margin-right: 15px;
+        font-size: 0.929rem;
+        color: $text-black-6;
+        line-height: 1.80rem;
+    }
+    > div.second-column {
+       @include default-flex-start;
+       align-items: flex-start;
+       > h3 {   
+           margin: 0;
+           font-size: 1rem;
+            font-weight: normal;
+            color: $text-gray-3;
+            line-height: 1.83rem;
+            @include default-flex-center;
+           > span {
+               font-size: 1.571rem;
+               font-weight: 600;
+               color: $text-orange-1;
+               margin-right: 10px;
+           }
+       }
+       > p {
+            margin: 0 0 4px 0;
+            font-size: 0.929rem;
+            color: $text-black-3;
+        > span {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+       }
+       .configuration-box{
+           label{
+            margin-right: 35px;
+               span{
+                padding-left: 25px;
+                margin-left: -10px;
+               }
+            &:last-child{
+                margin-right: 0;
+            }
+           }
+       }
+    }
+}
+.vertical-column {
+    flex-direction: column;
+}
+.general-resources-block {
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 12px 25px;
+    margin-bottom: 10px;
+    @include default-flex-between;
+    > div {
+        @include default-flex-center;
+        > span {
+            font-size: 0.857rem;
+            color: $text-gray-7;
+            width: 120px;
+            display: inline-flex;
+            white-space: nowrap;
+            &.blueTxt{
+                color: #5997D0;
+                font-weight: bold;
+            }
+        }
+        > strong {
+            font-size: 15px;
+            color:$text-black-3;
+            font-weight: normal;
+        }
+        > i {
+            margin-right: 8px;
+        }
+        &:last-child{
+            color: #777777;
+            font-size: 12px;
+        }
+    }
+}
+.pos-events-box {
+    display: inline-flex;
+    margin-top: 30px;
+    @media screen and (max-width:$screen-sm-min) {
+        flex-direction: column;
+        > .card { 
+            width: 100%!important;
+            margin-bottom: 30px!important;
+        }
+    }
+    > .card {
+        box-shadow: none !important;
+        margin: 0 15px 0 0;
+        width: 40%;
+        background: #FFFFFF;
+        border: 1px solid #DBDBDB;
+        box-sizing: border-box;
+        border-radius: 10px;
+       > .card-image {
+            > span {
+                background: #00CF38;
+                left: calc(50% - 25px);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                bottom: -25px;
+                @include default-flex-center;
+                font-weight: 900;
+                font-size: 2rem;
+            }
+        }
+       > .card-content {
+            @include default-flex-center;
+            flex-direction: column;
+            padding: 30px 24px;
+            > h4 {
+                font-size: 1.071rem;
+                color: $text-black-2;
+            }
+            > p {
+                font-size: 0.857rem;
+                color: $text-black-3;
+                text-align: center;
+            }
+        }
+    }
+}
+.product-summary-section.scrollspy {
+    overflow-x: auto;
+    .product-sum-row{
+        margin-top: 55px;
+        h3{
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 22px;
+            color: #494949;
+        }
+        h4{
+            font-size: 15px;
+            line-height: 25px;
+            color: #494949;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 15px;
+            line-height: 25px;
+            color: #494949;
+        }
+    }
+
+    .content-table{
+        margin-top: 20px;
+    }
+}
+
+.floating-price-container{
+    .tow-column-row{
+        .second-column{
+            h3{
+                font-size: 13px;
+                line-height: 28px;
+                span{
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 28px;
+                }
+         
+            }
+            .striked-text {
+                color: #e46442 ;
+                font-size: 15px;
+                font-weight: bold;
+                span {
+                    color: #777777 ; 
+                    font-weight: 500;
+                }
+            }
+        }
+
+    }
+
+    .price-details-left{
+        .collection{
+            .collection-item{
+                > span{
+                    min-width: 50px;
+                    margin-right: 15px;
+                    width: 60px;
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 28px;
+                    i.icon-dvbookList-linearrow{
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+
+        h4{
+            display: flex;
+            font-size: 18px;
+            font-weight: 600;
+            span{
+                min-width: 50px;
+                width: 60px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+.grp-fnt {
+    button:nth-child(1) {
+        font-size: 14px;
+    }
+    button:last-child{
+        font-size: 16px;
+    }
+}
+.tab-head {
+    h3 {
+    font-size: 17px;
+    line-height: 27px;
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: bold;
+    }
+}
+.foot-above {
+    h3{
+        font-size:22px;
+        font-family: "Noto Sans KR";
+        font-style: normal;
+        font-weight: bold;
+        line-height: 28px;
+    }
+}
+
+.tabel{
+    .roww{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        // border: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        // border-bottom: 1px solid #ddd;
+        .collumn1 {
+            display: flex;
+            flex-direction: row;
+            width: 139px;
+            padding: 15px 50px;
+            border-right: 1px solid #ddd;
+            flex-wrap: wrap;
+        }
+        .collumn2{
+            display: flex;
+            flex-direction: row;
+            width: calc(100% - 139px);
+            padding: 15px 50px;
+            // border-right: 1px solid #ddd;
+            flex-wrap: wrap;
+        }
+        .collumn1, .collumn2{
+            &.bolder{
+                font-weight: bold;
+            }
+        }        
+    }
+    .roww:nth-last-child(1){
+        border-bottom: 1px solid #ddd;
+    }
+}

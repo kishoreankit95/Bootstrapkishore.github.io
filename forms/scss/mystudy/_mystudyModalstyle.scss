@@ -1,0 +1,986 @@
+// 7.1.1.1.4 free period coupon modal , 7.1.1.1.6 pause modal & 7.1.1.1.7 second pause modal
+
+.customModal {
+  .modal {
+    .modal-content {
+      .free-period-modal,
+      .extension-modal {
+        .modal-head {
+          h4 {
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 28px;
+          }
+        }
+      }
+      .pause-modal {
+        .modal-content {
+          padding-top: 0;
+        }
+      }
+      // 7.1.1.1.3 bookmark modal
+      .bookmark-modal {
+        text-align: center;
+        p {
+          font-size: 17px;
+          letter-spacing: -0.5px;
+          line-height: 35px;
+          font-weight: normal;
+          color: $text-black-8;
+          > span {
+            font-weight: bold;
+            color: #53a1e8;
+            margin: 24px 0 20px;
+          }
+        }
+        .bookmarkForm {
+          h6 {
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            font-weight: 500;
+            line-height: 22px;
+            color: $text-black-8;
+            text-align: left;
+            margin: 12px 0 0;
+          }
+          .input-field {
+            > textarea {
+              border: 1px solid #aaaaaa;
+              border-radius: 5px;
+              height: 150px;
+              box-sizing: border-box;
+              padding: 15px 21px;
+              margin-top: 10px;
+              resize: none;
+            }
+          }
+          .ms-bookmark-text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media screen and (max-width: 640px) {
+              flex-direction: column;
+              align-items: flex-start;
+              margin-top: 5px;
+            }
+            > p {
+              margin: 0;
+              font-size: 1rem;
+              letter-spacing: -0.5px;
+              line-height: 20px;
+              color: $text-gray-3;
+            }
+            > h3 {
+              font-weight: 500;
+              font-size: 1.714rem;
+              line-height: 35px;
+              color: #1154ff;
+              margin: 0;
+            }
+          }
+          .btnWrapper {
+            > button {
+              border-radius: 30px;
+              box-shadow: none !important;
+              margin-top: 30px;
+              background: #444444 !important;
+              font-size: 15px;
+              letter-spacing: -0.5px;
+              font-weight: 500;
+              line-height: 22px;
+              min-width: 125px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal-content {
+    text-align: center;
+    h5 {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 18px;
+      font-weight: normal;
+      color: #666666;
+      margin: 21px auto 26px;
+      width: 70%;
+      > strong {
+        font-weight: bold;
+      }
+    }
+    h6 {
+      font-weight: 500;
+      font-size: 1.075rem;
+      line-height: 18px;
+      color: #5997d0;
+      font-weight: bold;
+      margin: 0;
+    }
+    .mystudy-modal-button {
+      @include default-flex-center;
+      margin-top: 25px;
+
+      a {
+        border: 1px solid #444444;
+        box-sizing: border-box;
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: -0.5px;
+        line-height: 35px;
+        height: 35px;
+        color: $text-black-8;
+        background: none;
+        box-shadow: none !important;
+        margin-right: 7px;
+        > &:last-child {
+          margin-right: 0;
+        }
+        &.active {
+          background: #444444;
+          color: #fff;
+        }
+        &.ms-min-width-2 {
+          min-width: 110px;
+        }
+        &.ms-min-width-3 {
+          min-width: 124.54px;
+        }
+      }
+    }
+  }
+}
+
+//7.1.1.1.5 extension modal and 7.1.5.2 my mp3 modal
+
+.extension-modal {
+  ul.mystudy-modal-select {
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    box-sizing: border-box;
+    padding: 24px 0;
+    margin: 35px 0 0 0;
+    > li {
+      @include default-flex-start;
+      box-sizing: border-box;
+      padding: 0;
+      width: 70%;
+      margin: 0 auto 12px;
+      @media screen and (max-width: 767px) {
+        width: 95%;
+      }
+      // @media screen and (max-width: 576px) {
+      //   flex-direction: column;
+      //   align-items: flex-start;
+      // }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      > label {
+        min-width: 90px;
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: -0.5px;
+        line-height: 22px;
+        color: $text-black-8;
+        text-align: left;
+        position: relative;
+        @media screen and (max-width: 576px) {
+          margin-bottom: 10px;
+        }
+        &:after{
+            content: ":";
+            width: 10px;
+            height: 22px;
+            position: absolute;
+            right: 20px;
+            font-size: 17px;
+        }
+      }
+      > .msmodal-field {
+        @include default-flex-start;
+        @media screen and (max-width: 400px) {
+          flex-direction: column;
+          width: 100%;
+        }
+        .purecss-dropdown {
+          @media screen and (max-width: 400px) {
+            width: 100%;
+          }
+          .select-wrapper {
+            input{
+              margin: 0;
+            }
+            input.select-dropdown {
+              border: 1px solid #aaaaaa;
+              box-sizing: border-box;
+              border-radius: 5px;
+              min-width: 136px;
+              max-width: 136px;
+              font-weight: normal;
+              font-size: 0.786rem;
+              line-height: 13px;
+              height: 33px;
+              color: #444444;
+              padding: 10px 18px;
+              -webkit-box-shadow: none;
+              box-shadow: none;
+
+              @media screen and (max-width: 400px) {
+                min-width: 100%;
+                width: 100%;
+              }
+            }
+
+            .dropdown-content {
+              li {
+                > span {
+                  padding: 5px;
+                  font-size: 0.786rem;
+                  line-height: 13px;
+                  color: #444444;
+                }
+              }
+            }
+          }
+        }
+        .ms-divider {
+          padding: 0 10px;
+          color: #999999;
+        }
+        > .extendedQuality {
+          font-weight: normal;
+          font-size: 15px;
+          letter-spacing: -0.5px;
+          line-height: 18px;
+          color: $text-black-8;
+          margin-left: 10px;
+          span {
+            margin-right: 4px;
+          }
+        }
+      }
+      > .msm-text-field {
+        min-width: 136px;
+        text-align: right;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: -0.5px;
+        line-height: 22px;
+        color: #444444;
+        @media screen and (max-width: 576px) {
+          text-align: left;
+        }
+      }
+      .msm-search-group {
+        width: 100%;
+        position: relative;
+        width: 100%;
+
+        input {
+          border: 1px solid #aaaaaa;
+          border-radius: 5px;
+          font-weight: normal;
+          //font-size: 0.786rem;
+          line-height: 33px;
+          color: #444444;
+          padding: 0 18px;
+          height: 33px;
+          margin: 0;
+          @media screen and (max-width: 767px) {
+            width: 92%;
+          }
+          @media screen and (max-width: 576px) {
+            width: 90%;
+          }
+          &:focus{
+            box-shadow: none;
+            border-color: #aaa;
+          }
+        }
+        .searchButtons {
+          position: absolute;
+          right: -30px;
+          bottom: 7px;
+          display: flex;
+          align-items: center;
+          @media screen and (max-width: 767px) {
+            right: 0;
+          }
+          a {
+            position: relative;
+            margin: 0 10px;
+            // &::before {
+            //   content: "|";
+            //   color: #444444;
+            //   position: absolute;
+            //   left: -7px;
+            //   top: -3px;
+            // }
+            &:first-child {
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mp3ListWrap {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 15px;
+    @media screen and (max-width: 1000px){
+      overflow: visible;
+    }
+    .listRow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+      &:first-child {
+        margin-top: 20px;
+      }
+      // @media screen and (max-width: 600px) {
+      //   flex-direction: column;
+      //   align-items: flex-start;
+      //   margin-top: 20px;
+      // }
+      .thumb {
+        width: 50px;
+      }
+      .desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 20px;
+        // @media screen and (max-width: 600px) {
+        //   padding-left: 0;
+        //   margin: 15px 0;
+        // }
+        h5 {
+          margin: 0 0 6px;
+          width: 100%;
+          font-weight: normal;
+          font-size: 14px;
+          letter-spacing: -0.5px;
+          line-height: 20px;
+          color: #444444;
+        }
+        p {
+          margin: 0;
+          font-weight: 300;
+          font-size: 12px;
+          letter-spacing: -0.5px;
+          line-height: 17px;
+          color: #777777;
+        }
+      }
+      .buttonHolder {
+        margin-right: 25px;
+        @media screen and (max-width:$screen-sm-min){
+          margin-right: 0;
+          margin-left: 10px;
+        }
+        .registerBtn {
+          background: #ffffff;
+          border-radius: 30px;
+          font-size: 11px;
+          letter-spacing: -0.5px;
+          color: #aaaaaa;
+          border: 1px solid #cccccc;
+          min-width: 80px;
+          height: 25px;
+          line-height: 25px;
+          box-shadow: none;
+          &:hover {
+            background: #444444;
+            color: #ffffff;
+            border: 1px solid #444444;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 7.1.5.2 my mp3 modal
+
+.myMp3-modal {
+  .modal-body {
+    ul.mystudy-modal-select {
+      li {
+        .msmodal-field {
+          @media screen and (max-width: 400px) {
+            flex-direction: column;
+            width: 100%;
+          }
+          .purecss-dropdown {
+            @media screen and (max-width: 400px) {
+              width: 100%;
+            }
+            .select-wrapper {
+              input.select-dropdown {
+                border: 1px solid #aaaaaa;
+                box-sizing: border-box;
+                border-radius: 5px;
+                min-width: 136px;
+                font-weight: normal;
+                font-size: 0.786rem;
+                line-height: 13px;
+                color: #444444;
+                padding: 10px 18px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+
+                @media screen and (max-width: 400px) {
+                  min-width: 100%;
+                  width: 100%;
+                }
+              }
+
+              .dropdown-content {
+                li {
+                  > span {
+                    padding: 5px;
+                    font-size: 0.786rem;
+                    line-height: 13px;
+                    color: #444444;
+                  }
+                }
+              }
+            }
+          }
+
+          .ms-divider {
+            @media screen and (max-width: 400px) {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 7.1.14.1 my study certificate and 7.1.14.2 attendence
+.my-certificate-modal {
+  .modal-head {
+    border-bottom: 1px solid #c8c8c8;
+    margin-bottom: 8px;
+    h4{
+      font-size: 33px !important;
+      margin-bottom: 20px;
+    }
+  }
+  .modal-body {
+    border: 1px solid #c8c8c8;
+    .certificateWrap {
+      padding: 0 40px 40px;
+      @media screen and (max-width: 640px) {
+        padding: 0 15px 15px;
+      }
+      h4 {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 40px;
+        color: #333333;
+        margin-top: 60px;
+        margin-bottom: 15px;
+        @media screen and (max-width: 767px) {
+          font-size: 27px;
+          margin-top: 40px;
+        }
+      }
+      .labelRight {
+        text-align: right;
+        h5 {
+          font-weight: normal;
+          font-size: 13px;
+          letter-spacing: -0.5px;
+          line-height: 25px;
+          color: #999999;
+          padding-bottom: 9px;
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      .certificatetableType {
+        padding: 0 25px;
+        border-top: 3px solid #333333;
+        border-bottom: 3px solid #333333;
+        @media screen and (max-width: 640px){
+          padding: 0;
+        }
+        .tableRow {
+          border-top: solid 1px #c8c8c8;
+          margin: 25px 0;
+          padding-top: 25px;
+          &:first-child {
+            border-top: none;
+            padding-top: 0;
+          }
+          .smallRow {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            @media screen and (max-width: 640px) {
+              flex-direction: row;
+              align-items: flex-start;
+              border-top: solid 1px #c8c8c8;
+              margin-top: 20px;
+              &:first-child {
+                border-top: none;
+                margin-top: 0;
+              }
+            }
+            label {
+              font-weight: bold;
+              font-size: 15px;
+              letter-spacing: -0.5px;
+              line-height: 50px;
+              color: #999999;
+              min-width: 105px;
+              text-align: left;
+              border-right: solid 1px #c8c8c8;
+              padding-right: 10px;
+              @media screen and (max-width: 640px) {
+                //width: 100%;
+                min-width: 80px;
+                padding-right: 0;
+                border-right: none;
+              }
+            }
+            p {
+              font-weight: 300;
+              padding-left: 30px;
+              font-size: 16px;
+              letter-spacing: -0.5px;
+              line-height: 50px;
+              color: #222222;
+              margin: 0;
+              text-align: left;
+              @media screen and (max-width: 640px) {
+                padding-left: 0;
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .attendanceTable {
+        border-bottom: 3px solid #333333;
+        margin: 9px 0;
+        thead {
+          background: #eaf3fa;
+          th {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 30px;
+            color: #777777;
+            text-align: center;
+            min-width: 60px;
+          }
+        }
+        tbody {
+          tr {
+            td {
+              text-align: center;
+              min-width: 60px;
+              font-weight: 300;
+              font-size: 13px;
+              line-height: 48px;
+              color: #222222;
+              padding: 0 15px;
+              &:first-child {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .certificateFooter {
+      padding-bottom: 60px;
+      h6 {
+        font-weight: normal;
+        font-size: 18px;
+        letter-spacing: -0.5px;
+        line-height: 50px;
+        color: #444444;
+        margin-bottom: 30px;
+      }
+      p {
+        font-weight: 300;
+        font-size: 15px;
+        letter-spacing: 2px;
+        line-height: 30px;
+        color: #444444;
+        margin: 0;
+      }
+      .cyber {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          font-weight: normal;
+          font-size: 14px;
+          letter-spacing: -0.5px;
+          line-height: 30px;
+          color: #444444;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .modal-footer {
+    background: #ffffff;
+    text-align: center;
+    .btnWrap {
+      margin: 25px 0 50px;
+      .printBtn {
+        box-shadow: none;
+        border: 1px solid #444444;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: -0.5px;
+        line-height: 35px;
+        color: #444444;
+        background: #ffffff;
+        width: 140px;
+        height: 35px;
+        //padding: 10px 30px;
+      }
+    }
+  }
+}
+
+// 7.1.12 One day One sentence modal
+
+.oneSentence-modal {
+  .modal-head {
+    border-bottom: 1px solid #c8c8c8;
+    margin-bottom: 8px;
+    h4 {
+      font-weight: bold !important;
+      font-size: 30px !important;
+      line-height: 43px !important;
+      color: #222222;
+    }
+  }
+  .modal-body {
+    .mp3Player {
+      background: #f1f8fc;
+      padding: 34px 35px 25px;
+      h4 {
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: -0.53px;
+        line-height: 14px;
+        color: #5997d0;
+      }
+      h5 {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -0.3px;
+        line-height: 25px;
+        color: #444444;
+        margin: 15px 0 0;
+        width: 100%;
+      }
+      .mp3Progress {
+        margin: 55px 0 0;
+        .progress {
+          height: 6px;
+          background: #d2d2d2;
+          width: 100%;
+          border-radius: 4px;
+          margin: 0 0 8px;
+          .determinate {
+            background: rgba(83, 160, 232, 1);
+            background: -moz-linear-gradient(
+              left,
+              rgba(83, 160, 232, 1) 0%,
+              rgba(0, 77, 160, 1) 100%
+            );
+            background: -webkit-gradient(
+              left top,
+              right top,
+              color-stop(0%, rgba(83, 160, 232, 1)),
+              color-stop(100%, rgba(0, 77, 160, 1))
+            );
+            background: -webkit-linear-gradient(
+              left,
+              rgba(83, 160, 232, 1) 0%,
+              rgba(0, 77, 160, 1) 100%
+            );
+            background: -o-linear-gradient(
+              left,
+              rgba(83, 160, 232, 1) 0%,
+              rgba(0, 77, 160, 1) 100%
+            );
+            background: -ms-linear-gradient(
+              left,
+              rgba(83, 160, 232, 1) 0%,
+              rgba(0, 77, 160, 1) 100%
+            );
+            background: linear-gradient(
+              to right,
+              rgba(83, 160, 232, 1) 0%,
+              rgba(0, 77, 160, 1) 100%
+            );
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53a0e8', endColorstr='#004da0', GradientType=1 );
+            border-radius: 4px;
+          }
+        }
+        .mp3Time {
+          display: flex;
+          justify-content: space-between;
+          span {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 14px;
+            color: #444444;
+          }
+        }
+      }
+      .mp3ButtonGrp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .mp3PlayBtn {
+          background: rgba(16, 105, 161, 1);
+          background: -moz-linear-gradient(
+            45deg,
+            rgba(16, 105, 161, 1) 0%,
+            rgba(13, 73, 141, 1) 100%
+          );
+          background: -webkit-gradient(
+            left bottom,
+            right top,
+            color-stop(0%, rgba(16, 105, 161, 1)),
+            color-stop(100%, rgba(13, 73, 141, 1))
+          );
+          background: -webkit-linear-gradient(
+            45deg,
+            rgba(16, 105, 161, 1) 0%,
+            rgba(13, 73, 141, 1) 100%
+          );
+          background: -o-linear-gradient(
+            45deg,
+            rgba(16, 105, 161, 1) 0%,
+            rgba(13, 73, 141, 1) 100%
+          );
+          background: -ms-linear-gradient(
+            45deg,
+            rgba(16, 105, 161, 1) 0%,
+            rgba(13, 73, 141, 1) 100%
+          );
+          background: linear-gradient(
+            45deg,
+            rgba(16, 105, 161, 1) 0%,
+            rgba(13, 73, 141, 1) 100%
+          );
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1069a1', endColorstr='#0d498d', GradientType=1 );
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          i {
+            color: #ffffff;
+            line-height: 35px;
+          }
+        }
+        .playFromStart {
+          background: #4c9ae2;
+          border-radius: 20px;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: normal;
+          color: #ffffff;
+          padding: 3px 10px;
+          display: flex;
+          align-items: center;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          i {
+            margin-right: 3px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .mp3ListWrap {
+      .mp3List {
+        text-align: left;
+        margin-top: 30px;
+        .top {
+          display: flex;
+          padding: 5px 5px 24px;
+          align-items: flex-start;
+          .labelB {
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: -0.3px;
+            line-height: 25px;
+            color: #5997d0;
+            margin-right: 19px;
+          }
+          h5 {
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: -0.5px;
+            line-height: 25px;
+            color: #444444;
+            margin: 0;
+          }
+        }
+        .bottom {
+          border: 1px solid #dddddd;
+          padding: 14px 28px;
+          border-radius: 10px;
+          p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 18px;
+            color: #777777;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .oneSenPpl {
+      display: flex;
+      align-items: center;
+      margin-top: 29px;
+      border-bottom: 1px solid #c8c8c8;
+      .pplThumb {
+        margin-right: 23px;
+        display: flex;
+      }
+      .pplDesc {
+        text-align: left;
+        h3 {
+          font-size: 20px;
+          line-height: 29px;
+          font-weight: 300;
+          margin-bottom: 5px;
+          span {
+            font-weight: 500;
+          }
+        }
+        p {
+          margin: 0;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 19px;
+          color: #777777;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    text-align: center;
+    background-color: #fff;
+    .mp3Dwnload {
+      background: #5997d0;
+      border-radius: 20px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: #ffffff;
+      height: auto;
+      padding: 9px 20px;
+      margin: 29px 0 30px;
+      i {
+        vertical-align: middle;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+// css for dropdown structure extended modal
+
+// > .purecss-dropdown {
+//     > .btn {
+//         background: #FFFFFF url(../assets/icons/select-dropdown.png) no-repeat right 10px center;
+//         border: 1px solid #AAAAAA;
+//         box-sizing: border-box;
+//         border-radius:  5px;
+//         min-width: 136px;
+//         font-weight: normal;
+//         font-size: 0.786rem;
+//         line-height: 13px;
+//         color:$text-black-8 ;
+//         padding: 10px 18px;
+//         display: block;
+//         text-align: left;
+//         box-shadow: none;
+//         @media screen and (max-width: 370px) {
+//             min-width: 114px;
+//         }
+//     }
+//     .dropdown-content{
+//         li{
+//             a{
+//                 padding: 5px;
+//                 font-size: 0.786rem;
+//                 line-height: 13px;
+//                 color:$text-black-8 ;
+//             }
+//         }
+//     }
+
+//     /*position the label*/
+//     > label {
+//         position: relative;
+//         display: block;
+//         cursor: pointer;
+//         text-align: left;
+//         font-weight: normal;
+//         font-size: 0.857rem;
+//         line-height: 33px;
+//         color: $text-gray-3;
+//         position: relative;
+//         box-sizing: border-box;
+//         padding-left: 15px;
+//         &::before {
+//             content: '';
+//             position: absolute;
+//             right: 13px;
+//             top:calc(50% - 6px);
+//             border: solid #777777;
+//             border-width: 0 1px 1px 0;
+//             display: inline-block;
+//             padding: 4px;
+//             transform: rotate(45deg);
+//             transition: all 0.4s ease;
+//         }
+//         }
+//         /*show the submenu when input is checked*/
+//         > input {
+//         &:checked~ul.submenu {
+//             display: block;
+//             }
+//             &:checked~label {
+//                 &::before {
+//                     content: '';
+//                     transform: rotate(-135deg);
+//                 }
+//             }
+//         }
+// }

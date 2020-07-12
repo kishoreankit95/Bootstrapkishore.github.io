@@ -1,0 +1,269 @@
+.coupon-search {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: $screen-sm-min){
+    flex-direction: column;
+  }
+  .inputs{
+    display: flex;
+    @media screen and (max-width: $screen-sm-min){
+      margin-bottom: 10px;
+    }
+    .search-drop {
+      margin-right: 10px;
+      .select-dropdown {
+        margin-bottom: 0;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        color: #777;
+        text-indent: 10px;
+        &:focus {
+          border: 1px solid #cccccc;
+        }
+      }
+    }
+    .search-input {
+      width: 300px;
+      .coupon-input {
+        margin-bottom: 0;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        text-indent: 10px;
+        box-shadow: none !important;
+        border-color: #ccc !important;
+        &:focus {
+          border: 1px solid #cccccc !important;
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+  
+  .btn-coupon {
+    box-shadow: none;
+    border-radius: 5px;
+    height: 44px;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    white-space: nowrap;
+    background-color: #0c5da7;
+    @media screen and (max-width: $screen-sm-min){
+      width: 100%;
+      justify-content: center;
+      margin-left: 0;
+    }
+  }
+}
+.coupon-table {
+  margin-bottom: 50px;
+  .coupon-table-head{
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    letter-spacing: -0.3px;
+    font-weight: 500;
+    @media screen and (max-width: $screen-md-min){
+      display: none;
+    }
+    .col-1{
+      width: 75%;
+      text-align: center;
+    }
+    .col-2{
+      width: 25%;
+      text-align: center;
+    }
+  }
+  .coupon-table-body{
+    .item{
+      display: flex;
+      padding: 45px 0 45px 25px;
+      border-bottom: 1px solid #ddd;
+      @media screen and (max-width: $screen-md-min){
+        flex-direction: column;
+        padding: 45px 15px;
+      }
+      .col-1{
+        display: flex;
+        width: 75%;
+        @media screen and (max-width: $screen-md-min){
+          width: 100%;
+        }
+        .coupon-img{
+          img{
+            width: 145px;
+            @media screen and (max-width: $screen-md-min){
+              width: 80px;
+            }
+          }
+        }
+        .coupon-cont {
+          margin-left: 35px;
+          @media screen and (max-width: $screen-md-min){
+            margin-left: 20px;
+          }
+          .title {
+            margin-bottom: 20px;
+            p,
+            h3 {
+              margin: 0;
+              line-height: normal;
+            }
+            h3 {
+              color: #444444;
+              font-size: 16px;
+              font-weight: 700;
+              letter-spacing: -0.3px;
+            }
+            p {
+              color: #bfbfbf;
+              font-size: 12px;
+              letter-spacing: -0.3px;
+              font-weight: normal;
+              margin-top: 10px;
+            }
+          }
+          .cont {
+            p,
+            h4 {
+              margin: 0;
+              color: #444;
+              font-size: 0.75rem;
+              line-height: normal;
+              font-size: 12px;
+              letter-spacing: -0.3px;
+            }
+            p {
+              font-weight: 200;
+            }
+            h4 {
+              margin-top: 20px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .col-2{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: $screen-md-min){
+          width: 100%;
+        }
+        .left-placeholder{
+          display: none;
+          @media screen and (max-width: $screen-md-min){
+            display: block;
+            min-width: 100px;
+          }
+        }
+        .coupon-action {
+          margin-left: 15px;
+          @media screen and (max-width: $screen-md-min){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-left: 0;
+            margin-top: 30px;
+          }
+          p {
+            margin: 10px 0;
+            color: #444;
+            font-size: 13px;
+            letter-spacing: -0.3px;
+            font-weight: normal;
+          }
+          .btn-outline {
+            box-shadow: none;
+            background-color: #fff;
+            height: auto;
+            line-height: normal;
+            padding: 3px 12px;
+            border: 1px solid #aaa;
+            color: #444;
+            border-radius: 5px;
+            font-size: 11px;
+            letter-spacing: -0.3px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  // table{
+  //   thead{
+  //     @media screen and (max-width: $screen-sm-min){
+  //       display: none;
+  //     }
+  //     th{
+        
+  //     }
+  //   }
+  //   tbody{
+  //     tr{
+  //       td{
+  //         padding: 48px 25px;
+  //         @media screen and (max-width: $screen-sm-min){
+  //           padding: 48px 10px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // .coupon-main {
+  //   display: flex;
+  //   @media screen and (max-width: $screen-sm-min) {
+  //     //flex-direction: column;
+  //   }
+  //   .coupon-img {
+  //     padding: 0 20px;
+  //     @media screen and (max-width: $screen-sm-min) {
+  //       padding: 0;
+  //       margin-right: 10px;
+  //       img{
+  //         width: 75px;
+  //       }
+  //     }
+  //     
+  //   }
+    
+  // }
+  
+}
+.coupon-info {
+  ul {
+    margin-left: 20px;
+    padding: 20px 10px;
+    li {
+      color: #777777;
+      font-weight: 200;
+      font-size: 1rem;
+      letter-spacing: -0.3px;
+      display: flex;
+      margin-bottom: 7px;
+      position: relative;
+      &::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        border-radius: 50px;
+        background-color: #777;
+        margin-right: 10px;
+        position: absolute;
+        top: 7px;
+        left: -10px;
+      }
+      span{
+        color: #FF0000;
+      }
+    }
+  }
+}

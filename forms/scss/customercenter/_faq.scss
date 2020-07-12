@@ -1,0 +1,259 @@
+.faq-serch-section {
+  @include default-flex-center;
+  flex-direction: column;
+  margin: 0 0 100px;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (max-width: $screen-sm-min){
+      margin-bottom: 30px;
+  }
+  h1.faq-title {
+    font-size: 55px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: #444;
+    margin: 40px 0 0 0;
+  }
+  p {
+    font-size: 20px;
+    color: #999;
+    letter-spacing: -1px;
+    line-height: 16px;
+    margin: 10px 0 30px;
+  }
+  .notice-search {
+    .input-field {
+      height: 43px;
+      @media screen and (max-width: $screen-sm-min) {
+        height: 60px;
+      }
+      .select-wrapper {
+        @media screen and (max-width: $screen-sm-min) {
+            min-width: 110px;
+            margin: 0 18px;
+            &::before{
+                right: -6px;
+            }
+        }
+      }
+    }
+    button {
+      @media screen and (max-width: $screen-sm-min) {
+        min-height: 60px !important;
+      }
+    }
+  }
+}
+.faq-title {
+  @media screen and (max-width: $screen-lg-min) {
+    .faq-border-none {
+      display: none;
+    }
+  }
+  .tab-title {
+    border-bottom: 1px solid #999999;
+    margin-bottom: 0;
+    > ul.tabs {
+      //   flex-wrap: wrap;
+      //   height: initial !important;
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      li.tab {
+        > a {
+          font-size: 15px;
+          color: $text-gray-7;
+          font-weight: 500;
+          &:hover,
+          &.active {
+            color: $text-black-2;
+            background: none !important;
+            border: none !important;
+            position: relative;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 16px;
+              top: 11px;
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+              background: #e46442;
+              @media screen and (max-width: $screen-sm-min){
+                  left: 4px;
+              }
+            }
+          }
+        }
+      }
+      li.indicator {
+        display: none;
+      }
+    }
+  }
+}
+.cc-faq-title {
+  @include default-flex-between;
+  box-sizing: border-box;
+  padding: 36px 0 30px 0;
+  > strong {
+    font-size: 1.286rem;
+    color: $text-black-8;
+    font-weight: bold;
+    width: 50%;
+    &:first-child {
+      width: 150px;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width:$screen-sm-min) {
+      visibility: hidden;
+      padding: 0;
+  }
+}
+.faq-Collapsible-description {
+  ul {
+    box-shadow: none !important;
+    border: 0 !important;
+    margin: 0;
+    > li {
+      margin-bottom: 13px;
+      > .collapsible-header {
+        @include default-flex-between;
+        border-radius: 5px;
+        border: 1px solid #dddddd;
+        padding: 30px 20px;
+        // @media screen and (max-width:$screen-sm-min) {
+        //     flex-direction: column;
+        //     align-items: flex-start;
+        //     .faq-question-title {
+        //         text-align: left!important;
+        //     }
+        // }
+        > .faq-left {
+          @include default-flex-start;
+          @media screen and (max-width: $screen-sm-min) {
+            align-items: flex-start;
+          }
+          > .faq-question-title {
+            min-width: 130px;
+            text-align: center;
+            font-size: 15px;
+            color: $text-bl-blue-3;
+            font-weight: 500;
+            @media screen and (max-width: $screen-sm-min) {
+              min-width: 60px;
+              text-align: left;
+            }
+          }
+          > .faq-question-description {
+            color: $text-black-8 !important;
+            display: flex;
+            align-items: flex-start;
+            > strong {
+              font-size: 25px;
+              line-height: 25px;
+              font-weight: 500;
+              margin-right: 10px;
+            }
+            > span {
+              font-size: 17px;
+              letter-spacing: -0.3px;
+              font-weight: normal;
+              > b {
+                color: #e46442;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+        > .faq-right {
+          position: relative;
+          display: block;
+          min-width: 70px;
+          &:before,
+          &:after {
+            transition: all 0.4s ease-in-out;
+            position: absolute;
+            background-color: #aaaaaa;
+            top: 50%;
+            right: 20px;
+            content: "";
+          }
+          &:before {
+            width: 20px;
+            height: 1.5px;
+            margin-right: -10px;
+            margin-top: -0.5px;
+            content: "";
+          }
+          &:after {
+            width: 1.5px;
+            height: 20px;
+            margin-right: -0.5px;
+            margin-top: -10px;
+            content: "";
+          }
+          &[aria-expanded="true"]:before {
+            transform: rotate(0deg);
+          }
+        }
+      }
+      > .collapsible-body {
+        border: solid #ddd;
+        background-color: #f8f8f8;
+        border-width: 0 1px 1px 1px;
+        border-radius: 0 0 5px 5px;
+        padding: 35px 50px 35px 20px;
+        position: relative;
+        top: -2px;
+        z-index: -1;
+        .faq-answer {
+          box-sizing: border-box;
+          //padding-left: 102px;
+          @include default-flex-start;
+          @media screen and (max-width: $screen-sm-min) {
+            padding-left: 0 !important;
+          }
+          align-items: flex-start;
+          .faq-left {
+            min-width: 130px;
+            @media screen and (max-width: $screen-sm-min) {
+              min-width: 60px;
+            }
+          }
+          > strong {
+            font-size: 25px;
+            line-height: 2.6rem;
+            color: #004da0;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-right: 15px;
+          }
+          p {
+            margin: 0;
+            font-size: 1.071rem;
+            line-height: 30px;
+            color: $text-gray-3;
+          }
+        }
+      }
+    }
+    > li.active {
+      .collapsible-header {
+        > .faq-right {
+          &:after {
+            transform: rotate(90deg);
+          }
+          &:before {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

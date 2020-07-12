@@ -1,0 +1,976 @@
+#book-hero {
+  background-color: #f3f5f5;
+  padding-bottom: 60px !important;
+  .container {
+    .breadcrumb {
+      justify-content: flex-end;
+      padding: 40px 0 20px 0;
+      @media screen and (max-width: $screen-sm-min){
+        padding: 20px 0;
+      }
+    }
+    .banners {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 16px;
+
+      &.lectureMain{
+        padding-bottom: 0;
+        padding-top: 0;
+        &.desktopView{
+          display: flex;
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+        &.mobileView{
+          display: none;
+          @media screen and (max-width: 768px) {
+            display: block;
+          }
+          #bannerlecturehead-scroll{
+            .owl-dot{
+              span{
+                background: rgba(170, 170, 170, 0.5);
+                opacity: 0.5;
+                margin: 5px 4px;
+              }
+              &.active{
+                span{
+                  background: #AAAAAA;
+                  opacity: 1;
+                  width: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.bookMainPage{
+        padding-bottom: 0;
+        padding-top: 0;
+        &.desktopView{
+          display: flex;
+          @media screen and (max-width:768px) {
+            display: none;
+          }
+        }
+        &.mobileView{
+          display: none;
+          @media screen and (max-width: 768px) {
+            display: block;
+          }
+          #bannerbookhead-scroll{
+            .owl-dot{
+              span{
+                background: rgba(170, 170, 170, 0.5);
+                opacity: 0.5;
+                margin: 5px 4px;
+              }
+              &.active{
+                span{
+                  background: #AAAAAA;
+                  opacity: 1;
+                  width: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bannerBlock{
+        width: 48%;
+        padding: 36px;
+        text-align: center;
+        
+        @media screen and (max-width: 768px) {
+          width: 500px;
+          margin: 30px auto 0;
+        }
+        @media screen and (max-width: 640px) {
+          width: 100%;
+        }
+
+        &:first-child{
+          background: linear-gradient(180deg, #FAFEF9 0%, #C6E6CF 51.04%, #309E53 100%);
+          @media screen and (max-width: 768px) {
+            margin-top: 0;
+          }
+          @media screen and (max-width: 640px) {
+            .imgHolder{
+              max-width: 250px;
+              margin: 0 auto;
+            }
+          }
+        }
+        &:last-child{
+          background: url(../assets/images/best-dvbook-thumb-banner.png) no-repeat;
+          background-size: cover;
+          .imgHolder{
+            max-width: 150px;
+            margin: 0 auto;
+            margin-top: 45px;
+            @media screen and (max-width: 768px) {
+              height: 305px;
+            }
+          }
+        }
+        .dvBookLogo{
+          // height:42px;
+          img{
+            margin: 0 auto;
+            @media screen and (max-width:768px) {
+              height:42px;
+              width: 201px;
+            }
+          }
+        }
+        h3{
+          font-weight: 600;
+          font-size: 28px;
+          color: #225213;
+          margin-top: 20px;
+        }
+        h4{
+          font-weight: 600;
+          font-size: 68px;
+          color: #000000;
+          margin-top: 11px;
+          @media screen and (max-width: 992px) {
+            font-size: 50px;
+          }
+        }
+        h5{
+          font-weight: bold;
+          font-size: 45px;
+          line-height: 126.8%;
+          text-align: center;
+          text-transform: uppercase;
+          color: #313B8B;
+        }
+        .imgHolder{
+          margin-top: 17px;
+          img{
+            max-width: 100%;
+          }
+        }
+        &.block-bnnr{
+          margin: 0 auto;
+        }
+      }
+      &.lectureMain{
+        a{
+          width: 48%;
+        }
+      }
+    }
+  }
+  // &.dvbook-duble-banner{
+  //   display: flex;
+  //   @media screen and (max-width:768px) {
+  //     display: none;
+  //   }
+  // }
+} 
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 75px;
+  color: #252424;
+  font-weight: bold;
+  font-family: "Noto Sans KR"
+  i{
+      margin-left: 5px;
+      background-size: auto 32px;
+      height: 32px;
+      width: 175px;
+  }
+  span{
+    font-weight: 200;
+  }
+  &.head-title{
+    flex-wrap: wrap;
+  }
+}
+
+#book-packages {
+  padding: 100px 95px;
+  #book-package-scroll {
+    .owl-carousel {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      @media screen and (max-width: $screen-md-min) {
+        width: 100%;
+      }
+
+      .owl-item {
+        .item {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid #eeeeee;
+          margin: 10px;
+          .thumb {
+            background-color: #f3f8fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 50px 0 50px;
+            @media screen and (max-width: 1279px) {
+              padding: 30px 30px 0 30px;
+            }
+            @media screen and (max-width: 380px) {
+              padding: 30px 15px 0 15px;
+            }
+            .item-title {
+              font-size: 1.3rem;
+              font-weight: 500;
+              color: $text-black-8;
+              padding-bottom: 22px;
+            }
+            // img {
+            //   width: 70%;
+            // }
+            .book-series-thumb{
+              width: 335px;
+              @media screen and (max-width: 1279px) {
+                width: 100%;
+              }
+              ul{
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                li{
+                  display: flex;
+                  //vertical-align: bottom;
+                  img{
+                    display: block;
+                    width: 114px;
+                    @media screen and (max-width: 1279px) {
+                      width: 100px;
+                    }
+                    @media screen and (max-width: 1178px) {
+                      width: 80px;
+                    }
+                    @media screen and (max-width: 800px) {
+                      width: 60px;
+                    }
+                    @media screen and (max-width: 380px) {
+                      width: 50px;
+                    }
+                  }
+                  &:last-child{
+                    margin-left: -24px;
+                    @media screen and (max-width: 800px) {
+                      margin-left: -14px;
+                    }
+                  }
+                  &.bigThumb{
+                    position: relative;
+                    img{
+                      width: 145px;
+                      height: auto;
+                      margin-left: -24px;
+                      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15), -5px 5px 10px rgba(0, 0, 0, 0.15);
+                      
+                      @media screen and (max-width: 1279px) {
+                        width: 125px;
+                      }
+                      @media screen and (max-width: 1178px) {
+                        width: 100px;
+                      }
+                      @media screen and (max-width: 800px) {
+                        width: 80px;
+                        margin-left: -14px;
+                      }
+                      @media screen and (max-width: 380px) {
+                        width: 70px;
+                      }
+                    }
+                  }
+                  // &:hover{
+                  //   img{
+                  //     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15), -5px 5px 10px rgba(0, 0, 0, 0.15);
+                  //   }
+                  // }
+                }
+              }
+            }
+          }
+          .item-action {
+            padding: 64px 45px 30px 45px;
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 768px) {
+              padding: 30px;
+            }
+            span {
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 25px;
+              color: #444444;
+              padding-right: 50px;
+              @media screen and (max-width: 1024px) {
+                padding-right: 30px;
+              }
+              @media screen and (max-width: 400px) {
+                padding: 0px;
+              }
+            }
+          }
+          &:hover {
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+
+      .owl-nav {
+        position: absolute;
+        top: calc(50% - 30px);
+        width: 100%;
+        @media screen and (max-width: $screen-sm-min) {
+          display: none;
+        }
+        button {
+          position: absolute;
+
+          &:hover {
+            background: none;
+          }
+          img {
+            width: 35px;
+          }
+        }
+        .owl-prev {
+          left: -60px;
+          @media screen and (max-width: $screen-md-min){
+            left: -35px;
+          }
+        }
+        .owl-next {
+          right: -60px;
+          @media screen and (max-width: $screen-md-min){
+            right: -35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.book-main-package {
+  @media screen and (max-width:767px) {
+    padding: 90px 50px !important;
+
+    .section-title {
+      padding: 0;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+#top-books.top-books {
+  padding: 80px 0;
+  background-color: #e9f2f4;
+  .top-books-grid {
+    display: flex;
+    width: 100%;
+    // height: 100%;;
+    @media screen and (max-width: $screen-md-min) {
+      flex-direction: column;
+    }
+
+    //general style
+    .top-book-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      &:hover{
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      .item-content {
+        .card-content {
+          padding: 0px 20px 0 20px;
+          h2,
+          h3,
+          h4,
+          p {
+            margin: 0;
+            line-height: normal;
+          }
+        }
+      }
+      .card-link-text {
+        padding: 17px 20px 10px 20px;
+        a{
+          color: #676767;
+          font-size: 12px;
+          font-weight: 300;
+          &:hover{
+            color: #242424;
+          }
+        }
+        span{
+          padding: 0 20px;
+          color: #CDCDCD;
+        }
+      }
+      .card-link-btm {
+        margin: 81px 0 0 0;
+      }
+      .bloat-btm {
+        padding: 43px 20px 25px 20px;
+      }
+    }
+
+    .top-book-left {
+      width: 45%;
+      padding-right: 3%;
+      display: flex;
+      height: 100%;
+      //justify-content: space-around;
+      @media screen and (max-width: 1120px) {
+        width: 40%;
+      }
+      @media screen and (max-width: $screen-md-min) {
+        width: 100%;
+        padding-right: 0;
+      }
+      .top-book-item {
+        width: 98%;
+        margin: 0;
+        //margin-bottom: 24px;
+        background-color: #fff;
+        @media screen and (max-width: $screen-md-min) {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .card-link-text{
+          a{
+            font-size: 14px;
+          }
+        }
+        .card-image {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(156.6deg, #53CBDD 17.48%, #BDF0E8 93.76%);
+          padding: 40px;
+          height: 407px;
+          img {
+            width: 260px;
+            height: 100%;
+          }
+        }
+        .card-content {
+          padding: 40px 30px 0;
+          @media screen and (max-width: 995px) {
+            padding: 30px 30px 0;
+          }
+          h2 {
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #242424;
+            margin-top: 10px;
+            margin-bottom: 6px;
+            @media screen and (max-width: 995px) {
+              font-size: 24px;
+            }
+          }
+          h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 41px;
+            //margin: 10px 0;
+            color: #242424;
+            @media screen and (max-width: 995px) {
+              font-size: 19px;
+            }
+          }
+          p {
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 41px;
+            font-family: "Noto Sans KR";
+            color: #606060;
+          }
+          .book-top-price {
+            margin-top: 6px;
+            h3{
+              font-size: 17px;
+              line-height: 34px;
+              font-weight: 600;
+              color: #E66545;
+              display: flex;
+              align-items: center;
+              span{
+                color: #767575;
+                &.with-line{
+                  text-decoration: line-through;
+                  text-decoration-thickness: 2px;
+                }
+              }
+              i{
+                &.icon-booktop-price{
+                  margin-right: 4px;
+                  margin-top: -6px;
+                }
+              }
+            }
+            .book-top-price-row{
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              @media screen and (max-width: 995px) {
+                flex-direction: column;
+                align-items: flex-start;
+              }
+              @media screen and (max-width: 768px) {
+                flex-direction: row;
+                align-items: center;
+              }
+              @media screen and (max-width: $screen-sm-min) {
+                flex-direction: column;
+                align-items: flex-start;
+              }
+              .row-left{
+                margin-right: 5px;
+                span {
+                  //text-decoration: line-through;
+                  color: $text-black-6;
+                  font-weight: 500;
+                }
+                i.icon-dvbookList-linearrow{
+                  margin: 0 10px;
+                }
+              }
+              .row-right{
+                h3{
+                  color: $text-orange-1;
+                  font-size: 1.063rem;
+                  font-weight: bold;
+                  @media screen and (max-width: 995px) {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .top-book-right {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 50.5%;
+      @media screen and (max-width: 1120px) {
+        width: 60%;
+      }
+      @media screen and (max-width: $screen-md-min) {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .top-book-item {
+        width: 48%;
+        // height: calc(50% - 18px);
+        margin: 0;
+        margin-top: 40px;
+        background-color: #fff;
+        img {
+          border: 1px solid;
+          // padding-top: 13px;
+          height: 210px;
+          widows: 148px;
+        }
+        @media screen and (max-width: $screen-md-min) {
+          margin-top: 25px;
+        }
+        @media screen and (max-width: $screen-sm-min) {
+          width: 100%;
+        }
+        &:first-child,
+        &:nth-child(2){
+          margin-top: 0;
+          @media screen and (max-width: $screen-sm-min) {
+            margin-top: 25px;
+          }
+        }
+        .item-content {
+          // height:0px;
+          .card-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: fff;
+            padding: 13px 13px 11px 13px;
+            height: 234px;
+            // max-height: 183px;
+            overflow: hidden;
+            @media screen and (max-width: $screen-sm-min) {
+              max-height: none;
+            }
+          }
+          .card-content {
+            h4 {
+              font-size: 14px;
+              line-height: 18px;
+              text-transform: uppercase;
+              color: #085CA8;;
+              font-weight: bold;
+            }
+            h3 {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+              color: #242424;
+              margin: 5px 0;
+              @media screen and (max-width: 995px) {
+                font-size: 14px;
+              }
+            }
+            p {
+              font-size: 13px;
+              line-height: 18px;
+              color: #252424;
+              font-weight: 300;
+              @media screen and (max-width: 995px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .right-sec-div {
+        height: 47%;
+      }
+      &.desktopVieu {
+        display: flex;
+        @media screen and (max-width:768px) {
+          display: none;
+        }
+      }
+      &.mobileVieu {
+        display: none;
+        @media screen and (max-width:768px) {
+          display: block;
+        }
+        .top-4{
+          .owl-carousel{
+            .item {
+              background-color: #fff;
+              .item-content {
+                width: 100%;
+                .card-image{
+                  height: auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  img{
+                    border: none;
+                    width: 75%;
+                    padding: 20px 0 10px ;
+                  }
+                }
+                .card-content{
+                  padding: 20px;
+                  h4{
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                    color: #085CA8;
+                    font-weight: bold;
+                  }
+                  h3{
+                    margin: 15px 0 10px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #242424;
+                  }
+                  p{
+                    font-weight: normal;
+                    line-height: 18px;
+                    color: #252424;
+                    font-size: 12px;
+                  }
+                }
+              }
+              .card-link-text{
+                padding: 0 10px;
+                a{
+                  color: #676767;
+                  font-size: 12px;
+                  font-weight: 300;
+                }
+                span{
+                    padding: 0 20px;
+                    color: #CDCDCD;
+                }
+              }
+            }
+          }
+        }
+      }  
+    }
+  }
+}
+
+
+
+
+#book-recommended {
+  padding: 66px 0;
+  background-color: #f8f8f8;
+  h3{
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
+    span{
+      font-weight: bold;
+      margin-left: 4px;
+    }
+  }
+  
+  #book-recommended-scroll {
+    
+    .carousel {
+      .carousel-item {
+        opacity: 1 !important;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        .br-imgoverlay {
+          position: relative;
+          display: flex;
+          box-shadow: -1px 7px 7px -4px rgba(0, 0, 0, 0.5);
+          margin-bottom: 19px;
+          span {
+            position: absolute;
+            background: rgba(0, 0, 0, 1);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+            display: block;
+            opacity: .5;
+            transition: opacity .5s;
+          }
+        }
+        &:hover{
+          span{
+            opacity: .3;
+          }
+        }
+        .item-title {
+          opacity: 0;
+          transition: opacity .5s;
+          text-align: center;
+          padding: 10px 0;
+          h4, h5{
+            margin: 0;
+          }
+          h4{
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: $text-black-2;
+            line-height: normal;
+          }
+          h5{
+            font-size: .9rem;
+            color: #555555;
+            font-weight: normal;
+            padding-top: 5px;
+            line-height: normal;
+          }
+        }
+      }
+      .carousel-item.active {
+        .br-imgoverlay {
+          span {
+            opacity: 0;
+          }
+        }
+        .item-title {
+          opacity: 1;
+        }
+      }
+    }
+    h3 {
+      width: 70%;
+      margin: 0 auto;
+      text-align:center;
+      font-family: "Noto Sans KR";
+      font-size: 22px;
+      line-height: 41px;
+      font-weight: bold;
+    }
+  }
+  .container {
+    .caraousel-btm {
+      padding: 0px 0px 45px 0px;
+    }
+  }
+}
+
+.banners{
+  //background: url(../assets/images/pattern-bg1.png) repeat 0 0, #d7eaf1;
+  padding: 60px 0;
+  margin: 0;
+  &.bookMainPage{
+    padding-top: 0;
+  }
+
+    .dvBookInnerSec{
+      background: #F6FAFC;
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 992px) {
+        display: block;
+      }
+
+      .leftSection{
+        width: 30%;
+        background: url(../assets/images/dvBookBanner-shadow.png) no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+        box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.15);
+          img{
+            width: 100%;
+            position: relative;
+            display: none;
+            @media screen and (max-width: 992px) {
+              display: block;
+              width: auto;
+              height: auto;
+              margin: 0 auto;
+            }
+          }
+
+          @media screen and (max-width: 992px) {
+            width: 100%;
+            background: none;
+          }
+      }
+
+      .rightSection{
+        padding: 40px 27px 30px;
+        width: 70%;
+        background: #F6FAFC;
+
+        @media screen and (max-width: 1180px) {
+          padding: 40px 30px 30px;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+        
+        #carousal-dv-books-new{
+          display: flex;
+          margin-top: 40px;
+          @media screen and (max-width: 700px) {
+            display: block;
+          }
+          .item{
+            margin-left: 12px;
+            background: #FFFFFF;
+            width: 33%;
+            &:first-child{
+              margin-left: 0;
+              @media screen and (max-width: 700px) {
+                margin: 0 auto;
+              }
+            }
+            @media screen and (max-width: 700px) {
+              margin: 50px auto 0;
+              display: block;
+              width: 260px;
+            }
+            .card{
+              padding: 0 25px 25px;
+              background: none;
+              box-shadow: none;
+              margin: 0;
+              .card-header{
+                position: relative;
+                top: -50px;
+                left: 0;
+                right: 0;
+                height: 40px;
+                @media screen and (max-width: 1280px) {
+                  top: -35px;
+                }
+                .blueRound{
+                  width: 98px;
+                  height: 98px;
+                  background: #3D4DA0;
+                  border-radius: 50%;
+                  text-align: center;
+                  display: block;
+                  margin: 0 auto;
+                  position: relative;
+                  @media screen and (max-width: 1280px) {
+                    width: 70px;
+                    height: 70px;
+                  }
+                  img{
+                    width: 51px;
+                    height: 50px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    @media screen and (max-width: 1280px) {
+                      width: 30px;
+                      height: 30px;
+                    }
+                  }
+                }
+              }
+              .card-content{
+                padding: 0;
+                .desc{
+                  text-align: center;
+                  h3{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 21px;
+                    line-height: 126.8%;
+                    letter-spacing: -0.5px;
+                    color: #5A6093;
+                    white-space: nowrap;
+                    margin: 20px 0 32px;
+                  }
+                  ul{
+                    margin: 0;
+                    li{
+                      text-align: left;
+                      font-weight: normal;
+                      font-size: 14px;
+                      line-height: 27px;
+                      color: #444444;
+                      list-style-type: disc;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}

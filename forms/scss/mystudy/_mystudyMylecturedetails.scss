@@ -1,0 +1,616 @@
+.mystudy-lecture-details {
+  display: flex;
+  // align-items: flex-start;
+  margin-top: 43px;
+  @media screen and (max-width: $screen-xl-min) {
+    margin-top: 0;
+  }
+  @media screen and (max-width: $screen-lg-min) {
+    flex-direction: column;
+    > .ms-left {
+      width: 100% !important;
+    }
+  }
+  > .ms-left {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    > .top-content {
+      > span {
+        font-size: 16px;
+        letter-spacing: -0.5px;
+        color: $text-black-8;
+        line-height: 35px;
+        font-weight: 500;
+      }
+      > h2 {
+        margin: 0;
+        font-size: 28px;
+        letter-spacing: -0.5px;
+        color: $text-black-8;
+        line-height: 40px;
+        font-weight: bold;
+      }
+      > .ms-left-top {
+        align-items: center;
+        margin-top: 14px;
+        @media screen and (max-width: $screen-sm-min){
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        > p {
+          font-size: 15px;
+          color: $text-black-8;
+          font-weight: 200;
+          margin: 0;
+          > span {
+            position: relative;
+            padding: 0 10px;
+            box-sizing: border-box;
+            &::before {
+              position: absolute;
+              top: calc(50% - 6px);
+              right: -3px;
+              content: "";
+              height: 12px;
+              width: 1px;
+              background: #444444;
+            }
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child {
+              padding-right: 0;
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+        > a {
+          border: 1px solid #e46442;
+          box-sizing: border-box;
+          border-radius: 20px;
+          font-size: 12px;
+          color: #e46442;
+          padding: 0 14px;
+          height: 24px;
+          line-height: 24px;
+          margin-left: 17px;
+          background: none !important;
+          box-shadow: none !important;
+          @media screen and (max-width: $screen-sm-min){
+            margin-left: 0;
+            margin-top: 15px;
+          }
+        }
+      }
+      > .ms-left-bottom {
+        flex-direction: column;
+        > .msld-top-button {
+          @include default-flex-start;
+          margin-top: 33px;
+          @media screen and (max-width: $screen-xl-min) {
+            flex-wrap: wrap;
+            > a {
+              margin: 5px !important;
+            }
+          }
+          > a {
+            background: #f9fbff;
+            @include default-flex-center;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1) !important;
+            border-radius: 7px !important;
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            height: 45px;
+            line-height: 45px;
+            color: $text-gray-3;
+            flex: 1;
+            flex-basis: 160px;
+            padding: 0;
+            margin-right: 15px;
+            > i {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    > .bottom-content {
+      @include default-flex-between;
+      @media screen and (max-width: $screen-sm-min) {
+        flex-direction: column;
+      }
+      @media screen and (max-width: $screen-md-min) {
+        > .progress-rate {
+          width: 100% !important;
+          padding: 20px 0 !important;
+        }
+      }
+      align-items: stretch;
+      background: #53a1e8;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      min-height: 60px;
+      margin: 5px 0 15px 5px;
+      > h5.progress-rate-left {
+        @media screen and (max-width: $screen-sm-min) {
+          width: 100% !important;
+          text-align: center;
+          box-sizing: border-box;
+          padding: 10px 0;
+        }
+        @media screen and (max-width: $screen-md-min) {
+          width: 50%;
+        }
+      }
+      > h5 {
+        margin: 0;
+        color: $text-white-1;
+        font-weight: bold;
+        @include default-flex-center;
+        margin-left: 10px;
+        overflow: hidden;
+        > span {
+          font-size: 18px;
+          letter-spacing: -0.3px;
+          font-weight: 500;
+          font-weight: normal;
+          margin-right: 7px;
+        }
+        > strong {
+          font-size: 27px;
+          letter-spacing: -0.3px;
+          font-weight: 600;
+          @media screen and (max-width: $screen-md-min) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      > .progress-rate {
+        background: #fff;
+        border-radius: 15px;
+        box-sizing: border-box;
+        padding: 0;
+        @include default-flex-center;
+        > span {
+          font-size: 17px;
+          letter-spacing: -0.5px;
+          color: $text-black-8;
+          font-weight: 200;
+          margin-right: 35px;
+          &:last-child {
+            margin-right: 0;
+          }
+          > strong {
+            font-weight: bold;
+            letter-spacing: -0.3px;
+          }
+        }
+      }
+    }
+  }
+  > .ms-right {
+    width: 35%;
+    @media screen and (max-width: $screen-sm-min) {
+      width: 90% !important;
+    }
+    @media screen and (max-width: $screen-xl-min) {
+      width: 30%;
+    }
+    @media screen and (max-width: $screen-lg-min) {
+      width: 50%;
+      margin: 25px auto 0;
+      padding: 25px !important;
+    }
+    margin: 5px 5px 15px 70px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 35px 28px 28px;
+    > .card.mystudy-video {
+      background: none !important;
+      box-shadow: none !important;
+      margin-bottom: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media screen and (max-width: $screen-sm-min) {
+        flex-direction: column !important;
+      }
+      > .card-top {
+        > h3 {
+          font-size: 23px;
+          letter-spacing: -0.8px;
+          line-height: 35px;
+          color: $text-black-8;
+          font-weight: 500;
+          margin: 0 0 5px 0;
+        }
+        > h5 {
+          font-size: 14px;
+          letter-spacing: -0.5px;
+          font-weight: normal;
+          color: #53a1e8;
+          margin: 0 0 34px 0;
+          display: flex;
+          align-items: center;
+          @media screen and (max-width: $screen-lg-min) {
+            margin: 0 0 10px 0;
+          }
+          > span {
+            margin: 0 4px;
+            &:first-child {
+              margin-left: 0;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+        > .card-image {
+          position: relative;
+          display: flex;
+          > .card-title {
+            padding: 0;
+            right: 0;
+            top: 0;
+            @include default-flex-center;
+            background: rgba(0, 0, 0, 0.5);
+            > strong {
+              background: #ffffff;
+              border-radius: 50%;
+              height: 64px;
+              width: 64px;
+              @include default-flex-center;
+              > i {
+                color: #c4c4c4;
+                font-size: 50px;
+              }
+            }
+          }
+        }
+      }
+      > .card-content {
+        padding: 0;
+        > p {
+          font-size: 1rem;
+          letter-spacing: -0.5px;
+          color: $text-black-8;
+          margin: 20px 0 0 20px;
+          position: relative;
+          &:before {
+            content: "";
+            background: #ff4141;
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            border-radius: 50%;
+            left: -14px;
+            top: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+.lecture-details-progress {
+  box-sizing: border-box;
+  padding: 110px 0 20px 0;
+  @media screen and (max-width: $screen-md-min) {
+    padding: 104px 40px 20px 0;
+    margin-top: 10px;
+  }
+  > .progress {
+    background: #fff;
+    height: 10px;
+    border-radius: 10px;
+    overflow: visible;
+    position: relative;
+    margin: 0;
+    > .determinate {
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#95c4ef+0,0752a3+100 */
+      background: #95c4ef; /* Old browsers */
+      background: -moz-linear-gradient(
+        left,
+        #95c4ef 0%,
+        #0752a3 100%
+      ); /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+        left,
+        #95c4ef 0%,
+        #0752a3 100%
+      ); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(
+        to right,
+        #95c4ef 0%,
+        #0752a3 100%
+      ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95c4ef', endColorstr='#0752a3',GradientType=1 ); /* IE6-9 */
+      border-radius: 10px;
+      position: relative;
+      height: 10px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 9.5px);
+        right: -9.5px;
+        background: #fff;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+      }
+    }
+    > .progress-text {
+      position: absolute;
+      bottom: 33px;
+      right: 50%;
+      transform: translateX(50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      z-index: 20;
+      > strong {
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 14px;
+        color: #444444;
+        margin-top: 3px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        border-top: 10px solid #fff;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        left: calc(50% - 5px);
+      }
+    }
+    > .progress-last-text {
+      position: absolute;
+      bottom: 33px;
+      right: 0;
+      transform: translateX(50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      z-index: 99;
+      > strong {
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 14px;
+        color: #444444;
+        margin-top: 3px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        border-top: 10px solid #fff;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        left: calc(50% - 5px);
+      }
+    }
+  }
+}
+.mystudy-details-tab {
+  margin-top: 80px;
+  > ul.tabs {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    @media screen and (max-width: $screen-xl-min) {
+      display: block !important;
+      margin-bottom: 0 !important;
+      margin-top: 30px;
+    }
+    > li {
+        margin-right: 30px;
+      > a {
+        font-size: 20px;
+        letter-spacing: -0.3px;
+        font-weight: bold;
+        color: $text-gray-7;
+        padding: 0 10px;
+        &:hover {
+          color: #232323;
+        }
+      }
+
+      > a.active {
+        color: #232323;
+        position: relative;
+        background: none !important;
+        box-shadow: none;
+        padding: 0 10px;
+        color: #232323 !important;
+        border-radius: 0 !important;
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          background: #e46442;
+          left: 0;
+          top: 11px;
+        }
+      }
+    }
+    > li.indicator {
+      display: none;
+    }
+  }
+}
+ul.mystudy-details-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 48px 0;
+  position: relative;
+
+  > li.item {
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 23%;
+    min-width: 195px;
+    @media screen and (max-width: 1250px) {
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+    @media screen and (max-width: $screen-lg-min) {
+      width: 30%;
+      min-width: 225px;
+    }
+    @media screen and (max-width: $screen-sm-min) {
+      width: 100%;
+    }
+    > .card {
+      background: #ffffff;
+      box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 0px 0px 10px 10px;
+      overflow: hidden;
+      // > .card-image {
+
+      // }
+      > .card-content {
+        padding: 22px 17px 17px 17px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &.active {
+          > h4 {
+            text-decoration: underline;
+          }
+        }
+        > h4 {
+          font-size: 15px;
+          letter-spacing: -0.5px;
+          color: $text-black-8;
+          margin: 0;
+          line-height: 20px;
+          font-weight: 500;
+          > span {
+            display: flex;
+          }
+        }
+        a{
+            i{
+                background-size: auto 22px;
+            height: 22px;
+            width: 16px;
+            display: inline-block;
+            }
+        }
+        a.active {
+          i {
+            background: url(../assets/icons/mystudy-blue-bookmark.svg) no-repeat
+              center center !important;
+            background-size: auto 22px;
+            height: 22px;
+            width: 16px;
+            display: inline-block;
+          }
+        }
+        //   > .mystudy-bookmark.active {
+        //
+        //   }
+      }
+      > .card-action {
+        margin: 0 17px;
+        padding: 15px 0;
+        border-top: 1px solid #dddddd;
+        @include default-flex-between;
+        > span {
+          display: flex;
+          font-size: 13px;
+          color: #777;
+          font-weight: bold;
+          line-height: 25px;
+          &:first-child {
+            > strong {
+              background: #ff7941;
+              height: 22px;
+              width: 22px;
+              border-radius: 50%;
+              @include default-flex-center;
+              margin-right: 7px;
+              &.active {
+                background: #777777;
+              }
+              > i {
+                color: #fff;
+                font-size: 1rem;
+              }
+            }
+          }
+          &:last-child {
+            font-weight: normal;
+            letter-spacing: -0.3px;
+          }
+        }
+      }
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      transform: translateY(-8px);
+
+      .card-content{
+          h4{
+              text-decoration: underline;
+          }
+      }
+    }
+  }
+  .floating-btn {
+    background: #fff;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    width: 73px;
+    height: 73px;
+    bottom: -36.5px;
+    left: initial;
+    right: 13%;
+    padding: 0;
+    position: absolute;
+    right: 80px;
+    bottom: 120px;
+    @include default-flex-center;
+    flex-direction: column;
+    > strong {
+      font-weight: bold;
+      font-size: 0.714rem;
+      line-height: 14px;
+      color: $text-black-8;
+    }
+  }
+}

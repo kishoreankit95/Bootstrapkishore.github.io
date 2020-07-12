@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>3.1.2.1 Book list grid</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="dist/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    rel="stylesheet" />
+
+
+  <!-- Google font css -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!-- Hero banner -->
+  <div id="book-list-hero">
+    <div class="section">
+      <div class="container">
+        <div class="row no-margin-bottom">
+          <div class="col s12">
+            <div class="top-fullwith-breadcrumb">
+              <div class="breadcrumb-default">
+                <ul>
+                  <li><a href="#">다락원 일본어</a></li>
+                  <li><a href="#">도서</a></li>
+                  <li><a href="#">대학·학원·교재</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Book list tab -->
+  <div class="section">
+    <div class="container">
+      <!-- <div class="book-list-tab">
+        <div class="row no-margin">
+          <div class="col s6 offset-s6 m6 offset-m6 l3 offset-l9 xl3 offset-xl9">
+            <div class="bl-tab-icon">
+              <ul>
+                <li><a href="#"><i class="icon-booklist-funnel"></i></a></li>
+                <li><a href="#"><i class="icon-booklist-progress-list"></i></a></li>
+              </ul>
+              <ul class="product-tab-icon">
+                <li><a href="#"><i class="icon-booklist-plist"></i></a></li>
+                <li><a href="#"><i class="icon-booklist-fourlist active"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    
+      <div class="book-list-tab">
+        <div class="llist-tab-list">
+          <div class="llist-tab-mobile">
+            <div class="icon-preview"><i class="material-icons">menu</i></div>
+            <ul>
+              <li><a href="#" class="active">등록일순</a></li>
+              <li><a href="#">인기순</a></li>
+              <li><a href="#">난이도순</a></li>
+              <li><a href="#">상품명순</a></li>
+              <li><a href="#">가격순</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="llist-tab-icon">
+          <!--  <ul>
+            <li><a href="#"><i class="icon-booklist-funnel"></i></a></li>
+          <li><a href="#"><i class="icon-booklist-progress-list"></i></a></li>
+        </ul>-->
+            <ul class="product-tab-icon">
+              <li><a href="#"><i class="icon-booklist-plist"></i></a></li>
+              <li><a href="#"><i class="icon-booklist-fourlist active"></i></a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Book list product tab -->
+  <div class="section">
+    <!-- <div class="adbanner">Ad Banner</div> -->
+    <div class="container">
+      <div class="bl-product-section">
+        <div class="row no-margin-bottom">
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box not-available">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <!-- new wishlist icon class "iconWishlist" and for active use class "active" -->
+                    <a href="#"><i class="iconWishlist active"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button onclick="openModal();currentSlide(1)" type="button" class="btn blchart-btn" id="bl-chart-btn"><i
+                          class="icon-booklist-search"></i></button>
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light notavailable">절판</button></li>
+                    <li style="display: none;"><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button>
+                    </li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box request-available">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn waves-effect blchart-btn"><i
+                          class="icon-booklist-search"></i></button>
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light requestForavailable">재입고 알림
+                        신청</button></li>
+                    <li style="display: none;"><button
+                        class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn blchart-btn"><i class="icon-booklist-search"></i></button>
+
+                      <!--<div id="bl-serch-hover3"  class="bl-serch-hoverdiv">
+                        <form action="">
+                          <div class="input-field">
+                            <input placeholder="Search product" id="first_name" type="text" class="validate">
+                            <button id="bl-serch-btn3">Submit</button>
+                          </div>
+                        </form>
+                      </div>-->
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light">장바구니</button></li>
+                    <li><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn blchart-btn"><i class="icon-booklist-search"></i></button>
+
+                      <!-- <div id="bl-serch-hover4"  class="bl-serch-hoverdiv">
+                        <form action="">
+                          <div class="input-field">
+                            <input placeholder="Search product" id="first_name" type="text" class="validate">
+                            <button id="bl-serch-btn4">Submit</button>
+                          </div>
+                        </form>
+                      </div>-->
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light">장바구니</button></li>
+                    <li><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn blchart-btn"><i class="icon-booklist-search"></i></button>
+
+                      <!-- <div id="bl-serch-hover4"  class="bl-serch-hoverdiv">
+                        <form action="">
+                          <div class="input-field">
+                            <input placeholder="Search product" id="first_name" type="text" class="validate">
+                            <button id="bl-serch-btn4">Submit</button>
+                          </div>
+                        </form>
+                      </div>-->
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light">장바구니</button></li>
+                    <li><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn blchart-btn"><i class="icon-booklist-search"></i></button>
+
+                      <!-- <div id="bl-serch-hover4"  class="bl-serch-hoverdiv">
+                        <form action="">
+                          <div class="input-field">
+                            <input placeholder="Search product" id="first_name" type="text" class="validate">
+                            <button id="bl-serch-btn4">Submit</button>
+                          </div>
+                        </form>
+                      </div>-->
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light">장바구니</button></li>
+                    <li><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+          <!-- Ad banner Full width -->
+          <div
+          style="text-align: center; background-color: black; height: 60px; color: white; display: flex; justify-content: center; align-items: center; margin: 50px 0;">
+          Ad Banner</div>
+
+
+<div class="section">
+  <div class="container">
+    <div class="bl-product-section">
+      <div class="row no-margin-bottom">
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn blchart-btn"><i class="icon-booklist-search"></i></button>
+
+                      <!-- <div id="bl-serch-hover4"  class="bl-serch-hoverdiv">
+                        <form action="">
+                          <div class="input-field">
+                            <input placeholder="Search product" id="first_name" type="text" class="validate">
+                            <button id="bl-serch-btn4">Submit</button>
+                          </div>
+                        </form>
+                      </div>-->
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light">장바구니</button></li>
+                    <li><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn blchart-btn"><i class="icon-booklist-search"></i></button>
+
+                      <!-- <div id="bl-serch-hover4"  class="bl-serch-hoverdiv">
+                        <form action="">
+                          <div class="input-field">
+                            <input placeholder="Search product" id="first_name" type="text" class="validate">
+                            <button id="bl-serch-btn4">Submit</button>
+                          </div>
+                        </form>
+                      </div>-->
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light">장바구니</button></li>
+                    <li><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn blchart-btn"><i class="icon-booklist-search"></i></button>
+
+                      <!-- <div id="bl-serch-hover4"  class="bl-serch-hoverdiv">
+                        <form action="">
+                          <div class="input-field">
+                            <input placeholder="Search product" id="first_name" type="text" class="validate">
+                            <button id="bl-serch-btn4">Submit</button>
+                          </div>
+                        </form>
+                      </div>-->
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light">장바구니</button></li>
+                    <li><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn blchart-btn"><i class="icon-booklist-search"></i></button>
+
+                      <!-- <div id="bl-serch-hover4"  class="bl-serch-hoverdiv">
+                        <form action="">
+                          <div class="input-field">
+                            <input placeholder="Search product" id="first_name" type="text" class="validate">
+                            <button id="bl-serch-btn4">Submit</button>
+                          </div>
+                        </form>
+                      </div>-->
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light">장바구니</button></li>
+                    <li><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn blchart-btn"><i class="icon-booklist-search"></i></button>
+
+                      <!-- <div id="bl-serch-hover4"  class="bl-serch-hoverdiv">
+                        <form action="">
+                          <div class="input-field">
+                            <input placeholder="Search product" id="first_name" type="text" class="validate">
+                            <button id="bl-serch-btn4">Submit</button>
+                          </div>
+                        </form>
+                      </div>-->
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light">장바구니</button></li>
+                    <li><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l4 xl4">
+            <div class="bl-product-box">
+              <div class="lb-product-quality">
+                <div class="lbp-quality-img">
+                  <img class="responsive-img" src="dist/assets/images/lb-pro.jpg">
+                  <div class="llist-p-image-hover">
+                    <a href="#"><i class="iconWishlist"></i></a>
+                    <a href="#"><i class="icon-lectureList-share"></i></a>
+                    <a href="#"><i class="icon-lectureList-plus"></i></a>
+                  </div>
+                </div>
+                <ul class="tags">
+                  <li class="new">new</li>
+                  <li class="hot">hot</li>
+                  <li class="event outline">EVENT</li>
+                </ul>
+              </div>
+              <div class="lb-product-purchase">
+                <h4>수학 깨치는 비법 수깨비 유아 수학 공부 1단계
+                  0-9까지의 수, 도형</h4>
+                <h5> <span>12,000원</span> 10,800원 (10% <b></b> )</h5>
+                <div class="bl-chart-box">
+                  <ul>
+                    <li class="bl-chart-serch">
+                      <button type="button" id="" class="btn blchart-btn"><i class="icon-booklist-search"></i></button>
+
+                      <!-- <div id="bl-serch-hover4"  class="bl-serch-hoverdiv">
+                        <form action="">
+                          <div class="input-field">
+                            <input placeholder="Search product" id="first_name" type="text" class="validate">
+                            <button id="bl-serch-btn4">Submit</button>
+                          </div>
+                        </form>
+                      </div>-->
+                    </li>
+                    <li><button class="btn bl-chart-shoping waves-effect waves-light">장바구니</button></li>
+                    <li><button class="btn bl-chart-buynow  waves-effect waves-light">바로구매</button></li>
+                  </ul>
+                </div>
+                <h6>#어린이수학 #수학 #어린이교육 #어린이 교육 #어린이 교육 #어린이 교육 #어린이 교육</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- pagination arrow -->
+        <!-- <div class="row">
+          <div class="col s12">
+            <div class="arrow-view-more">
+              <i class="icon-collapsible-dropdown-arrow"></i>
+            </div>
+          </div>
+        </div> -->
+        <!-- /pagination arrow -->
+      </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="page-footer orange">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+              full time job. Any amount would help support and continue development on this project and is greatly
+              appreciated.</p>
+    
+    
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Settings</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Link 1</a></li>
+              <li><a class="white-text" href="#!">Link 2</a></li>
+              <li><a class="white-text" href="#!">Link 3</a></li>
+              <li><a class="white-text" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="orange-text text-lighten-3" href="#">DvConsulting</a>
+        </div>
+      </div>
+    </footer>
+
+
+<!--======================= lightbox =======================-->
+<div class="lightBoxWrap">
+  <!-- Images used to open the lightbox -->
+
+<div id="myLightbox" class="modal">
+  <span class="close cursor" onclick="closeModal()"><i class="material-icons">close</i></span>
+  <div class="modal-content">
+
+    <div class="mySlidesWrap">
+      <div class="mySlider">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="dist/assets/images/bm-slider1.jpg">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="dist/assets/images/bm-slider2.jpg">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="dist/assets/images/bm-slider3.jpg">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="dist/assets/images/bm-slider4.jpg">
+        </div>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      </div>
+      <div class="thumb-row">
+        <div class="column">
+          <img class="demo cursor" src="dist/assets/images/bm-slider1.jpg" onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="dist/assets/images/bm-slider2.jpg" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="dist/assets/images/bm-slider3.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="dist/assets/images/bm-slider4.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+      </div>
+    </div>
+    
+    <div class="navigationArrows">
+      <a class="prev" onclick="plusSlides(-1)"><i class="material-icons">keyboard_arrow_left</i></a>
+      <a class="next" onclick="plusSlides(1)"><i class="material-icons">keyboard_arrow_right</i></a>
+    </div>
+
+  </div>
+</div>
+</div>
+
+  
+
+  <!--<div style="text-align: center; background-color: black; height: 60px; color: white;
+   display: flex; justify-content: center; align-items: center; margin-bottom: 50px;">
+    Ad Banner</div>
+   Book list product tab -->
+  <!-- <div class="section">
+    <div class="container">
+      <div class="bl-product-section">
+        <div class="row no-margin-bottom">
+
+         
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Footer -->
+  <!-- <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+            full time job. Any amount would help support and continue development on this project and is greatly
+            appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="orange-text text-lighten-3" href="#">DvConsulting</a>
+      </div>
+    </div>
+  </footer> -->
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script>
+    $(".owl-carousel").owlCarousel({
+      margin: 0,
+      loop: true,
+      dots: true,
+      nav: true,
+      items: 1
+    });    
+  </script>
+  <script>
+    // tabs
+    $(document).ready(function () {
+      $('.tabs').tabs();
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.collaps-ld-header').click(function () {
+        $(".collaps-ld-header p").removeClass('ld-open');
+        $(this).children(".collaps-ld-header p").addClass('ld-open');
+      });
+      // Book list serch
+      /*  $('.bl-chart-serch button#bl-chart-btn, .input-field button#bl-serch-btn').click(function(){
+          $('.bl-chart-serch').children('#bl-serch-hover').toggle();
+        });*/
+    });
+  </script>
+
+  <script>
+    /*--1--*/
+    var randomScalingFactor = function () {
+      return Math.round(Math.random() * 100);
+    };
+    var config = {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          data: [
+            randomScalingFactor(),
+            randomScalingFactor()
+          ],
+          backgroundColor: [
+            '#0481DB',
+            '#ddd'
+          ],
+          label: 'Dataset 1'
+        }],
+      },
+      legend: {
+        display: true,
+        labels: {
+          fontColor: 'rgb(255, 99, 132)'
+        }
+      },
+      options: {
+        responsive: true,
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Dummy Text',
+          position: 'bottom',
+          fontColor: '#000'
+        },
+        animation: {
+          animateScale: true,
+          animateRotate: true
+        },
+        tooltips: {
+          intersect: 'true',
+          callbacks: {
+            labelColor: function (tooltipItem, chart) {
+              return {
+                borderColor: 'rgb(255, 255, 255)',
+                backgroundColor: 'rgb(255, 255, 255)'
+              };
+            },
+            labelTextColor: function (tooltipItem, chart) {
+              return '#fff';
+            }
+          }
+        }
+      }
+    };
+
+    window.onload = function () {
+      var ctx = document.getElementById('chart-area').getContext('2d');
+      window.myDoughnut = new Chart(ctx, config);
+    };
+
+    document.getElementById('addData').addEventListener('click', function () {
+      if (config.data.datasets.length > 0) {
+        config.data.labels.push('data #' + config.data.labels.length);
+
+        var colorName = colorNames[config.data.datasets[0].data.length % colorNames.length];
+        var newColor = window.chartColors[colorName];
+
+        config.data.datasets.forEach(function (dataset) {
+          dataset.data.push(randomScalingFactor());
+          dataset.backgroundColor.push(newColor);
+        });
+        window.myDoughnut.update();
+      }
+    });
+  /*--1--*/
+  </script>
+</body>
+
+</html>

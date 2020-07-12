@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>3.1.2.1.1 book-details</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="dist/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- Google font css -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!-- Top section -->
+  <div class="section product-details">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="product-details-breadcrum">
+            <div class="breadcrumb-default">
+              <ul>
+                <li><a href="#">다락원 일본어</a></li>
+                <li><a href="#">도서</a></li>
+                <li><a href="#">회화</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-details">
+        <!-- Book detais img section end-->
+        <div class="product-details-left">
+          <div class="material-placeholder"><img class="materialboxed"
+              src="dist/assets/images/cover-sample.jpg"></div>
+          <div class="product-details-image-preview">
+            <button type="button" onclick="openModal();currentSlide(1)" class="waves-effect waves-light btn bd-dark-gray-btn"> <i
+                class="icon-booklist-search"></i> 미리보기</button>
+            <!-- new wishlist icon class "iconWishlist-whiteOrange" and for active use class "active" -->
+            <button type="button" class="waves-effect waves-light btn">
+              <i class="iconWishlist-whiteOrange"></i>
+            </button>
+            <button type="button" class="waves-effect waves-light btn">
+              <i class="icon-dvbookdetails-share"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Book detais img section end-->
+        <!-- Book detais contain section start-->
+        <div class="product-details-right">
+          <h2 class="details-title">미스터리 유튜버 콜린 2 팝스타로 변신하다</h2>
+          <div class="author-box">
+            <div class="author">
+              <ul>
+                <li>
+                  <span>저 자</span> <span>Zabine Chet</span>
+                </li>
+              </ul>
+            </div>
+            <div class="author">
+              <ul>
+                <li>
+                  <span>ISBN</span> <span>99875029357</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="author-box border-bottom">
+            <div class="author">
+              <ul>
+                <li>
+                  <span>발행일</span> <span>2019.10.25</span>
+                </li>
+                <li>
+                  <span>구성</span> <span>본책</span>
+                </li>
+              </ul>
+            </div>
+            <div class="author">
+              <ul>
+                <li>
+                  <span>서지</span> <span>192쪽 | 152*215mm</span>
+                </li>
+                <li>
+                  <span>난이도</span> <span>초급</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-details">
+            <div class="price-details-left">
+              <ul class="collection">
+                <li class="collection-item">
+                  <span>가격</span>
+                  <p class="orangeTxt"><span class="with-line"><strike>12,000원</strike></span><i class="icon-booktop-price"></i> 
+                    10,800원 (10%<i class="icon-downArrow"></i>)</p>
+                </li>
+                <li class="collection-item">
+                  <span class="helper-text">수량</span>
+                  <div class="input-field inline">
+                    <input type="number" class="validate mod" value="1">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="price-details-right">
+              <div class="amount-tital">결제금액</div>
+              <div class="amount-number">10,800원</div>
+            </div>
+          </div>
+          <div class="group-purchase">
+            <div class="half-with">
+              <button type="button" class="waves-effect waves-dark btn white-black-border-style">단체 구매</button>
+              <button type="button" class="waves-effect waves-dark btn white-black-border-style">장바구니</button>
+            </div>
+            <div class="half-with">
+              <button type="button" class="waves-effect waves-light btn orange-white-colour-style book-ml">바로
+                구매</button>
+            </div>
+
+          </div>
+          <div class="group-purchase group-mt">
+            <button type="button" class="waves-effect waves-light btn blue-white-colour-style"> 이벤트 구매 </button>
+          </div>
+          <div class="general-resources">
+            <div class="resources-box">
+              <div class="resources-title">일반 자료 (3)</div>
+              <div class="resources-item small-button-font">
+                <button type="button" class="waves-effect waves-light btn blue-light-btn-style">MP3</button>
+                <button type="button" class="waves-effect waves-light btn blue-light-btn-style">정답</button>
+                <button type="button" class="waves-effect waves-light btn blue-light-btn-style">스크립트</button>
+              </div>
+            </div>
+            <div class="resources-box">
+              <div class="resources-title">온라인 구매처</div>
+              <div class="resources-item">
+                <button type="button" class="waves-effect waves-dark btn buy-online-btn-style">
+                  <div class="material-placeholder">
+                    <img class="materialboxed" width="100%" src="dist/assets/images/image 83.png">
+                  </div>
+                </button>
+                <button type="button" class="waves-effect waves-dark btn buy-online-btn-style">
+                  <div class="material-placeholder">
+                    <img class="materialboxed" width="100%" src="dist/assets/images/image 84.png">
+                  </div>
+                </button>
+                <button type="button" class="waves-effect waves-dark btn buy-online-btn-style">
+                  <div class="material-placeholder">
+                    <img class="materialboxed" width="100%" src="dist/assets/images/image 86.png">
+                  </div>
+                </button>
+                <button type="button" class="waves-effect waves-dark btn buy-online-btn-style">
+                  <div class="material-placeholder">
+                    <img class="materialboxed" width="100%" src="dist/assets/images/image 85.png">
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Book detais contain section end-->
+      </div>
+    </div>
+  </div>
+
+  <!-- Ad banner full width -->
+  <div class="adbanner"
+    style="text-align: center; background-color: black; height: 60px; color: white; display: flex; justify-content: center; align-items: center; margin: 50px 0;">
+    Ad Banner</div>
+
+  <!-- Bottom section -->
+  <div class="section">
+    <!-- Product summary -->
+    <div class="container">
+      <div class="row bookDetailsWrap" id="blue3">
+        <!-- Left column floating sticky price box -->
+        <div class="product-summary col s12 m7" id="parentOne">
+          <div class="product-summary-tabs product-summary-nav" data-target="blue3">
+            <nav>
+              <ul id="">
+                <li><a href="#sectionOne" class="summary-tab-item">도서 알림</a></li>
+                <li><a href="#sectionTwo" class="summary-tab-item">도서 소개</a></li>
+                <li><a href="#sectionThree" class="summary-tab-item">목차 보기</a></li>
+                <li><a href="#sectionFour" class="summary-tab-item">저자 소개</a></li>
+                <!-- <li><a href="#sectionFive" class="summary-tab-item">관련 자료</a></li> -->
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <div id="sectionOne" class="product-summary-section scrollspy">
+              <h3>도서 알림</h3>
+              <div class="pdf-download">
+                <ul class="collapsible">
+                  <li>
+                    <div class="collapsible-header pdf-download-tital">
+                      <span>
+                        <i class="material-icons dp48">check</i> 오타 수정 및 업데이트 안내
+                      </span>
+                      <span>
+                        <i class="icon-collapsible-dropdown-arrow"></i>
+                      </span>
+                    </div>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li>
+                          <span><i class="material-icons dp48">check</i>180page 오타 수정되었습니다.</span> <button type="button"
+                            class="waves-effect waves-dark btn japan-line-gray-btn">자세히보기</button>
+                        </li>
+                        <li>
+                          <span><i class="material-icons dp48">check</i>스크립트(일반자료)가 추가되었습니다.</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="sectionTwo" class="product-summary-section scrollspy">
+              <h3>도서 소개</h3>
+              <img class="materialboxed" width="100%" src="dist/assets/images/summary-long.jpg">
+              <p>아웃사이더에서 유튜브 스타로, 이번엔 팝스타로 변신! 독일에서 제일 바쁜 작가 중 한 명인 자비네 체트의 재기발랄한 이야기에 독일의 유명 삽화가 차프(팔크 홀츠아펠)의 코믹한 삽화가
+                풍부하게
+                곁들여진 글씨 반, 그림 반 초등 소설 <미스터리 유튜버 콜린> 시리즈! 제1권에 이어 제2권이 한층 더 흥미진진한 내용으로 다시 찾아왔어요!</p>
+              <p>1권 ‘쿨 가이로 변신하다’에서 CMC(Cool Mans Channel)라는 유튜브 채널을 만들고 퓨마 가면을 쓴 미스터리 유튜버로 변신한 콜린. 채널 구독자 수가 10명에서
+                100명으로
+                불어나더니 이제는 1,000명을 돌파해 정말 쿨 가이로 변신하는 데 성공한 듯해요! 물론 퓨마 가면을 쓴 운영자가 콜린이라는 것은 단짝 친구 요요와 가족들만 아는 비밀이지만 말이에요.
+              </p>
+            </div>
+            
+
+            <div id="sectionThree" class="tabel product-summary-section scrollspy">
+              <h3 class="sec-two-head">목차보기</h3>
+              <div class="roww">
+                <div class="collumn1 bolder">
+                  No.
+                </div>
+                <div class="collumn2 bolder">
+                  Chapter
+                </div>   
+              </div>
+              <div class="roww">
+                <div class="collumn1">
+                  1
+                </div>
+                <div class="collumn2">
+                  대단한 소식
+                </div>   
+              </div>
+              <div class="roww">
+                <div class="collumn1">
+                  2
+                </div>
+                <div class="collumn2">
+                  내가 바로 마에스트로
+                </div>   
+              </div>
+              <div class="roww">
+                <div class="collumn1">
+                  3
+                </div>
+                <div class="collumn2">
+                  그래니가 최고야
+                </div>   
+              </div>
+              <div class="roww">
+                <div class="collumn1">
+                  4
+                </div>
+                <div class="collumn2">
+                  학교를 위한 천재적 속임수
+                </div>   
+              </div>
+              <div class="roww">
+                <div class="collumn1">
+                  5
+                </div>
+                <div class="collumn2">
+                  교장 선생님 전문 조련사
+                </div>   
+              </div>
+              <div class="roww">
+                <div class="collumn1">
+                  6
+                </div>
+                <div class="collumn2">
+                  혼돈의 캐스팅
+                </div>   
+              </div>
+              <div class="roww">
+                <div class="collumn1">
+                  7
+                </div>
+                <div class="collumn2">
+                  노래와 관련된 일
+                </div>   
+              </div>
+              <div class="roww">
+                <div class="collumn1">
+                  8
+                </div>
+                <div class="collumn2">
+                  친구들과 함께 연주하기
+                </div>   
+              </div>
+              <div class="roww">
+                <div class="collumn1">
+                  9
+                </div>
+                <div class="collumn2">
+                  이제 후퇴는 없다
+                </div>   
+              </div>
+            </div>
+
+          
+
+            <div id="sectionFour" class="product-summary-section scrollspy">
+              <h3>저자소개</h3>
+
+              <h4>자비네 체트(지은이)</h4>
+              <p>자비네 체트는 독일에서 가장 바쁘고 유명한 작가들 중 한 명입니다. 여러 신문사에서 오래 일한 저널리스트 출신으로, 지금까지 40권 이상의 책을 집필했습니다. 어린이와 청소년들을 위한
+                이야기와
+                오디오 북, 소설을 쓰고 노래 작사도 합니다. 그 동안 많은 상을 받았고, 작품들은 세계 여러 언어로 번역·판매되었습니다. 어린이들을 대상으로 독서 권장 활동을 활발히 펼치고 있으며,
+                독일
+                독서
+                재단(Stiftung Lesen)의 공식 독서 홍보대사로도 활약하고 있습니다.</p>
+
+              <h4>차프(팔크 홀츠아펠)(그린이)</h4>
+              <p>10년 넘게 그림을 그렸으며, 현재 빈에서 살고 있습니다. 다양한 어린이 책의 그림뿐 아니라, 게임에 들어가는 그림도 그리고, 애니메이션 캐릭터 디자인도 하고 있습니다.</p>
+
+              <h4>이은주(옮긴이)</h4>
+              <p>서울대학교에서 독어독문학 박사 과정을 수료하고, 같은 학교에서 독일어를 가르쳤습니다. 현재는 영어책 또는 독일어 책을 우리말로 옮기는 일을 하고 있습니다. 옮긴 책으로는 <우린 널
+                  사랑해>
+                  ,
+                  <성탄절 이야기>, <가이아의 정원>(공역), <꼬마 흡혈귀> 등이 있고, 집필한 책으로는 <유럽 문화와 교육 대국 독일 이야기>가 있습니다.</p>
+              <h3>관련 자료</h3>
+              <!-- <table class="download-content">
+                <tbody>
+                  <tr>
+                    <td>일반 자료</td>
+                    <td>mp3</td>
+                    <td><span>다운로드<a href="#"><i class="icon-download"></i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>일반 자료</td>
+                    <td>태스트 자료</td>
+                    <td><span>다운로드<a href="#"><i class="icon-download"></i></a></span></td>
+                  </tr>
+                  <tr>
+                    <td>일반 자료</td>
+                    <td>스크립트 파일</td>
+                    <td><span>다운로드<a href="#"><i class="icon-download"></i></a></span></td>
+                  </tr>
+                </tbody>
+              </table> -->
+
+              <div class="general-resources-block">
+                <div>
+                  <span>일반 자료</span>
+                  <strong>MP3</strong>
+                  </div>
+                <div>
+                  <i class="icon-em-music"></i>
+                  플레이리스트
+                </div>
+              </div>
+
+              <div class="general-resources-block">
+                <div>
+                  <span>일반 자료</span>
+                  <strong>정오표</strong>
+                  </div>
+                <div>
+                  <i class="icon-em-download"></i>
+                  다운로드
+                </div>
+              </div>
+
+              <div class="general-resources-block">
+                <div>
+                  <span class="blueTxt">교강사 자료</span>
+                  <strong>강의 PPT</strong>
+                  </div>
+                <div>
+                  <i class="icon-em-download"></i>
+                  다운로드
+                </div>
+              </div>
+            </div>
+
+            <div id="float-management" style="height: 20px;"></div>
+
+
+          </div>
+        </div>
+        <!-- Right column floating sticky price box -->
+        <div class="col s12 m4" id="parentTwo">
+          <div class="floating-price product-price-float" data-target="blue3">
+            <div class="floating-price-container">
+              <div class="floating-price-btn-group">
+                <div>
+                  <ul class="tags">
+                    <li class="new">new</li>
+                    <li class="hot">hot</li>
+                    <li class="event">EVENT</li>
+                  </ul>
+                </div>
+                <div class="extra-btn">
+                  <!-- new wishlist icon class "iconWishlist-greyOrange" and for active use class "active" -->
+                  <a href="#"><i class="iconWishlist-greyOrange"></i></a>
+                  <a href="#"><i class="icon-bookDetails-share"></i></a>
+                </div>
+              </div>
+              <h3 class="floating-price-tital">미스터리 유튜버 콜린 2 팝스타로 변신하다</h3>
+
+
+              <div class="price-details-left price-details-left--floating-full-width">
+                <ul class="collection">
+                  <li class="collection-item">
+                    <span>가격</span>
+                    <p><span class="with-line">12,000원</span>
+                      <i class="icon-booktop-price"></i> 10,800원 (10% <i class="icon-downArrow"></i>)</p>
+                  </li>
+                  <li class="collection-item">
+                    <span class="helper-text">수량</span>
+                    <div class="input-field inline">
+                      <input type="number" class="validate mod" value="1">
+                    </div>
+                  </li>
+                  <li>
+                    <span class="helper-text">결제금액</span>
+                    <p class="blackTxt">10,800원</p>
+                  </li>
+                </ul>
+                <!-- <h4><span>결제금액</span> 10,800원</h4> -->
+              </div>
+              <div class="floating-purchase-btn">
+                <button type="button" class="waves-effect waves-dark btn white-black-border-style">단체 구매</button>
+                <button type="button" class="waves-effect waves-light btn orange-white-colour-style">장바구니</button>
+              </div>
+              <div class="floating-price-recommendation">
+                <div class="price-recommendation-title">
+                  <h4>시리즈 상품</h4>
+                </div>
+                <div id="book-details-scroll">
+                  <div class="owl-carousel owl-theme">
+
+                    <div class="item">
+                      <a class="thumb" href="#">
+                        <img src="./dist/assets/images/image-thumb-1.jpg">
+                        <h6>미스터리 유튜버...1</h6>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="thumb" href="#">
+                        <img src="./dist/assets/images/image-thumb-2.jpg">
+                        <h6>미스터리 유튜버...2</h6>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="thumb" href="#">
+                        <img src="./dist/assets/images/image-thumb-2.jpg">
+                        <h6>미스터리 유튜버...1</h6>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="thumb" href="#">
+                        <img src="./dist/assets/images/image-thumb-2.jpg">
+                        <h6>미스터리 유튜버...2</h6>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="floating-price-footer" href="#">
+              <i class="icon-report-typo"></i> 오탈자 신고 </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- notice modal -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#noticemodal">notice modal</a>
+  <div class="customModal">
+    <div id="noticemodal" class="modal">
+      <!-- class name change -->
+      <div class="modal-close-wrap">
+        <a href="#!" class="modal-close">
+          <img src="dist/assets/icons/modal-close.svg"/>
+        </a>
+      </div>
+      <div class="modal-content">
+        <div class="modal-head">
+          <h4>도서알림 상세</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="noticeCont">
+              <h3>・180page 15번째 줄 오타 수정 안내</h3>
+              <div class="content">
+                <p><span class="label">수정 전</span>: 일본어에 관심이 <span class="red">잇는</span> 학생들을 대상으로 한</p>
+                <p><span class="label">수정 전</span>: 일본어에 관심이 <span class="black">잇는</span> 학생들을 대상으로 한</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <!-- /notice modal -->
+
+  <!-- share modal -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#sharemodal">share modal</a>
+  <div class="customModal">
+    <div id="sharemodal" class="modal">
+      <!-- class name change -->
+      <div class="modal-close-wrap">
+        <a href="#!" class="modal-close">
+          <img src="dist/assets/icons/modal-close.svg"/>
+        </a>
+      </div>
+      <div class="modal-content">
+        <div class="modal-head">
+          <h4>공유하기</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="shareDiv">
+              <div class="iconsList">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="dist/assets/icons/fb-round.svg"/>
+                      <span>페이스북</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="dist/assets/icons/twitter-round.svg"/>
+                      <span>트위터</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="shareUrl">
+                <div class="copyTxt">
+                  <input type="text" placeholder="http://www.darakwon.co.kr/books/detailProduct.asp?pNum=1&pSize=20&"/>
+                </div>
+                <div class="urlbutton">URL복사</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <!-- /share modal -->
+
+  <footer class="page-footer white" id="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col l9 s12">
+                    <div class="instructor-support-box">
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <a class="collection-item-anchor" href="#">
+                                    <i class="icon-footer-refund"></i>
+                                    <div class="i-support-text">
+                                        <h6>구입·환불문의</h6>
+                                        <p>구입·환불문의 페이지로 이동합니다.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a class="collection-item-anchor" href="#">
+                                    <i class="icon-footer-question"></i>
+                                    <div class="i-support-text">
+                                        <h6>강의문의</h6>
+                                        <p>강의 문의 페이지로 이동합니다.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a class="collection-item-anchor" href="#">
+                                    <i class="icon-footer-contact"></i>
+                                    <div class="i-support-text">
+                                        <h6>제휴문의</h6>
+                                        <p>제휴 문의 페이지로 이동합니다.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a class="collection-item-anchor" href="#">
+                                    <i class="icon-footer-publication"></i>
+                                    <div class="i-support-text">
+                                        <h6>출판문의</h6>
+                                        <p>출판 문의 페이지로 이동합니다.</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l3 s12">
+                    <div class="instructor-support-serch">
+                        <a href="#!" class="waves-effect waves-light btn">
+                            <i class="icon-support-serach"></i>
+                            <div class="support-serch-text">
+                                <h4>다락원 강사 지원</h4>
+                                <p>다락원의 강사를 지원해보세요</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like
+                    it's our
+                    full time job. Any amount would help support and continue development on this project and is
+                    greatly
+                    appreciated.</p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>-->
+    </div>
+    <!-- <div class="footer-middle">
+        <div class="container">
+            <div class="row no-margin">
+                <div class="col s12 m6 l4 xl4">
+                    <div class="notice-section">
+                        <ul class="collection with-header">
+                            <li class="collection-header">
+                                <h4>공지사항</h4> <span>+</span>
+                            </li>
+                            <li class="collection-item">
+                                <div class="notice-date">
+                                    <h4>21</h4>
+                                    <span>17.04</span>
+                                </div>
+                                <div class="notice-details">
+                                    <h5> Dummy text is also us appearance ></h5>
+                                    <p>Dummy text is also used </p>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="notice-date">
+                                    <h4>21</h4>
+                                    <span>17.04</span>
+                                </div>
+                                <div class="notice-details">
+                                    <h5>Dummy text is also us appearance ></h5>
+                                    <p>Dummy text is also used </p>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="notice-date">
+                                    <h4>21</h4>
+                                    <span>17.04</span>
+                                </div>
+                                <div class="notice-details">
+                                    <h5> Dummy text is also us appearance ></h5>
+                                    <p>Dummy text is also used </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="waves-effect waves-light btn inquryBtn"> Dummy text is also</a>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4 offset-l1 xl4 offset-xl1">
+                    <div class="service-center">
+                        <ul class="collection with-header">
+                            <li class="collection-header">
+                                <h4>고객센터 </h4>
+                            </li>
+                            <li class="collection-item">
+                                <div class="footer-ph">
+                                    <a href="tel:02)-736-2031">02)-736-2031</a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="online-purchase">
+                                    <strong>인터넷 구입 및 강좌문의 -</strong>
+                                    <span>내선 (313,314)</span>
+                                </div>
+
+                            </li>
+                            <li class="collection-item">
+                                <div class="online-purchase">
+                                    <strong>도서문의 및 교재출판 -</strong>
+                                    <span>내선 (250,251,252)</span>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="consultation-time">
+                                    <span><b>상담시간</b> 09:00 - 18:00</span>
+                                    <span> <b>토요일</b> 및 공휴일 휴무</span>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="download-box">
+                                    <a href="#!" class="waves-effect waves-light btn">다운로드 오류해결</a>
+                                    <a href="#!" class="waves-effect waves-light btn">1:1 QnA</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col s12 m12 l3 xl3">
+                    <div class="report-a-typo">
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <i class="icon-footer-report-typo"></i>
+                                    <h6>오탈자 신고</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <i class="icon-footer-book-catalog"></i>
+                                    <h6>북카탈로그</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>제휴 쿠폰 등록</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>어린이 중국어 도서 자료실</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>성적확인</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>301구 프리미엄 학습권 등록</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>성적확인</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>성적확인</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="footer-middle">
+        <div class="container">
+            <ul class="footerList">
+                <li class="footerList-item">
+                    <div class="notice-section">
+                        <ul class="collection with-header">
+                            <li class="collection-header">
+                                <h4>공지사항</h4> <a href="#">+</a>
+                            </li>
+                            <li class="collection-item">
+                                <div class="notice-date">
+                                    <h4>21</h4>
+                                    <span>17.04</span>
+                                </div>
+                                <div class="notice-details">
+                                    <h5> Dummy text is also us appearance ></h5>
+                                    <p>Dummy text is also used </p>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="notice-date">
+                                    <h4>21</h4>
+                                    <span>17.04</span>
+                                </div>
+                                <div class="notice-details">
+                                    <h5>Dummy text is also us appearance ></h5>
+                                    <p>Dummy text is also used </p>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="notice-date">
+                                    <h4>21</h4>
+                                    <span>17.04</span>
+                                </div>
+                                <div class="notice-details">
+                                    <h5> Dummy text is also us appearance ></h5>
+                                    <p>Dummy text is also used </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="waves-effect waves-light btn inquryBtn">B2B 문의 및 단체 수강 문의</a>
+                    </div>
+                </li>
+                <li class="footerList-item">
+                    <div class="service-center">
+                        <ul class="collection with-header">
+                            <li class="collection-header">
+                                <h4>고객센터 </h4>
+                            </li>
+                            <li class="collection-item">
+                                <div class="footer-ph">
+                                    <a href="tel:02)-736-2031">02)-736-2031</a>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="online-purchase">
+                                    <strong>인터넷 구입 및 강좌문의 -</strong>
+                                    <span>내선 (313,314)</span>
+                                </div>
+
+                            </li>
+                            <li class="collection-item">
+                                <div class="online-purchase">
+                                    <strong>도서문의 및 교재출판 -</strong>
+                                    <span>내선 (250,251,252)</span>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="consultation-time">
+                                    <span><b>상담시간</b> 09:00 - 18:00</span>
+                                    <span> <b>토요일</b> 및 공휴일 휴무</span>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div class="download-box">
+                                    <a href="#!" class="waves-effect waves-light btn">다운로드 오류해결</a>
+                                    <a href="#!" class="waves-effect waves-light btn">1:1 QnA</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="footerList-item">
+                    <div class="report-a-typo">
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <i class="icon-footer-report-typo"></i>
+                                    <h6>오탈자 신고</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <i class="icon-footer-book-catalog"></i>
+                                    <h6>북카탈로그</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>제휴 쿠폰 등록</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>어린이 중국어 <br/> 도서 자료실</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>성적확인</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>301구 프리미엄 <br/> 학습권 등록</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>성적확인</h6>
+                                </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">
+                                    <h6>성적확인</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row no-margin">
+                <div class="col s12">
+                    <div class="site-map">
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <a href="#!"> 회사소개</a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">오시는길</a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">이용약관</a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!">개인정보처리방침</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-margin">
+                <div class="col s12 m7 l9 xl9">
+                    <div class="footer-attic">
+                        <ul class="collection">
+                            <li class="collection-item">
+                                다락원
+                            </li>
+                            <li class="collection-item">
+                                <span>CEO.</span>정규도
+                            </li>
+                            <li class="collection-item">
+                                <span>사업자등록번호.</span> 110-81-32211
+                            </li>
+                            <li class="collection-item">
+                                <span>통신판매업소신고.</span>파주 741호
+                            </li>
+                            <li class="collection-item">
+                                <span>개인정보책임담당자.</span> 양완규
+                            </li>
+                            <li class="collection-item">
+                                <span>서울사무소.</span> (04031) 서울특별시 마포구 잔다리로 64-1
+                            </li>
+                            <li class="collection-item">
+                                <!-- <a href="tel:02-736-2031"></a> -->
+                                <span>TEL.</span> 02-736-2031(내선313)
+                            </li>
+                            <li class="collection-item">
+                                <!-- <a href="fax:02-732-2037"></a> -->
+                                <span>FAX.</span> 02-732-2037
+                            </li>
+                            <li class="collection-item">
+                                <span>파주본사.</span>(10881) 경기도 파주시 문발로 211 다락원빌딩
+                            </li>
+                            <li class="collection-item">
+                                <!-- <a href="tel:02-736-2031"></a> -->
+                                <span>TEL.</span>02-736-2031(내선800)
+                            </li>
+                            <li class="collection-item">
+                                <!-- <a href="fax:031- 8035-6906"></a> -->
+                                <span>FAX.</span>031- 8035-6906
+                            </li>
+                            <li class="collection-item">
+                                본 홈페이지 내용에 대한 무단복제를 금지하며 이메일 주소의 자동
+                                 수집을 거부합니다.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-social-icon">
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <a href="#!"> <i class="icon-footer-youtube"></i> </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!"> <i class="icon-footer-facebook"></i> </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!"> <i class="icon-footer-blog"></i> </a>
+                            </li>
+                            <li class="collection-item">
+                                <a href="#!"> <i class="icon-footer-n-link"></i> </a>
+                            </li>
+                            <li class="collection-item">
+                                <div class="foot-english">
+                                    <a href="#!"> <i class="icon-footer-earth"></i> ENGLISH </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col s12 m5 l3 xl3">
+                    <div class="playStoreWrap">
+                        <div class="play-store">
+                            <ul class="collection">
+                                <li class="collection-item">
+                                    <a href="#!">
+                                        <i class="icon-footer-app-store"></i>
+                                    </a>
+                                </li>
+                                <li class="collection-item">
+                                    <a href="#!">
+                                        <i class="icon-footer-google-play"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button type="button" class="waves-effect waves-light btn">
+                                <i class="icon-footer-remote-support"></i> 원격지원
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-margin">
+                <div class="col s12">
+                    <div class="footer-copyright-text">
+                        <p>COPYRIGHT <span>&copy; DARAKWON INC.</span> ALL RIGHTS RESERVED</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Made by <a class="orange-text text-lighten-3" href="#">DvConsulting</a> -->
+
+        </div>
+    </div>
+</footer>
+
+<!--======================= lightbox =======================-->
+<div class="lightBoxWrap">
+  <!-- Images used to open the lightbox -->
+
+<div id="myLightbox" class="modal">
+  <span class="close cursor" onclick="closeModal()"><i class="material-icons">close</i></span>
+  <div class="modal-content">
+
+    <div class="mySlidesWrap">
+      <div class="mySlider">
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <img src="dist/assets/images/bm-slider1.jpg">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="dist/assets/images/bm-slider2.jpg">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="dist/assets/images/bm-slider3.jpg">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="dist/assets/images/bm-slider4.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="dist/assets/images/bm-slider4.jpg">
+        </div>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      </div>
+      <div class="thumb-row">
+        <div class="column">
+          <img class="demo cursor" src="dist/assets/images/bm-slider1.jpg" onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="dist/assets/images/bm-slider2.jpg" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="dist/assets/images/bm-slider3.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="dist/assets/images/bm-slider4.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="dist/assets/images/bm-slider5.jpg" onclick="currentSlide(5)" alt="Northern Lights">
+        </div>
+      </div>
+    </div>
+    
+    <div class="navigationArrows">
+      <a class="prev" onclick="plusSlides(-1)"><i class="material-icons">keyboard_arrow_left</i></a>
+      <a class="next" onclick="plusSlides(1)"><i class="material-icons">keyboard_arrow_right</i></a>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/lightbox.js"></script>
+</body>
+
+</html>

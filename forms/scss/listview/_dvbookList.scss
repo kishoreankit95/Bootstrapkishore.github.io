@@ -1,0 +1,40 @@
+.dvbook-list-block {
+  .product-list-item {
+    .product-list-desc {
+      h3 {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 480px) {
+          display: block;
+        }
+        
+        span{
+          @media screen and (max-width: 480px) {
+            display: block;
+          }
+        }
+        i.icon-dvbook-logo {
+          margin-right: 10px;
+          background-size: auto 22px;
+          height: 22px;
+          width: 100px;
+          @media screen and (max-width: 480px) {
+            display: block;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .dvbook-price{
+          font-size: 1rem;
+      }
+    }
+  }
+}
+.product-list-desc.dvbook-list-desc {
+  padding: 0 20px 0 40px!important;
+  > div {
+    > p {
+      font-weight: 200;
+    }
+  }
+}

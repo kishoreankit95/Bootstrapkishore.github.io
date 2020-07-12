@@ -1,0 +1,55 @@
+.mystudy-emergency {
+    box-sizing: border-box;
+    padding: 40px 25px;
+    @media screen and (max-width:$screen-md-min) {
+        flex-direction: row;
+        align-items: center;
+    }
+    @media screen and (max-width:$screen-sm-min) {
+        flex-direction: column!important;
+        align-items: center;
+        > button {
+            margin-top: 20px;
+        }
+    }
+   > .mye-link {
+        > a {
+            font-weight: 500;
+            font-size: 1.143rem;
+            line-height: 13px;
+            color:#aaaaaa;
+            margin-right: 60px;
+            @media screen and (max-width:$screen-xl-min) {
+                margin-right: 15px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                color: #2C5A84;
+            }
+        }
+    }
+    > button {
+        background: #2C5A84!important;
+        box-shadow: none!important;
+        border: 1px solid #DDDDDD;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height: 54px;
+        > i {
+            margin-right: 8px;
+        }
+    }
+}
+.mse-image {
+    display: flex;
+    flex-direction: column;
+    max-width: 584px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    @media screen and (max-width:$screen-md-min) {
+        width: 95%;
+    }
+}

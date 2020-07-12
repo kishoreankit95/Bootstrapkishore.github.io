@@ -1,0 +1,59 @@
+.af-input-box {
+    @include default-flex-start;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1107px) {
+        margin-top: 5px;
+    }
+    @media screen and (max-width: 992px) {
+        margin: 5px;
+    }
+    > input {
+        margin: 0!important;;
+        border:0!important;
+        &:focus {
+            box-shadow: none!important;
+            border: 0!important;
+        }
+    }
+    > span {
+        font-size: 1.071rem;
+      color: #3E3E3E;
+    }
+    
+}
+.recruitment-box {
+    @include default-flex-start;
+    box-sizing: border-box;
+    padding: 0 ;
+    @media screen and (max-width:$screen-sm-min) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    > span {
+        color: #E46442;
+        font-size: 15px;
+        letter-spacing: 0.3px;
+        min-width: 160px;
+        > b {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #E46442;
+            color:$text-white-1 ;
+            @include default-flex-center;
+            display: inline-flex;
+            margin-right: 7px;
+        }
+    }
+    p{
+        font-size: 16px;
+        letter-spacing: -0.5px;
+        color: #666;
+        strong{
+            color: #444;
+        }
+    }
+}

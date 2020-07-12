@@ -1,0 +1,782 @@
+.package-details {
+  background: #E0E8EF!important;
+  min-height: 490px;
+}
+.lecturePackageDet{
+  padding-top: 70px;
+}
+
+.lecPackageDet{
+  .em-collapsible-box {
+    margin-top: -365px;
+    .headPart{
+      h1 {
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 20px;
+        color: #121212;
+        margin-top: 0;
+        font-weight: 500;
+    
+        @media screen and (max-width:$screen-sm-min) {
+          font-size: 1.2rem;
+          //margin-top:10px!important;
+        }
+      }
+      p{
+        margin-bottom: 19px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+      }
+      ul.collection.package-lebel{
+        margin: 40px 0 !important;
+        li.collection-item{
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 20px;
+          &:first-child{
+            border-radius: 15px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    
+    .package-all-details{
+      .row{
+        .col.m6{
+          @media screen and (max-width: 767px) {
+            width: 100% !important;
+          }
+        }
+      }
+      .package-all-details-content{
+        @media screen and (max-width: 767px) {
+          margin-top: 40px;
+        }
+      }
+      .package-details-sum{
+        .dropdown-tital{
+          opacity: 1 !important;
+        }
+        h1{
+          &.orangeTxt{
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 20px;
+            color: #E46442;
+          }
+        }
+      }
+      .em-full-width-row{
+        @media screen and (max-width: 1200px) {
+          flex-direction: row;
+        }
+        &.mobileRow{
+          justify-content: flex-start;
+          // @media screen and (max-width: 767px) {
+          //   align-items: center;
+          // }
+          @media screen and (max-width: 576px) {
+            display: flex;
+          }
+          .dropdown-tital{
+            @media screen and (max-width: 767px) {
+              width: auto;
+              margin-bottom: 0;
+              font-weight: normal;
+              color: #444444;
+            }
+          }
+        }
+        .dropdown-tital{
+          width: 60px;
+          min-width: 50px;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 20px;
+          color: #121212;
+          opacity: 0.7;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 20px;
+            &.mobileHide{
+              display: none;
+            }
+          }
+        }
+        .em-dropdown-descrip{
+          display: flex;
+          flex-direction: column;
+          h6{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #444444;
+          }
+          .number-lessons{
+            h4{
+              font-weight: 500;
+              color: #444444;
+              .strikeT{
+                text-decoration: line-through;
+                @media screen and (max-width: 767px) {
+                  margin-left: 5px;
+                  font-size: 16px;
+                }
+              }
+              @media screen and (max-width: 767px) {
+                display: flex;
+                flex-direction: row-reverse;
+              }
+            }
+            span.ml{
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 20px;
+            }
+          }
+          .textbook-checkbox{
+            label [type="checkbox"] + span:not(.lever){
+              padding-left: 28px;
+            }
+            // @media screen and (max-width: 767px) {
+            //   display: none;
+            // }
+          }
+          // .textbook-select-box{
+          //   display: none;
+          //   @media screen and (max-width: 767px) {
+          //     display: block;
+          //   }
+          //   .select-wrapper{
+          //     input.select-dropdown{
+          //       margin: 0;
+          //       border: 1px solid #cccccc !important;
+          //       border-radius: 5px;
+          //       width: 100%;
+          //       box-sizing: border-box;
+          //       padding:0 7px;
+          //       font-size: 14px;
+          //       color: #777777;
+          //     }
+          //   }
+          // }
+        }
+      }
+      .package-details-sum{
+        @media screen and (max-width: 1200px) {
+          .row{
+            .col.offset-l3{
+              margin-left: 0;
+              width: 100%;
+              .em-full-width-row{
+                flex-direction: row;
+              }
+            }
+          }
+        }
+        
+        @media screen and (max-width: 767px) {
+          .row{
+            .col.offset-l3{
+              .em-full-width-row{
+                flex-direction: column;
+                position: relative;
+                .lp-descrip-btn{
+                  width: 100%;
+                  h1.orangeTxt, h1.blueTxt{
+                    position: absolute;
+                    top: 8px;
+                    right: 0;
+                  }
+                  .buttonGrps{
+                    width: 100%;
+                    button{
+                      width: 50%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .lecture-package-detail{
+    .package-details-tital{
+      border-bottom: 2px solid #dddddd;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+      &.lp-title{
+        .package-name, .number-lessons{
+          text-align: center;
+          h3{
+            color: #666666;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .package-list-item{
+      .row.package-list-item-box{
+        .col.m9{
+          @media screen and (max-width: 767px) {
+            width: 100% !important;
+          }
+        }
+      }
+      .product-list-content{
+        .product-list-desc{
+          .product-list-rating, .text-tags{
+            @media screen and (max-width: 767px) {
+              display: none;
+            }
+          }
+        }
+      }
+      .product-list-shop{
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+      .number-lessons{
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      .package-list-item-footer{
+        display: none;
+        @media screen and (max-width: 767px) {
+          display: block;
+          border-top: 0.5px solid #EEEEEE;
+        }
+        .books-price-wrap{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .book-name{
+            display: inline-flex;
+            align-items: center;
+            span{
+              font-weight: normal;
+              font-size: 13px;
+              line-height: 14px;
+              border: 0.5px solid #777777;
+              box-sizing: border-box;
+              border-radius: 20px;
+              padding: 4px 13px;
+              margin-right: 7px;
+            }
+            p{
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 20px;
+              color: #444444;
+            }
+          }
+          .print-price{
+            p{
+              font-weight: 500;
+              font-size: 17px;
+              line-height: 20px;
+              color: #444444;
+              span{
+                color: #777777;
+                font-size: 13px;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+.package-all-details {
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5rem 4% 2.813rem 4%;
+  margin-bottom: 5%;
+}
+.em-collapsible-box {
+  > p {
+    color: $text-bl-blue-1;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  ul.collection.package-lebel {
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    @media screen and (max-width:$screen-sm-min) { 
+      margin-top:10px;
+    }
+    li.collection-item {
+      border: 0;
+      background: none;
+      position: relative;
+      color: $text-black-6;
+      padding:0 13px 0 5px;
+      &:last-child {
+        &:before {
+          display: none;
+        }
+      }
+      &:first-child {
+        background: $text-bl-blue-4;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 1px 15px;
+        font-size: 0.813rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-right: 10px;
+        &:before {
+          display: none;
+        }
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        background: url(../assets/icons/icon-tilde.svg) no-repeat center center;
+        height: 6px;
+        width: 10px;
+        top:calc(50% - 3px);
+        right: 0;
+      }
+    }
+  }
+}
+
+.package-detail .owl-dots .owl-dot.active span {
+  width: 30px;
+}
+.package-detail .owl-dots .owl-dot.active span {
+  background: #777777;
+}
+.package-detail .owl-dots .owl-dot span {
+  background: #D6D6D6;
+}
+.number-lessons {
+  h4 {
+    margin: 0 13px 0 0;
+    font-size: 19px;
+    line-height: 20px;
+    span{
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 20px;
+      color: #5997D0;
+      &.light-color{
+        color: #bbbbbb;
+        font-weight: 300;
+      }
+      &.ml{
+        font-size: 12px;
+      }
+    }
+    > b {
+      color: $text-black-12;
+      text-decoration:line-through;
+      font-weight: normal!important;
+      margin-right: 10px;
+    }
+  }
+  span {
+    font-size: 0.85rem;
+    color: $text-black-11;
+    flex: 1;
+    @media screen and (max-width:$screen-md-min) {
+      flex: initial;
+    }
+  }
+}
+.font-blue-color {
+  color: $text-bl-blue-4!important;
+}
+.em-dropdown-descrip {
+  h6 {
+    margin:15px 0 0 0;
+    font-size: 1rem;
+    color: $text-black-8;
+    line-height: 1.5rem;
+  }
+}
+.textbook-checkbox {
+  label {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    [type="checkbox"].filled-in:checked + span:not(.lever):after {
+      background: #777;
+      border: 1px solid transparent!important;
+      width: 14px!important;
+      height: 14px!important;
+    }
+    [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+      border: 1px solid #AAAAAA;
+      width: 14px!important;
+      height: 14px!important;
+      background: #fff;
+    }
+    [type="checkbox"] + span:not(.lever) {
+      height: 14px;
+      line-height: 14px;
+    }
+    [type="checkbox"].filled-in:checked + span:not(.lever):before {
+      top: -2px;
+      left: 0px;
+      width: 6px;
+      height: 10px;
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+    }
+    > span {
+      font-size: 0.813rem;
+      color: $text-black-8;
+    }
+  }
+}
+.lp-descrip-btn {
+  //justify-content: flex-end!important;
+  width: 85%;
+  @media screen and (max-width: 640px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+  h1 {
+    margin: 0;
+    font-size: 25px;
+    color: $button-bl-orange-1;
+    font-weight: bold;
+    @media screen and (max-width: 640px) { 
+      margin:10px 0;
+      font-size: 15px;
+    }
+  }
+}
+.lp-white-btn {
+  font-size: 1rem;
+  color: $text-black-8!important;
+  border: 1px solid #777777!important;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 3px!important;
+  @media screen and (max-width:$screen-sm-min) { 
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.75rem;
+  }
+}
+.lp-black-btn {
+  font-size: 1rem;
+  color: $text-white-1;
+  border: 1px solid transparent;
+  font-weight: bold;
+  background: #444444!important;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: none!important;
+  border-radius: 3px;
+  @media screen and (max-width:$screen-sm-min) { 
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.75rem;
+  }
+}
+.package-details-sum {
+  border-top: 2px solid #DDDDDD;
+  box-sizing: border-box;
+  padding-top: 20px;
+  .lp-descrip-btn{
+    button{
+      margin-left: 7px;
+      padding: 0 5px;
+      font-size: 16px;
+      line-height: 20px;
+      width: 144px;
+      height: 48px;
+      &:first-child{
+        margin-left: 0;
+      }
+      &.lp-white-btn{
+        background: #FFFFFF;
+        box-shadow: none;
+      }
+      @media screen and (max-width: 1400px) {
+        width: 120px;
+      }
+    }
+  }
+}
+.lp-title {
+  border-top:0;
+}
+.lp-darkgray-btn {
+  background-color: #777777!important;
+}
+.lp-row-style {
+  border-bottom: 1px solid #ddd;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+.package-details-tital {
+  //border-top: 3px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  color: $text-gray-3;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  padding:0;
+  >.row.mb-5{
+    margin-top: 110px;
+  }
+  .package-name,
+  .number-lessons{
+    h3{
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+.pl-detail-list {
+  nav {
+    height: initial;
+    line-height: inherit;
+    box-shadow: none;
+    background: none;
+    .nav-wrapper {
+      padding: 0;
+      display: flex;
+       a.breadcrumb {
+        font-size: 13px;
+        line-height: 13px;
+        color: $text-bl-blue-4;
+        font-weight: bold;
+        letter-spacing: -0.3px;
+        &::before {
+          margin: 0;
+          font-size: 1rem;
+          color: $text-bl-blue-4;
+          line-height: 1.2rem;
+        }
+      }
+    }
+  }
+  h3 {
+    margin:13px 0 16px!important;
+    font-size: 23px;
+  }
+}
+.pl-books-box {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .pl-book-width {
+    width: 40%;
+  }
+ > h4 {
+    font-weight: 500;
+    color: #333333;
+    font-size: 17px;
+    margin-top: 13px;
+    margin-right: 0;
+  }
+  > p {
+    color: $text-black-10;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    min-width: 100px;
+    text-align: left;
+  }
+  &::before {
+    content: '';
+    height: 80%;
+    width: 1px;
+    background: #ddd;
+    position: absolute;
+    top: 10%;
+    left: 0;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}
+.lpd-black-btn {
+  background: #444444!important;
+  border-radius: 30px;
+  font-size: 0.938rem;
+  color: $text-white-1;
+  padding-left: 35px;
+  padding-right: 35px;
+  box-shadow: none!important;
+}
+
+.package-list-item-box{
+  .material-placeholder{
+    max-width: 230px;
+  }
+  .product-list-desc{
+    p{
+      font-size: 15px;
+      line-height: 25px !important;
+      @media screen and (max-width: 992px) {
+        font-size: 14px;
+        line-height: 20px !important;
+      }
+    }
+  }
+}
+
+.lecture-list-block{
+  .product-list-content{
+    .product-list-desc.pl-detail-list{
+      p{
+        font-size: 15px !important;
+      }
+    }
+  }
+}
+
+.lecturePackageInfo{
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+  
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  .info2{
+    margin-left: 50px;
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+      margin-top: 50px;
+    }
+    &:first-child{
+      margin-left: 0;
+      @media screen and (max-width: 767px) {
+        margin-top: 0;
+      }
+    }
+    h3{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+      color: #666666;
+      margin: 0 0 11px;
+      span{
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+    ul{
+      li{
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 24px;
+        color: #555555;
+        &.redTxt{
+          color: #D65A5A;
+        }
+      }
+    }
+  }
+}
+
+.series-list-block{
+  .product-list-item{
+    .product-list-content{
+      .product-list-desc{
+        p{
+          font-weight: normal;
+          font-size: 15px !important;
+          line-height: 25px !important;
+          @media screen and (max-width: 992px) {
+            font-size: 14px !important;
+            line-height: 20px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lectureFreepass{
+  background: #F7E4E4 !important;
+}
+
+.lecFreepass{
+  .em-collapsible-box {
+    .headPart{
+      p{
+        color: #FD5B5B;
+      }
+      ul.collection.package-lebel{
+        margin: 40px 0 !important;
+        li.collection-item{
+          &:first-child{
+            background: #FD5B5B;
+          }
+        }
+      }
+    }
+
+    .package-all-details{
+      figure{
+        margin: 0;
+        img{
+          width: 100%;
+        }
+      }
+      .em-dropdown-descrip{
+        .number-lessons{
+          h4{
+            span{
+              color: #FD5B5B;
+            }
+          }
+        }
+      }
+      .package-details-sum{
+        .dropdown-tital{
+          opacity: 1 !important;
+        }
+        h1{
+          &.blueTxt{
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 20px;
+            color: #5997D0;
+          }
+        }
+      }
+    }
+  }
+}

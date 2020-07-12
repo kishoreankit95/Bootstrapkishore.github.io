@@ -1,0 +1,62 @@
+@mixin default-list {
+    margin: 0;
+    padding: 0;
+    list-style: none!important;
+    border: 0!important;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+  @mixin h-default-list {
+    @include default-list;
+     li {
+        background :none;
+        border: 0!important;
+        padding: 0;
+        list-style: none;
+     } 
+  }
+  @mixin default-flex-center {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @mixin default-flex-between {
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  @mixin default-flex-start {
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+  }
+  
+  @mixin flex-row {
+    display: flex;
+  }
+  @mixin icon-margin {
+    margin-right: 6px;
+  }
+  @mixin defult-button {
+    background: none!important;
+    box-shadow: none!important;
+  }
+
+  @mixin rotate($rotation) {
+    transform: rotate($rotation);
+}
+
+@mixin box-sizing($box-sizing) {
+    box-sizing: $box-sizing;
+}
+@mixin transition-property($transition) {
+    transition-property: $transition;
+}
+
+@mixin transition-duration($duration) {
+    transition-duration: $duration;
+}
+
+@mixin transition-timing-function($timing){
+    transition-timing-function: $timing;
+}

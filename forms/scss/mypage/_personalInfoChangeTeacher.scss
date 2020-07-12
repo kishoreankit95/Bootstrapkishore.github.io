@@ -1,0 +1,28 @@
+.change-teacher-bb1 {
+  border-top: 1px solid #ddd;
+}
+.form-full-right {
+  min-width: 250px;
+  @media screen and (max-width: $screen-sm-min){
+    min-width: auto;
+  }
+  // .input-field{
+  //   input{
+  //     min-width: 250px;
+  //   }
+  // }
+}
+.email-change-form {
+  .input-field {
+    .select-wrapper {
+      input {
+        font-size: 0.857rem;
+        color: #bebebe;
+        box-sizing: border-box;
+        padding-right: 25%;
+        min-width: 187px;
+        
+      }
+    }
+  }
+}

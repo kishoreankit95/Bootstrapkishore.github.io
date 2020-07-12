@@ -1,0 +1,858 @@
+.lecture-main-packages {
+  @media screen and (max-width: 767px) {
+    padding: 90px 50px !important;
+
+    .section-title{
+      padding: 0;
+      margin-bottom: 60px;
+    }
+  }
+  
+  #lecture-package-scroll {
+    .owl-carousel {
+      .owl-stage{
+        padding-bottom: 10px;
+      }
+      .owl-item {
+        border-radius: 10px;
+        .item {
+          // border-radius: 10px;
+          border-radius: 15px;
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+          .thumb {
+            display: block;
+            position: relative;
+            border-radius: 15px 15px 0 0;
+            overflow: hidden;
+            span {
+              position: absolute;
+              top: 0;
+              background-color: rgba($color: #000000, $alpha: 0.5);
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              padding: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              h6,
+              h2,
+              p {
+                margin: 0;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+              }
+              h6 {
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 600;
+                color: #72C8F4;
+              }
+              h2 {
+                font-size: 23px;
+                line-height: 28px;
+                font-weight: 600;
+                color: #fff;
+                margin: 4px 0 18px;
+                @media screen and (max-width: 767px) {
+                  font-size: 18px;
+                }
+              }
+              p {
+                font-size: 17px;
+                line-height: 20px;
+                font-weight: normal;
+                color: #fff;
+                @media screen and (max-width: 767px) {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          .card-action {
+            padding: 13px 20px;
+            background-color: #fff;
+            border-radius: 0 0 15px 15px;
+            display: flex;
+            justify-content: space-around;
+            a{
+              color: #676767;
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: normal;
+              &:hover{
+                color: #000000;
+              }
+            }
+            span{
+              display: block;
+              content: "";
+              height: 19px;
+              background: #CDCDCD;
+              width: 1px;
+            }
+          }
+        }
+      }
+      .owl-nav {
+        position: absolute;
+        top: calc(50% - 30px);
+        width: 100%;
+        @media screen and (max-width: $screen-sm-min) {
+          display: none;
+        }
+        button {
+          position: absolute;
+
+          &:hover {
+            background: none;
+          }
+          img {
+            width: 45px;
+            @media screen and (max-width: 800px) {
+              width: 30px;
+            }
+          }
+        }
+        .owl-prev {
+          left: -40px;
+          margin: 0;
+          @media screen and (max-width: 800px) {
+            left: -30px;
+          }
+        }
+        .owl-next {
+          right: -40px;
+          margin: 0;
+          @media screen and (max-width: 800px) {
+            right: -30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#lecture-recommended-scroll {
+  height: 350px;
+  @media screen and (max-width: $screen-sm-min) {
+    height: 250px;
+  }
+  .carousel {
+    @media screen and (max-width: $screen-sm-min) {
+      height: 250px;
+    }
+    .carousel-item {
+      opacity: 1 !important;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 400px;
+      @media screen and (max-width: $screen-sm-min) {
+        width: 250px;
+      }
+
+      .br-imgoverlay {
+        position: relative;
+        display: flex;
+        box-shadow: -1px 7px 7px -4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 19px;
+        img {
+          width: 400px;
+          @media screen and (max-width: $screen-sm-min) {
+            width: 250px;
+          }
+        }
+        span {
+          position: absolute;
+          background: rgba(0, 0, 0, 1);
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 9;
+          display: block;
+          opacity: 0.5;
+          transition: opacity 0.5s;
+        }
+      }
+      &:hover {
+        span {
+          opacity: 0.3;
+        }
+      }
+      .item-title {
+        opacity: 0;
+        transition: opacity 0.5s;
+        text-align: center;
+        padding: 10px 0;
+        h4,
+        h5 {
+          margin: 0;
+        }
+        h4 {
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 41px;
+          color: #333333;
+          line-height: normal;
+        }
+        h5 {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 41px;
+          color: #555555;
+          margin-top: 5px;
+        }
+      }
+    }
+    .carousel-item.active {
+      .br-imgoverlay {
+        span {
+          opacity: 0;
+        }
+      }
+      .item-title {
+        opacity: 1;
+      }
+    }
+  }
+}
+#lecture-main-testimonial {
+  padding: 90px 0;
+  h3{
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 60px;
+    padding-bottom: 0;
+    span{
+      font-weight: bold;
+      margin-left: 4px;
+    }
+  }
+  #lecture-testimonial-scroll {
+    @media screen and (max-width: 639px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 500px) {
+      width: 80%;
+    }
+    .owl-carousel {
+      //width: 95%;
+      position: relative;
+      .owl-stage {
+        margin: 50px 0 0;
+        .item {
+          height: 100%;
+          //margin: 5px;
+          .testimonial {
+            position: relative;
+            border: 1px solid #d4d4d4;
+            height: 100%;
+            border-radius: 15px;
+            .testimonial-image-circle {
+              position: absolute;
+              top: -50px;
+              left: 49px;
+              width: 110px;
+              height: 110px;
+              img {
+                border-radius: 50%;
+              }
+            }
+            .testimonial-content {
+              margin-top: 70px;
+              padding: 0 30px 20px;
+              h2 {
+                font-size: 22px;
+                line-height: 41px;
+                margin: 0;
+                color: #121212;
+                font-weight: normal;
+                span {
+                  font-weight: bold;
+                }
+              }
+              p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 25px;
+                color: #323232;
+                margin: 14px 0 5px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 25px;
+                color: #b1b1b1;
+                &:hover {
+                  color: rgb(84, 84, 84);
+                }
+              }
+            }
+          }
+        }
+      }
+      .owl-nav {
+        position: absolute;
+        top: calc(50% - 30px);
+        width: 100%;
+        // @media screen and (max-width: $screen-sm-min) {
+        //   display: none;
+        // }
+        button {
+          position: absolute;
+
+          &:hover {
+            background: none;
+          }
+          img {
+            width: 32px;
+          }
+        }
+        .owl-prev {
+          left: -35px;
+          margin: 0;
+          @media screen and (max-width: $screen-md-min) {
+            left: -30px;
+          }
+        }
+        .owl-next {
+          right: -35px;
+          margin: 0;
+          @media screen and (max-width: $screen-md-min) {
+            right: -30px;
+          }
+        }
+      }
+    }
+  }
+}
+#top-books.top-lectures {
+  padding: 80px 0;
+  background-color: #e9f2f4;
+  .top-books-grid {
+    display: flex;
+    width: 100%;
+    // height: 100%;;
+    @media screen and (max-width: $screen-md-min) {
+      flex-direction: column;
+    }
+
+    //general style
+    .top-book-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+      &:hover{
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      .item-content {
+        .card-content {
+          padding: 0px 20px 0 20px;
+          h2,
+          h3,
+          h4,
+          p {
+            margin: 0;
+            line-height: normal;
+          }
+        }
+      }
+      .card-link-text {
+        padding: 17px 20px 10px 20px;
+        a{
+          color: #676767;
+          font-size: 12px;
+          font-weight: 300;
+          &:hover{
+            color: #242424;
+          }
+        }
+        span{
+          padding: 0 20px;
+          color: #CDCDCD;
+        }
+      }
+      .card-link-btm {
+        margin: 81px 0 0 0;
+      }
+      .bloat-btm {
+        padding: 43px 20px 25px 20px;
+      }
+    }
+
+    .top-book-left {
+      width: 45%;
+      padding-right: 3%;
+      display: flex;
+      height: 100%;
+      //justify-content: space-around;
+      @media screen and (max-width: 1120px) {
+        width: 40%;
+      }
+      @media screen and (max-width: $screen-md-min) {
+        width: 100%;
+        padding-right: 0;
+      }
+      .top-book-item {
+        width: 98%;
+        margin: 0;
+        //margin-bottom: 24px;
+        background-color: #fff;
+        @media screen and (max-width: $screen-md-min) {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .card-link-text{
+          a{
+            font-size: 14px;
+          }
+        }
+        .card-image {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(156.6deg, #53CBDD 17.48%, #BDF0E8 93.76%);
+          padding: 40px;
+          height: 407px;
+          img {
+            width: 260px;
+            height: 100%;
+          }
+        }
+        .card-content {
+          padding: 40px 30px 0;
+          @media screen and (max-width: 995px) {
+            padding: 30px 30px 0;
+          }
+          h2 {
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #242424;
+            margin-top: 10px;
+            margin-bottom: 6px;
+            @media screen and (max-width: 995px) {
+              font-size: 24px;
+            }
+          }
+          h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 41px;
+            //margin: 10px 0;
+            color: #242424;
+            @media screen and (max-width: 995px) {
+              font-size: 19px;
+            }
+          }
+          p {
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 41px;
+            font-family: "Noto Sans KR";
+            color: #606060;
+          }
+          .book-top-price {
+            margin-top: 6px;
+            h3{
+              font-size: 17px;
+              line-height: 34px;
+              font-weight: 600;
+              color: #E66545;
+              display: flex;
+              align-items: center;
+              span{
+                color: #767575;
+                &.with-line{
+                  text-decoration: line-through;
+                  text-decoration-thickness: 2px;
+                }
+              }
+              i{
+                &.icon-booktop-price{
+                  margin-right: 4px;
+                  margin-top: -6px;
+                }
+              }
+            }
+            .book-top-price-row{
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              @media screen and (max-width: 995px) {
+                flex-direction: column;
+                align-items: flex-start;
+              }
+              @media screen and (max-width: 768px) {
+                flex-direction: row;
+                align-items: center;
+              }
+              @media screen and (max-width: $screen-sm-min) {
+                flex-direction: column;
+                align-items: flex-start;
+              }
+              .row-left{
+                margin-right: 5px;
+                span {
+                  //text-decoration: line-through;
+                  color: $text-black-6;
+                  font-weight: 500;
+                }
+                i.icon-dvbookList-linearrow{
+                  margin: 0 10px;
+                }
+              }
+              .row-right{
+                h3{
+                  color: $text-orange-1;
+                  font-size: 1.063rem;
+                  font-weight: bold;
+                  @media screen and (max-width: 995px) {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .top-book-right {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 50.5%;
+      @media screen and (max-width: 1120px) {
+        width: 60%;
+      }
+      @media screen and (max-width: $screen-md-min) {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .top-book-item {
+        width: 48%;
+        // height: calc(50% - 18px);
+        margin: 0;
+        margin-top: 40px;
+        background-color: #fff;
+        img {
+          border: 1px solid;
+          // padding-top: 13px;
+          height: 100%;
+        }
+        @media screen and (max-width: $screen-md-min) {
+          margin-top: 25px;
+        }
+        @media screen and (max-width: $screen-sm-min) {
+          width: 100%;
+        }
+        &:first-child,
+        &:nth-child(2){
+          margin-top: 0;
+          @media screen and (max-width: $screen-sm-min) {
+            margin-top: 25px;
+          }
+        }
+        .item-content {
+          // height:0px;
+          .card-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: fff;
+            padding: 13px 13px 11px 13px;
+            height: 234px;
+            // max-height: 183px;
+            overflow: hidden;
+            @media screen and (max-width: $screen-sm-min) {
+              max-height: none;
+            }
+          }
+          .card-content {
+            h4 {
+              font-size: 14px;
+              line-height: 18px;
+              text-transform: uppercase;
+              color: #085CA8;;
+              font-weight: bold;
+            }
+            h3 {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+              color: #242424;
+              margin: 5px 0;
+              @media screen and (max-width: 995px) {
+                font-size: 14px;
+              }
+            }
+            p {
+              font-size: 13px;
+              line-height: 18px;
+              color: #252424;
+              font-weight: 300;
+              @media screen and (max-width: 995px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .right-sec-div {
+        height: 47%;
+      }
+      &.desktopVieu {
+        display: flex;
+        @media screen and (max-width:768px) {
+          display: none;
+        }
+      }
+      &.mobileVieu {
+        display: none;
+        @media screen and (max-width:768px) {
+          display: block;
+        }
+        .top-4{
+          .owl-carousel{
+            .item {
+              background-color: #fff;
+              .item-content {
+                width: 100%;
+                .card-image{
+                  height: auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  img{
+                    border: none;
+                    width: 75%;
+                    padding: 20px 0 10px ;
+                  }
+                }
+                .card-content{
+                  padding: 20px;
+                  h4{
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                    color: #085CA8;
+                    font-weight: bold;
+                  }
+                  h3{
+                    margin: 15px 0 10px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #242424;
+                  }
+                  p{
+                    font-weight: normal;
+                    line-height: 18px;
+                    color: #252424;
+                    font-size: 12px;
+                  }
+                }
+              }
+              .card-link-text{
+                padding: 0 10px;
+                a{
+                  color: #676767;
+                  font-size: 12px;
+                  font-weight: 300;
+                }
+                span{
+                    padding: 0 20px;
+                    color: #CDCDCD;
+                }
+              }
+            }
+          }
+        }
+      }  
+    }
+  }
+}
+#top-books.top-lectures {
+  @media screen and (max-width: 767px) {
+    .section-title{
+      padding: 0;
+      margin-bottom: 60px;
+    }
+  }
+  
+  h3{
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
+    span{
+      font-weight: bold;
+      margin-left: 4px;
+    }
+  }
+  .top-books-grid {
+    .card-image {
+      padding: 0 !important;
+      img {
+        width: 100%;
+      }
+    }
+    .top-book-left {
+      .top-book-item{
+        .item-content {
+          .card-image{
+            background: none;
+            height: auto;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+          .card-content {
+            .star-ratings-css {
+              .star-ratings-css-top {
+                color: $primary-medium-blue;
+              }
+            }
+            h3{
+              font-weight: bold;
+              max-width: 7px 0;
+            }
+            p{
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 20px;
+              span{
+                display: block;
+              }
+            }
+            .book-top-price {
+              margin-top: 40px;
+              h3 {
+                padding-bottom: 0 !important;
+                font-size: 1.5rem !important;
+                span {
+                  text-decoration: none !important;
+                  font-size: 1rem;
+                  &:last-child {
+                    margin-right: 10px;
+                  }
+                }
+                i {
+                  margin: 0 10px;
+                }
+              }
+            }
+          }
+        }
+
+        .card-link-text{
+          padding: 30px;
+          margin-top: 55px;
+        }
+      }
+    }
+
+    .top-book-right{
+      .top-book-item{
+        .item-content{
+          .card-image{
+            height: auto;
+            img{
+              border: none;
+            }
+          }
+          .card-content{
+            padding: 20px;
+            h3{
+              margin: 15px 0 10px;
+            }
+            p{
+              font-weight: normal;
+            }
+          }
+        }
+      }
+
+      &.desktopView{
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+
+    .top-book-right-carousel{
+      display: none;
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+      .top4{
+        .owl-carousel{
+          .item{
+            background: #fff;
+            .item-content{
+              .card-image{
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                  border: none;
+                  width: 100%;
+                }
+              }
+              .card-content{
+                padding: 20px;
+                h4{
+                  font-size: 14px;
+                  line-height: 18px;
+                  text-transform: uppercase;
+                  color: #085CA8;
+                  font-weight: bold;
+                  margin: 0;
+                }
+                h3{
+                  margin: 15px 0 10px;
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 20px;
+                  color: #242424;
+                }
+                p{
+                  font-weight: normal;
+                  line-height: 18px;
+                  color: #252424;
+                  font-size: 12px;
+                }
+              }
+            }
+
+            .card-link-text{
+              padding: 0 20px 20px;
+              margin-top: 0;
+              a{
+                color: #676767;
+                font-size: 12px;
+                font-weight: 300;
+              }
+              span{
+                padding: 0 20px;
+                color: #CDCDCD;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

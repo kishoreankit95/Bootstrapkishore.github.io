@@ -1,0 +1,248 @@
+
+.signup {
+  margin-top: 40px;
+  h4 {
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+    @media screen and (max-width:$screen-sm-min){
+      line-height: 2.75rem;
+    }
+  }
+  h6 {
+    //font-size: 1rem;
+    color: #8a8a8a;
+    margin-bottom: 0;
+  }
+  .spacing-margin{
+    height: 40px;
+  }
+  .signup-form{
+    padding: 0 40px;
+    @media screen and (max-width:$screen-sm-min){
+      padding: 0;
+    }
+  }
+  button {
+    box-shadow: none;
+    font-size: 13px;
+    border-radius: 5px;
+    line-height: normal;
+    &:hover{
+      box-shadow: none;
+    }
+  }
+  .sub-title {
+    border-bottom: 1px solid #d7d7d7;
+    text-align: right;
+    box-sizing: border-box;
+    padding-bottom: 7px;
+    color: #878787;
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  .signup-block-1 {
+    padding: 0 0.75rem;
+    h4 {
+      color: #3e3e3e;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+      span {
+        font-size: 12px;
+        letter-spacing: -0.5px;
+        color: #a9a9a9;
+        margin-left: 20px;
+        font-weight: 100;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      li {
+        margin-bottom: 14px;
+        label {
+          a {
+            margin-left: 10px;
+            color: #5e8fee;
+            &:hover{
+              text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+            }
+          }
+          [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+            border: 1px solid #b3b3b3;
+            top: 2px;
+          }
+          [type="checkbox"].filled-in:checked + span:not(.lever):after {
+            border: 2px solid $primary-medium-blue;
+            background-color: $primary-medium-blue;
+            top: 2px;
+          }
+          span {
+            font-size: 13px;
+            font-weight: 300;
+            color: #a9a9a9;
+
+            b {
+              color: $text-black-3;
+            }
+          }
+        }
+
+        ul {
+          box-sizing: border-box;
+          padding-left: 35px;
+          li {
+            margin-bottom: 9px;
+            ul {
+              display: flex;
+              flex-direction: row;
+              margin-top: 9px;
+
+              li {
+                &:first-child {
+                  margin-right: 20px;
+                }
+              }
+
+              span {
+                color: $text-black-3;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .main-check {
+        label {
+          span {
+            font-size: 15px;
+            font-weight: 500;
+            color: #3e3e3e;
+          }
+          [type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+            border: 2px solid #545454;
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+  .join2_blue {
+    button {
+      background: #0c5da7;
+      color: #ffffff;
+      border: 0;
+      box-sizing: border-box;
+      padding: 0;
+      width: 100%;
+      margin: 0;
+      height: 41px;
+      white-space: nowrap;
+      line-height: 41px;
+      @media screen and (max-width:$screen-lg-min) {
+        //font-size: 0.83rem;
+      }
+      @media screen and (max-width:$screen-sm-min) {
+        font-size: 0.8rem;
+      }
+    }
+    .join2_gray {
+      background-color: #bcbcbc;
+    }
+    .join2_blank {
+      background: #fff;
+      border: 1px solid #8a8a8a;
+      color: #8a8a8a;
+    }
+    .under_gray{
+      background-color: #222222;
+      width: 100%;
+    }
+  }
+  .label-text {
+    min-height: 41px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4px 0;
+    @media screen and (max-width:$screen-sm-min){
+      margin: 12px 0 0 0;
+    }
+    h5 {
+      font-size: 15px;
+      color: #3e3e3e;
+      margin: 0;
+    }
+    p {
+      margin: 7px 0 0 0;
+    }
+  }
+  input, input[type = "text"], input[type = "password"] {
+    border: 1px solid #d7d7d7;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    height: 41px;
+    margin-bottom: 15px;
+    &:focus {
+      border-bottom: 1px solid $primary-medium-blue !important;
+      box-shadow: 0 1px 0 0 $primary-medium-blue !important;
+    }
+    &::placeholder{
+      font-size: 12px;
+      letter-spacing: -1px;
+      color: #BEBEBE;
+      font-weight: 200;
+    }
+  }
+  .signup-submit-btn {
+    button {
+      width: 100%;
+      background-color: #0c5da7;
+      color: #ffffff;
+      box-sizing: border-box;
+      padding: 10px;
+      font-size: 16px;
+      letter-spacing: -1px;
+      font-weight: 500;
+      margin: 20px 0;
+      height: 50px;
+      white-space: nowrap;
+    }
+  }
+  // flex by dipankar
+  .signup-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px !important;
+  }
+ 
+  //sign up teacher
+  .input-field {
+    margin: 0;
+    input {
+      border: 1px solid #d7d7d7;
+      box-sizing: border-box;
+      color: $text-black-3;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 1rem;
+      height: 41px;
+    }
+    .caret {
+      margin-right: 10px;
+    }
+    ul{
+      li{
+        span{
+          color: $text-black-3;
+        }
+      }
+    }
+  }
+}

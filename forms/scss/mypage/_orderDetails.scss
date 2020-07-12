@@ -1,0 +1,329 @@
+.order-details-title {
+  padding: 20px 0;
+  border-bottom: 4px solid #dddddd;
+  h4 {
+    margin: 0;
+    font-size: 23px;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+  }
+}
+.order-details-main {
+  .list-item {
+    padding: 30px 20px !important;
+    .left {
+      .product-img {
+        min-height: 150px ;
+        min-width: auto ;
+        margin-right: 48px !important;
+        img {
+          max-height: 150px !important;
+        }
+      }
+      .item-desc {
+        .top {
+          h3 {
+            font-size: 19px !important;
+            letter-spacing: -1px;
+          }
+        }
+      }
+    }
+  }
+}
+.order-details {
+  border-top: 4px solid #dddddd;
+  .order-details-table {
+    padding: 0 35px;
+    padding-bottom: 30px;
+    background-color: #f9f9f9;
+    @media screen and (max-width: $screen-sm-min) {
+      padding: 0 10px;
+    }
+    .table-head {
+      border-bottom: 1px solid #ddd;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      color: #777777;
+      letter-spacing: -1px;
+      font-weight: normal;
+      .info {
+        width: 100%;
+        text-align: center;
+      }
+      .quantity {
+        min-width: 100px;
+        text-align: center;
+        @media screen and (max-width: $screen-md-min) {
+          min-width: 50px;
+        }
+      }
+      .price {
+        min-width: 150px;
+        text-align: center;
+        @media screen and (max-width: $screen-md-min) {
+          display: none;
+        }
+      }
+    }
+    .table-body {
+      .item {
+        display: flex;
+        padding: 13px 0;
+        @media screen and (max-width: $screen-md-min) {
+          padding: 25px 0;
+        }
+        .col-1 {
+          display: flex;
+          .index {
+            display: flex;
+            align-items: center;
+            min-width: 40px;
+            font-size: 14px;
+            letter-spacing: -1px;
+            font-weight: 500;
+            color: #aaa;
+            @media screen and (max-width: $screen-md-min) {
+              display: none;
+            }
+          }
+          .product-img {
+            img {
+              width: 55px;
+            }
+          }
+        }
+        .col-2 {
+          display: flex;
+          width: 100%;
+          @media screen and (max-width: $screen-md-min) {
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .details {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            @media screen and (max-width: $screen-md-min) {
+              width: 100%;
+              align-items: flex-start;
+            }
+            .title {
+              width: 100%;
+              margin-left: 23px;
+              font-size: 1rem;
+              letter-spacing: -0.5px;
+              font-weight: normal;
+              color: #444;
+            }
+            .quantity {
+              min-width: 100px;
+              text-align: center;
+              @media screen and (max-width: $screen-md-min) {
+                min-width: 50px;
+              }
+            }
+          }
+
+          .price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 150px;
+            @media screen and (max-width: $screen-md-min) {
+              width: 100%;
+              justify-content: flex-start;
+              margin-left: 23px;
+            }
+            strike {
+              margin-right: 10px;
+              color: #aaa;
+              font-size: 14px;
+              letter-spacing: -0.3px;
+              font-weight: 200;
+              white-space: nowrap;
+            }
+            p {
+              margin: 0;
+              color: #444;
+              font-size: 16px;
+              letter-spacing: -0.3px;
+              font-weight: 500;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  
+  }
+  .order-desc {
+    margin-top: 30px;
+    .order-desc-title {
+      padding: 10px 34px;
+      border-bottom: 3px solid #dddddd;
+      @media screen and (max-width: $screen-md-min){
+        padding: 10px 10px 15px;
+      }
+      h4 {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: -0.3px;
+        font-weight: normal;
+        color: #444;
+      }
+    }
+    .order-desc-cont {
+      padding: 26px 34px;
+      @media screen and (max-width: $screen-md-min){
+        padding: 26px 10px;
+      }
+      .desc-item {
+        display: flex;
+        //margin-bottom: 15px;
+        @media screen and (max-width: $screen-sm-min) {
+          flex-direction: column;
+        }
+        .item-spcl {
+          display: flex;
+          align-items: flex-start;
+          width: 100%;
+          p {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #444;
+            min-width: 120px;
+          }
+          textarea {
+            width: calc(100% - 30%);
+            height: auto;
+            border-radius: 5px;
+            border: 1px solid #dddddd;
+            padding: 15px;
+            &:focus {
+              outline: none;
+              border-color: rgb(167, 167, 167);
+            }
+            @media screen and (max-width: $screen-sm-min) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .item-left {
+      display: flex;
+      align-items: center;
+      min-width: 50%;
+      margin-bottom: 26px;
+      p {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        color: #444;
+        min-width: 120px;
+      }
+      span {
+        color: #898989;
+        font-size: 1rem;
+        letter-spacing: -0.3px;
+        font-weight: normal;
+        font-family: "Montserrat", sans-serif;
+        i {
+          background-color: #cd5555;
+          margin-left: 5px;
+          font-style: normal;
+          font-size: 0.75rem;
+          color: #fff;
+          padding: 3px 10px;
+          border-radius: 5px;
+          white-space: nowrap;
+        }
+      }
+    }
+    .desc-summary {
+      display: flex;
+      border-bottom: 3px solid #dddddd;
+      @media screen and (max-width: $screen-lg-min) {
+        flex-direction: column;
+      }
+      .left,
+      .right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 20px 34px;
+        @media screen and (max-width: $screen-lg-min) {
+          width: 100%;
+        }
+      }
+      .left {
+        background-color: #fff;
+      }
+      .right {
+        background-color: #f9f9f9;
+        @media screen and (max-width: $screen-md-min){
+          padding: 20px 10px;
+        }
+        .item-left {
+          display: flex;
+          justify-content: space-between;
+          span {
+            color: #444;
+          }
+        }
+        .total {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 15px 0;
+          border-top: 1px solid #dddddd;
+          p {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #444;
+            min-width: 120px;
+          }
+          span {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #444;
+          }
+        }
+      }
+    }
+  }
+}
+.order-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+  a.btn,
+  button.btn {
+    box-shadow: none;
+    border-radius: 50px;
+    height: auto;
+    line-height: normal;
+    padding: 7px 20px;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    margin-left: 10px;
+    min-width: 120px;
+  }
+  a.btn-black,
+  button.btn-black {
+    background-color: #444;
+    color: #fff;
+  }
+  a.btn-outline {
+    background-color: #fff;
+    border: 1px solid #aaaaaa;
+    color: #444;
+  }
+}
