@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>6.5.3 Group Purchase</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="dist/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    rel="stylesheet" />
+
+    <!-- Google font css -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <section class="advertisingReq">
+        <div class="container">
+            <div class="headTop top-txt">
+                <h2>도서 단체 구매 문의하기</h2>
+            </div>
+            <div class="midForm">
+                <div class="row row-spl">
+                    <div class="col m6 12 col-flex">
+                        <div class="item-1">
+                            <span class="labelH">단체명</span>
+                        </div>
+                        <div class="item-2">
+                            <div class="inputWrap ">
+                            <div class="inputGroup">
+                                <input type="text" class="formControl" placeholder=""/>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m6 12 col-flex">
+                        <div class="item-1 spacel">
+                            <span class="labelH">대표 번호</span>
+                        </div>
+                        <div class="item-2">
+                            <div class="inputWrap">
+                                <div class="inputGroup input-left">
+                                    <select class="customSelect browser-default">
+                                        <option value="" selected> <span>+82</span> Republic of Korea</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                </div>
+                                <div class="inputGroup input-right">
+                                    <input type="text" class="formControl" placeholder=""/>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-spl">
+                    <div class="col m6 12 col-flex">
+                        <div class="item-1">
+                            <span class="labelH">도서명 * </span>
+                        </div>
+                    
+                        <div class="item-2">
+                            <div class="inputWrap ">
+                                <div class="inputGroup">
+                                    <input type="text" class="formControl" placeholder=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m6 12 col-flex">
+                        <div class="item-1">
+                            <span class="labelH">수량</span>
+                        </div>
+                        <div class="item-2">
+                            <div class="inputWrap">
+                                <div class="inputGroup input-left">
+                                    <select class="customSelect browser-default">
+                                        <option value="" selected>1 </option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="row border-down">
+                    <div class="col m3 12">
+                        <span class="labelH">내용 *</span>
+                    </div>
+                    <div class="col m9 12 tarea">
+                        <div class="inputWrap ">
+                            <div class="inputGroup full-width low-border">
+                                <textarea class="formControl txtarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mar-up">
+                    <div class="col m3 12">
+                        <span class="labelH">담당자 이름* </span>
+                    </div>
+                    <div class="col m9 12 tarea">
+                        <div class="inputWrap ">
+                        <div class="inputGroup tarea-exp">
+                            <input type="text" class="formControl" placeholder=""/>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col m3 12">
+                        <span class="labelH">이메일*</span>
+                    </div>
+                    <div class="col m9 12 ">
+                        <div class="inputWrap">
+                            <div class="inputGroup">
+                                <input type="text" class="formControl" placeholder=""/>
+                            </div>
+                            <span class="dividerH">@</span>
+                            <div class="inputGroup">
+                                <input type="text" class="formControl" placeholder=""/>
+                            </div>
+                            <div class="inputGroup">
+                                <select class="customSelect browser-default">
+                                    <option value="" selected>직접입력</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col m3 12">
+                        <span class="labelH">핸드폰*</span>
+                    </div>
+                    <div class="col m9 12">
+                        <div class="inputWrap">
+                            <div class="inputGroup width-130">
+                                <select class="customSelect browser-default">
+                                    <option value="" selected>010</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="inputGroup width-130">
+                                <input type="text" class="formControl" placeholder=""/>
+                            </div>
+                            <div class="inputGroup width-130">
+                                <input type="text" class="formControl" placeholder=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+
+            <div class="mid-txt">
+                <div class="row">
+                    <div class="col m3 12">
+                        <i class="icon-gp-alert-orange"></i>
+                        <span class="labelHr">단체구매안내</span>
+                    </div>
+                    <div class="col m9 12">
+                       <p>다락원 담당 부서에서 영업일 2~3일 이내에 개별 회신을 드립니다.<span class="bolder"> 메일을 확인해주세요.</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabSection personalInfoWrap">
+                <div class="headTop top-txt">
+                    <h2>개인정보처리방침 <span>개인정보 수집 및 이용 동의</span></h2>
+                    <h3>+ 전체보기</h3>
+                </div>
+
+                <div class="personalInfoPolicy">
+                    <ul class="collapsible expandable">
+                        <li class="active">
+                        <div class="collapsible-header ">
+                            ・개인정보의 수집 목적
+                            <i class="material-icons">expand_more</i>
+                        </div>
+                        <div class="collapsible-body collap-bg">
+                            <span>개인정보의 수집 목적 
+                                <p>회사는 다음의 목적을 위해 이용자의 개인정보를 수집합니다.</p>
+                                <p>1) 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산 콘텐츠 제공, 구매 및 요금 결제, 본인인증, 물품배송 또는 청구지 등 발송</p>
+                                <p>2) 회원 관리</p>
+                                <p>회원제 서비스 이용에 따른 본인확인, 개인 식별, 불량회원의 부정 이용 방지와 비인가 사용 방지, 가입 의사 확인, 불만처리 등 민원처리, 고지사항전달</p>
+                                <p>3) 마케팅 및 광고에 활용</p>
+                                <p>신규 서비스(제품) 개발 및 특화, 이벤트 등 광고성 정보 전달, 인구통계학적 특성에 따른 서비스 제공 및 광고 게재, 접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계</p>
+                                <p>4) 기타 분쟁조정을 위한 기록보존 및 기타 통계자료 산출</p></span>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="collapsible-header">
+                            ・수집하는 개인정보의 항목
+                            <i class="material-icons">expand_more</i>
+                        </div>
+                        <div class="collapsible-body collap-bg">
+                            <span>Sed ut perspiciatis unde omnis iste natus error sit 
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                 eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                  beatae vitae dicta sunt explicabo.</span>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="collapsible-header">
+                            ・개인정보의 수집 및 보유 기간
+                            <i class="material-icons">expand_more</i>
+                        </div>
+                        <div class="collapsible-body collap-bg">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat.</span>
+                        </div>
+                        </li>
+                    </ul>
+
+                    <div class="personalInfoFooter">
+                        <label>
+                            <input type="checkbox" class="filled-in" checked="checked">
+                            <span>개인정보 수집 및 이용에 동의합니다.</span>
+                        </label>
+                        <div class="btnHolder">
+                            <a href="#" class="btn btn-round btn-dark">등록</a>
+                            <a href="#" class="btn btn-round btn-white">취소</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="rightTxt rttxt-mob"> -->
+        <!-- <div class="upper"> -->
+            <h5>정기구독 <span>신청하기</span></h5>
+            <!-- <div class="applySubscription"> -->
+                <!-- <div class="formRow"> -->
+                    <span>구독 시작</span>
+                    <select class="customSelect">
+                        <option value="" selected>2020년 2월</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                <!-- </div> -->
+                <div class="formRow">
+                    <span>구독 기간</span>
+                    <select class="customSelect">
+                        <option value="" selected>1년 정기구독</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+
+
+
+
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like
+                        it's our
+                        full time job. Any amount would help support and continue development on this project and is
+                        greatly
+                        appreciated.</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="#">DvConsulting</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
