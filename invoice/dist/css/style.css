@@ -1,0 +1,489 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.customer-html .main-title {
+  margin: 75px 0;
+}
+
+.customer-html .main-title h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: -2px;
+  color: #505050;
+  font-weight: 500;
+  font-family: "Libre Baskerville", serif;
+}
+
+.customer-html .invoice-head .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+}
+
+.customer-html .invoice-head .top h3,
+.customer-html .invoice-head .top p {
+  margin: 0;
+  color: #333;
+}
+
+.customer-html .invoice-head .top h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 25px;
+  letter-spacing: -2px;
+}
+
+.customer-html .invoice-head .top p {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+
+.customer-html .invoice-head .bottom {
+  padding-top: 35px;
+}
+
+.customer-html .invoice-head .bottom h1 {
+  text-align: center;
+  margin: 0;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+.customer-html .invoice {
+  margin-top: 120px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+
+.customer-html .invoice .invoice-section {
+  margin-bottom: 45px;
+}
+
+.customer-html .invoice .invoice-section .title {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #333;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.customer-html .invoice .invoice-section .title span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  letter-spacing: -1px;
+  font-weight: 300;
+}
+
+.customer-html .invoice .invoice-section .content {
+  border-top: 2px solid #333;
+}
+
+.customer-html .invoice .invoice-section .content .item-row {
+  border-bottom: 1px solid #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer-html .invoice .invoice-section .content .item-row .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.customer-html .invoice .invoice-section .content .item-row .item .left,
+.customer-html .invoice .invoice-section .content .item-row .item .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer-html .invoice .invoice-section .content .item-row .item .left {
+  background-color: #f8f8f8;
+  margin: 5px 0px;
+  min-width: 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.customer-html .invoice .invoice-section .content .item-row .item .right {
+  padding: 7px;
+}
+
+.customer-html .invoice .invoice-section .content .item-row .item .right .value {
+  margin: 7px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  min-width: 110px;
+}
+
+.customer-html .invoice .invoice-section .content .product .table-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.customer-html .invoice .invoice-section .content .product .table-head .cell {
+  min-width: 130px;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 15px;
+  letter-spacing: -1px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}
+
+.customer-html .invoice .invoice-section .content .product .table-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer-html .invoice .invoice-section .content .product .table-body .cell {
+  min-width: 130px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+}
+
+.customer-html .invoice .invoice-section .content .product .product-details {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.customer-html .invoice .invoice-section .content .product .product-details .details-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.customer-html .invoice .invoice-section .content .product .product-details .details-block .left {
+  min-width: 110px;
+  border-right: 1px solid #bababa;
+  font-size: 15px;
+  letter-spacing: -1px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.customer-html .invoice .invoice-section .content .product .product-details .details-block .left .label {
+  padding: 22px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.customer-html .invoice .invoice-section .content .product .product-details .details-block .right {
+  width: 100%;
+}
+
+.customer-html .invoice .invoice-section .content .product .product-details .details-block .right .detail-row {
+  border-bottom: 1px solid #bababa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+}
+
+.customer-html .invoice .invoice-section .content .product .product-details .details-block .right .detail-row:last-child {
+  border-bottom: none;
+}
+
+.customer-html .invoice .invoice-section .content .product .product-details .details-block .right .detail-row .label {
+  background-color: #f8f8f8;
+  min-width: 200px;
+  padding: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer-html .invoice .invoice-section .content .product .product-details .details-block .right .detail-row .input {
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 14px;
+  min-width: 110px;
+}
+
+.customer-html .invoice .invoice-section .content .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #333;
+  min-height: 62px;
+}
+
+.customer-html .invoice .invoice-section .content .boxes .box {
+  padding: 16px 10px;
+  border-right: 1px solid #333;
+  min-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customer-html .invoice .invoice-section .content .boxes .box:last-child {
+  border-right: none;
+}
+
+.customer-html .invoice .invoice-section .content .boxes .box .value {
+  background-color: #fff;
+  padding: 5px 60px;
+  margin-left: 15px;
+}
+
+.customer-html .invoice .invoice-section .content .grey-box {
+  background-color: #f5f5f5;
+  min-height: 250px;
+  padding: 20px;
+}
+
+.customer-html .invoice-bottom {
+  margin-bottom: 200px;
+}
+
+.customer-html .invoice-bottom .details {
+  text-align: center;
+}
+
+.customer-html .invoice-bottom .details p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  letter-spacing: -1px;
+  font-weight: 300;
+  color: #333;
+}
+
+.customer-html .invoice-bottom .details .agreement {
+  font-weight: normal;
+}
+
+.customer-html .invoice-bottom .details .agreement span {
+  color: #d47474;
+}
+
+.customer-html .invoice-bottom .details h3 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 21px;
+  letter-spacing: -1px;
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.customer-html .invoice-bottom .details .date {
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+.customer-html .invoice-bottom .signature {
+  border: 1px solid #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.customer-html .invoice-bottom .signature .sign-box {
+  border-right: 1px solid #333;
+  width: 50%;
+  min-height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 20px;
+}
+
+.customer-html .invoice-bottom .signature .sign-box .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 80%;
+}
+
+.customer-html .invoice-bottom .signature .sign-box .upper img {
+  width: 90px;
+  height: auto;
+  overflow: hidden;
+}
+
+.customer-html .invoice-bottom .signature .sign-box .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: #333;
+}
+
+.customer-html .invoice-bottom .signature .sign-box .bottom .right {
+  color: #aaa;
+}
+
+.customer-html input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.customer-html label {
+  position: relative;
+  cursor: pointer;
+}
+
+.customer-html label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #AAAAAA;
+  padding: 7px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  top: -1px;
+}
+
+.customer-html input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 4px;
+  height: 9px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.footer {
+  width: 70%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 20px 20px;
+}
+
+.button {
+  background-color: #bbaf09;
+  border: none;
+  border-radius: 38px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media print {
+  #pageprint {
+    display: none;
+  }
+  .invoice-bottom {
+    page-break-after: always;
+  }
+}
+/*# sourceMappingURL=style.css.map */
