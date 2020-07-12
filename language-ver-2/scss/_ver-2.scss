@@ -1,0 +1,67 @@
+//Page is an extension of DV Landing ver-2 & first.scss. Later to be merged into first.scss
+//Dt- 10.07.2020
+
+.container-spl{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-banner-chg, .line-banner-chg{
+    width: 100%;
+    min-width: 1200px;
+}
+
+.main-content{
+    position: relative;
+    top: 86px;
+}
+
+.fp-exterior{
+    width: 100%;
+    min-width: 1200px;
+    .fp-modular-chg{
+        margin: 0 auto;
+        .fp-tab-chg{
+            width: 1000px;
+            padding: 0;
+        }
+    }
+}
+
+.fp-blackarea-chg{
+    width: 100%;
+    min-width: 1200px;
+}
+
+.fp-coupon-outer-chg{
+    width: 100%;
+    min-width: 1200px;
+}
+
+.fp-pcsubs-chg{
+    width: 100%;
+    min-width: 1200px;
+}
+
+.fp-mobsubs-chg, .fp-tabsubs-chg, .fp-blackarea-chg-2{
+    width: 100%;
+    min-width: 1200px;
+}
+
+.fp-combo-chg{
+    width: 100%;
+    min-width: 1200px;
+    .secondImg{
+        padding: 0;
+    }
+}
+
+.fp-flags-chg{
+    width: 100%;
+    min-width: 1200px;
+}
