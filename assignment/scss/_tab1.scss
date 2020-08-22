@@ -61,6 +61,15 @@
     background-color: #f9f9f9;
     .tab-start{
         background-color: #ffffff;
+        .tabs{
+            li.tab{
+                text-transform: capitalize;
+                a{
+                    color: #232323;
+                    font-size: 17px;
+                }
+            }
+        }
     }
     .tabular-cont{
         padding: 40px 0;
@@ -156,11 +165,30 @@
             .collapsible{
                 .collapsible-header{
                     background-color: #f0f9fb;
-                    min-height: 60px;
-                    line-height: 29px;  
+                    min-height: 70px;
+                    line-height: 39px;
+                    align-items: center;
+                    justify-content: space-between;
+                    .subj{
+                        display: flex;
+                        p{
+                            margin: 0px;
+                            padding: 0 14px;
+                            font-size: 19px;
+                        }
+                        p:nth-child(2){
+                            // margin-left: 20px;
+                            font-size: 22px;
+                            padding-left: 8px;
+                        }
+                    }
+                    i{
+                        margin-left: 8px;
+                    }
                 }
                 .collapsible-body{
                     padding-bottom: 10px;
+                    padding-right: 25px;
                     background-color: #ffffff;
                     .all-in-one{
                         display: flex;

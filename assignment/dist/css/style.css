@@ -90,6 +90,15 @@
   background-color: #ffffff;
 }
 
+.course-info .tab-start .tabs li.tab {
+  text-transform: capitalize;
+}
+
+.course-info .tab-start .tabs li.tab a {
+  color: #232323;
+  font-size: 17px;
+}
+
 .course-info .tabular-cont {
   padding: 40px 0;
 }
@@ -221,12 +230,40 @@
 
 .course-info .tabular-cont .collap-head .collapsible .collapsible-header {
   background-color: #f0f9fb;
-  min-height: 60px;
-  line-height: 29px;
+  min-height: 70px;
+  line-height: 39px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course-info .tabular-cont .collap-head .collapsible .collapsible-header .subj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.course-info .tabular-cont .collap-head .collapsible .collapsible-header .subj p {
+  margin: 0px;
+  padding: 0 14px;
+  font-size: 19px;
+}
+
+.course-info .tabular-cont .collap-head .collapsible .collapsible-header .subj p:nth-child(2) {
+  font-size: 22px;
+  padding-left: 8px;
+}
+
+.course-info .tabular-cont .collap-head .collapsible .collapsible-header i {
+  margin-left: 8px;
 }
 
 .course-info .tabular-cont .collap-head .collapsible .collapsible-body {
   padding-bottom: 10px;
+  padding-right: 25px;
   background-color: #ffffff;
 }
 
@@ -329,6 +366,14 @@
 
 .icon-minus {
   background: url("../assets/images/minus.png") no-repeat;
+  background-size: auto 20px;
+  height: 20px;
+  width: 22px;
+  display: inline-block;
+}
+
+.icon-plus {
+  background: url("../assets/images/plus.png") no-repeat;
   background-size: auto 20px;
   height: 20px;
   width: 22px;
