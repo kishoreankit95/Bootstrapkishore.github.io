@@ -495,6 +495,78 @@
   background-color: #f0f9fb;
 }
 
+.course-info .tabular-cont .course-discuss .disc-row {
+  padding: 40px 20px;
+  border-bottom: 1px solid #ebe6e6;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row h4 {
+  color: #807575;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row p {
+  margin: 0px;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row p.txt {
+  font-size: 16px;
+  color: #6b5f5f;
+  width: 77%;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 15px 0;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .days p {
+  font-size: 15px;
+  text-align: right;
+  color: #bdbaba;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .userc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .userc p {
+  font-size: 19px;
+  margin-top: 8px;
+  padding-left: 8px;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .extra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .extra p {
+  padding: 0 10px;
+  color: #019aff;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .extra p i {
+  vertical-align: middle;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row.disc-white {
+  background-color: #ffffff;
+}
+
 .icon-clock {
   background: url("../assets/images/time.png") no-repeat;
   background-size: auto 20px;
@@ -540,6 +612,22 @@
   background-size: auto 17px;
   height: 18px;
   width: 25px;
+  display: inline-block;
+}
+
+.icon-user {
+  background: url("../assets/images/user-grey.png") no-repeat;
+  background-size: auto 51px;
+  height: 48px;
+  width: 51px;
+  display: inline-block;
+}
+
+.icon-thumbs {
+  background: url("../assets/images/thumbs-up.png") no-repeat;
+  background-size: auto 18px;
+  height: 22px;
+  width: 23px;
   display: inline-block;
 }
 

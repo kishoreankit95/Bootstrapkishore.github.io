@@ -355,6 +355,59 @@
                 }
             }
         }
+        .course-discuss{
+            .disc-row{
+                padding: 40px 20px;
+                border-bottom: 1px solid #ebe6e6;
+                h4{
+                    color: #807575;
+                    font-size: 20px;
+                    margin: 0px;
+                }
+                p{
+                    margin: 0px;
+                    &.txt{
+                        font-size: 16px;
+                        color: #6b5f5f;
+                        width: 77%;
+                    }
+                }
+                .days{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 0 15px 0;
+                    p{
+                        font-size: 15px;
+                        text-align: right;
+                        color: #bdbaba;
+                    }
+                }
+                .userc{
+                    display: flex;
+                    margin-top: 10px;
+                    p{
+                        font-size: 19px;
+                        margin-top: 8px;
+                        padding-left: 8px;
+                    }
+                }
+                .extra{
+                    display: flex;
+                    justify-content: flex-end;
+                    // align-items: center;
+                    p{
+                        padding: 0 10px;
+                        color: #019aff;
+                        i{
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                &.disc-white{
+                    background-color: #ffffff;
+                }
+            }
+        }
     }
 }
 

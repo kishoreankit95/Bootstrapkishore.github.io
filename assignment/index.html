@@ -47,8 +47,8 @@
             <div class="container">
                 <ul class="tabs">
                     <li class="tab col s3"><a href="#test1" > Overview </a></li>
-                    <li class="tab col s3"><a  href="#test2" class="active"> Resources (04) </a></li>
-                    <li class="tab col s3"><a href="#test3">Discussions (01) </a></li>
+                    <li class="tab col s3"><a  href="#test2" > Resources (04) </a></li>
+                    <li class="tab col s3"><a href="#test3" class="active">Discussions (01) </a></li>
                 </ul>
             </div>
         </div>
@@ -355,7 +355,7 @@
                                     <p>10 Downloads</p>
                                 </div>
                                 <div class="down-caps">
-                                    <div class="download">
+                                    <div class="download" id="super">
                                         <p>View</p>
                                         <p><i class="icon-download"></i>Download</p>
                                     </div>
@@ -367,13 +367,74 @@
                     
                 
                 </div>
-                <div id="test3" class="col s12">Discussions (01) </div>
+                <div id="test3" class="col s12">
+                    <div class="course-discuss">
+                        <div class="disc-row">
+                            <div class="days">
+                                <h4>Deciphering marketing lingo for small business Owners</h4>
+                                <p class="">Yesterday</p>
+                            </div>
+                            <p class="txt">Experts doubt they will even try or that the will be succesful. Once the bill was passed and signed into law by the president, it became much harder to reverse the law. </p>
+                            <div class="userc">
+                                <i class="icon-user"></i>
+                                <p class="">Nicholas Green</p>
+                            </div>
+                            
+                            <div class="extra">
+                                <p><i class="icon-thumbs"></i>74 Likes</p>
+                                <p><i></i>20 Comments</p>
+                            </div>
+                        </div>
+                        <div class="disc-row disc-white">
+                            <div class="days">
+                                <h4>Deciphering marketing lingo for small business Owners</h4>
+                                <p class="">Yesterday</p>
+                            </div>
+                            <p class="txt">Experts doubt they will even try or that the will be succesful. Once the bill was passed and signed into law by the president, it became much harder to reverse the law. </p>
+                            <div class="userc">
+                                <i class="icon-user"></i>
+                                <p class="">John Doe</p>
+                            </div>
+                            <div class="extra">
+                                <p><i class="icon-thumbs"></i>74 Likes</p>
+                                <p><i></i>20 Comments</p>
+                            </div>
+                            <div class="comments">
+                                <input type="text">
+                                <a class="btn btn-reply" href="">REPLY</a>
+                            </div>
+                        </div>
+                        <div class="disc-row">
+                            <div class="days">
+                                <h4>Deciphering marketing lingo for small business Owners</h4>
+                                <p class="">Yesterday</p>
+                            </div>
+                            <p class="txt">Experts doubt they will even try or that the will be succesful. Once the bill was passed and signed into law by the president, it became much harder to reverse the law. </p>
+                            <div class="userc">
+                                <i class="icon-user"></i>
+                                <p class="">Nicholas Green</p>
+                            </div>
+                            
+                            <div class="extra">
+                                <p><i class="icon-thumbs"></i>74 Likes</p>
+                                <p><i></i>20 Comments</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
                   
             </div>
            
         </div>
     </div>
 
+
+    <!-- <p>Click the button to get the computed background color for the test div.</p>
+    <p><button onclick="myFunction()">Try it</button></p>
+    <div id="test" style="height: 50px;background-color: lightblue;">Test Div</div>
+    <p>The computed background color for the test div is: <span id="demo"></span></p> -->
 
 
 
@@ -386,17 +447,41 @@
             $('.tabs').tabs();
 
             $('.collapsible').collapsible();
-
-
-            $('.course-row').click(function (){
-                var x= $(this);
-                // var y = $(x '.down-caps').hide();
-                
-                // $('x .right .down-caps').show();
-                // $('.right .download').addClass('active');
-            });
+            
 
         });
+
+        // var copies = document.getElementsByClassName("course-row");
+
+        // var dog = document.getElementsByClassName('down-caps');
+        // var cat;
+        // console.log(dog);
+
+        // var getCSS = window.getComputedStyle(dog, null);
+
+
+        // cat = document.getElementsByClassName('download').style.display;
+        // console.log(dog.getComputedStyle(dog, null));
+
+        // alert("Page");
+
+
+        // copies.addEventListener("click", function () {
+        //     console.log(dog.style.display);
+        //     dog.style.display = "block";
+        //     alert('Page clicked');
+        // });
+
+        // function myFunction(){
+        // var elem = document.getElementById("test");
+        // // console.log("Hii");
+        // var theCSSprop = window.getComputedStyle(elem, null).getPropertyValue("background-color");
+        // var propety = window.getComputedStyle(elem, null);
+        // console.log(propety);
+        // document.getElementById("demo").innerHTML = theCSSprop;
+        // }
+
+        // myFunction();
 
 
 
