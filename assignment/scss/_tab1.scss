@@ -1,0 +1,163 @@
+
+.co-tab1{
+    padding: 100px 0 20px;
+    .top-content{
+        display: flex;
+        .first{
+            flex: 1;
+            img{
+                vertical-align: middle;
+                // width: 100%;
+            }
+        }
+        .second{
+            padding: 0 40px 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 3;
+            h3{
+                font-size: 21px;
+                text-transform: capitalize;
+                margin: 0px;
+            }
+            p{
+                width: 70%;
+                margin: 0px;
+            }
+            a{
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 500;
+                color: #ffffff;
+                border-radius: 8px;
+                width: 180px;
+                &.btn-cust{
+                    background-color: #7792e4;
+                    padding: 8px 15px;
+                }
+            }
+        }
+        .third{
+            flex: 0.8;
+            text-align: center;
+            h3{
+                margin: 0px;
+                font-size: 28px;
+                span{
+                    font-size: 18px;
+                }
+            }
+            p{
+                margin: 0px;
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.course-info{
+    background-color: #f9f9f9;
+    .tab-start{
+        background-color: #ffffff;
+    }
+    .tabular-cont{
+        padding: 40px 0;
+        .grey-content{
+            display: flex;
+            justify-content: space-between;
+            .leftt{
+                width: 48%;
+                .left-row{
+                    padding: 18px 0 16px;
+                    border-bottom: 1px solid #ebe6e6;
+                    h4{
+                        margin: 0px;
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                    &.left-row-btn{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 20px 0;
+                        p{
+                            border: 1px solid black;
+                            border-radius: 10px;
+                            padding: 2px 10px;
+                            line-height: 100%;
+                            font-size: 15px;
+                            margin: 0px;
+                        }
+                    }
+                    .left-guide{
+                        padding: 20px 0;
+                        .guide-row{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 15px 0;
+                            .guides{
+                                display: flex;
+                                .guide-img{
+    
+                                }
+                                .guide-info{
+                                    padding: 0 0 0 20px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    h5{
+                                        margin: 0px 0 0px;
+                                        font-size: 22px;
+                                        line-height: 24px;
+                                    }
+                                    p{
+                                        color: #c6c0c0;
+                                        margin: 0px;
+                                        font-size: 15px;
+                                        line-height: 19px;
+                                    }
+                                    a{
+                                        // color: #039be5;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .rightt{
+                width: 48%;
+                .right-row{
+                    border-bottom: 1px solid #ebe6e6;
+                    padding: 18px 0 16px;
+                    h4{
+                        margin: 0px;
+                        font-size: 20px;
+                        font-weight: 450;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                    .inner-txt{
+                        h5{
+                            font-size: 17px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        .collap-head{
+            padding: 25px 0 0 0;
+            .collapsible{
+                .collapsible-header{
+                    background-color: #f0f9fb;
+                }
+            }
+        }
+    }
+}

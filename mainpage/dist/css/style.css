@@ -700,6 +700,14 @@ nav .link {
   display: inline-block;
 }
 
+.icon-head-logo {
+  background: url(../assets/icons/Kishorelogo.png) no-repeat center center;
+  background-size: auto 90px;
+  height: 45px;
+  width: 100px;
+  display: inline-block;
+}
+
 #chinese-banner {
   width: 100%;
   min-width: 1200px;

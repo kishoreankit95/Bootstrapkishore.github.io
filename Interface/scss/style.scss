@@ -1,0 +1,25 @@
+@import './form';
+
+
+html,body{
+    // width: 100%;
+    // min-width: 1220px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.container-spcl{
+    width: 1200px;
+    // min-width: 1000px;
+    margin: 0 auto;
+    // height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+

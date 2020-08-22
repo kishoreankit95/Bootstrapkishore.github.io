@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="./dist/css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <nav>
+		<p>SURVEY FORM</p>
+	
+	</nav>
+		
+		<div class="form">
+	<form class="box">
+		
+	<strong>Is Work-From-Home suiting you?</strong> <br>
+		<label>Yes <input type="radio" name="suit" ></label >
+		<label>No <input type="radio" name="suit"></label><br><br>
+		
+		Did your company have WFH policy before the COVID-19 crisis?<br>
+		<label>Yes <input type="radio" name="policy"></label>
+		<label>Available rarely<input type="radio" name="policy"></label>
+		<label>No <input type="radio" name="policy"></label><br><br>
+		
+		How many hours do you spend on Web Meetings? <br>
+		<select autofocus>
+		<option >None</option>
+		<option>1-3 hours</option>
+		<option>3-5 hours</option>
+		<option>5-7 hours</option>
+		<option>7+ hours</option>
+		</select><br><br>
+	
+		How many hours do you spend on TV? <br>
+		<select>
+		<option>None</option>
+		<option>1-3 hours</option>
+		<option>3-5 hours</option>
+		<option>5-7 hours</option>
+		<option>7+ hours</option>
+		</select><br><br>
+		
+		Are Webinars useful in adding knowledge?<br>
+		<label>Totally agree <input type="radio" name="knowldg"></label>
+		<label>Somewhat agree <input type="radio" name="knowldg"></label>
+		<label>Disagree <input type="radio" name="knowldg"></label><br><br>
+		
+		<strong>Have you gained any certificate in this duration?</strong><br>
+		<label>Yes <input type="radio" name="cert"></label>
+		<label>Pursuing <input type="radio" name="cert"></label>
+		<label>No <input type="radio" name="cert"></label><br><br>
+		
+		Has your family been supportive of this change in work culture?<br>
+		<label>Yes <input type="radio" name="knowldg"></label>
+		<label>Trying to adjust <input type="radio" name="knowldg"></label>
+		<label>No <input type="radio" name="knowldg"></label><br><br>
+	
+		<em>Would you like to continue working like this forever?</em><br>
+		<label>Totally agree <input type="radio" name="knowldg"></label>
+		<label>Somewhat agree <input type="radio" name="knowldg"></label>
+		<label>Disagree <input type="radio" name="knowldg"></label><br><br>
+		
+		
+		
+		
+		<br><br>
+		Any feedback or Suggestions? <br>
+        <input type="textarea" >
+        
+		
+		
+	</form>
+    </div>
+    <div>
+        <h3>
+            Find the vowels in your name
+        </h3>
+        <div>
+            <label> Enter your name here
+                <input type="text" id="inp-name">
+            </label>
+            <button onclick=vowelsfind()>Try Once!</button>
+        </div>
+        <h4>VOWELS</h4>
+        <p id="result">Look here for Results!!</p>
+    </div>
+
+    <script src="./js/made.js"></script>
+    <script>
+
+        // let arr = [1,2,3,4,5,6];
+        // arr.forEach((num) => {
+        //     console.log(num);
+        //     if (num === 4) {
+        //         break;
+        //     }
+        // })
+
+        // var x = 1;
+        // var output = (function () {
+        //     delete x;
+        //     return x;
+
+        // }) ();
+        // console.log(output);
+
+        // function test () {
+        //     console.log('Zero arguments');
+
+        // }
+        // function test(a) {
+        //     console.log(a);
+        // }
+        // function test(a, b) {
+        //     console.log(a, b);
+        // }
+        // test ();
+        // test (1);
+        // test (1,2);
+        // test (1,2,3,4);
+
+
+        // const var arr = [10,20,30,40];
+        // for (var i=0; i<arr.length; i++) {
+        //     setTimeout(function (){
+        //         console.log("Index: ' + i + ', element: ' + arr[i]' ");
+
+        //     }, 3000);
+        // } 
+
+        // var myObject = {
+        //     foo: "bar",
+        //     func: function () {
+        //         var self = this;
+        //         (function () {
+        //             console.log("inner func: this.foo= " + this.foo);
+        //             console.log("inner func: self.foo= " + self.foo);
+        //         }());
+        //     }
+        // };
+        // myObject.func();
+
+        // function test () {
+        //     return new Promise (function (resolve, reject) {
+        //         throw new Error ('Whoops');
+        //     }).catch(function(error){
+        //         console.log('Errordetected');
+
+        //     }).then(function () {
+        //         console.log("Next..");
+        //     });
+
+        // }
+        // test().then (function () {
+        //     console.log('Promise execution complete');
+        // });
+
+
+        // let name = "Mark";
+
+        // let user = {
+        //     name: "john",
+        //     hi () {
+        //         return this.name;
+        //     }
+        // };
+
+        // let hi = user.hi;
+        // let username = hi();
+        // console.log(username);
+
+        // function test () {
+        //     console.log(a);
+        //     console.log(foo());
+
+        //     var a=1;
+        //     function foo() {
+        //         return 2;
+        //     }
+        // }
+        // test();
+
+        // let arr = [1,2,3,4];
+        // delete arr[3];
+        // console.log(arr.length);
+
+        // Promise.resolve(1)
+        // .then((x) => x + 1)
+        // .then ((x) => {throw new Error ('My erroe') })
+        // .catch (() => 1)
+        // .then ((x) => x+1)
+        // .then ((x) => console.log(x))
+        // .catch (console.error)
+
+        // const a = ""-1 + 0;
+        // const b = true + false;
+        // console.log(a/b);
+        
+        // var x = null;
+        // typeof(x)
+
+        // (function () {
+        //     var objA = {
+        //         foo: 'foo',
+        //         bar: 'bar'
+        //     };
+        //     var objB = {
+        //         foo: 'foo',
+        //         bar: 'bar'
+        //     };
+        //     console.log(objA == objB);
+        //     console.log(objA === objB);
+        // }());
+
+
+            // Hacker Rank
+
+            // Problem 2 start
+        // var str = "javascriptloops";
+        // var strlen = str.length;
+        // console.log(strlen); 
+
+        // var i;
+        // var j;
+        
+        // for (i=0; i<strlen; i++) {
+        //     var identify = str.charAt(i);
+        //     // console.log(identify );
+        //     if (identify == "a" || identify == "e" || identify == "i" || identify == "o" || identify == "u") {
+        //         console.log(identify);
+                
+        //     }
+        // }
+
+        // for (i=0; i<strlen; i++) {
+        //     var identifye = str.charAt(i);
+           
+        //     if( !(identifye == "i" || identifye == "a" || identifye == "e" || identifye == "o" || identifye == "u")) {
+        //         console.log(identifye);
+        //     }
+        // }
+        // Problem 2 end
+
+
+        // Problem 3 start
+        // function getArea(length, width) {
+        //     let area;
+        //     // Write your code here
+        //     // let length = length;
+        //     var length= length;
+        //     var width = width;
+        //     // let width= width;
+        //     area = length * width;
+                        
+        //     return area;
+        // }
+
+        // var find = getArea(10, 20);
+        // console.log(find);
+
+        // function getPerimeter(length, width) {
+        //     let perimeter;
+        //     // Write your code here
+        //     perimeter = (2*(length + width));
+            
+        //     return perimeter;
+        // }
+        // Problem 3 end
+
+
+        // Problem 4 start
+        // function factorial (int) {
+        //     var x = int;
+        //     var factor;
+
+        //     var result= 1;
+
+        //     // factor = x*(x-1);
+        //     for (i=2; i<=x; i++) {
+        //         result = result*i;                
+        //         // console.log(result);
+        //     }
+        //     console.log(result);
+        // }
+
+        // factorial(4);
+        // Problem 4 end
+
+
+        // Problem 5 start
+        // function getGrade(score) {
+        //     let grade;
+        //     // Write your code here
+        //     var score =  score;
+
+        //     if (score > 25 && score <= 30 ) {
+        //         grade = "A";
+        //         // console.log(grade);
+        //     }
+        //     else if (score > 20 && score <= 25 ) {
+        //         grade = "B";
+        //         // console.log(grade);
+        //     }
+        //     else if (score > 15 && score <=20 ) {
+        //         grade = "C";
+        //         // console.log(grade);
+        //     }
+        //     else if (score > 10 && score <=15 ) {
+        //         grade = "D";
+        //         // console.log(grade);
+        //     }
+        //     else if (score > 5 && score <=10 ) {
+        //         grade = "E";
+        //         // console.log(grade);
+        //     }
+        //     else if (score > 0 && score <= 5) {
+        //         grade = "F";
+        //         // console.log(grade);
+        //     }
+        //     else {
+        //         console.log("Not in range");
+        //     }
+            
+        //     return grade;
+        // }      
+
+        // getGrade(14);
+        // Problem 5 end
+
+        // Problem 6 start
+        // const PI = Math.PI;
+
+        // function area (r) {
+        //     var radius = r;
+
+        //     var ar;
+        //     ar = PI * radius * radius;
+        //     console.log(ar);
+
+        // }
+
+        // area(2.6);
+        // Problem 6 end
+
+
+
+        // Problem 7 start
+        // var buton = document.getElementById("btn");
+        // var btntext = document.getElementById("btn").innerHTML;
+        // console.log(typeof(btntext));
+        
+        // var piece = 1;
+
+        // function increase() {
+            
+        //     buton.innerHTML = piece;
+        //     // piece++;
+        //     piece = piece + 1;
+        // }
+        // Problem 7 end
+
+        
+        
+
+
+        
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>

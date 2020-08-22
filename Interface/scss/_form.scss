@@ -1,0 +1,45 @@
+body {
+	// background-image: url('https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-color: yellow;
+}
+
+
+
+nav {
+	background-color: black;
+	height: 40px;
+	color: white;
+	text-align: center;
+
+	
+}
+
+nav p {
+	height: 100%;
+
+	font-size: 1.8rem;
+	font-family: arial, serif;
+	
+}
+
+.form {
+width: 40%;
+background-color: khaki;
+margin: 10px auto;
+padding: 10px 0px 10px 20px;
+line-height: 25px;
+	border-radius: 25px;
+  border: 1px solid red;
+	text-align: center;
+	
+}
+
+.box {
+
+	font-family: cursive;
+  border: 1px solid black;
+  width: 100%;
+
+	
+}
