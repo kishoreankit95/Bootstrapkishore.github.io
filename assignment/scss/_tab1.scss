@@ -403,6 +403,18 @@
                         }
                     }
                 }
+                .comments{
+                    display: flex;
+                    a.btn-reply{
+                        color: #ffffff;
+                        background-color: #d4d4d4;
+                        width: 150px;
+                        padding: 12px 20px;
+                        line-height: 21px;
+                        border-radius: 5px;
+                        height: 45px;
+                    }
+                }
                 &.disc-white{
                     background-color: #ffffff;
                 }
