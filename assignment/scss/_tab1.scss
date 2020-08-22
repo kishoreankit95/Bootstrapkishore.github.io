@@ -21,6 +21,29 @@
                 text-transform: capitalize;
                 margin: 0px;
             }
+            .class-info{
+                display: flex;
+                align-items: center;
+                p{
+                    width: auto;
+                    padding: 0 10px;
+                    font-size: 15px;
+                    color: #bfb5b5;
+                    font-weight: 500;
+                    // border-right: 1px solid black;
+                }
+                .border{
+                    width: 1px;
+                    height: 15px;
+                    background-color: black;
+                }
+                p:first-child{
+                    padding-left: 0px;
+                }
+                p:last-child{
+                    border-right: none;
+                }
+            }
             p{
                 width: 70%;
                 margin: 0px;
@@ -62,12 +85,22 @@
     .tab-start{
         background-color: #ffffff;
         .tabs{
-            li.tab{
+            .tab{
                 text-transform: capitalize;
                 a{
                     color: #232323;
                     font-size: 17px;
+                    
                 }
+                a:focus{
+                    &.active{
+                        background-color: #ffffff;
+                    }
+                }
+            }
+            .indicator{
+                background-color: #1798e9;
+                margin-bottom: 3px;
             }
         }
     }
@@ -260,3 +293,7 @@
         }
     }
 }
+
+// .tabs .tab a:focus.active{
+//     background-color: #ffffff;
+// }

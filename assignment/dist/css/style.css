@@ -41,6 +41,37 @@
   margin: 0px;
 }
 
+.co-tab1 .top-content .second .class-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.co-tab1 .top-content .second .class-info p {
+  width: auto;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #bfb5b5;
+  font-weight: 500;
+}
+
+.co-tab1 .top-content .second .class-info .border {
+  width: 1px;
+  height: 15px;
+  background-color: black;
+}
+
+.co-tab1 .top-content .second .class-info p:first-child {
+  padding-left: 0px;
+}
+
+.co-tab1 .top-content .second .class-info p:last-child {
+  border-right: none;
+}
+
 .co-tab1 .top-content .second p {
   width: 70%;
   margin: 0px;
@@ -90,13 +121,22 @@
   background-color: #ffffff;
 }
 
-.course-info .tab-start .tabs li.tab {
+.course-info .tab-start .tabs .tab {
   text-transform: capitalize;
 }
 
-.course-info .tab-start .tabs li.tab a {
+.course-info .tab-start .tabs .tab a {
   color: #232323;
   font-size: 17px;
+}
+
+.course-info .tab-start .tabs .tab a:focus.active {
+  background-color: #ffffff;
+}
+
+.course-info .tab-start .tabs .indicator {
+  background-color: #1798e9;
+  margin-bottom: 3px;
 }
 
 .course-info .tabular-cont {
