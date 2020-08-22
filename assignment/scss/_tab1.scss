@@ -156,6 +156,77 @@
             .collapsible{
                 .collapsible-header{
                     background-color: #f0f9fb;
+                    min-height: 60px;
+                    line-height: 29px;  
+                }
+                .collapsible-body{
+                    padding-bottom: 10px;
+                    background-color: #ffffff;
+                    .all-in-one{
+                        display: flex;
+                        .middle-left{
+                            flex: 0.1;
+                            font-size: 22px;
+                        }
+                        .middle{
+                            flex: 2.5;
+                            .vision{
+                                margin: 0 0 15px 0;
+                                h4{
+                                    margin: 0;
+                                    font-size: 24px;
+                                }
+                            }
+                            .bottom-comb{
+                                display: flex;
+                                .long-img{
+        
+                                }
+                                .centre-text-wrap{
+                                    padding-left: 15px;
+                                    .centre-text{
+                                        display: flex;
+                                        margin-bottom: 24px;
+                                        .centre-img{
+                                            img{
+                                                vertical-align: middle;
+                                            }
+                                        }
+                                        .cover{
+                                            padding: 0 0 0 10px;
+                                            .oppor{
+                                                display: flex;
+                                                justify-content: space-between;
+                                                padding-bottom: 10px;
+                                                h4{
+                                                    font-size: 20px;
+                                                    margin: 0px;
+                                                    line-height: 22px;
+                                                }
+                                                p{
+                                                    margin: 0px;
+                                                    i{
+                                                        vertical-align: middle;
+                                                        margin-right: 8px;
+                                                    }
+                                                }
+                                            }
+                                            .desc{
+                                                p{
+                                                    margin: 0px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .middle-right{
+                            flex: 0.1;
+                            text-align: center;
+                        }  
+                    }
+                                  
                 }
             }
         }
