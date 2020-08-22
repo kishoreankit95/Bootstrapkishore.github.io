@@ -19,7 +19,7 @@
 }
 
 .co-tab1 .top-content .second {
-  padding: 0 40px 0 20px;
+  padding: 10px 40px 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,8 +54,8 @@
   width: auto;
   padding: 0 10px;
   font-size: 15px;
-  color: #bfb5b5;
-  font-weight: 500;
+  color: #d2d1d1;
+  font-weight: 400;
 }
 
 .co-tab1 .top-content .second .class-info .border {
@@ -73,7 +73,7 @@
 }
 
 .co-tab1 .top-content .second p {
-  width: 70%;
+  width: 85%;
   margin: 0px;
 }
 
@@ -126,8 +126,12 @@
 }
 
 .course-info .tab-start .tabs .tab a {
-  color: #232323;
+  color: #d2cccc;
   font-size: 17px;
+}
+
+.course-info .tab-start .tabs .tab a.active {
+  color: #232323;
 }
 
 .course-info .tab-start .tabs .tab a:focus.active {
@@ -140,7 +144,7 @@
 }
 
 .course-info .tabular-cont {
-  padding: 40px 0;
+  padding: 40px 0 130px;
 }
 
 .course-info .tabular-cont .grey-content {
@@ -396,6 +400,52 @@
   text-align: center;
 }
 
+.course-info .tabular-cont .course-link .course-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+}
+
+.course-info .tabular-cont .course-link .course-row .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.course-info .tabular-cont .course-link .course-row .left p {
+  margin: 0px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.course-info .tabular-cont .course-link .course-row .left i.icon-pdf {
+  vertical-align: middle;
+}
+
+.course-info .tabular-cont .course-link .course-row .left i.icon-new {
+  vertical-align: middle;
+}
+
+.course-info .tabular-cont .course-link .course-row .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.course-info .tabular-cont .course-link .course-row .right p {
+  margin: 0px;
+  font-size: 18px;
+}
+
 .icon-clock {
   background: url("../assets/images/time.png") no-repeat;
   background-size: auto 20px;
@@ -417,6 +467,22 @@
   background-size: auto 20px;
   height: 20px;
   width: 22px;
+  display: inline-block;
+}
+
+.icon-pdf {
+  background: url("../assets/images/pdf.png") no-repeat;
+  background-size: auto 25px;
+  height: 25px;
+  width: 26px;
+  display: inline-block;
+}
+
+.icon-new {
+  background: url("../assets/images/new.png") no-repeat;
+  background-size: auto 24px;
+  height: 24px;
+  width: 42px;
   display: inline-block;
 }
 

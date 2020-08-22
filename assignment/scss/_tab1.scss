@@ -11,7 +11,7 @@
             }
         }
         .second{
-            padding: 0 40px 0 20px;
+            padding: 10px 40px 0 20px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -28,8 +28,8 @@
                     width: auto;
                     padding: 0 10px;
                     font-size: 15px;
-                    color: #bfb5b5;
-                    font-weight: 500;
+                    color: #d2d1d1;
+                    font-weight: 400;
                 }
                 .border{
                     width: 1px;
@@ -44,7 +44,7 @@
                 }
             }
             p{
-                width: 70%;
+                width: 85%;
                 margin: 0px;
             }
             a{
@@ -87,9 +87,11 @@
             .tab{
                 text-transform: capitalize;
                 a{
-                    color: #232323;
+                    color: #d2cccc;
                     font-size: 17px;
-                    
+                    &.active{
+                        color: #232323;
+                    }
                 }
                 a:focus{
                     &.active{
@@ -104,7 +106,7 @@
         }
     }
     .tabular-cont{
-        padding: 40px 0;
+        padding: 40px 0 130px;
         .grey-content{
             display: flex;
             justify-content: space-between;
@@ -287,6 +289,37 @@
                         }  
                     }
                                   
+                }
+            }
+        }
+        .course-link{
+            .course-row{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 0;
+                .left{
+                    display: flex;
+                    width: 50%;
+                    p{
+                        margin: 0px;
+                        font-size: 18px;
+                        padding: 0 10px;
+                    }
+                    i.icon-pdf{
+                        vertical-align: middle;
+                    }
+                    i.icon-new{
+                        vertical-align: middle;
+                    }
+                }
+                .right{
+                    display: flex;
+                    width: 50%;
+                    p{
+                        margin: 0px;
+                        font-size: 18px;
+                    }
                 }
             }
         }
