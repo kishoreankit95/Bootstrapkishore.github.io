@@ -57,7 +57,55 @@
 .icon-thumbs{
     background: url('../assets/images/thumbs-up.png') no-repeat;
     background-size: auto 18px;
-    height: 22px;
+    height: 24px;
     width: 23px;
+    display: inline-block;
+}
+
+.icon-thumbs-wt{
+    background: url('../assets/images/thumbs-white.png') no-repeat;
+    background-size: auto 18px;
+    height: 24px;
+    width: 23px;
+    display: inline-block;
+}
+
+.icon-search{
+    background: url('../assets/images/search.png') no-repeat;
+    background-size: auto 29px;
+    height: 29px;
+    width: 35px;
+    display: inline-block;
+}
+
+.icon-filter{
+    background: url('../assets/images/filter.png') no-repeat;
+    background-size: auto 27px;
+    height: 32px;
+    width: 30px;
+    display: inline-block;
+}
+
+.icon-downarrow{
+    background: url('../assets/images/downarrow.png') no-repeat;
+    background-size: auto 12px;
+    height: 12px;
+    width: 20px;
+    display: inline-block;
+}
+
+.icon-books{
+    background: url('../assets/images/book.png') no-repeat;
+    background-size: auto 23px;
+    height: 25px;
+    width: 38px;
+    display: inline-block;
+}
+
+.icon-comments{
+    background: url('../assets/images/comments.png') no-repeat;
+    background-size: auto 25px;
+    height: 23px;
+    width: 35px;
     display: inline-block;
 }

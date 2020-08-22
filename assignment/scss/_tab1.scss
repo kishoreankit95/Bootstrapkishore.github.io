@@ -86,6 +86,7 @@
         .tabs{
             .tab{
                 text-transform: capitalize;
+                line-height: 35px;
                 a{
                     color: #d2cccc;
                     font-size: 17px;
@@ -97,6 +98,16 @@
                     &.active{
                         background-color: #ffffff;
                     }
+                }
+            }
+            .tab:nth-child(2){
+                i{
+                    vertical-align: middle;
+                }
+            }
+            .tab:nth-child(3){
+                i{
+                    vertical-align: middle;
                 }
             }
             .indicator{
@@ -293,6 +304,16 @@
             }
         }
         .course-link{
+            .search-box{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                input{
+                    width: 210px;
+                    max-height: 30px;
+                    border-bottom: none;
+                }
+            }
             .course-row{
                 display: flex;
                 justify-content: space-between;
@@ -356,6 +377,21 @@
             }
         }
         .course-discuss{
+            .disc-start{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px;
+                p{
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin: 0px;
+                }
+                a{
+                    text-transform: capitalize;
+                    line-height: 23px;
+                }
+            }
             .disc-row{
                 padding: 40px 20px;
                 border-bottom: 1px solid #ebe6e6;
@@ -363,6 +399,7 @@
                     color: #807575;
                     font-size: 20px;
                     margin: 0px;
+                    text-transform: capitalize;
                 }
                 p{
                     margin: 0px;
@@ -385,26 +422,32 @@
                 .userc{
                     display: flex;
                     margin-top: 10px;
+                    justify-content: space-between;
+                    .userl{
+                        display: flex;
+                    }
+                    .extra{
+                        display: flex;
+                        align-items: flex-end;
+                        p{
+                            padding: 0 10px;
+                            color: #019aff;
+                            font-size: 14px;
+                            line-height: 25px;
+                            i{
+                                vertical-align: middle;
+                            }
+                        }
+                    }
                     p{
                         font-size: 19px;
                         margin-top: 8px;
                         padding-left: 8px;
                     }
                 }
-                .extra{
-                    display: flex;
-                    justify-content: flex-end;
-                    // align-items: center;
-                    p{
-                        padding: 0 10px;
-                        color: #019aff;
-                        i{
-                            vertical-align: middle;
-                        }
-                    }
-                }
+                
                 .more-comment{
-                    margin-top: 15px;
+                    padding: 15px 0;
                     .btm-user{
                         display: flex;
                         align-items: center;
@@ -416,7 +459,6 @@
                                 color: #232323;
                                 font-size: 19px;
                             }
-                            
                         }
                         p{
                             font-size: 15px;
@@ -428,10 +470,15 @@
                         margin-top: 12px;
                     }
                 }
-                
+                .load-more{
+                    text-align: center;
+                    color: #019aff;
+                    padding: 10px 0 0 0;
+                }
                 .comments{
                     display: flex;
                     justify-content: space-between;
+                    padding: 20px 0;
                     input{
                         width: 85%;
                     }
