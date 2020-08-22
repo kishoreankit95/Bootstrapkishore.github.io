@@ -305,6 +305,10 @@
                         margin: 0px;
                         font-size: 18px;
                         padding: 0 10px;
+                        text-transform: capitalize;
+                        a{
+                            color: #232323;
+                        }
                     }
                     i.icon-pdf{
                         vertical-align: middle;
@@ -315,10 +319,38 @@
                 }
                 .right{
                     display: flex;
+                    align-items: center;
+                    justify-content: space-between;
                     width: 50%;
-                    p{
-                        margin: 0px;
-                        font-size: 18px;
+                    .infor{
+                        display: flex;
+                        p{
+                            margin: 0px;
+                            font-size: 18px;
+                            color: #d2cccc;
+                            padding: 0 10px;
+                        }
+                    }
+                    .down-caps{
+                        display: none;
+                        .download{
+                            display: flex;
+                            align-items: center;
+                            // display: none;
+                            p{
+                                margin: 0px;
+                                padding: 0 20px;
+                                color: #2bc6f3;
+                                // font-size: 12px;
+                                i{
+                                    vertical-align: middle;
+                                }
+                            }
+                            &.active{
+                                display: flex;
+                                background-color: #f0f9fb;
+                            }
+                        }
                     }
                 }
             }

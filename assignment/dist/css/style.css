@@ -424,6 +424,11 @@
   margin: 0px;
   font-size: 18px;
   padding: 0 10px;
+  text-transform: capitalize;
+}
+
+.course-info .tabular-cont .course-link .course-row .left p a {
+  color: #232323;
 }
 
 .course-info .tabular-cont .course-link .course-row .left i.icon-pdf {
@@ -438,12 +443,56 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 50%;
 }
 
-.course-info .tabular-cont .course-link .course-row .right p {
+.course-info .tabular-cont .course-link .course-row .right .infor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.course-info .tabular-cont .course-link .course-row .right .infor p {
   margin: 0px;
   font-size: 18px;
+  color: #d2cccc;
+  padding: 0 10px;
+}
+
+.course-info .tabular-cont .course-link .course-row .right .down-caps {
+  display: none;
+}
+
+.course-info .tabular-cont .course-link .course-row .right .down-caps .download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-info .tabular-cont .course-link .course-row .right .down-caps .download p {
+  margin: 0px;
+  padding: 0 20px;
+  color: #2bc6f3;
+}
+
+.course-info .tabular-cont .course-link .course-row .right .down-caps .download p i {
+  vertical-align: middle;
+}
+
+.course-info .tabular-cont .course-link .course-row .right .down-caps .download.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f0f9fb;
 }
 
 .icon-clock {
@@ -483,6 +532,14 @@
   background-size: auto 24px;
   height: 24px;
   width: 42px;
+  display: inline-block;
+}
+
+.icon-download {
+  background: url("../assets/images/download.png") no-repeat;
+  background-size: auto 17px;
+  height: 18px;
+  width: 25px;
   display: inline-block;
 }
 
