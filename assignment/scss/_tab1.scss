@@ -403,12 +403,43 @@
                         }
                     }
                 }
+                .more-comment{
+                    margin-top: 15px;
+                    .btm-user{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        
+                        .userc{
+                            margin-top: 0px;
+                            p{
+                                color: #232323;
+                                font-size: 19px;
+                            }
+                            
+                        }
+                        p{
+                            font-size: 15px;
+                            text-align: right;
+                            color: #bdbaba;
+                        }
+                    }
+                    .txt{
+                        margin-top: 12px;
+                    }
+                }
+                
                 .comments{
                     display: flex;
+                    justify-content: space-between;
+                    input{
+                        width: 85%;
+                    }
                     a.btn-reply{
                         color: #ffffff;
                         background-color: #d4d4d4;
                         width: 150px;
+                        max-width: 150px;
                         padding: 12px 20px;
                         line-height: 21px;
                         border-radius: 5px;

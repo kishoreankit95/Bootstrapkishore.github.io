@@ -563,16 +563,59 @@
   vertical-align: middle;
 }
 
+.course-info .tabular-cont .course-discuss .disc-row .more-comment {
+  margin-top: 15px;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .more-comment .btm-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .more-comment .btm-user .userc {
+  margin-top: 0px;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .more-comment .btm-user .userc p {
+  color: #232323;
+  font-size: 19px;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .more-comment .btm-user p {
+  font-size: 15px;
+  text-align: right;
+  color: #bdbaba;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .more-comment .txt {
+  margin-top: 12px;
+}
+
 .course-info .tabular-cont .course-discuss .disc-row .comments {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course-info .tabular-cont .course-discuss .disc-row .comments input {
+  width: 85%;
 }
 
 .course-info .tabular-cont .course-discuss .disc-row .comments a.btn-reply {
   color: #ffffff;
   background-color: #d4d4d4;
   width: 150px;
+  max-width: 150px;
   padding: 12px 20px;
   line-height: 21px;
   border-radius: 5px;
