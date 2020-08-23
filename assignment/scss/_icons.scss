@@ -94,6 +94,14 @@
     display: inline-block;
 }
 
+.icon-down-arrow{
+    background: url('../assets/images/downarrow.png') no-repeat;
+    background-size: auto 9px;
+    height: 8px;
+    width: 14px;
+    display: inline-block;
+}
+
 .icon-books{
     background: url('../assets/images/book.png') no-repeat;
     background-size: auto 23px;
@@ -126,11 +134,19 @@
     display: inline-block;
 }
 
+.icon-user-btm{
+    background: url('../assets/images/user-both.png') no-repeat;
+    background-size: auto 17px;
+    height: 20px;
+    width: 32px;
+    display: inline-block;
+}
+
 .icon-user-img{
     background: url('../assets/images/john.png') no-repeat;
     background-size: auto 25px;
-    height: 23px;
-    width: 35px;
+    height: 27px;
+    width: 33px;
     display: inline-block;
 }
 
@@ -152,6 +168,22 @@
 
 .icon-notify{
     background: url('../assets/images/notify.png') no-repeat;
+    background-size: auto 22px;
+    height: 21px;
+    width: 22px;
+    display: inline-block;
+}
+
+.icon-mail{
+    background: url('../assets/images/mail.png') no-repeat;
+    background-size: auto 22px;
+    height: 21px;
+    width: 22px;
+    display: inline-block;
+}
+
+.icon-tweet{
+    background: url('../assets/images/tweet.png') no-repeat;
     background-size: auto 22px;
     height: 21px;
     width: 22px;
