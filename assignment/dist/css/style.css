@@ -39,6 +39,21 @@
   display: flex;
 }
 
+.co-tab1 .tab-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.co-tab1 .tab-active p {
+  margin: 0px;
+  text-transform: capitalize;
+}
+
 .co-tab1 .top-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -877,9 +892,9 @@
 
 .icon-right-arr {
   background: url("../assets/images/rightarrow.png") no-repeat;
-  background-size: auto 25px;
-  height: 23px;
-  width: 35px;
+  background-size: auto 15px;
+  height: 18px;
+  width: 19px;
   display: inline-block;
 }
 
