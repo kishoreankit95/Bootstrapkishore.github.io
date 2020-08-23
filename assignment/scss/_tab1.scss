@@ -214,7 +214,7 @@
                                         }
                                     }
                                     .guide-info{
-                                        padding: 0 0 0 20px;
+                                        padding: 10px 0 0 20px;
                                         // display: flex;
                                         // flex-direction: column;
                                         // justify-content: space-between;
@@ -236,8 +236,15 @@
                                 .lower{
                                     display: flex;
                                     justify-content: space-between;
+                                    padding: 10px 0 0 0;
                                     .mail-icons{
-
+                                        display: flex;
+                                        justify-content: space-between;
+                                        width: 33%;
+                                        padding-left: 4%;
+                                        i{
+                                            display: inline-block;
+                                        }
                                     }
                                     a{
                                         // color: #039be5;

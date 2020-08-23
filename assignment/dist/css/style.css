@@ -315,7 +315,7 @@
 }
 
 .course-info .tabular-cont .grey-content .leftt .left-row .left-guide .guide-row .guides .upper .guide-info {
-  padding: 0 0 0 20px;
+  padding: 10px 0 0 20px;
 }
 
 .course-info .tabular-cont .grey-content .leftt .left-row .left-guide .guide-row .guides .upper .guide-info h5 {
@@ -339,6 +339,22 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px 0 0 0;
+}
+
+.course-info .tabular-cont .grey-content .leftt .left-row .left-guide .guide-row .guides .lower .mail-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 33%;
+  padding-left: 4%;
+}
+
+.course-info .tabular-cont .grey-content .leftt .left-row .left-guide .guide-row .guides .lower .mail-icons i {
+  display: inline-block;
 }
 
 .course-info .tabular-cont .grey-content .leftt .left-row .left-guide .guide-row .guides .lower a {
@@ -970,7 +986,7 @@
 
 .icon-mail {
   background: url("../assets/images/mail.png") no-repeat;
-  background-size: auto 22px;
+  background-size: auto 20px;
   height: 21px;
   width: 22px;
   display: inline-block;
@@ -978,7 +994,7 @@
 
 .icon-tweet {
   background: url("../assets/images/tweet.png") no-repeat;
-  background-size: auto 22px;
+  background-size: auto 20px;
   height: 21px;
   width: 22px;
   display: inline-block;
