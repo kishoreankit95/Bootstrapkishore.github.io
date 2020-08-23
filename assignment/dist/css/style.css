@@ -188,6 +188,10 @@
   line-height: 18px;
 }
 
+.co-tab1.dbrd {
+  padding-bottom: 20px;
+}
+
 .course-info {
   background-color: #f9f9f9;
 }
@@ -808,6 +812,99 @@
   background-color: #ffffff;
 }
 
+.main-portion .container .single-row {
+  padding-bottom: 40px;
+}
+
+.main-portion .container .single-row .head-info {
+  font-size: 20px;
+  padding: 3px 0 15px;
+}
+
+.main-portion .container .single-row .courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-portion .container .single-row .courses .course-book {
+  width: 32%;
+  margin: 0 20px 0 0;
+  border-radius: 11px;
+  background-color: #f9f9f9;
+}
+
+.main-portion .container .single-row .courses .course-book .upp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-portion .container .single-row .courses .course-book .upp .book-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-portion .container .single-row .courses .course-book .upp .controls {
+  width: 25%;
+}
+
+.main-portion .container .single-row .courses .course-book .upp .controls .piece {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 10px;
+  border-bottom: 1px solid #e4e2e2;
+}
+
+.main-portion .container .single-row .courses .course-book .upp .controls .piece p {
+  margin: 0px;
+}
+
+.main-portion .container .single-row .courses .course-book .bttm {
+  padding: 20px 10px;
+}
+
+.main-portion .container .single-row .courses .course-book .bttm .infoo p {
+  margin: 0px;
+  color: #4a4242;
+  font-weight: 500;
+}
+
+.main-portion .container .single-row .courses .course-book .bttm .infoo h4 {
+  margin: 5px 0 0 0;
+  font-size: 22px;
+  color: #019aff;
+}
+
+.main-portion .container .single-row .courses .course-book .bttm .infoo .link-txt p {
+  color: #bbafaf;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 8px 0;
+}
+
+.main-portion .container .single-row .courses .course-book .bttm .infoo .link-txt p i {
+  vertical-align: middle;
+}
+
+.main-portion .container .single-row .courses .course-book .bttm .infoo .link-txt p:first-child {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.main-portion .container .single-row .courses .course-book .bttm .infoo .link-txt a {
+  text-transform: capitalize;
+}
+
+.main-portion .container .single-row .courses .course-book .bttm .infoo .link-txt a.btn-continue {
+  background-color: #019aff;
+  width: 160px;
+  padding: 3px 34px;
+  border-radius: 8px;
+}
+
 .icon-clock {
   background: url("../assets/images/time.png") no-repeat;
   background-size: auto 20px;
@@ -994,6 +1091,38 @@
 
 .icon-tweet {
   background: url("../assets/images/tweet.png") no-repeat;
+  background-size: auto 20px;
+  height: 21px;
+  width: 22px;
+  display: inline-block;
+}
+
+.icon-copy {
+  background: url("../assets/images/book-db.png") no-repeat;
+  background-size: auto 28px;
+  height: 28px;
+  width: 33px;
+  display: inline-block;
+}
+
+.icon-comments-db {
+  background: url("../assets/images/comments-blue.png") no-repeat;
+  background-size: auto 20px;
+  height: 21px;
+  width: 22px;
+  display: inline-block;
+}
+
+.icon-books-db {
+  background: url("../assets/images/book-blue.png") no-repeat;
+  background-size: auto 20px;
+  height: 21px;
+  width: 22px;
+  display: inline-block;
+}
+
+.icon-star-db {
+  background: url("../assets/images/satr-db.png") no-repeat;
   background-size: auto 20px;
   height: 21px;
   width: 22px;
