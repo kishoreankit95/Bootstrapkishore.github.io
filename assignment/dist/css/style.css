@@ -1,5 +1,42 @@
 .co-tab1 {
-  padding: 100px 0 20px;
+  padding: 20px 0 20px;
+}
+
+.co-tab1 .head {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.co-tab1 .head .course-icon img {
+  vertical-align: middle;
+}
+
+.co-tab1 .head .small-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+}
+
+.co-tab1 .head .small-icons p {
+  margin: 0px;
+}
+
+.co-tab1 .head .small-icons .small-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .co-tab1 .top-content {
@@ -61,7 +98,7 @@
 .co-tab1 .top-content .second .class-info .border {
   width: 1px;
   height: 15px;
-  background-color: black;
+  background-color: #e2d6d6;
 }
 
 .co-tab1 .top-content .second .class-info p:first-child {
@@ -803,6 +840,54 @@
   background-size: auto 25px;
   height: 23px;
   width: 35px;
+  display: inline-block;
+}
+
+.icon-calender {
+  background: url("../assets/images/calendar.png") no-repeat;
+  background-size: auto 25px;
+  height: 25px;
+  width: 35px;
+  display: inline-block;
+}
+
+.icon-user-top {
+  background: url("../assets/images/user-both.png") no-repeat;
+  background-size: auto 20px;
+  height: 22px;
+  width: 30px;
+  display: inline-block;
+}
+
+.icon-user-img {
+  background: url("../assets/images/john.png") no-repeat;
+  background-size: auto 25px;
+  height: 23px;
+  width: 35px;
+  display: inline-block;
+}
+
+.icon-home {
+  background: url("../assets/images/home.png") no-repeat;
+  background-size: auto 25px;
+  height: 23px;
+  width: 35px;
+  display: inline-block;
+}
+
+.icon-right-arr {
+  background: url("../assets/images/rightarrow.png") no-repeat;
+  background-size: auto 25px;
+  height: 23px;
+  width: 35px;
+  display: inline-block;
+}
+
+.icon-notify {
+  background: url("../assets/images/notify.png") no-repeat;
+  background-size: auto 22px;
+  height: 21px;
+  width: 22px;
   display: inline-block;
 }
 
