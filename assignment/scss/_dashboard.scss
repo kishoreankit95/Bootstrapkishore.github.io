@@ -2,97 +2,165 @@
 
 .main-portion{
     // display: flex;
+    background-color: #f9f9f9;
     .container{
         .cont-area{
-            .single-row{
-                padding-bottom: 40px;
-                .head-info{
-                    font-size: 20px;
-                    padding: 3px 0 15px;
-                }
-                .courses{
-                    display: flex;
-                    .course-book{
-                        // display: flex;
-                        // flex: 1;
-                        width: 32%;
-                        margin: 0 20px 0 0;
-                        border-radius: 11px;
-                        background-color: #f9f9f9;
-                        .upp{
-                            display: flex;
-                            .book-img{
+            display: flex;
+            .dbrd-left{
+                width: 70%;
+                background-color: #ffffff;
+                padding: 0 5px 0 5px;
+                .single-row{
+                    padding-bottom: 40px;
+                    padding-right: 60px;
+                    .head-info{
+                        font-size: 20px;
+                        padding: 3px 0 15px;
+                    }
+                    .courses{
+                        display: flex;
+                        .course-book{
+                            // display: flex;
+                            // flex: 1;
+                            width: 50%;
+                            margin: 0 20px 0 0;
+                            border-radius: 11px;
+                            background-color: #f9f9f9;
+                            .upp{
                                 display: flex;
-                            }
-                            .controls{
-                                width: 25%;
-                                .piece{
+                                .book-img{
                                     display: flex;
-                                    padding: 15px 10px;
-                                    border-bottom: 1px solid #e4e2e2;
+                                    width: 80%;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                                .controls{
+                                    width: 25%;
+                                    .piece{
+                                        display: flex;
+                                        padding: 15px 10px;
+                                        border-bottom: 1px solid #e4e2e2;
+                                        p{
+                                            margin: 0px;
+                                        }
+                                    }
+                                }
+                            }
+                            .bttm{
+                                padding: 20px 10px;
+                                .infoo{
                                     p{
                                         margin: 0px;
+                                        color: #4a4242;
+                                        font-weight: 500;
+                                    }
+                                    h4{
+                                        margin: 5px 0 0 0;
+                                        font-size: 22px;
+                                        color: #019aff;
+                                    }
+                                    .link-txt{
+                                        p{
+                                            color: #bbafaf;
+                                            font-size: 16px;
+                                            font-weight: 300;
+                                            margin: 8px 0;
+                                            i{
+                                                vertical-align: middle;
+                                            }
+                                        }
+                                        p:first-child{
+                                            font-size: 14px;
+                                            margin-bottom: 15px;
+                                        }
+                                        a{
+                                            text-transform: capitalize;
+                                            &.btn-continue{
+                                                background-color: #019aff;
+                                                width: 160px;
+                                                padding: 3px 34px;
+                                                border-radius: 8px;
+                                            }
+                                        }
                                     }
                                 }
                             }
                         }
-                        .bttm{
-                            padding: 20px 10px;
-                            .infoo{
-                                p{
-                                    margin: 0px;
-                                    color: #4a4242;
-                                    font-weight: 500;
-                                }
-                                h4{
-                                    margin: 5px 0 0 0;
-                                    font-size: 22px;
-                                    color: #019aff;
-                                }
-                                .link-txt{
-                                    p{
-                                        color: #bbafaf;
-                                        font-size: 16px;
-                                        font-weight: 300;
-                                        margin: 8px 0;
-                                        i{
-                                            vertical-align: middle;
-                                        }
-                                    }
-                                    p:first-child{
-                                        font-size: 14px;
-                                        margin-bottom: 15px;
-                                    }
-                                    a{
-                                        text-transform: capitalize;
-                                        &.btn-continue{
-                                            background-color: #019aff;
-                                            width: 160px;
-                                            padding: 3px 34px;
-                                            border-radius: 8px;
-                                        }
-                                    }
-                                }
+                        .course-book:last-child{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                .second-row{
+                    padding-bottom: 30px;
+                    padding-right: 10px;
+                    .head-info{
+                        font-size: 20px;
+                        padding: 3px 0 15px;
+                    }
+                    .img-holder{
+                        display: flex;
+                        .img-upcom{
+                            width: 33.33%;
+                            margin-right: 10px;
+                            img{
+                                width: 100%;
                             }
+                        }
+                        .img-upcom:last-child{
+                            margin-right: 0px;
                         }
                     }
                 }
             }
-            .second-row{
-                padding-bottom: 30px;
-                .head-info{
-                    font-size: 20px;
-                    padding: 3px 0 15px;
-                }
-                .img-holder{
+            .dbrd-right{
+                width: 30%;
+                background-color: #f9f9f9;
+                padding: 0 14px;
+                .badges{
                     display: flex;
-                    .img-upcom{
-                        margin-right: 10px;
+                }
+                .bar-chart{
+
+                }
+                .range-chart{
+                    .chart-txt{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            margin: 0px;
+                        }
+                        p:last-child{
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: black;
+                        }
                     }
+                    .chart-comm{
+                        h4{
+                            margin: 0px;
+                            font-size: 19px;
+                        }
+                        p{
+                            margin: 0px;
+                            font-size: 12px;
+                            margin: 3px 0;
+                        }
+                        .feedback{
+                            display: flex;
+                            align-items: center;
+                            margin: 5px 0;
+                            i{
+                                // vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+                .resources{
+                    
                 }
             }
         }
-        
      }
-    
 }

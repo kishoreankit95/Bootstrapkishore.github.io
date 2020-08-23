@@ -224,24 +224,40 @@
 
 .icon-badge{
     background: url('../assets/images/badge.png') no-repeat;
-    background-size: auto 20px;
-    height: 21px;
-    width: 22px;
+    background-size: auto 30px;
+    height: 28px;
+    width: 36px;
     display: inline-block;
 }
 
 .icon-trophy{
     background: url('../assets/images/trphy.png') no-repeat;
-    background-size: auto 20px;
-    height: 21px;
-    width: 22px;
+    background-size: auto 28px;
+    height: 27px;
+    width: 33px;
     display: inline-block;
 }
 
 .icon-cert{
     background: url('../assets/images/cert.png') no-repeat;
-    background-size: auto 20px;
-    height: 21px;
-    width: 22px;
+    background-size: auto 28px;
+    height: 28px;
+    width: 33px;
+    display: inline-block;
+}
+
+.icon-grn-dot{
+    background: url('../assets/images/green-dot.png') no-repeat;
+    background-size: auto 14px;
+    height: 17px;
+    width: 25px;
+    display: inline-block;
+}
+
+.icon-blue-dot{
+    background: url('../assets/images/blue-dot.png') no-repeat;
+    background-size: auto 14px;
+    height: 17px;
+    width: 25px;
     display: inline-block;
 }
