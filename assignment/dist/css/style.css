@@ -555,7 +555,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 0;
+  padding: 15px 13px;
 }
 
 .course-info .tabular-cont .course-link .course-row .left {
@@ -641,7 +641,7 @@
 }
 
 .course-info .tabular-cont .course-link .course-row.active {
-  background-color: #ffffff;
+  background-color: #efffff;
 }
 
 .course-info .tabular-cont .course-link .course-row.active .right .down-caps {

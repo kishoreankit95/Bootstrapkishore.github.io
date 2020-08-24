@@ -6,6 +6,14 @@ $(document).ready(function(){
 
   // Collapsible for Course Tabs page
   $('.collapsible').collapsible();
+
+
+  $('.course-row').hover(function () {
+    $(this).addClass("active");
+    }, 
+    function () {
+      $(this).removeClass("active");
+  });
   
 
 });
