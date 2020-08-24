@@ -449,6 +449,14 @@
                         }
                     }
                 }
+                &.active{
+                    background-color: #ffffff;
+                    .right{
+                        .down-caps{
+                            display: block;
+                        }
+                    }
+                }
             }
         }
         .course-discuss{

@@ -68,8 +68,8 @@
         <div class="tab-start">
             <div class="container">
                 <ul class="tabs">
-                    <li class="tab col s3"><a href="#test1" class="active"> Overview </a></li>
-                    <li class="tab col s3"><a  href="#test2" > <i class="icon-books"></i>Resources (04) </a></li>
+                    <li class="tab col s3"><a href="#test1" > Overview </a></li>
+                    <li class="tab col s3"><a  href="#test2" class="active"> <i class="icon-books"></i>Resources (04) </a></li>
                     <li class="tab col s3"><a href="#test3" > <i class="icon-comments"></i>Discussions (01) </a></li>
                 </ul>
             </div>
@@ -516,47 +516,42 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/made.js"></script>
     <script>
 
-        $(document).ready(function(){
-            $('.tabs').tabs();
+        $(document).ready(function (){
 
-            $('.collapsible').collapsible();
-            
+        
+            // var tabule = document.getElementsByClassName("collap-head");
 
+            // var head = document.getElementsByClassName("collap-head li");
+
+            // var minto = $(".collap-head li.active .collapsible-header");
+
+            // function myCollapse() {
+            //     if ($(".collap-head li").hasClass("active")) {
+            //         var pinto = $(".collap-head li.active .collapsible-header");
+            //         $(pinto).hide();
+            //     }
+            //     else{
+            //         $(pinto).show();
+            //     }
+            // }
+
+            // head.forEach(myCollapse);
+
+            // myCollapse();
+
+            $('.course-row .left').on("click", function () {
+                var sinto =  ('.course-row');
+                // $('.course-row').addClass("active");
+                $(this).addClass("active");
+                // if (sinto.hasClass("active")){
+
+                // }
+            })
+        
         });
-
-        // var copies = document.getElementsByClassName("course-row");
-
-        // var dog = document.getElementsByClassName('down-caps');
-        // var cat;
-        // console.log(dog);
-
-        // var getCSS = window.getComputedStyle(dog, null);
-
-
-        // cat = document.getElementsByClassName('download').style.display;
-        // console.log(dog.getComputedStyle(dog, null));
-
-        // alert("Page");
-
-
-        // copies.addEventListener("click", function () {
-        //     console.log(dog.style.display);
-        //     dog.style.display = "block";
-        //     alert('Page clicked');
-        // });
-
-        // function myFunction(){
-        // var elem = document.getElementById("test");
-        // // console.log("Hii");
-        // var theCSSprop = window.getComputedStyle(elem, null).getPropertyValue("background-color");
-        // var propety = window.getComputedStyle(elem, null);
-        // console.log(propety);
-        // document.getElementById("demo").innerHTML = theCSSprop;
-        // }
-
-        // myFunction();
 
 
 

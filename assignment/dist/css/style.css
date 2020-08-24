@@ -640,6 +640,14 @@
   background-color: #f0f9fb;
 }
 
+.course-info .tabular-cont .course-link .course-row.active {
+  background-color: #ffffff;
+}
+
+.course-info .tabular-cont .course-link .course-row.active .right .down-caps {
+  display: block;
+}
+
 .course-info .tabular-cont .course-discuss .disc-start {
   display: -webkit-box;
   display: -ms-flexbox;
