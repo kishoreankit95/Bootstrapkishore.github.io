@@ -10,6 +10,13 @@
   margin-top: 20px;
 }
 
+.airquality #lastUpdated {
+  background-color: #ebdcdc;
+  text-align: center;
+  font-weight: 500;
+  padding: 15px 0;
+}
+
 .icon-clock {
   background: url("../assets/images/time.png") no-repeat;
   background-size: auto 20px;
