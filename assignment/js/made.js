@@ -7,6 +7,12 @@ $(document).ready(function(){
   // Collapsible for Course Tabs page
   $('.collapsible').collapsible();
 
+  // Controlling Collapsible header visibility
+  $('.all-top a').click(function () {
+    $('.collapsible li').removeClass("active");
+    $('.collapsible li .collapsible-body').css("display", "none");
+  });
+
 
   $('.course-row').hover(function () {
     $(this).addClass("active");
