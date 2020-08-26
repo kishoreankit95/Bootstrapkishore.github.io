@@ -48,8 +48,16 @@
     }
     .top-content{
         display: flex;
+        flex-wrap: wrap;
+        @media screen and (max-width:981px) {
+            flex-direction: column;
+            align-items: center;
+        }
         .first{
             flex: 1;
+            @media screen and (max-width:981px) {
+                margin: 15px 0;
+            }
             img{
                 vertical-align: middle;
                 // width: 100%;
@@ -60,15 +68,26 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @media screen and (max-width:981px) {
+                align-items: center;
+                margin: 15px 0;
+                width: 70%;
+            }
             flex: 3;
             h3{
                 font-size: 21px;
                 text-transform: capitalize;
                 margin: 0px;
+                @media screen and (max-width:981px) {
+                    margin: 5px 0 12px;
+                }
             }
             .class-info{
                 display: flex;
                 align-items: center;
+                @media screen and (max-width:981px) {
+                    margin: 0 0 7px;
+                }
                 p{
                     width: auto;
                     padding: 0 10px;
@@ -94,6 +113,9 @@
             p{
                 width: 85%;
                 margin: 0px;
+                @media screen and (max-width:981px) {
+                    margin: 0 0 10px;
+                }
             }
             a{
                 font-size: 16px;
@@ -111,6 +133,9 @@
         .third{
             flex: 0.8;
             text-align: center;
+            @media screen and (max-width:981px) {
+                margin: 15px 0;
+            }
             h3{
                 margin: 0px;
                 font-size: 28px;
@@ -172,8 +197,14 @@
         .grey-content{
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width:768px) {
+                flex-direction: column;
+            }
             .leftt{
                 width: 48%;
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                }
                 .left-row{
                     padding: 18px 0 16px;
                     border-bottom: 1px solid #ebe6e6;
@@ -191,13 +222,30 @@
                         display: flex;
                         justify-content: space-between;
                         padding: 20px 0;
+                        @media screen and (max-width:1215px) {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        @media screen and (max-width:768px) {
+                            flex-direction: row;
+                        }
+                        @media screen and (max-width:768px) {
+                            flex-direction: column;
+                        }
                         p{
                             border: 1px solid #b5b1b1;
                             border-radius: 13px;
-                            padding: 3px 13px;
-                            line-height: 100%;
-                            font-size: 14px;
+                            padding: 1px 13px;
                             margin: 0px;
+                            @media screen and (max-width:1215px) {
+                                margin: 5px 0;
+                                max-width: 130px;
+                            }
+                            a{
+                                color: #444444;
+                                line-height: 100%;
+                                font-size: 14px;
+                            }
                         }
                     }
                     .left-guide{
@@ -206,9 +254,23 @@
                             display: flex;
                             justify-content: space-between;
                             padding: 15px 0;
+                            @media screen and (max-width:1215px) {
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding-bottom: 0px;
+                            }
+                            @media screen and (max-width:768px) {
+                                flex-direction: row;
+                            }
+                            @media screen and (max-width:768px) {
+                                flex-direction: column;
+                            }
                             .guides{
                                 display: flex;
                                 flex-direction: column;
+                                @media screen and (max-width:1215px) {
+                                    margin: 10px 0;
+                                }
                                 .upper{
                                     display: flex;
                                     .guide-img{
@@ -237,6 +299,10 @@
                                     display: flex;
                                     justify-content: space-between;
                                     padding: 10px 0 0 0;
+                                    @media screen and (max-width:1215px) {
+                                        width: 100%;
+                                        max-width: 207px;
+                                    }
                                     .mail-icons{
                                         display: flex;
                                         justify-content: space-between;
@@ -253,6 +319,11 @@
                                 }
                             }
                         }
+                        .guide-row:last-child{
+                            @media screen and (max-width:1215px) {
+                                padding: 0px;
+                            }
+                        }
                     }
                     &.instructors{
                         padding: 15px 65px 0 15px;
@@ -261,6 +332,9 @@
             }
             .rightt{
                 width: 48%;
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                }
                 .right-row{
                     border-bottom: 1px solid #ebe6e6;
                     padding: 18px 0 16px;
