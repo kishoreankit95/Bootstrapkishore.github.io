@@ -14,6 +14,14 @@ $(document).ready(function(){
     function () {
       $(this).removeClass("active");
   });
+
+  // Discussions Tab Reply button color change
+  $('.disc-white .comments').hover(function () {
+    $('.disc-white .btn-reply').css("background-color","#2663a6");
+},
+function () {
+    $('.disc-white .btn-reply').css("background-color","#d4d4d4");
+})
   
 
 });

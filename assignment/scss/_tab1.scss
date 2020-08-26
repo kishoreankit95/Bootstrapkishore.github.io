@@ -73,6 +73,10 @@
                 margin: 15px 0;
                 width: 70%;
             }
+            @media screen and (max-width:786px) {
+                width: 90%;
+                padding-right: 20px;
+            }
             flex: 3;
             h3{
                 font-size: 21px;
@@ -125,7 +129,7 @@
                 border-radius: 8px;
                 width: 180px;
                 &.btn-cust{
-                    background-color: #7792e4;
+                    background-color: #2ab8d9;
                     padding: 8px 15px;
                 }
             }
@@ -388,54 +392,59 @@
                     padding-right: 25px;
                     background-color: #ffffff;
                     .all-in-one{
-                        display: flex;
-                        .middle-left{
-                            flex: 0.1;
-                            font-size: 22px;
-                        }
-                        .middle{
-                            flex: 2.5;
-                            .vision{
-                                margin: 0 0 15px 0;
-                                h4{
-                                    margin: 0;
-                                    font-size: 24px;
-                                }
+                        // display: flex;
+                        .all-top{
+                            display: flex;
+                            justify-content: space-between;
+                            margin:0 0 14px;
+                            align-items: center;
+                            h4{
+                                margin: 0;
+                                font-size: 24px;
+                                width: 88%;
                             }
-                            .bottom-comb{
-                                display: flex;
-                                .centre-text-wrap{
-                                    padding-left: 15px;
-                                    .centre-text{
-                                        display: flex;
-                                        margin-bottom: 24px;
-                                        .centre-img{
-                                            img{
-                                                vertical-align: middle;
-                                            }
-                                        }
-                                        .cover{
-                                            padding: 0 0 0 10px;
-                                            .oppor{
-                                                display: flex;
-                                                justify-content: space-between;
-                                                padding-bottom: 10px;
-                                                h4{
-                                                    font-size: 20px;
-                                                    margin: 0px;
-                                                    line-height: 22px;
+                        }
+                        .all-bottom{
+                            .middle{
+                                flex: 2.5;
+                                .vision{
+                                    margin: 0 0 15px 0;
+                                }
+                                .bottom-comb{
+                                    display: flex;
+                                    .centre-text-wrap{
+                                        padding-left: 15px;
+                                        .centre-text{
+                                            display: flex;
+                                            margin-bottom: 24px;
+                                            .centre-img{
+                                                img{
+                                                    vertical-align: middle;
                                                 }
-                                                p{
-                                                    margin: 0px;
-                                                    i{
-                                                        vertical-align: middle;
-                                                        margin-right: 8px;
+                                            }
+                                            .cover{
+                                                padding: 0 0 0 10px;
+                                                .oppor{
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    padding-bottom: 10px;
+                                                    h4{
+                                                        font-size: 20px;
+                                                        margin: 0px;
+                                                        line-height: 22px;
+                                                    }
+                                                    p{
+                                                        margin: 0px;
+                                                        i{
+                                                            vertical-align: middle;
+                                                            margin-right: 8px;
+                                                        }
                                                     }
                                                 }
-                                            }
-                                            .desc{
-                                                p{
-                                                    margin: 0px;
+                                                .desc{
+                                                    p{
+                                                        margin: 0px;
+                                                    }
                                                 }
                                             }
                                         }
@@ -443,6 +452,11 @@
                                 }
                             }
                         }
+                        .middle-left{
+                            flex: 0.1;
+                            font-size: 22px;
+                        }
+                        
                         .middle-right{
                             flex: 0.1;
                             text-align: center;
