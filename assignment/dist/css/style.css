@@ -32,6 +32,78 @@
           align-items: center;
 }
 
+@media screen and (max-width: 1270px) {
+  .co-tab1 .head .small-icons {
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .co-tab1 .head .small-icons {
+    width: 29%;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .co-tab1 .head .small-icons {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .co-tab1 .head .small-icons {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .co-tab1 .head .small-icons {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .co-tab1 .head .small-icons {
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .co-tab1 .head .small-icons {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .co-tab1 .head .small-icons {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .co-tab1 .head .small-icons {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .co-tab1 .head .small-icons {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .co-tab1 .head .small-icons {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .co-tab1 .head .small-icons {
+    width: 75%;
+  }
+}
+
 .co-tab1 .head .small-icons p {
   margin: 0px;
 }
@@ -42,10 +114,40 @@
   min-height: 17px;
 }
 
+.co-tab1 .head .small-icons .big-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 470px) {
+  .co-tab1 .head .small-icons .big-user {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .co-tab1 .head .small-icons .big-user {
+    margin-right: 0px;
+  }
+}
+
 .co-tab1 .head .small-icons .small-user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 470px) {
+  .co-tab1 .head .small-icons .small-user {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .co-tab1 .head .small-icons .small-user {
+    margin-left: 0px;
+  }
 }
 
 .co-tab1 .head .small-icons .small-user p {

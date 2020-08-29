@@ -16,6 +16,42 @@
             justify-content: space-between;
             width: 23%;
             align-items: center;
+            @media screen and (max-width:1270px) {
+                width: 27%;
+            }
+            @media screen and (max-width:1060px) {
+                width: 29%;
+            }
+            @media screen and (max-width:925px) {
+                width: 32%;
+            }
+            @media screen and (max-width:850px) {
+                width: 35%;
+            }
+            @media screen and (max-width:768px) {
+                width: 40%;
+            }
+            @media screen and (max-width:667px) {
+                width: 44%;
+            }
+            @media screen and (max-width:604px) {
+                width: 50%;
+            }
+            @media screen and (max-width:536px) {
+                width: 55%;
+            }
+            @media screen and (max-width:470px) {
+                width: 60%;
+            }
+            @media screen and (max-width:430px) {
+                width: 65%;
+            }
+            @media screen and (max-width:395px) {
+                width: 70%;
+            }
+            @media screen and (max-width:345px) {
+                width: 75%;
+            }
             p{
                 margin: 0px;
             }
@@ -24,8 +60,23 @@
                 background-color: #8c8282;
                 min-height: 17px;
             }
+            .big-user{
+                display: flex;
+                @media screen and (max-width:470px) {
+                    margin-right: 8px;
+                }
+                @media screen and (max-width:365px) {
+                    margin-right: 0px;
+                }
+            }
             .small-user{
                 display: flex;
+                @media screen and (max-width:470px) {
+                    margin-left: 8px;
+                }
+                @media screen and (max-width:365px) {
+                    margin-left: 0px;
+                }
                 p{
                     margin-right: 15px;
                     font-size: 15px;
