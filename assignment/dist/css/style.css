@@ -711,6 +711,8 @@
   padding-bottom: 10px;
   padding-right: 25px;
   background-color: #ffffff;
+  -webkit-transition: display 4s;
+  transition: display 4s;
 }
 
 .course-info .tabular-cont .collap-head .collapsible li .collapsible-body .all-in-one .all-top {

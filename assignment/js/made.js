@@ -10,7 +10,8 @@ $(document).ready(function(){
   // Controlling Collapsible header visibility
   $('.all-top a').click(function () {
     $('.collapsible li').removeClass("active");
-    $('.collapsible li .collapsible-body').css("display", "none");
+    // $('.collapsible li .collapsible-body').css("display", "none");
+    $('.collapsible li .collapsible-body').fadeOut(800);
   });
 
 
