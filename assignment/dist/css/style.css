@@ -119,13 +119,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 49%;
+  width: 50%;
 }
 
 @media screen and (max-width: 470px) {
@@ -140,22 +140,26 @@
   }
 }
 
-.co-tab1 .head .small-icons .big-user img {
+.co-tab1 .head .small-icons .big-user a {
+  margin-right: 15px;
+}
+
+.co-tab1 .head .small-icons .big-user a img {
   display: inline-block;
   width: 100%;
 }
 
-.co-tab1 .head .small-icons .big-user img.calendar {
+.co-tab1 .head .small-icons .big-user a img.calendar {
   width: 25px;
   height: 24px;
 }
 
-.co-tab1 .head .small-icons .big-user img.notify {
+.co-tab1 .head .small-icons .big-user a img.notify {
   width: 20px;
   height: 20px;
 }
 
-.co-tab1 .head .small-icons .big-user img.userbth {
+.co-tab1 .head .small-icons .big-user a img.userbth {
   width: 26px;
   height: 18px;
 }
@@ -164,7 +168,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 49%;
+  width: 50%;
 }
 
 @media screen and (max-width: 470px) {
@@ -409,8 +413,26 @@
   font-size: 17px;
 }
 
+@media screen and (max-width: 425px) {
+  .course-info .tab-start .tabs .tab a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .course-info .tab-start .tabs .tab a {
+    padding: 0 3px;
+  }
+}
+
 .course-info .tab-start .tabs .tab a.active {
   color: #232323;
+}
+
+@media screen and (max-width: 510px) {
+  .course-info .tab-start .tabs .tab a i {
+    display: none;
+  }
 }
 
 .course-info .tab-start .tabs .tab a:focus.active {
