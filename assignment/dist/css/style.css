@@ -1051,6 +1051,21 @@
   padding: 15px 13px;
 }
 
+@media screen and (max-width: 768px) {
+  .course-info .tabular-cont .course-link .course-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .course-info .tabular-cont .course-link .course-row {
+    padding: 15px 5px;
+  }
+}
+
 .course-info .tabular-cont .course-link .course-row .left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1058,11 +1073,23 @@
   width: 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .course-info .tabular-cont .course-link .course-row .left {
+    width: 100%;
+  }
+}
+
 .course-info .tabular-cont .course-link .course-row .left p {
   margin: 0px;
   font-size: 18px;
   padding: 0 10px;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 390px) {
+  .course-info .tabular-cont .course-link .course-row .left p {
+    padding: 0 5px;
+  }
 }
 
 .course-info .tabular-cont .course-link .course-row .left p a {
@@ -1088,6 +1115,12 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .course-info .tabular-cont .course-link .course-row .right {
+    width: 100%;
+  }
 }
 
 .course-info .tabular-cont .course-link .course-row .right .infor {
@@ -1618,7 +1651,7 @@
   background: url("../assets/images/pdf.png") no-repeat;
   background-size: auto 25px;
   height: 25px;
-  width: 26px;
+  width: 35px;
   display: inline-block;
 }
 
@@ -1626,7 +1659,7 @@
   background: url("../assets/images/new.png") no-repeat;
   background-size: auto 24px;
   height: 24px;
-  width: 42px;
+  width: 56px;
   display: inline-block;
 }
 

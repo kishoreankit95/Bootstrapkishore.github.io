@@ -676,14 +676,26 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 15px 13px;
+                @media screen and (max-width:768px) {
+                    flex-direction: column;
+                }
+                @media screen and (max-width:390px) {
+                    padding: 15px 5px;
+                }
                 .left{
                     display: flex;
                     width: 50%;
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                    }
                     p{
                         margin: 0px;
                         font-size: 18px;
                         padding: 0 10px;
                         text-transform: capitalize;
+                        @media screen and (max-width:390px) {
+                            padding: 0 5px;
+                        }
                         a{
                             color: #232323;
                         }
@@ -700,6 +712,9 @@
                     align-items: center;
                     justify-content: space-between;
                     width: 50%;
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                    }
                     .infor{
                         display: flex;
                         p{
