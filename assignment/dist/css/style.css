@@ -1136,6 +1136,10 @@
 @media screen and (max-width: 768px) {
   .course-info .tabular-cont .course-link .course-row .right {
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
