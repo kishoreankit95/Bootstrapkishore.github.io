@@ -454,11 +454,16 @@
                                 margin: 0px;
                                 padding: 0 14px;
                                 font-size: 19px;
+                                @media screen and (max-width:360px) {
+                                    font-size: 18px;
+                                }
                             }
                             p:nth-child(2){
-                                // margin-left: 20px;
                                 font-size: 22px;
                                 padding-left: 8px;
+                                @media screen and (max-width:360px) {
+                                    font-size: 18px;
+                                }
                             }
                         }
                         i{
@@ -470,6 +475,9 @@
                         padding-right: 25px;
                         background-color: #ffffff;
                         transition: display 4s;
+                        @media screen and (max-width:470px) {
+                            padding: 28px 15px 10px;
+                        }
                         .all-in-one{
                             // display: flex;
                             .all-top{
@@ -477,13 +485,32 @@
                                 justify-content: space-between;
                                 margin:0 0 14px;
                                 align-items: center;
+                                .middle-left{
+                                    @media screen and (max-width:768px) {
+                                        margin-right: 10px;
+                                    }
+                                    @media screen and (max-width:420px) {
+                                        font-size: 20px;
+                                    }
+                                    @media screen and (max-width:360px) {
+                                        font-size: 18px;
+                                    }
+                                }
                                 h4{
                                     margin: 0;
                                     font-size: 24px;
                                     width: 88%;
+                                    @media screen and (max-width:420px) {
+                                        font-size: 20px;
+                                    }
+                                    @media screen and (max-width:360px) {
+                                        font-size: 18px;
+                                    }
                                 }
                                 a{
                                     margin-right: 10px;
+                                    display: flex;
+                                    align-items: center;
                                 }
                             }
                             .all-bottom{
@@ -494,11 +521,26 @@
                                     }
                                     .bottom-comb{
                                         display: flex;
+                                        .long-img{
+                                            @media screen and (max-width: 768px) {
+                                                display: none;
+                                            }
+                                        }
                                         .centre-text-wrap{
                                             padding-left: 15px;
+                                            @media screen and (max-width: 700px) {
+                                                padding-left: 0px;
+                                            }
                                             .centre-text{
                                                 display: flex;
                                                 margin-bottom: 24px;
+                                                @media screen and (max-width: 700px) {
+                                                    flex-direction: column;
+                                                }
+                                                @media screen and (max-width: 576px) {
+                                                    border-bottom: 1px solid #c8c0c0;
+                                                    padding-bottom: 10px;
+                                                }
                                                 .centre-img{
                                                     img{
                                                         vertical-align: middle;
@@ -506,10 +548,17 @@
                                                 }
                                                 .cover{
                                                     padding: 0 0 0 10px;
+                                                    @media screen and (max-width: 700px) {
+                                                        padding: 0px;
+                                                        margin-top: 15px;
+                                                    }
                                                     .oppor{
                                                         display: flex;
                                                         justify-content: space-between;
                                                         padding-bottom: 10px;
+                                                        @media screen and (max-width: 576px) {
+                                                            flex-direction: column;
+                                                        }
                                                         h4{
                                                             font-size: 20px;
                                                             margin: 0px;
@@ -517,6 +566,9 @@
                                                         }
                                                         p{
                                                             margin: 0px;
+                                                            @media screen and (max-width: 576px) {
+                                                                margin: 7px 0 0 0;
+                                                            }
                                                             i{
                                                                 vertical-align: middle;
                                                                 margin-right: 8px;
@@ -526,6 +578,9 @@
                                                     .desc{
                                                         p{
                                                             margin: 0px;
+                                                            @media screen and (max-width:576px) {
+                                                                text-align: justify;
+                                                            }
                                                         }
                                                     }
                                                 }
