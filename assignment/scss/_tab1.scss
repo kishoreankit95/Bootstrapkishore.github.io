@@ -739,6 +739,9 @@
                 display: flex;
                 justify-content: space-between;
                 padding: 0 20px;
+                @media screen and (max-width:370px) {
+                    flex-direction: column;
+                }
                 p{
                     text-transform: uppercase;
                     font-size: 18px;
@@ -753,6 +756,9 @@
             .disc-row{
                 padding: 40px 20px;
                 border-bottom: 1px solid #ebe6e6;
+                @media screen and (max-width:370px) {
+                    padding: 25px 20px;
+                }
                 h4{
                     color: #807575;
                     font-size: 20px;
@@ -765,6 +771,9 @@
                         font-size: 16px;
                         color: #6b5f5f;
                         width: 77%;
+                        @media screen and (max-width:700px) {
+                            width: 100%;
+                        }
                     }
                 }
                 .days{
@@ -787,12 +796,18 @@
                     display: flex;
                     margin-top: 10px;
                     justify-content: space-between;
+                    @media screen and (max-width:520px) {
+                        flex-direction: column;
+                    }
                     .userl{
                         display: flex;
                     }
                     .extra{
                         display: flex;
                         align-items: flex-end;
+                        @media screen and (max-width:520px) {
+                            margin-top: 10px;
+                        }
                         p{
                             padding: 0 10px;
                             color: #019aff;
@@ -845,6 +860,19 @@
                     padding: 20px 0;
                     input{
                         width: 85%;
+                        @media screen and (max-width:370px) {
+                            width: 66%;
+                        }
+                        // @media screen and (max-width:768px) {
+                        //     width: %;
+                        // }
+                    }
+                    input:placeholder-shown{
+                        @media screen and (max-width:370px) {
+                            font-size: 14px;
+                            letter-spacing: -0.3px;
+                        }
+                        
                     }
                     a.btn-reply{
                         color: #ffffff;
@@ -855,6 +883,13 @@
                         line-height: 21px;
                         border-radius: 5px;
                         height: 45px;
+                        @media screen and (max-width:370px) {
+                            width: 90px;
+                            padding: 12px 8px;
+                        }
+                        @media screen and (max-width:768px) {
+                            width: 30%;
+                        }
                     }
                 }
                 &.disc-white{
