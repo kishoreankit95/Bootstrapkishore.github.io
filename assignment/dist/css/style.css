@@ -32,75 +32,9 @@
           align-items: center;
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 769px) {
   .co-tab1 .head .small-icons {
-    width: 27%;
-  }
-}
-
-@media screen and (max-width: 1060px) {
-  .co-tab1 .head .small-icons {
-    width: 29%;
-  }
-}
-
-@media screen and (max-width: 925px) {
-  .co-tab1 .head .small-icons {
-    width: 32%;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .co-tab1 .head .small-icons {
-    width: 35%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .co-tab1 .head .small-icons {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 667px) {
-  .co-tab1 .head .small-icons {
-    width: 44%;
-  }
-}
-
-@media screen and (max-width: 604px) {
-  .co-tab1 .head .small-icons {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 536px) {
-  .co-tab1 .head .small-icons {
-    width: 55%;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .co-tab1 .head .small-icons {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .co-tab1 .head .small-icons {
-    width: 65%;
-  }
-}
-
-@media screen and (max-width: 395px) {
-  .co-tab1 .head .small-icons {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 345px) {
-  .co-tab1 .head .small-icons {
-    width: 75%;
+    display: none;
   }
 }
 
@@ -113,6 +47,7 @@
   background-color: #8c8282;
   min-height: 17px;
   margin: 0 12px;
+  border-right: 1px solid #8c8282;
 }
 
 .co-tab1 .head .small-icons .big-user {
@@ -147,6 +82,7 @@
 .co-tab1 .head .small-icons .big-user a img {
   display: inline-block;
   width: 100%;
+  vertical-align: middle;
 }
 
 .co-tab1 .head .small-icons .big-user a img.calendar {
@@ -169,6 +105,9 @@
   display: -ms-flexbox;
   display: flex;
   width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 470px) {
@@ -183,21 +122,100 @@
   }
 }
 
+.co-tab1 .head .small-icons .small-user img {
+  display: inline-block;
+}
+
 .co-tab1 .head .small-icons .small-user a.jon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-left: 15px;
   color: #444444;
 }
 
 .co-tab1 .head .small-icons .small-user a.jon p {
-  margin-right: 15px;
   font-size: 15px;
   line-height: 27px;
+  white-space: nowrap;
 }
 
-.co-tab1 .head .small-icons .small-user a.jon i.icon-down-arrow {
-  margin-top: 8px;
+@media screen and (min-width: 769px) {
+  .co-tab1 .head .hamburg {
+    display: none;
+  }
+}
+
+.co-tab1 .small-icontwo {
+  display: none;
+  padding: 10px 13px;
+  background-color: #f9f9f9;
+}
+
+.co-tab1 .small-icontwo .big-user {
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.co-tab1 .small-icontwo .big-user a {
+  margin-right: 15px;
+}
+
+.co-tab1 .small-icontwo .big-user a img {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.co-tab1 .small-icontwo .big-user a img.calendar {
+  width: 25px;
+  height: 24px;
+}
+
+.co-tab1 .small-icontwo .big-user a img.notify {
+  width: 20px;
+  height: 20px;
+}
+
+.co-tab1 .small-icontwo .big-user a img.userbth {
+  width: 26px;
+  height: 18px;
+}
+
+.co-tab1 .small-icontwo .small-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.co-tab1 .small-icontwo .small-user img {
+  margin-right: 25px;
+}
+
+.co-tab1 .small-icontwo .small-user a {
+  color: #444444;
+}
+
+.co-tab1 .small-icontwo .small-user a p {
+  margin: 0px;
+}
+
+.co-tab1 .small-icontwo .border-head {
+  min-height: 17px;
+  margin: 0 12px;
+  border-right: 1px solid #8c8282;
 }
 
 .co-tab1 .tab-active {
@@ -249,6 +267,7 @@
 
 .co-tab1 .top-content .first img {
   vertical-align: middle;
+  width: 100%;
 }
 
 .co-tab1 .top-content .second {
@@ -1163,10 +1182,25 @@
   margin: 0 0 15px 0;
 }
 
+@media screen and (max-width: 700px) {
+  .course-info .tabular-cont .course-discuss .disc-row .days {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .course-info .tabular-cont .course-discuss .disc-row .days p {
   font-size: 15px;
   text-align: right;
   color: #bdbaba;
+}
+
+@media screen and (max-width: 700px) {
+  .course-info .tabular-cont .course-discuss .disc-row .days p {
+    text-align: left;
+  }
 }
 
 .course-info .tabular-cont .course-discuss .disc-row .userc {
@@ -1580,7 +1614,7 @@
 .icon-down-arrow {
   background: url("../assets/images/downarrow.png") no-repeat;
   background-size: auto 9px;
-  height: 8px;
+  height: 10px;
   width: 14px;
   display: inline-block;
 }
