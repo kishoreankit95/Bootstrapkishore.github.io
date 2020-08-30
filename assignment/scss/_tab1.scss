@@ -187,6 +187,9 @@
                 width: 90%;
                 padding-right: 20px;
             }
+            @media screen and (max-width:500px) {
+                padding: 0 5px;
+            }
             flex: 3;
             h3{
                 font-size: 21px;
@@ -229,6 +232,10 @@
                 margin: 0px;
                 @media screen and (max-width:981px) {
                     margin: 0 0 10px;
+                }
+                @media screen and (max-width:500px) {
+                    width: 100%;
+                    text-align: justify;
                 }
             }
             a{

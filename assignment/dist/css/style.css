@@ -304,6 +304,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .co-tab1 .top-content .second {
+    padding: 0 5px;
+  }
+}
+
 .co-tab1 .top-content .second h3 {
   font-size: 21px;
   text-transform: capitalize;
@@ -365,6 +371,13 @@
 @media screen and (max-width: 981px) {
   .co-tab1 .top-content .second p {
     margin: 0 0 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .co-tab1 .top-content .second p {
+    width: 100%;
+    text-align: justify;
   }
 }
 
