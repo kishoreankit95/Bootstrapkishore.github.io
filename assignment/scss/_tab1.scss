@@ -19,42 +19,6 @@
             @media screen and (max-width:769px) {
                 display: none;
             }
-            // @media screen and (max-width:1270px) {
-            //     width: 27%;
-            // }
-            // @media screen and (max-width:1060px) {
-            //     width: 29%;
-            // }
-            // @media screen and (max-width:925px) {
-            //     width: 32%;
-            // }
-            // @media screen and (max-width:850px) {
-            //     width: 35%;
-            // }
-            // @media screen and (max-width:768px) {
-            //     width: 40%;
-            // }
-            // @media screen and (max-width:667px) {
-            //     width: 44%;
-            // }
-            // @media screen and (max-width:604px) {
-            //     width: 50%;
-            // }
-            // @media screen and (max-width:536px) {
-            //     width: 55%;
-            // }
-            // @media screen and (max-width:470px) {
-            //     width: 60%;
-            // }
-            // @media screen and (max-width:430px) {
-            //     width: 65%;
-            // }
-            // @media screen and (max-width:395px) {
-            //     width: 70%;
-            // }
-            // @media screen and (max-width:345px) {
-            //     width: 75%;
-            // }
             p{
                 margin: 0px;
             }
@@ -112,11 +76,9 @@
                     display: inline-block;
                 }
                 a.jon{
-                    // display: flex;
                     margin-left: 15px;
                     color: #444444;
                     p{
-                        // margin-right: 15px;
                         font-size: 15px;
                         line-height: 27px;
                         white-space: nowrap;
@@ -138,9 +100,6 @@
         display: none;
         padding: 10px 13px;
         background-color: #f9f9f9;
-        // @media screen and (max-width:500px) {
-        //     display: none;
-        // }
         .big-user{
             width: 49%;
             display: flex;
@@ -181,7 +140,6 @@
                     margin: 0px;
                 }
             }
-            
         }
         .border-head{
             min-height: 17px;
@@ -229,9 +187,6 @@
                 width: 90%;
                 padding-right: 20px;
             }
-            // @media screen and (max-width:370px) {
-            //     padding: 0px;
-            // }
             flex: 3;
             h3{
                 font-size: 21px;
@@ -275,9 +230,6 @@
                 @media screen and (max-width:981px) {
                     margin: 0 0 10px;
                 }
-                // @media screen and (max-width:370px) {
-                //     width: 100%;
-                // }
             }
             a{
                 font-size: 16px;
