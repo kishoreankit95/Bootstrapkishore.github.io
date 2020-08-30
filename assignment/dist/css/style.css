@@ -337,6 +337,16 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .co-tab1 .top-content .second .class-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
 .co-tab1 .top-content .second .class-info p {
   width: auto;
   padding: 0 10px;
@@ -349,6 +359,12 @@
   width: 1px;
   height: 15px;
   background-color: #e2d6d6;
+}
+
+@media screen and (max-width: 768px) {
+  .co-tab1 .top-content .second .class-info .border {
+    display: none;
+  }
 }
 
 .co-tab1 .top-content .second .class-info p:first-child {
