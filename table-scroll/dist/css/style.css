@@ -1,0 +1,90 @@
+.outer {
+  width: 100%;
+  max-width: 1920px;
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.outer .table {
+  height: 400px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.outer .table .btm-row {
+  overflow: auto;
+}
+
+.outer .table .btm-row .table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.outer .table .btm-row .table-row .cols {
+  width: 150px;
+  min-width: 150px;
+  height: 50px;
+  text-align: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.outer .table .top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  position: fixed;
+  max-width: 1200px;
+  top: 0px;
+  width: 100%;
+  overflow: auto;
+  border-bottom: none;
+}
+
+.outer .table .top-row .cols {
+  width: 150px;
+  min-width: 150px;
+  height: 50px;
+  text-align: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
