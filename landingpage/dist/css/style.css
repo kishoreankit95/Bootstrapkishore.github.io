@@ -20,6 +20,12 @@ body {
   position: relative;
 }
 
+.parent a.btn-primary {
+  background-color: #1247e7;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
 .upper {
   text-align: center;
   position: relative;

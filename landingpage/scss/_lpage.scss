@@ -16,7 +16,12 @@ body {
 	background-position: center;
 	height: 100vh;
 	background-attachment: fixed;
-	position: relative;
+    position: relative;
+    a.btn-primary{
+        background-color: #1247e7;
+        color: #ffffff;
+        border-radius: 6px;
+    }
 }
 
 .upper {

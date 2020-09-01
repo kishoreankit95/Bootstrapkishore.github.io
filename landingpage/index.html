@@ -9,8 +9,8 @@
 
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
 	<link rel="stylesheet" href="./dist/css/style.css">
 	
@@ -24,7 +24,14 @@
 			<h1>Welcome To The Beach</h1>  
 			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
 			
-			<button class="btn btn-primary" type="submit">Read More</button>
+			<a class="btn btn-primary waves-effect waves-light modal-trigger" href="#modal1" type="submit">Read More</a>
+
+			<div id="modal1" class="modal">
+				<div class="modal-content">
+					<h4>Modal Header</h4>
+					<p>A bunch of text</p>
+				  </div>
+			</div>
 			
 		</header>
 		
@@ -50,6 +57,9 @@
 	
 	</div>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="./js/made.js"></script>
 </body>
 
 </html>
