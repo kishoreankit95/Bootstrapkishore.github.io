@@ -74,17 +74,26 @@
 		
 	</form>
     </div>
-    <div>
+    <div class="find-vowels">
         <h3>
             Find the vowels in your name
         </h3>
-        <div>
+        <div class="input-name">
             <label> Enter your name here
-                <input type="text" id="inp-name">
+                <input type="text" id="inp-name" placeholder="Enter name here">
             </label>
-            <button onclick=vowelsfind()>Try Once!</button>
+            <button onclick=getvuwel()>Try Once!</button>
         </div>
-        <h4>VOWELS</h4>
+        <div class="result-separator">
+            <div class="vowels" id="vowels">
+                <h4>VOWELS</h4>
+                <p></p>
+            </div>
+            <div class="consonant" id="consonant">
+                <h4>CONSONANTS</h4>
+            </div>
+        </div>
+        
         <p id="result">Look here for Results!!</p>
     </div>
 

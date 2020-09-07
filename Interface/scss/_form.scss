@@ -43,3 +43,15 @@ line-height: 25px;
 
 	
 }
+
+.find-vowels{
+	.result-separator{
+		display: flex;
+		.vowels{
+			flex: 1;
+		}
+		.consonant{
+			flex: 1;
+		}
+	}
+}
