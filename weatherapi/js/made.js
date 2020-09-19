@@ -125,7 +125,7 @@ $(document).ready(function(){
 
         $('.indv-city').attr('id', 'id' + idno);
 
-        $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&units=Metric&APPID=eaeddcf19cf77bb3b515062fed6d2a73", function (data) {
+        $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&units=Metric&APPID=eaeddcf19cf77bb3b515062fed6d2a73", function (data) {
 
             console.log(data);
 
