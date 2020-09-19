@@ -1,20 +1,104 @@
-.row {
-  margin-top: 20px;
+.weather-cont {
+  background-color: #FAFAFA;
 }
 
-.margin-top-30 {
-  margin-top: 30px;
+.weather-cont .weather-disp {
+  margin: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.margin-top-20 {
-  margin-top: 20px;
+.weather-cont .weather-disp .indv-city {
+  width: calc(33.33% - 30px);
+  margin: 20px 15px;
+  border: 1px solid #C7C7C7;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 10px 18px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.airquality #lastUpdated {
-  background-color: #ebdcdc;
+.weather-cont .weather-disp .indv-city .cities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather-cont .weather-disp .indv-city .cities h3 {
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  width: 80px;
+}
+
+.weather-cont .weather-disp .indv-city .cities .citi {
+  font-size: 22px;
+  margin: 0px;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  width: calc(100% - 60px);
   text-align: center;
-  font-weight: 500;
-  padding: 15px 0;
+}
+
+.weather-cont .weather-disp .indv-city .country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather-cont .weather-disp .indv-city .country h3 {
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  width: 80px;
+}
+
+.weather-cont .weather-disp .indv-city .country .countri {
+  font-size: 22px;
+  margin: 0px;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  width: calc(100% - 60px);
+  text-align: center;
+}
+
+.weather-cont .weather-disp .indv-city .info {
+  padding: 10px 20px;
+}
+
+.weather-cont .weather-disp .indv-city .info .info-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather-cont .weather-disp .indv-city .info .info-row p {
+  margin: 0px;
+  width: 120px;
+}
+
+.weather-cont .weather-disp .indv-city .info .info-row .edits {
+  width: calc(100% - 120px);
+  text-align: center;
 }
 
 body {
