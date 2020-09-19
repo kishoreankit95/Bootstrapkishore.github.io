@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="dist/css/style.css" rel="stylesheet" type="text/css">
-    <title>Pollution Data Chart</title>
+    <title>Weather Report</title>
 </head>
 
 <body>
@@ -15,22 +15,39 @@
     <div class="airquality">
        
         <div class="container">
-            <div class="row">
+
+            <div class="">
+                <form>
+                    <input type="text" id="city" value="Kolkata" placeholder="Enter name of city here" />
+                    <input type="text" id="country" value="India" />
+                    <button id="submitt" >Submit</button>
+                </form>
+            </div>
+
+            <div class="weather-dis" id="apps">
+                <p class="temp">Temperature: <span id="app"></span></p>
+                <p class="humi">Humidity: <span id="app"></span></p>
+                <p class="weth">Weather: <span id="app"></span></p>
+            </div>
+
+            <!-- <div class="row">
                 <div class="col-lg-12 text-center">
                 <h3 id="api-title"></h3>
                 <hr>
                 </div>
-            </div>
+            </div> -->
+
             <!-- notifications area -->
-            <div class="row margin-top-20">
+            <!-- <div class="row margin-top-20">
                 <div class="col-lg-12 text-right">
                 <div class="alert alert-dark" role="alert">
                     <div id="lastUpdated"></div>
                 </div>
                 </div>
-            </div>
+            </div> -->
+
             <!-- data area -->
-            <div class="row margin-top-30">
+            <!-- <div class="row margin-top-30">
                 <div class="col-lg-12">
                 <div class="table-responsive">
                     <table class="table" id="air-quality-table">
@@ -51,7 +68,7 @@
                     </table>
                 </div>
                 </div>
-            </div>
+            </div> -->
             </div>
        
     </div>
