@@ -111,8 +111,15 @@ $(document).ready(function(){
     $('.pointone').select2({
         width: '100%',
     });
-        // theme: 'bootstrap4',
-        // width: 100%
+
+    $('#weather-car .owl-carousel').owlCarousel({
+        items: 1,
+        // autoplay: true,
+        margin: 10,
+        loop: true,
+        nav: false,
+        dots: true
+    });
     
 
     $('#submitt').click(function (e) {

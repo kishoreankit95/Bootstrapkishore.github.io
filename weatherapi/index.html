@@ -13,6 +13,9 @@
     <!-- Select2- bootstrap4-theme -->
     <link href="https://raw.githack.com/ttskch/select2-bootstrap4-theme/master/dist/select2-bootstrap4.css" rel="stylesheet">
     <link href="./dist/css/select2-bootstrap4.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet">
     <link href="dist/css/style.css" rel="stylesheet" type="text/css">
     <title>Weather Report</title>
 </head>
@@ -20,6 +23,27 @@
 <body>
 
     <div class="weather-wrap">
+
+        <div id="weather-car"  class="weather-carousel">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="weth-img">
+                        <img src="./dist/assets/images/winter.jpg" />
+                    </div>
+                    <h3>KNOW YOUR WEATHER</h3>
+                </div>
+                <div class="item">
+                    <div class="weth-img">
+                        <img src="./dist/assets/images/summer.jpg" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="weth-img">
+                        <img src="./dist/assets/images/rains.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
        
         <div class="container">
 
@@ -39,7 +63,9 @@
                         <label for="country">Country: </label>
                         <input type="text" id="country" value="India" />
                     </div>
-                    <button id="submitt" >Submit</button>
+                    <div class="inp-button">
+                        <button id="submitt" >Submit</button>
+                    </div>        
                 </form>
             </div>
         </div>
@@ -102,6 +128,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/made.js"></script>
     <script>
 
