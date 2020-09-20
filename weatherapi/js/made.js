@@ -130,23 +130,23 @@ $(document).ready(function(){
             console.log(data);
 
 
-            // $('.citi').empty();
-            var target = 'id' + idno + ' ' + '.citi';
+            $('.citi').empty();
+            // var target = 'id' + idno + ' ' + '.citi';
             $(target).append(data.name);
 
-            // $('.countri').empty();          
+            $('.countri').empty();          
             $('.countri').append(country);
 
-            // $('.temp').empty();          
+            $('.temp').empty();          
             $('.temp').append(data.main.temp);
 
-            // $('.humi').empty();          
+            $('.humi').empty();          
             $('.humi').append(data.main.humidity);
 
-            // $('.feel').empty();          
+            $('.feel').empty();          
             $('.feel').append(data.main.feels_like);
 
-            // $('.weth').empty();          
+            $('.weth').empty();          
             $('.weth').append(data.weather[0].main);
            
 
