@@ -22,13 +22,14 @@
       .cities{
         display: flex;
         align-items: center;
+        margin-bottom: 10px;
         h3{
           font-size: 18px;
           margin: 0px;
           font-weight: 400;
           font-family: "Roboto", sans-serif;
           line-height: 1;
-          width: 80px;
+          width: 120px;
         }
         .citi{
           font-size: 22px;
@@ -38,18 +39,20 @@
           font-family: "Roboto", sans-serif;
           width: calc(100% - 60px);
           text-align: center;
+          color: #3f5eae;
         }
       }
       .country{
         display: flex;
         align-items: center;
+        margin-bottom: 10px;
         h3{
           font-size: 18px;
           margin: 0px;
           font-weight: 400;
           font-family: "Roboto", sans-serif;
           line-height: 1;
-          width: 80px;
+          width: 120px;
         }
         .countri{
           font-size: 22px;
@@ -62,17 +65,27 @@
         }
       }
       .info{
-        padding: 10px 20px;
+        // padding: 10px 0px;
         .info-row{
           display: flex;
           align-items: center;
           p{
             margin: 0px;
             width: 120px;
+            font-size: 18px;
           }
           .edits{
             width: calc(100% - 120px);
             text-align: center;
+            color: #ffc649;
+            font-weight: 500;
+            font-size: 18px;
+          }
+          .humi{
+            color: #744338;
+          }
+          .weth{
+            color: #657fb2;
           }
         }
       }
