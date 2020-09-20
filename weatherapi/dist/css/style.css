@@ -1,3 +1,72 @@
+.weather-wrap .user-inputs .inp-city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  height: 42px;
+}
+
+.weather-wrap .user-inputs .inp-city label {
+  min-width: 80px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.weather-wrap .user-inputs .inp-city input[type="text"] {
+  width: 100%;
+  border: none;
+  padding: 5px 10px;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.weather-wrap .user-inputs .inp-city input[type="text"]:focus {
+  border: 1px solid #c7c7c7;
+  outline: none;
+  border-radius: 15px;
+}
+
+.weather-wrap .user-inputs .inp-country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  height: 42px;
+  border-bottom: 2px solid #C7C7C7;
+}
+
+.weather-wrap .user-inputs .inp-country label {
+  min-width: 80px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.weather-wrap .user-inputs .inp-country input[type="text"] {
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+.weather-wrap .user-inputs .inp-country input[type="text"]:focus {
+  border: 1px solid #c7c7c7;
+  outline: none;
+  border-radius: 15px;
+}
+
 .weather-cont {
   background-color: #FAFAFA;
 }

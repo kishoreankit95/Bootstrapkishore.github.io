@@ -103,36 +103,58 @@ function objcreate () {
 
 
 
+
+
+
 $(document).ready(function(){
 
+    $('.pointone').select2({
+        width: '100%',
+    });
+        // theme: 'bootstrap4',
+        // width: 100%
     
 
     $('#submitt').click(function (e) {
 
         e.preventDefault();
 
-        var city = $('#city').val();
+        //Input tag for city name text capturing
+        // var city = $('#city').val();
+   
 
-        console.log(city);
+        //Select 2 dropdown selected option capturing
+        var city = $('.pointone option:selected').text();
+      
+
+        // console.log(city);
 
         var country = $('#country').val();
         
-        objcreate();        
+        objcreate();
+        
+        var buton = $('#buton');
+        console.log(buton);
+        var butoncount = buton.value;
+        console.log(butoncount);
+        // butoncount = 0;
+        butoncount++;
 
         var idno;
-        idno = 0;
+        idno = 1;
         idno = idno + 1;
 
         $('.indv-city').attr('id', 'id' + idno);
 
         $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&units=Metric&APPID=eaeddcf19cf77bb3b515062fed6d2a73", function (data) {
 
-            console.log(data);
+            // console.log(data);
 
 
             $('.citi').empty();
+            $('.citi').append(data.name);
             // var target = 'id' + idno + ' ' + '.citi';
-            $(target).append(data.name);
+            // $(target).append(data.name);
 
             $('.countri').empty();          
             $('.countri').append(country);
