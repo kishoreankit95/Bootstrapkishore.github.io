@@ -1,0 +1,23 @@
+.outer {
+  width: 100%;
+  max-width: 1920px;
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.outer .text-split h3 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
