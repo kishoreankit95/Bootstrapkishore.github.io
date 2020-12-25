@@ -1,0 +1,26 @@
+.outer{
+    width: 100%;
+    max-width: 1920px;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    .text-split{
+        h3{
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .split__input{
+            .btn--split{
+                margin-top: 20px;
+            }
+            .split__text{
+                min-height: 40px;
+                background-color: #fff;
+                font-family: 'Nunito Sans', sans-serif;
+                border-radius: 20px;
+                margin-top: 30px;
+                font-size: 17px;
+                padding: 8px 15px;
+                font-weight: 600;
+            }
+        }
+    }
+}
