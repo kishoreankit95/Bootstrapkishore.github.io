@@ -13,7 +13,21 @@
   margin-top: 20px;
 }
 
-.outer .text-split .split__input .split__text {
+.outer .text-split .split__input label {
+  display: inline-block;
+}
+
+.outer .text-split .split__input label:focus {
+  color: #9e9e9e;
+}
+
+.outer .text-split .split__input input[type="text"]:focus {
+  border-bottom: none;
+  -webkit-box-shadow: 0 1px 0 0 #000;
+          box-shadow: 0 1px 0 0 #000;
+}
+
+.outer .text-split .split__textCont .split__text {
   min-height: 40px;
   background-color: #fff;
   font-family: 'Nunito Sans', sans-serif;
@@ -22,6 +36,15 @@
   font-size: 17px;
   padding: 8px 15px;
   font-weight: 600;
+  width: 100%;
+  word-break: break-word;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 .btn-primary {
@@ -42,5 +65,39 @@
 
 .btn-primary:focus {
   background-color: #1391f1;
+}
+
+label {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+  border: 1px solid #232323;
+  width: 300px;
+  display: block;
+  -webkit-transition: width 0.5s ease-in;
+  transition: width 0.5s ease-in;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input:not([type]):focus, input[type=text]:not(.browser-default):focus, input[type=password]:not(.browser-default):focus, input[type=email]:not(.browser-default):focus, input[type=url]:not(.browser-default):focus, input[type=time]:not(.browser-default):focus, input[type=date]:not(.browser-default):focus, input[type=datetime]:not(.browser-default):focus, input[type=datetime-local]:not(.browser-default):focus, input[type=tel]:not(.browser-default):focus, input[type=number]:not(.browser-default):focus, input[type=search]:not(.browser-default):focus, textarea.materialize-textarea:focus {
+  width: 100%;
+}
+
+input[type="text"]:focus {
+  border-bottom: none;
+  -webkit-box-shadow: 0 1px 0 0 #000;
+          box-shadow: 0 1px 0 0 #000;
+}
+
+input[type="text"]:focus + label {
+  border-bottom: none;
+  -webkit-box-shadow: 0 1px 0 0 #000;
+          box-shadow: 0 1px 0 0 #000;
 }
 /*# sourceMappingURL=style.css.map */
