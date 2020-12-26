@@ -6,14 +6,14 @@ var entrgap = document.getElementById("entrgap");
 
 var splittext = document.getElementsByClassName("split__text");
 
-console.log(entrgap);
-console.log(splittext);
+// console.log(entrgap);
+// console.log(splittext);
 
 function entrtxtCopy () {
   var splittxtval = entrtxt.value;
   var splittxtat = entrgap.value;
 
-  console.log("Hi");
+  // console.log("Hi");
 
   var result = splittxtval.split(splittxtat);
 
