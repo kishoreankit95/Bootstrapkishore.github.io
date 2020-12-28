@@ -22,3 +22,12 @@ function entrtxtCopy () {
   }
   
 }
+
+//Split text Section -- 1
+
+
+//Replace text Section -- 2
+var rephold = document.getElementById("entrtxt2");
+
+var reptxt = document.getElementById("entrgap2");
+

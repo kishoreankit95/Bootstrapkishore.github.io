@@ -19,8 +19,8 @@
     <div class="outer">
         <div class="container">
 
-        <!-- Text Splitting section into Small fragments -->
-            <div class="text-split">
+            <!-- Text Splitting section into Small fragments -->
+            <div class="text-cont">
                 <h3>Text Split Section</h3>
                 <div class="split__input">
                     <div class="split__input__hold">
@@ -39,14 +39,50 @@
                     <p class="split__text"></p>
                 </div>
             </div>    
+            <!-- Text Splitting section into Small fragments -->
+             
+            <!-- Text Replacing section into Small fragments -->
+            <div class="text-cont replace__txt">
+                <h3>Text Split Section</h3>
+                <div class="split__input">
+                    <div class="split__input__hold">
+                        <label for="entrtxt2">Enter Text First</label>
+                        <input type="text" id="entrtxt2" class="inp-smbig" placeholder="Enter your text" />
+                    </div>
+                    <div class="split__input__hold">
+                        <label for="entrgap2">Enter Text to be Replaced</label>
+                        <input type="text" id="entrgap2" class="inp-smbig" placeholder="To break at??" />
+                    </div>
+                    <div class="split__input__hold rep__inp">
+                        <div class="input__hold__radio">                            
+                            <input type="radio" id="reptxtall" name="reptxts" class="" />
+                            <label for="reptxtall">Replace for all matching elements</label>
+                        </div>
+                        <div class="input__hold__radio">                            
+                            <input type="radio" id="reptxtone" name="reptxts" class="" />
+                            <label for="reptxtone">Replace for first matching element</label>
+                        </div>                        
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn--split" onclick="entrtxtCopy()">Submit</button>
+                                        
+                </div>
+                <div class="split__textCont">
+                    <p class="split__text"></p>
+                </div>
+            </div>    
              <!-- Text Splitting section into Small fragments -->
-             
-             
+
+
         </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/made.js"></script>
 </body>
+
+<script>
+    
+</script>
 
 </html>
