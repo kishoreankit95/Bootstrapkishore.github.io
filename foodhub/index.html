@@ -33,14 +33,120 @@
         </div>  
         <!-- Body starts -->
         <div class="total-body">
-            <div class="navbar__head">
-                <h1>The Great table</h1>
-                <i class="fa fa-search" aria-hidden="true"></i>
+            <div class="navbar-body">
+                <div class="navbar__head">
+                    <h1>The Great table</h1>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class="navbar__drops">
+                    <div class="drop-down w-200 mr-au">
+                        <div class="drop-disp">
+                            <p>Today</p>
+                            <a href="#!"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        </div>
+                        <ul class="drop-list">
+                            <li>Today</li>
+                            <li>Tomorrow</li>
+                            <li>Yesterday</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>            
-            
+
+            <div class="items">
+                <div class="items__block">
+                    <h2>Table <span>5- Mrs. Einstein</span></h2>
+                    <div class="items__option">
+                        <ul class="nav nav-tabs" id="foodTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Drinks</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Food</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Desert</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="drop-down">
+                                    <div class="drop-disp">
+                                        <p>Wine</p>
+                                        <a href="#!"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                    </div>
+                                    <ul class="drop-list">
+                                        <li>Today</li>
+                                        <li>Tomorrow</li>
+                                        <li>Yesterday</li>
+                                    </ul>
+                                </div>
+                                <div class="items__product">
+                                    <div class="product">
+                                        <div class="img-holder">
+                                            <img src="./dist/assets/images/prod3.png" />
+                                        </div>
+                                        <div class="pric-info">
+                                            <h4>Beaux Feres</h4>
+                                            <p>$7.50</p>
+                                            <div class="qty">
+                                                <input class="btn-add" type="button" value="-" />
+                                                <input class="btn-add" type="text" value="0" />
+                                                <input class="btn-add form-contro" type="button" value="+" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="img-holder">
+                                            <img src="./dist/assets/images/prod3.png" />
+                                        </div>
+                                        <div class="pric-info">
+                                            <h4>Beaux Feres</h4>
+                                            <p>$7.50</p>
+                                            <div class="qty">
+                                                <input class="btn-add" type="button" value="-" id="decvalue">
+                                                <input class="btn-add" type="text" value="0" id="relvalue">
+                                                <input class="btn-add form-contro" type="button" value="+" id="incvalue" >
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product">
+                                        <div class="img-holder">
+                                            <img src="./dist/assets/images/prod3.png" />
+                                        </div>
+                                        <div class="pric-info">
+                                            <h4>Beaux Feres</h4>
+                                            <p>$7.50</p>
+                                            <div class="qty">
+                                                <input class="btn-add" type="button" value="-" />
+                                                <input class="btn-add" type="text" value="0" />
+                                                <input class="btn-add form-contro" type="button" value="+" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Hii</div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="items__price">
+
+                </div>
+            </div>
+
         </div>
-    </div>
+            
+    </div>            
+            
+        
 
     
 
@@ -51,6 +157,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script> -->
     <script src="./js/made.js"></script>
+    
 
 
 </body>
