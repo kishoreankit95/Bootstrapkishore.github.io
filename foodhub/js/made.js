@@ -27,8 +27,8 @@ $(document).ready(function(){
     $(this).addClass("active");
   }
 
-  var button;
 
+  //Increasing Counter Value
   $(".btn-addv").on("click", incvalu);
 
   function incvalu () {
@@ -36,9 +36,9 @@ $(document).ready(function(){
     var capini = capinp.val();
     var incval = ++capini;
     capinp.val(incval);
-    // console.log(capini); 
   }
 
+  //Decreasing Counter Value
   $(".btn-decv").on("click", decvalu);
 
   function decvalu () {
@@ -91,6 +91,92 @@ $(document).ready(function(){
     var categTotal = categTotalNum + netprice;
 
     $("#drinks .categ-total").text(categTotal);
+
+    // console.log("ck");
+    return netprice;
+  }
+
+
+  // Profile page Tab input button
+  $("#profile .btn-totv").on("change", addfooditem2);
+
+  var target2 = $("#food");
+
+  function addfooditem2 () {
+    var inpval = $(this).val();
+
+    var itmname = $(this).parent().siblings("h4").text();
+    var itmuprice = $(this).parent().siblings("p").children(".unit-pric").text();
+
+    var totcost = itmuprice*inpval;
+    var totcostPre = totcost.toPrecision(3);
+    var netprice = parseFloat(totcostPre);
+    
+    var categTotalini = $("#food .categ-total").text();
+
+    if (inpval > 0) {
+      const adddiv = document.createElement("div");
+
+      adddiv.className = "sep-items";
+
+      adddiv.innerHTML = `
+      <p class="fd__name">` + itmname + `</p>
+      <p class="fd__brkup">` + "$" + itmuprice + ` x ` + inpval + `</p>
+      <p class="fd__tot">`+ "$" + netprice + `</p> `;
+
+      target2.append(adddiv);
+
+      // categTotal.text(netprice);
+      
+    }
+
+    var categTotalNum = parseFloat(categTotalini);
+    var categTotal = categTotalNum + netprice;
+
+    $("#food .categ-total").text(categTotal);
+
+    // console.log("ck");
+    return netprice;
+  }
+
+
+  // contact page Tab input button
+  $("#contact .btn-totv").on("change", addfooditem3);
+
+  var target3 = $("#desert");
+
+  function addfooditem3 () {
+    var inpval = $(this).val();
+
+    var itmname = $(this).parent().siblings("h4").text();
+    var itmuprice = $(this).parent().siblings("p").children(".unit-pric").text();
+
+    var totcost = itmuprice*inpval;
+    var totcostPre = totcost.toPrecision(3);
+    var netprice = parseFloat(totcostPre);
+    
+    var categTotalini = $("#desert .categ-total").text();
+
+    if (inpval > 0) {
+      const adddiv = document.createElement("div");
+
+      adddiv.className = "sep-items";
+
+      adddiv.innerHTML = `
+      <p class="fd__name">` + itmname + `</p>
+      <p class="fd__brkup">` + "$" + itmuprice + ` x ` + inpval + `</p>
+      <p class="fd__tot">`+ "$" + netprice + `</p> `;
+
+      target3.append(adddiv);
+
+      // categTotal.text(netprice);
+      
+    }
+
+    var categTotalNum = parseFloat(categTotalini);
+    var categTotal = categTotalNum + netprice;
+
+    $("#desert .categ-total").text(categTotal);
 
     // console.log("ck");
     return netprice;
