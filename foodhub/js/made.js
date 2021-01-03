@@ -54,7 +54,7 @@ $(document).ready(function(){
   }
 
 
-  // Home page Tab input button
+  // Home page Tab input button keypress
   $("#home .btn-totv").on("change", addfooditem);
 
   var target1 = $("#drinks");
@@ -83,7 +83,6 @@ $(document).ready(function(){
 
       target1.append(adddiv);
 
-      // categTotal.text(netprice);
       
     }
 
