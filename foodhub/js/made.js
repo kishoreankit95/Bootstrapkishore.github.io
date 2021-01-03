@@ -75,12 +75,53 @@ $(document).ready(function(){
 
     //Price change in Invoice section
     // var categTotalini = $("#drinks .categ-total").text();
+    
 
+    // Check if item already in invoice section
+    
+
+    function abradabra () {
+      var checkitem1 = $(this).text();
+      // console.log(checkitem1);
+      if(itmname == checkitem1){
+        console.log("Found");
+      }
+      else{
+        const adddiv = document.createElement("div");
+  
+        adddiv.className = "sep-items";
+  
+        adddiv.innerHTML = `
+        <p class="fd__name">` + itmname + `</p>
+        <p class="fd__brkup">` + "$" + itmuprice + ` x ` + inpval + `</p>
+        <p class="fd__tot">`+ "$" + netprice + `</p> `;
+  
+        target1.append(adddiv);
+      }
+
+    }
 
     
     
 
-    if (inpval > 0) {
+    // if (inpval > 0) {
+    //   const adddiv = document.createElement("div");
+
+    //   adddiv.className = "sep-items";
+
+    //   adddiv.innerHTML = `
+    //   <p class="fd__name">` + itmname + `</p>
+    //   <p class="fd__brkup">` + "$" + itmuprice + ` x ` + inpval + `</p>
+    //   <p class="fd__tot">`+ "$" + netprice + `</p> `;
+
+    //   target1.append(adddiv);
+      
+    // }
+
+    var checks2 = $("#drinks .sep-items .fd__name");
+    console.log(checks2);
+
+    if(checks2.length === 0) {
       const adddiv = document.createElement("div");
 
       adddiv.className = "sep-items";
@@ -91,7 +132,29 @@ $(document).ready(function(){
       <p class="fd__tot">`+ "$" + netprice + `</p> `;
 
       target1.append(adddiv);
-      
+      console.log("1st Loop");
+    }
+    else if(checks2.length > 0){
+      for (var i=0; i<checks2.length; i++) {
+        var checkstxt = checks2[i].innerText;
+        if(checkstxt === itmname) {
+          console.log("no more");
+        }
+        else{
+          const adddiv = document.createElement("div");
+  
+          adddiv.className = "sep-items";
+  
+          adddiv.innerHTML = `
+          <p class="fd__name">` + itmname + `</p>
+          <p class="fd__brkup">` + "$" + itmuprice + ` x ` + inpval + `</p>
+          <p class="fd__tot">`+ "$" + netprice + `</p> `;
+  
+          target1.append(adddiv);
+          console.log("adding");
+        }
+      }
+      console.log("2nd Loop");
     }
 
 
@@ -105,7 +168,7 @@ $(document).ready(function(){
 
     //Picking text from breakup headers of three regions
     var categTotalini1 = $("#drinks .categ-total").text();
-    console.log(categTotalini1);
+    // console.log(categTotalini1);
     var categTotalini2 = $("#food .categ-total").text();
     var categTotalini3 = $("#desert .categ-total").text();
 
@@ -119,19 +182,12 @@ $(document).ready(function(){
 
     // Targetting summary section
     var choutbasic = $(".chkout-summ .chkout-sep p .chkout-basic");
-    // var choutbasictx = $(".chkout-summ .chkout-sep p .chkout-basic").text();
     var chouttax = $(".chkout-summ .chkout-sep p .chkout-tax");
-    // var chouttaxtx = $(".chkout-summ .chkout-sep p .chkout-tax").text();
     var choutdisc = $(".chkout-summ .chkout-sep p .chkout-disc");
-    // var choutdisctx = $(".chkout-summ .chkout-sep p .chkout-disc").text();
     var chouttotl = $(".price-chkut .btn-hold .chkout-totl");
-    // var chouttotltx = $(".price-chkut .btn-hold .chkout-totl").text();
 
-    // console.log(choutbasic);
-    // console.log(categTotalini1);
-    // console.log(categTotalini2);
-    // console.log(categTotalini3);
 
+    //Calculating Invoice breakup and total checkout calculations
     var choutbasictx = parseFloat(categTotal) + parseFloat(categTotalini2) + parseFloat(categTotalini3);
     var chouttaxtx = (choutbasictx*0.18).toPrecision(3);
     var chouttaxtx4 = parseFloat(chouttaxtx);
@@ -139,10 +195,11 @@ $(document).ready(function(){
 
     // console.log(choutbasic);
     // console.log(chouttax);
-
     choutbasic.text(choutbasictx);
     chouttax.text(chouttaxtx);
     chouttotl.text(chouttotltx);
+
+
 
     // console.log("ck");
     return netprice;
