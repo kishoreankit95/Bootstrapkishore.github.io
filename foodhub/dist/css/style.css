@@ -268,19 +268,49 @@ p {
   }
 }
 
+.fullPage .total-body .items .items__block .items__option .items__product .product .img-holder {
+  width: 99px;
+}
+
+.fullPage .total-body .items .items__block .items__option .items__product .product .img-holder img {
+  width: 100%;
+}
+
 .fullPage .total-body .items .items__block .items__option .items__product .product .img-holder:hover {
   -webkit-box-shadow: 7px 7px 10px -1px rgba(0, 0, 0, 0.67);
           box-shadow: 7px 7px 10px -1px rgba(0, 0, 0, 0.67);
+}
+
+.fullPage .total-body .items .items__block .items__option .items__product .product .pric-info {
+  width: calc(100% - 150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .fullPage .total-body .items .items__block .items__option .items__product .product .pric-info h4 {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .fullPage .total-body .items .items__block .items__option .items__product .product .pric-info p {
-  margin-bottom: 33px;
+  margin-bottom: 40px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .fullPage .total-body .items .items__block .items__option .items__product .product .pric-info .qty .btn-add {

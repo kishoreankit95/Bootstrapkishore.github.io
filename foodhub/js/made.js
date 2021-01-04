@@ -80,28 +80,7 @@ $(document).ready(function(){
     // Check if item already in invoice section
     
 
-    function abradabra () {
-      var checkitem1 = $(this).text();
-      // console.log(checkitem1);
-      if(itmname == checkitem1){
-        console.log("Found");
-      }
-      else{
-        const adddiv = document.createElement("div");
-  
-        adddiv.className = "sep-items";
-  
-        adddiv.innerHTML = `
-        <p class="fd__name">` + itmname + `</p>
-        <p class="fd__brkup">` + "$" + itmuprice + ` x ` + inpval + `</p>
-        <p class="fd__tot">`+ "$" + netprice + `</p> `;
-  
-        target1.append(adddiv);
-      }
-
-    }
-
-    
+        
     
 
     // if (inpval > 0) {
@@ -133,27 +112,48 @@ $(document).ready(function(){
 
       target1.append(adddiv);
       console.log("1st Loop");
-    }
+      // target1.getElementById
+    }    
     else if(checks2.length > 0){
       for (var i=0; i<checks2.length; i++) {
         var checkstxt = checks2[i].innerText;
-        if(checkstxt === itmname) {
-          console.log("no more");
-        }
-        else{
-          const adddiv = document.createElement("div");
-  
-          adddiv.className = "sep-items";
-  
-          adddiv.innerHTML = `
-          <p class="fd__name">` + itmname + `</p>
+        
+        if(checkstxt == itmname) {
+          var getinstance = checks2[i];
+          var instanceParent = getinstance.parentElement;
+          instanceParent.innerHTML = 
+          `<p class="fd__name">` + itmname + `</p>
           <p class="fd__brkup">` + "$" + itmuprice + ` x ` + inpval + `</p>
           <p class="fd__tot">`+ "$" + netprice + `</p> `;
-  
-          target1.append(adddiv);
-          console.log("adding");
+          // var anki2 = anki1.getElementByClassName("fd__brkup");
+          // var brkupto = checks2[i].parent().children(".fd__brkup");
+          // var brkupinsrt = itmuprice + "x" + inpval;
+          // var brkuptocopy = brkupto.text(brkupinsrt);
+          // var nettocopy = (itmuprice*inpval);
+          var categTotalini1 = $("#drinks .categ-total").text();
+          var categTotalNum = parseFloat(categTotalini1);
+          var categTotal = categTotalNum + netprice;
+          $("#drinks .categ-total").text(categTotal);
+          // checks2[i].siblings(".fd__brkup").text()
+          console.log("no more");
+          // console.log(nettocopy);
+          console.log(ank1);
+          console.log(anki1);
+          return;
         }
       }
+      const adddiv = document.createElement("div");
+  
+      adddiv.className = "sep-items";
+
+      adddiv.innerHTML = `
+      <p class="fd__name">` + itmname + `</p>
+      <p class="fd__brkup">` + "$" + itmuprice + ` x ` + inpval + `</p>
+      <p class="fd__tot">`+ "$" + netprice + `</p> `;
+
+      target1.append(adddiv);
+      console.log("adding");
+      // addsepitemblock(target1);
       console.log("2nd Loop");
     }
 
@@ -203,6 +203,20 @@ $(document).ready(function(){
 
     // console.log("ck");
     return netprice;
+  }
+
+  function addsepitemblock (focusin) {
+    const adddiv = document.createElement("div");
+  
+    adddiv.className = "sep-items";
+
+    adddiv.innerHTML = `
+    <p class="fd__name">` + itmname + `</p>
+    <p class="fd__brkup">` + "$" + itmuprice + ` x ` + inpval + `</p>
+    <p class="fd__tot">`+ "$" + netprice + `</p> `;
+
+    focusin.append(adddiv);
+    console.log("adding");
   }
 
 
