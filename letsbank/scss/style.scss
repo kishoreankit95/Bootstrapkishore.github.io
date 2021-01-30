@@ -1,4 +1,4 @@
-@import './tab1';
+@import './variables';
 @import './dashboard';
 @import './icons';
 
@@ -10,9 +10,10 @@ body{
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
+    max-width: 1415px;
     margin: 0 auto;
+    padding: 0;
 }
 
 // p,h1, h2, h3, h4, h5, h6{
