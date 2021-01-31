@@ -148,7 +148,7 @@ p {
 }
 
 .fullPage .checks .checks__txt .simpl {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   padding-left: 50px;
 }
 
@@ -163,6 +163,18 @@ p {
 }
 
 .fullPage .checks .checks__txt .img-hold::before {
+  content: "";
+  position: absolute;
+  background: url("../assets/images/blob.svg") no-repeat;
+  background-size: contain;
+  width: 572px;
+  height: 572px;
+  left: -317px;
+  top: -257px;
+  z-index: -1;
+}
+
+.fullPage .checks .checks__txt .img-hold::after {
   content: "";
   position: absolute;
   background: url("../assets/images/dots.svg") no-repeat;
@@ -193,14 +205,60 @@ p {
 
 .fullPage .checks .eligibile .eligible__calc {
   background-color: #fff;
-  padding: 10px 25px;
+  padding: 20px 45px 50px;
   -webkit-box-shadow: 0px 0px 20px #00000033;
           box-shadow: 0px 0px 20px #00000033;
-  border-radius: 11px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.fullPage .checks .eligibile .eligible__calc p.elig-hdr {
+  font: normal normal 600 22px/26px 'Open Sans', sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .fullPage .checks .eligibile .eligible__calc .eligible__slid {
-  width: 250px;
+  width: 350px;
+}
+
+.fullPage .checks .eligibile .eligible__calc .eligible__slid .income {
+  margin-bottom: 40px;
+}
+
+.fullPage .checks .eligibile .eligible__calc .eligible__slid .income .lwr {
+  margin-bottom: 15px;
+}
+
+.fullPage .checks .eligibile .eligible__calc .eligible__slid .income .progress {
+  height: 5px;
+}
+
+.fullPage .checks .eligibile .eligible__calc .eligible__slid .income .progress .progress-bar {
+  background-color: #663399;
+}
+
+.fullPage .checks .eligibile .eligible__calc::before {
+  content: "";
+  position: absolute;
+  background: url("../assets/images/big-circle.png") no-repeat;
+  background-size: contain;
+  width: 1185px;
+  height: 1080px;
+  top: -445px;
+  left: -203px;
+}
+
+.fullPage .checks .eligibile .eligible__calc::after {
+  content: "";
+  position: absolute;
+  background: url("../assets/images/dots.svg") no-repeat;
+  background-size: contain;
+  width: 430px;
+  height: 70px;
+  right: -300px;
+  bottom: -56px;
+  z-index: -1;
 }
 
 .fullPage .checks .eligibile .eligible__disp {
@@ -348,12 +406,15 @@ p {
 .income .upr {
   text-transform: capitalize;
   color: #949494;
+  margin-bottom: 8px;
+  font: normal normal 600 16px/20px 'Open Sans', sans-serif;
 }
 
 .income .lwr {
   color: #222222;
   text-transform: capitalize;
-  font: normal normal 600 16px/20px 'Open Sans', sans-serif;
+  font: normal normal 600 26px/32px 'Open Sans', sans-serif;
+  margin-bottom: 10px;
 }
 
 .drop-down {
@@ -731,7 +792,7 @@ body {
 
 .container {
   width: 95%;
-  max-width: 1415px;
+  max-width: 1545px;
   margin: 0 auto;
   padding: 0;
 }

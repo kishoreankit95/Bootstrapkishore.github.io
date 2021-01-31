@@ -60,7 +60,7 @@
             padding-left: 23px;
             width: 45%;
             .simpl{
-                margin-bottom: 100px;
+                margin-bottom: 80px;
                 padding-left: 50px;
                 
                 h2{
@@ -72,6 +72,17 @@
                 max-width: 652px;
                 position: relative;
                 &::before{
+                    content: "";
+                    position: absolute;
+                    background: url("../assets/images/blob.svg") no-repeat;
+                    background-size: contain;
+                    width: 572px;
+                    height: 572px;
+                    left: -317px;
+                    top: -257px;
+                    z-index: -1;
+                }
+                &::after{
                     content: "";
                     position: absolute;
                     background: url("../assets/images/dots.svg") no-repeat;
@@ -94,12 +105,50 @@
             width: 45%;
             .eligible__calc{
                 background-color: $color-white1;
-                padding: 10px 25px;
+                padding: 20px 45px 50px;
                 box-shadow: 0px 0px 20px #00000033;
-                border-radius: 11px;
-                
+                border-radius: 15px;
+                position: relative;
+                p.elig-hdr{
+                    font: normal normal 600 22px/26px 'Open Sans', sans-serif;
+                    text-align: center; 
+                    margin-bottom: 50px;
+                }
                 .eligible__slid{
-                    width: 250px;
+                    width: 350px;
+                    .income{
+                        margin-bottom: 40px;
+                        .lwr{
+                            margin-bottom: 15px;
+                        }
+                        .progress{
+                            height: 5px;
+                            .progress-bar{
+                                background-color: $color-viol1;
+                            }
+                        }
+                    }
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    background: url("../assets/images/big-circle.png") no-repeat;
+                    background-size: contain;
+                    width: 1185px;
+                    height: 1080px;
+                    top: -445px;
+                    left: -203px;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    background: url("../assets/images/dots.svg") no-repeat;
+                    background-size: contain;
+                    width: 430px;
+                    height: 70px;
+                    right: -300px;
+                    bottom: -56px;
+                    z-index: -1;
                 }
             }
             .eligible__disp{
@@ -233,11 +282,14 @@
     .upr{
         text-transform: capitalize;
         color: $color-grey2;
+        margin-bottom: 8px;
+        font: normal normal 600 16px/20px 'Open Sans', sans-serif;
     }
     .lwr{
         color: $color-black1;
         text-transform: capitalize;
-        font: normal normal 600 16px/20px 'Open Sans', sans-serif;
+        font: normal normal 600 26px/32px 'Open Sans', sans-serif;
+        margin-bottom: 10px;
     }
 }
 
