@@ -10,6 +10,10 @@
   margin-bottom: 40px !important;
 }
 
+.mb-5 {
+  margin-bottom: 50px !important;
+}
+
 .mt-1 {
   margin-top: 10px !important;
 }
@@ -106,25 +110,14 @@ p {
   margin-left: 60px;
 }
 
-.header .nav__btns .btns {
+.header .nav__btns .btn-primary {
   margin-left: 24px;
-  border: 2px solid #663399;
-  border-radius: 24px;
-  opacity: 1;
-  color: #663399;
   width: 118px;
   height: 45px;
-  background-color: transparent;
-  font: normal normal 600 16px/29px 'Open Sans', sans-serif;
 }
 
-.header .nav__btns .btns:first-child {
+.header .nav__btns .btn-primary:first-child {
   margin-left: 0;
-}
-
-.header .nav__btns .btns:hover {
-  background: #663399;
-  color: #fff;
 }
 
 .header .nav__btns .btn-dep {
@@ -281,6 +274,42 @@ p {
 
 .fullPage .checks .openacc {
   width: 45%;
+}
+
+.fullPage .checks .openacc .openacc__boost h2 {
+  margin-bottom: 30px;
+}
+
+.fullPage .checks .openacc .light {
+  padding-top: 40px;
+}
+
+.fullPage .checks .openacc .light p {
+  color: #777777;
+}
+
+.fullPage .checks .openacc .btn-hold .btn-primary {
+  width: 279px;
+  height: 58px;
+}
+
+.fullPage .section-two {
+  background: url("../assets/images/lower-bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.btn-primary {
+  border: 2px solid #663399;
+  border-radius: 24px;
+  opacity: 1;
+  color: #663399;
+  background-color: transparent;
+  font: normal normal 600 16px/29px 'Open Sans', sans-serif;
+}
+
+.btn-primary:hover {
+  background: #663399;
+  color: #fff;
 }
 
 .blk-brder {

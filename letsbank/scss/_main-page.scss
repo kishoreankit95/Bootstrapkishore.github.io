@@ -27,24 +27,14 @@
     }
     .nav__btns{
         margin-left: 60px;
-        .btns{
+        .btn-primary{
             margin-left: 24px;
             // box-shadow: 0px 0px 20px #00000033;
-            border: 2px solid $color-viol1;
-            border-radius: 24px;
-            opacity: 1;
-            color: $color-viol1;
             width: 118px;
             height: 45px;
-            background-color: transparent;
-            font: normal normal 600 16px/29px 'Open Sans', sans-serif;
             &:first-child{
                 margin-left: 0;
-            }
-            &:hover{
-                background: $color-viol1;
-                color: $color-white1;
-            }
+            }           
         }
         .btn-dep{
             background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
@@ -59,7 +49,7 @@
     }
 }
 
-.fullPage{      
+.fullPage{    
     .checks{
         display: flex;
         justify-content: space-between;
@@ -168,7 +158,42 @@
         }
         .openacc{
             width: 45%;
-        }
+            .openacc__boost{
+                h2{
+                    margin-bottom: 30px;
+                }
+            }
+            .light{
+                padding-top: 40px;
+                p{
+                    color: $color-grey5;                    
+                }
+            }
+            .btn-hold{
+                .btn-primary{
+                    width: 279px;
+                    height: 58px;
+                }
+            }
+        }       
+    }
+    .section-two{        
+        background: url("../assets/images/lower-bg.png") no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.btn-primary{
+    // box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid $color-viol1;
+    border-radius: 24px;
+    opacity: 1;
+    color: $color-viol1;
+    background-color: transparent;
+    font: normal normal 600 16px/29px 'Open Sans', sans-serif;    
+    &:hover{
+        background: $color-viol1;
+        color: $color-white1;
     }
 }
 
