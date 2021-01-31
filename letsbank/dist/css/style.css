@@ -159,6 +159,18 @@ p {
 
 .fullPage .checks .checks__txt .img-hold {
   max-width: 652px;
+  position: relative;
+}
+
+.fullPage .checks .checks__txt .img-hold::before {
+  content: "";
+  position: absolute;
+  background: url("../assets/images/dots.svg") no-repeat;
+  background-size: contain;
+  width: 430px;
+  height: 70px;
+  right: -100px;
+  bottom: -35px;
 }
 
 .fullPage .checks .checks__txt .img-hold img {
@@ -295,7 +307,12 @@ p {
 
 .fullPage .section-two {
   background: url("../assets/images/lower-bg.png") no-repeat;
-  background-size: 100% 100%;
+  background-size: contain;
+  background-position: 0 151px;
+}
+
+.fullPage .section-two .checks {
+  padding: 20px 0 0;
 }
 
 .btn-primary {

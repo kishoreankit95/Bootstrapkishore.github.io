@@ -70,6 +70,17 @@
             }
             .img-hold{
                 max-width: 652px;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    background: url("../assets/images/dots.svg") no-repeat;
+                    background-size: contain;
+                    width: 430px;
+                    height: 70px;
+                    right: -100px;
+                    bottom: -35px;
+                }
                 img{
                     width: 100%;
                     vertical-align: middle;
@@ -179,7 +190,11 @@
     }
     .section-two{        
         background: url("../assets/images/lower-bg.png") no-repeat;
-        background-size: 100% 100%;
+        background-size: contain;
+        background-position: 0 151px;
+        .checks{
+            padding: 20px 0 0;
+        }
     }
 }
 
