@@ -226,11 +226,13 @@ p {
 }
 
 .fullPage .checks .progs .progs__fac .progs-cols .progs__pills {
+  background-color: #f9f9f9;
   border-radius: 11px;
-  -webkit-box-shadow: 0px 0px 20px #00000033;
-          box-shadow: 0px 0px 20px #00000033;
+  -webkit-box-shadow: 0px 0px 20px #2321321F;
+          box-shadow: 0px 0px 20px #2321321F;
   padding: 30px 34px;
   margin-top: 60px;
+  border: 1px solid #ffffff;
 }
 
 .fullPage .checks .progs .progs__fac .progs-cols .progs__pills:first-child {
