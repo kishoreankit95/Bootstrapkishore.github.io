@@ -1,15 +1,24 @@
 
 $color-viol1 : #663399;
-$color-viol1 : #663399;
+$color-viol2 : #6c389e;
+$color-viol3 : #663398;
+$color-viol4 : #a58dc7;
 
 $color-white1 : #fff;
 
 $color-black1 : #222222;
 $color-black2 : #000000;
 
+$color-grey1 : #a98cc6;
+$color-grey2 : #949494;
+$color-grey3 : #999999;
+
 
 .mb-1{
     margin-bottom: 10px !important;
+}
+.mb-2{
+    margin-bottom: 20px !important;
 }
 .mb-4{
     margin-bottom: 40px !important;
@@ -17,6 +26,12 @@ $color-black2 : #000000;
 
 .mt-1{
     margin-top: 10px !important;
+}
+.mt-2{
+    margin-top: 20px !important;
+}
+.mt-14{
+    margin-top: 140px !important;
 }
 
 .mr-au{
