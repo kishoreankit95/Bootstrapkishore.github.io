@@ -1,3 +1,7 @@
+.fullPage{
+    overflow: hidden;
+}
+
 .header{    
     padding: 27px 0 0;
     .logo__cont{
@@ -49,7 +53,7 @@
     }
 }
 
-.fullPage{    
+.section-one{     
     .checks{
         display: flex;
         justify-content: space-between;
@@ -167,95 +171,97 @@
                 }
             }
         }
-        .progs{
-            width: 50%;
-            .progs__fac{
-                display: flex;
-                // flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: flex-start;
-                gap: 48px;
-                .progs-cols{
-                    width: 50%;
-                    &:nth-child(2){
-                        padding-top: 140px;
-                    }
-                    .progs__pills{
-                        // width: 48%;
-                        background-color: $color-grey4;
-                        border-radius: 11px;
-                        box-shadow: 0px 0px 20px #2321321F;
-                        padding: 30px 34px;
-                        margin-top: 60px;
-                        border: 1px solid #ffffff;
-                        &:first-child{
-                            margin-top: 0;
-                        }
-                        .img-hold{
-                            margin-bottom: 25px;
-                            img{
-                                vertical-align: middle;
-                                width: 90px;
-                            }
-                        }
-                        .txt{
-                            margin-bottom: 30px;
-                            h4{
-                                color: $color-black1;
-                                margin-bottom: 10px;
-                                font: normal normal 600 15px/19px 'Open Sans', sans-serif;
-                            }
-                            p{
-                                color: $color-grey3;
-                                font: normal normal normal 15px/19px 'Open Sans', sans-serif;
-                            }
-                        }
-                        &:hover{
-                            background-color: $color-viol4;
-                            .txt{
-                                h4{
-                                    color: $color-white1;
-                                }
-                                p{
-                                    color: $color-white1;
-                                }
-                            }
-                        }
-                    }
-                }
-                
-            }
-        }
-        .openacc{
-            width: 45%;
-            .openacc__boost{
-                h2{
-                    margin-bottom: 30px;
-                }
-            }
-            .light{
-                padding-top: 40px;
-                p{
-                    color: $color-grey5;                    
-                }
-            }
-            .btn-hold{
-                .btn-primary{
-                    width: 279px;
-                    height: 58px;
-                }
-            }
-        }       
-    }
-    .section-two{        
-        background: url("../assets/images/lower-bg.png") no-repeat;
-        background-size: contain;
-        background-position: 0 151px;
-        .checks{
-            padding: 90px 0 110px;
-        }
     }
 }
+.section-two{
+    background: url("../assets/images/lower-bg.png") no-repeat;
+    background-size: contain;
+    background-position: 0 151px;
+    .checks{
+        padding: 90px 0 110px;
+    }
+    .progs{
+        width: 50%;
+        .progs__fac{
+            display: flex;
+            // flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 48px;
+            .progs-cols{
+                width: 50%;
+                &:nth-child(2){
+                    padding-top: 140px;
+                }
+                .progs__pills{
+                    // width: 48%;
+                    background-color: $color-grey4;
+                    border-radius: 11px;
+                    box-shadow: 0px 0px 20px #2321321F;
+                    padding: 30px 34px;
+                    margin-top: 60px;
+                    border: 1px solid #ffffff;
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                    .img-hold{
+                        margin-bottom: 25px;
+                        img{
+                            vertical-align: middle;
+                            width: 90px;
+                        }
+                    }
+                    .txt{
+                        margin-bottom: 30px;
+                        h4{
+                            color: $color-black1;
+                            margin-bottom: 10px;
+                            font: normal normal 600 15px/19px 'Open Sans', sans-serif;
+                        }
+                        p{
+                            color: $color-grey3;
+                            font: normal normal normal 15px/19px 'Open Sans', sans-serif;
+                        }
+                    }
+                    &:hover{
+                        background-color: $color-viol4;
+                        .txt{
+                            h4{
+                                color: $color-white1;
+                            }
+                            p{
+                                color: $color-white1;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .openacc{
+        width: 45%;
+        .openacc__boost{
+            h2{
+                margin-bottom: 30px;
+            }
+        }
+        .light{
+            padding-top: 40px;
+            p{
+                color: $color-grey5;                    
+            }
+        }
+        .btn-hold{
+            .btn-primary{
+                width: 279px;
+                height: 58px;
+            }
+        }
+    }
+}            
+    
+
 
 .btn-primary{
     // box-shadow: 0px 0px 20px #00000033;
