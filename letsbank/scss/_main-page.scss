@@ -115,7 +115,7 @@
                     margin-bottom: 50px;
                 }
                 .eligible__slid{
-                    width: 350px;
+                    width: 300px;
                     .income{
                         margin-bottom: 40px;
                         .lwr{
@@ -138,6 +138,7 @@
                     height: 1080px;
                     top: -445px;
                     left: -203px;
+                    z-index: -1;
                 }
                 &::after{
                     content: "";
@@ -153,8 +154,17 @@
             }
             .eligible__disp{
                 background-color: $color-viol2;
-                padding: 50px 20px;
+                padding: 80px 20px;
                 border-radius: 0 7px 7px 0;
+                .loan{
+                    margin-bottom: 25px;
+                    p{
+                        text-align: center;
+                    }
+                    .hdr{
+                        margin-bottom: 3px;
+                    }
+                }
             }
         }
         .progs{
@@ -242,7 +252,7 @@
         background-size: contain;
         background-position: 0 151px;
         .checks{
-            padding: 20px 0 0;
+            padding: 90px 0 110px;
         }
     }
 }
@@ -261,6 +271,15 @@
     }
 }
 
+.btn-appr{
+    background-color: $color-white1;
+    color: $color-viol1;
+    font: normal normal 600 14px/18px 'Open Sans', sans-serif;
+    border-radius: 30px;
+    width: 140px;
+    height: 40px;
+}
+
 .blk-brder{
     background-color: $color-black2;
     width: 236px;
@@ -272,9 +291,11 @@
 .loan{
     .hdr{
         color: $color-grey1;
+        font: normal normal 600 15px/19px 'Open Sans', sans-serif;
     }
     .amt{
         color: $color-white1;
+        font: normal normal 600 20px/24px 'Open Sans', sans-serif;
     }
 }
 

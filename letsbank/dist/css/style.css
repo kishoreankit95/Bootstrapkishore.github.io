@@ -219,7 +219,7 @@ p {
 }
 
 .fullPage .checks .eligibile .eligible__calc .eligible__slid {
-  width: 350px;
+  width: 300px;
 }
 
 .fullPage .checks .eligibile .eligible__calc .eligible__slid .income {
@@ -247,6 +247,7 @@ p {
   height: 1080px;
   top: -445px;
   left: -203px;
+  z-index: -1;
 }
 
 .fullPage .checks .eligibile .eligible__calc::after {
@@ -263,8 +264,20 @@ p {
 
 .fullPage .checks .eligibile .eligible__disp {
   background-color: #6c389e;
-  padding: 50px 20px;
+  padding: 80px 20px;
   border-radius: 0 7px 7px 0;
+}
+
+.fullPage .checks .eligibile .eligible__disp .loan {
+  margin-bottom: 25px;
+}
+
+.fullPage .checks .eligibile .eligible__disp .loan p {
+  text-align: center;
+}
+
+.fullPage .checks .eligibile .eligible__disp .loan .hdr {
+  margin-bottom: 3px;
 }
 
 .fullPage .checks .progs {
@@ -370,7 +383,7 @@ p {
 }
 
 .fullPage .section-two .checks {
-  padding: 20px 0 0;
+  padding: 90px 0 110px;
 }
 
 .btn-primary {
@@ -387,6 +400,15 @@ p {
   color: #fff;
 }
 
+.btn-appr {
+  background-color: #fff;
+  color: #663399;
+  font: normal normal 600 14px/18px 'Open Sans', sans-serif;
+  border-radius: 30px;
+  width: 140px;
+  height: 40px;
+}
+
 .blk-brder {
   background-color: #000000;
   width: 236px;
@@ -397,10 +419,12 @@ p {
 
 .loan .hdr {
   color: #a98cc6;
+  font: normal normal 600 15px/19px 'Open Sans', sans-serif;
 }
 
 .loan .amt {
   color: #fff;
+  font: normal normal 600 20px/24px 'Open Sans', sans-serif;
 }
 
 .income .upr {
@@ -781,6 +805,11 @@ p {
   height: 17px;
   width: 25px;
   display: inline-block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
