@@ -74,10 +74,7 @@ p {
 
 .fullPage {
   overflow: hidden;
-}
-
-.header {
-  padding: 27px 0 0;
+  padding-top: 27px;
 }
 
 .header .logo__cont {
@@ -130,6 +127,14 @@ p {
   color: #fff;
   width: 166px;
   height: 45px;
+}
+
+.header.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 500;
+  background: #fff;
 }
 
 .section-one .checks {

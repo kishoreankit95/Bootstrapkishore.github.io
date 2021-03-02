@@ -1,0 +1,121 @@
+.fullPage{
+    // overflow: hidden;
+    padding-top: 125px;
+}
+
+.header{    
+    // padding: 27px 0 0;
+    .logo__cont{
+        width: 123px;
+        img{
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+    .nav__links{
+        margin-left: auto;
+        .link{
+            margin-left: 50px;
+            font: normal normal 500 25px/34px 'Open Sans', sans-serif;
+            letter-spacing: 0px;
+            color: #222222;
+            opacity: 1;
+            text-decoration: none;
+            &:hover{
+                color: $color-viol1;
+                // font-weight: 600;
+            }
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
+    .nav__btns{
+        margin-left: 60px;
+        .btn-primary{
+            margin-left: 24px;
+            // box-shadow: 0px 0px 20px #00000033;
+            width: 118px;
+            height: 45px;
+            &:first-child{
+                margin-left: 0;
+            }           
+        }
+        .btn-dep{
+            background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+            color: $color-white1;            
+            width: 166px;
+            height: 45px;
+            // &:hover{
+            //     background-color: $color-viol1;
+            //     color: $color-white1;
+            // }
+        }
+    }
+    &.fixed{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 500;
+        background: #fff;
+    }
+}
+
+.sectionone{  
+    display: grid;
+     grid-template-areas: "gr largebx blu"
+     "pu largebx re"
+     "oran largebx gre";
+     gap: 15px;
+     justify-content: center;
+    //  @media screen and (max-width:768px) {
+    //     grid-template-areas: "gr largebx blu"
+    //     "pu largebx re"
+    //     "oran largebx gre";
+    //  }
+    .smbox{
+        width: 200px;
+        height: 150px;
+        border-radius: 5px;
+        // border: 1px solid black;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .largebox{
+        width: 400px;
+        height: 480px;
+        border: 1px solid yellow;
+        grid-area: largebx;
+        border-radius: 5px;
+    }
+    .green{
+        grid-area: gr;
+        border: 2px solid green;
+        
+    }
+    .purple{
+        grid-area: pu;
+        border: 1px solid purple;
+    }
+    .orange{
+        grid-area: oran;
+        border: 1px solid orange;
+    }
+    .blue{
+        grid-area: blu;
+        border: 1px solid blue;
+    }
+    .red{
+        grid-area: re;
+        border: 1px solid red;
+    }
+    .grey{
+        grid-area: gre;
+        border: 1px solid grey;
+    }
+}
+           
+    
+

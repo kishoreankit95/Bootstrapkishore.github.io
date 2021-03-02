@@ -1,11 +1,32 @@
 
 $(document).ready(function(){
 
-  // Tabs page tabs
-  // $('.tabs').tabs();
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 150) {
+        $('.header').addClass('fixed');
+    } else {
+        $('.header').removeClass('fixed');
+    }
+  });
 
-  // Collapsible for Course Tabs page
-  // $('.collapsible').collapsible();
+
+  //
+
+  $(window).on("load", function(){ 
+    var range = $("#range").attr("value");
+    $("#demo").html(range);
+    $(".slide").css("width", "50%");
+    $(document).on('input change', '#range', function() {
+      $('#demo').html( $(this).val() );
+      var slideWidth = $(this).val() * 100 / 50000;
+      
+      $(".slide").css("width", slideWidth + "%");
+    });
+  });
+
+  //  
+
+
 
   $(".drop-down").on("click", dropdowns);
 
