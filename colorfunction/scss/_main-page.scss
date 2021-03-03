@@ -62,8 +62,9 @@
 }
 
 .sectionone{  
-    display: grid;
-     grid-template-areas: "gr largebx blu"
+    display: none;
+    grid-template-columns: 220px 320px 220px;
+    grid-template-areas: "gr largebx blu"
      "pu largebx re"
      "oran largebx gre";
      gap: 15px;
@@ -73,6 +74,9 @@
     //     "pu largebx re"
     //     "oran largebx gre";
     //  }
+    @media screen and (min-width:768px) {
+        display: grid;
+    }
     .smbox{
         width: 200px;
         height: 150px;
@@ -84,9 +88,9 @@
         cursor: pointer;
     }
     .largebox{
-        width: 400px;
+        width: 300px;
         height: 480px;
-        border: 1px solid yellow;
+        border: 1px solid black;
         grid-area: largebx;
         border-radius: 5px;
     }
@@ -115,6 +119,54 @@
         grid-area: gre;
         border: 1px solid grey;
     }
+}
+
+.smbox{
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    // border: 1px solid black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.largebox{
+    width: 300px;
+    height: 480px;
+    border: 1px solid black;
+    grid-area: largebx;
+    border-radius: 5px;
+}
+.green{
+    grid-area: gr;
+    border: 2px solid green;
+    
+}
+.purple{
+    grid-area: pu;
+    border: 1px solid purple;
+}
+.orange{
+    grid-area: oran;
+    border: 1px solid orange;
+}
+.blue{
+    grid-area: blu;
+    border: 1px solid blue;
+}
+.red{
+    grid-area: re;
+    border: 1px solid red;
+}
+.grey{
+    grid-area: gre;
+    border: 1px solid grey;
+}
+
+.sectiontwo{
+    display: flex;
+    justify-content: center;
 }
            
     
