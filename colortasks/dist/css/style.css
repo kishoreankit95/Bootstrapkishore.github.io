@@ -288,13 +288,38 @@ p {
   border: 1px solid grey;
 }
 
-.sectiontwo {
+@media screen and (min-width: 768px) {
+  .sectiontwo {
+    display: none;
+  }
+}
+
+.sectiontwo .centeralign {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.sectiontwo .boxcont {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.sectiontwo .boxcont .item {
+  width: 100%;
+}
+
+.sectiontwo .boxcont .item .smbox {
+  width: 100%;
 }
 
 .icon-clock {

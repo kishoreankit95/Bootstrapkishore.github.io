@@ -22,6 +22,24 @@ $(document).ready(function(){
     console.log(border);
   }
 
+  $('.boxcont .owl-carousel').owlCarousel({
+    loop: false,
+    margin: 10,
+    items: 1.5,
+    nav: false,
+    dots: false,
+    center: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1.3
+      },
+      
+    }
+  });
+
 
 
 

@@ -165,8 +165,27 @@
 }
 
 .sectiontwo{
-    display: flex;
-    justify-content: center;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+    .centeralign{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }    
+    .boxcont{
+        margin-top: 20px;
+        width: 100%;
+        .item{
+            width: 100%;
+            .smbox{
+                width: 100%;
+            }
+        }
+        
+    }
 }
            
     
