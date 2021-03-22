@@ -71,13 +71,11 @@
         // display: flex;
         // justify-content: space-between;
         // align-items: center;
-        padding: 149px 0 60px;
+        padding: 149px 0 27px;
         // gap: 30px;
         .checks__txt{
-            padding-left: 23px;
             width: 100%;   
-            margin-bottom: 80px;
-            padding-left: 50px;            
+            margin-bottom: 40px;      
             h2{
                 color: $color-white1;
                 max-width: 916px;
@@ -90,7 +88,7 @@
                 max-width: 836px;
                 margin: 0 auto;
                 text-align: center;
-                font: normal normal 600 17px/26px 'Lato', sans-serif;
+                font: normal normal 600 17px/24px 'Lato', sans-serif;
                 text-shadow: 0px 0px 2px #444444BF;
             }
             .img-hold{
@@ -138,15 +136,19 @@
                 font: normal normal 500 18px/46px 'Lato', sans-serif;
             }
         }
-        
+        .down-arrow{
+            text-align: center;
+            margin-top: 107px;
+            .arrow{
+                width: 55px;
+                height: 55px;
+
+            }
+        }
     }
 }
 .section-two{
-    background: url("../assets/images/lower-bg.png") no-repeat;
-    background-size: contain;
-    background-position: 0 151px;
     .checks{
-        padding: 90px 0 110px;
     }
     .progs{
         width: 50%;
