@@ -157,7 +157,7 @@
     }
 }
 .section-two{
-    padding: 34px 0 83px;
+    padding: 34px 0 49px;
     .checks{
         h2{
             text-align: center;
@@ -166,7 +166,18 @@
             text-align: center;
         }
         .benefits-bullet{
+            .benf-bullet{
+                margin-bottom: 34px;
+                &:nth-child(3n+1) {
 
+                }
+                .text-holder{
+                    h4{
+                        font: normal normal 500 18px/22px 'Lato', sans-serif;
+                        color: #555555;
+                    }
+                }
+            }
         }
     }
 }            
@@ -188,61 +199,17 @@
 }
 
 .btn-primary{
-    // box-shadow: 0px 0px 20px #00000033;
-    border: 2px solid $color-viol1;
     border-radius: 24px;
     opacity: 1;
-    color: $color-viol1;
     background-color: transparent;
     font: normal normal 600 16px/29px 'Open Sans', sans-serif;    
     &:hover{
-        background: $color-viol1;
         color: $color-white1;
     }
 }
 
-.btn-appr{
-    background-color: $color-white1;
-    color: $color-viol1;
-    font: normal normal 600 14px/18px 'Open Sans', sans-serif;
-    border-radius: 30px;
-    width: 140px;
-    height: 40px;
-}
 
-.blk-brder{
-    background-color: $color-black2;
-    width: 236px;
-    height: 8px;
-    border-radius: 13px;
-    opacity: 0.7;
-}
 
-.loan{
-    .hdr{
-        color: $color-grey1;
-        font: normal normal 600 15px/19px 'Open Sans', sans-serif;
-    }
-    .amt{
-        color: $color-white1;
-        font: normal normal 600 20px/24px 'Open Sans', sans-serif;
-    }
-}
-
-.income{
-    .upr{
-        text-transform: capitalize;
-        color: $color-grey2;
-        margin-bottom: 8px;
-        font: normal normal 600 16px/20px 'Open Sans', sans-serif;
-    }
-    .lwr{
-        color: $color-black1;
-        text-transform: capitalize;
-        font: normal normal 600 26px/32px 'Open Sans', sans-serif;
-        margin-bottom: 10px;
-    }
-}
 
 
 .drop-down {
