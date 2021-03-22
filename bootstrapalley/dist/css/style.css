@@ -89,7 +89,7 @@ p {
 }
 
 .header {
-  padding: 13.75px 0;
+  padding: 14px 0;
 }
 
 .header .logo__cont {
@@ -152,8 +152,13 @@ p {
 
 .section-one {
   background: url("../assets/images/laptop-bg.png") no-repeat center center;
-  background-size: contain;
-  height: 619px;
+  background-size: 100% 100%;
+}
+
+.section-one .black-wrapper {
+  opacity: 0.8;
+  background: transparent -webkit-gradient(linear, left bottom, left top, from(#231F2033), to(#000000)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(0deg, #231F2033 0%, #000000 100%) 0% 0% no-repeat padding-box;
 }
 
 .section-one .checks {
