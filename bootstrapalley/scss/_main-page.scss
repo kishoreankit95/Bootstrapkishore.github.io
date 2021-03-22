@@ -123,6 +123,7 @@
         }
         .get-started{
             text-align: center;
+            height: 55px;
             .started{
                 text-transform: capitalize;
                 width: 165px;
@@ -134,15 +135,23 @@
                 opacity: 1;
                 color: $color-white1;
                 font: normal normal 500 18px/46px 'Lato', sans-serif;
+                text-decoration: none;
+                transition: all 0.25s linear;
+                &:hover{
+                    width: 190px;
+                    height: 55px;
+                    font: normal normal 500 22px/53px 'Lato', sans-serif;
+                }
             }
         }
         .down-arrow{
             text-align: center;
-            margin-top: 107px;
+            margin-top: 96px;
             .arrow{
                 width: 55px;
                 height: 55px;
-
+                cursor: pointer;
+                
             }
         }
     }

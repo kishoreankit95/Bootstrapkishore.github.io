@@ -222,6 +222,7 @@ p {
 
 .section-one .checks .get-started {
   text-align: center;
+  height: 55px;
 }
 
 .section-one .checks .get-started .started {
@@ -236,16 +237,26 @@ p {
   opacity: 1;
   color: #fff;
   font: normal normal 500 18px/46px 'Lato', sans-serif;
+  text-decoration: none;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.section-one .checks .get-started .started:hover {
+  width: 190px;
+  height: 55px;
+  font: normal normal 500 22px/53px 'Lato', sans-serif;
 }
 
 .section-one .checks .down-arrow {
   text-align: center;
-  margin-top: 107px;
+  margin-top: 96px;
 }
 
 .section-one .checks .down-arrow .arrow {
   width: 55px;
   height: 55px;
+  cursor: pointer;
 }
 
 .section-two .progs {
