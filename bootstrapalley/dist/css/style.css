@@ -72,13 +72,28 @@ p {
           justify-content: center;
 }
 
+.ju-spacebetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ju-flexstart {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .fullPage {
   overflow: hidden;
-  padding-top: 27px;
+}
+
+.header {
+  padding: 13.75px 0;
 }
 
 .header .logo__cont {
-  width: 123px;
+  width: 138px;
 }
 
 .header .logo__cont img {
@@ -87,20 +102,40 @@ p {
 }
 
 .header .nav__links {
-  margin-left: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .header .nav__links .link {
-  margin-left: 50px;
-  font: normal normal 500 25px/34px 'Open Sans', sans-serif;
-  letter-spacing: 0px;
-  color: #222222;
-  opacity: 1;
+  margin-left: 25px;
+}
+
+.header .nav__links .link a {
+  color: #B3B3B3;
+  font: normal normal 500 15px/18px 'Open Sans', sans-serif;
+  letter-spacing: 0.6px;
+  position: relative;
+}
+
+.header .nav__links .link a::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #F16739;
+  bottom: -13px;
+  left: 0;
+  display: none;
+}
+
+.header .nav__links .link:hover a {
+  color: #fff;
   text-decoration: none;
 }
 
-.header .nav__links .link:hover {
-  color: #663399;
+.header .nav__links .link:hover a::after {
+  display: inline;
 }
 
 .header .nav__links .link:first-child {
@@ -816,6 +851,48 @@ p {
   display: inline-block;
 }
 
+.rSlider {
+  position: relative;
+}
+
+.rSlider .slide {
+  background: red;
+  height: 5px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  z-index: 2;
+}
+
+input[type=range] {
+  position: relative;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ddd;
+  outline: none;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: red;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: red;
+  cursor: pointer;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -830,7 +907,7 @@ body {
 
 .container {
   width: 95%;
-  max-width: 1545px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0;
 }
