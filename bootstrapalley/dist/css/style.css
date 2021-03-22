@@ -162,7 +162,7 @@ p {
 }
 
 .section-one .checks {
-  padding: 120px 0 60px;
+  padding: 149px 0 60px;
 }
 
 .section-one .checks .checks__txt {
@@ -237,6 +237,7 @@ p {
   border-radius: 24px;
   opacity: 1;
   color: #fff;
+  font: normal normal 500 18px/46px 'Lato', sans-serif;
 }
 
 .section-two {
