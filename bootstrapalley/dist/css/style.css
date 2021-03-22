@@ -113,7 +113,7 @@ p {
 
 .header .nav__links .link a {
   color: #B3B3B3;
-  font: normal normal 500 15px/18px 'Open Sans', sans-serif;
+  font: normal normal 500 15px/18px 'Lato', sans-serif;
   letter-spacing: 0.6px;
   position: relative;
 }
@@ -142,34 +142,18 @@ p {
   margin-left: 0;
 }
 
-.header .nav__btns {
-  margin-left: 60px;
-}
-
-.header .nav__btns .btn-primary {
-  margin-left: 24px;
-  width: 118px;
-  height: 45px;
-}
-
-.header .nav__btns .btn-primary:first-child {
-  margin-left: 0;
-}
-
-.header .nav__btns .btn-dep {
-  background: transparent -webkit-gradient(linear, left top, right top, from(#9F62C9), to(#663399)) 0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
-  color: #fff;
-  width: 166px;
-  height: 45px;
-}
-
 .header.fixed {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 500;
   background: #fff;
+}
+
+.section-one {
+  background: url("../assets/images/laptop-bg.png") no-repeat center center;
+  background-size: contain;
+  height: 619px;
 }
 
 .section-one .checks {
@@ -188,17 +172,22 @@ p {
 
 .section-one .checks .checks__txt {
   padding-left: 23px;
-  width: 45%;
-}
-
-.section-one .checks .checks__txt .simpl {
+  width: 100%;
   margin-bottom: 80px;
   padding-left: 50px;
 }
 
-.section-one .checks .checks__txt .simpl h2 {
-  color: #222222;
-  font: normal normal 600 40px/49px 'Open Sans', sans-serif;
+.section-one .checks .checks__txt h2 {
+  color: #fff;
+  text-align: center;
+  font: normal normal 600 56px/67px 'Lato', sans-serif;
+  text-shadow: 0px 0px 4px #999999BF;
+}
+
+.section-one .checks .checks__txt p {
+  color: #fff;
+  font: normal normal 600 18px/26px 'Lato', sans-serif;
+  text-shadow: 0px 0px 2px #444444BF;
 }
 
 .section-one .checks .checks__txt .img-hold {

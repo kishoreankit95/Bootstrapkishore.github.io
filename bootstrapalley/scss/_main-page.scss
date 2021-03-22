@@ -20,7 +20,7 @@
             margin-left: 25px;
             a{
                 color: #B3B3B3;
-                font: normal normal 500 15px/18px 'Open Sans', sans-serif;
+                font: normal normal 500 15px/18px 'Lato', sans-serif;
                 letter-spacing: 0.6px;
                 position: relative;
                 &::after{
@@ -47,29 +47,7 @@
                 margin-left: 0;
             }
         }
-    }
-    .nav__btns{
-        margin-left: 60px;
-        .btn-primary{
-            margin-left: 24px;
-            // box-shadow: 0px 0px 20px #00000033;
-            width: 118px;
-            height: 45px;
-            &:first-child{
-                margin-left: 0;
-            }           
-        }
-        .btn-dep{
-            background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
-            color: $color-white1;            
-            width: 166px;
-            height: 45px;
-            // &:hover{
-            //     background-color: $color-viol1;
-            //     color: $color-white1;
-            // }
-        }
-    }
+    }    
     &.fixed{
         position: fixed;
         width: 100%;
@@ -79,7 +57,10 @@
     }
 }
 
-.section-one{     
+.section-one{
+    background: url('../assets/images/laptop-bg.png') no-repeat center center;
+    background-size: contain;   
+    height: 619px;
     .checks{
         display: flex;
         justify-content: space-between;
@@ -88,15 +69,19 @@
         gap: 30px;
         .checks__txt{
             padding-left: 23px;
-            width: 45%;
-            .simpl{
-                margin-bottom: 80px;
-                padding-left: 50px;
-                
-                h2{
-                    color: $color-black1;
-                    font: normal normal 600 40px/49px 'Open Sans', sans-serif;
-                }
+            width: 100%;   
+            margin-bottom: 80px;
+            padding-left: 50px;            
+            h2{
+                color: $color-white1;
+                text-align: center;
+                font: normal normal 600 56px/67px 'Lato', sans-serif;
+                text-shadow: 0px 0px 4px #999999BF;
+            }
+            p{
+                color: $color-white1;
+                font: normal normal 600 18px/26px 'Lato', sans-serif;
+                text-shadow: 0px 0px 2px #444444BF;
             }
             .img-hold{
                 max-width: 652px;
