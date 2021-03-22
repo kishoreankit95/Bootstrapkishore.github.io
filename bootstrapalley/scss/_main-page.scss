@@ -68,11 +68,11 @@
         background: transparent linear-gradient(0deg, #231F2033 0%, #000000 100%) 0% 0% no-repeat padding-box;
     }
     .checks{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
         padding: 120px 0 60px;
-        gap: 30px;
+        // gap: 30px;
         .checks__txt{
             padding-left: 23px;
             width: 100%;   
@@ -80,13 +80,17 @@
             padding-left: 50px;            
             h2{
                 color: $color-white1;
-                text-align: center;
+                max-width: 916px;
+                margin: 0 auto;
                 font: normal normal 600 56px/67px 'Lato', sans-serif;
                 text-shadow: 0px 0px 4px #999999BF;
             }
             p{
                 color: $color-white1;
-                font: normal normal 600 18px/26px 'Lato', sans-serif;
+                max-width: 836px;
+                margin: 0 auto;
+                text-align: center;
+                font: normal normal 600 17px/26px 'Lato', sans-serif;
                 text-shadow: 0px 0px 2px #444444BF;
             }
             .img-hold{
@@ -119,75 +123,21 @@
                 }
             }
         }
-        .eligibile{
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            width: 45%;
-            .eligible__calc{
-                background-color: $color-white1;
-                padding: 20px 45px 50px;
-                box-shadow: 0px 0px 20px #00000033;
-                border-radius: 15px;
-                position: relative;
-                p.elig-hdr{
-                    font: normal normal 600 22px/26px 'Open Sans', sans-serif;
-                    text-align: center; 
-                    margin-bottom: 50px;
-                }
-                .eligible__slid{
-                    width: 300px;
-                    .income{
-                        margin-bottom: 40px;
-                        .lwr{
-                            margin-bottom: 15px;
-                        }
-                        .progress{
-                            height: 5px;
-                            .progress-bar{
-                                background-color: $color-viol1;
-                            }
-                        }
-                    }
-                }
-                &::before{
-                    content: "";
-                    position: absolute;
-                    background: url("../assets/images/big-circle.png") no-repeat;
-                    background-size: contain;
-                    width: 1185px;
-                    height: 1080px;
-                    top: -445px;
-                    left: -203px;
-                    z-index: -1;
-                }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    background: url("../assets/images/dots.svg") no-repeat;
-                    background-size: contain;
-                    width: 430px;
-                    height: 70px;
-                    right: -300px;
-                    bottom: -56px;
-                    z-index: -1;
-                }
-            }
-            .eligible__disp{
-                background-color: $color-viol2;
-                padding: 80px 20px;
-                border-radius: 0 7px 7px 0;
-                .loan{
-                    margin-bottom: 25px;
-                    p{
-                        text-align: center;
-                    }
-                    .hdr{
-                        margin-bottom: 3px;
-                    }
-                }
+        .get-started{
+            text-align: center;
+            .started{
+                text-transform: capitalize;
+                width: 165px;
+                height: 48px;
+                display: inline-block;
+                background: #F16739 0% 0% no-repeat padding-box;
+                box-shadow: 0px 0px 3px #999999BF;
+                border-radius: 24px;
+                opacity: 1;
+                color: $color-white1;
             }
         }
+        
     }
 }
 .section-two{

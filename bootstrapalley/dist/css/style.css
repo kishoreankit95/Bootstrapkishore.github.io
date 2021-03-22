@@ -162,17 +162,7 @@ p {
 }
 
 .section-one .checks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 120px 0 60px;
-  gap: 30px;
 }
 
 .section-one .checks .checks__txt {
@@ -184,14 +174,18 @@ p {
 
 .section-one .checks .checks__txt h2 {
   color: #fff;
-  text-align: center;
+  max-width: 916px;
+  margin: 0 auto;
   font: normal normal 600 56px/67px 'Lato', sans-serif;
   text-shadow: 0px 0px 4px #999999BF;
 }
 
 .section-one .checks .checks__txt p {
   color: #fff;
-  font: normal normal 600 18px/26px 'Lato', sans-serif;
+  max-width: 836px;
+  margin: 0 auto;
+  text-align: center;
+  font: normal normal 600 17px/26px 'Lato', sans-serif;
   text-shadow: 0px 0px 2px #444444BF;
 }
 
@@ -228,94 +222,21 @@ p {
   vertical-align: middle;
 }
 
-.section-one .checks .eligibile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 45%;
-}
-
-.section-one .checks .eligibile .eligible__calc {
-  background-color: #fff;
-  padding: 20px 45px 50px;
-  -webkit-box-shadow: 0px 0px 20px #00000033;
-          box-shadow: 0px 0px 20px #00000033;
-  border-radius: 15px;
-  position: relative;
-}
-
-.section-one .checks .eligibile .eligible__calc p.elig-hdr {
-  font: normal normal 600 22px/26px 'Open Sans', sans-serif;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.section-one .checks .eligibile .eligible__calc .eligible__slid {
-  width: 300px;
-}
-
-.section-one .checks .eligibile .eligible__calc .eligible__slid .income {
-  margin-bottom: 40px;
-}
-
-.section-one .checks .eligibile .eligible__calc .eligible__slid .income .lwr {
-  margin-bottom: 15px;
-}
-
-.section-one .checks .eligibile .eligible__calc .eligible__slid .income .progress {
-  height: 5px;
-}
-
-.section-one .checks .eligibile .eligible__calc .eligible__slid .income .progress .progress-bar {
-  background-color: #663399;
-}
-
-.section-one .checks .eligibile .eligible__calc::before {
-  content: "";
-  position: absolute;
-  background: url("../assets/images/big-circle.png") no-repeat;
-  background-size: contain;
-  width: 1185px;
-  height: 1080px;
-  top: -445px;
-  left: -203px;
-  z-index: -1;
-}
-
-.section-one .checks .eligibile .eligible__calc::after {
-  content: "";
-  position: absolute;
-  background: url("../assets/images/dots.svg") no-repeat;
-  background-size: contain;
-  width: 430px;
-  height: 70px;
-  right: -300px;
-  bottom: -56px;
-  z-index: -1;
-}
-
-.section-one .checks .eligibile .eligible__disp {
-  background-color: #6c389e;
-  padding: 80px 20px;
-  border-radius: 0 7px 7px 0;
-}
-
-.section-one .checks .eligibile .eligible__disp .loan {
-  margin-bottom: 25px;
-}
-
-.section-one .checks .eligibile .eligible__disp .loan p {
+.section-one .checks .get-started {
   text-align: center;
 }
 
-.section-one .checks .eligibile .eligible__disp .loan .hdr {
-  margin-bottom: 3px;
+.section-one .checks .get-started .started {
+  text-transform: capitalize;
+  width: 165px;
+  height: 48px;
+  display: inline-block;
+  background: #F16739 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 0px 3px #999999BF;
+          box-shadow: 0px 0px 3px #999999BF;
+  border-radius: 24px;
+  opacity: 1;
+  color: #fff;
 }
 
 .section-two {
