@@ -324,6 +324,10 @@ p {
   font: normal normal 600 18px/22px 'Lato', sans-serif;
 }
 
+.section-five .half-cont .one .address form .sub-form {
+  margin-top: 45px;
+}
+
 .section .checks h2 {
   text-align: center;
 }
@@ -370,6 +374,19 @@ p {
 
 .section .half-cont .one {
   width: 50%;
+}
+
+.send {
+  text-transform: capitalize;
+  width: 165px;
+  height: 48px;
+  display: inline-block;
+  background: #F16739;
+  border: none;
+  border-radius: 24px;
+  color: #fff;
+  font: normal normal 500 18px/46px 'Lato', sans-serif;
+  text-decoration: none;
 }
 
 .or-bottom {
