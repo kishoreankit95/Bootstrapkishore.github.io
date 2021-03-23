@@ -189,6 +189,26 @@
                     margin-top: 15px;
                     display: block;
                 }
+                form{
+                    .inp-char{
+                        border: none;
+                        border-bottom: 1px solid #999999;
+                        width: 100%;
+                        margin-top: 30px;
+                        height: 30px;
+                        padding: 3px 10px;
+                        &:focus{
+                            outline: 0;
+                        }
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                        &::placeholder{
+                            color: #808080;
+                            font: normal normal 600 18px/22px 'Lato', sans-serif;
+                        }
+                    }
+                }
             }
         }
     }

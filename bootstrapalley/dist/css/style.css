@@ -287,6 +287,43 @@ p {
   display: block;
 }
 
+.section-five .half-cont .one .address form .inp-char {
+  border: none;
+  border-bottom: 1px solid #999999;
+  width: 100%;
+  margin-top: 30px;
+  height: 30px;
+  padding: 3px 10px;
+}
+
+.section-five .half-cont .one .address form .inp-char:focus {
+  outline: 0;
+}
+
+.section-five .half-cont .one .address form .inp-char:first-child {
+  margin-top: 0;
+}
+
+.section-five .half-cont .one .address form .inp-char::-webkit-input-placeholder {
+  color: #808080;
+  font: normal normal 600 18px/22px 'Lato', sans-serif;
+}
+
+.section-five .half-cont .one .address form .inp-char:-ms-input-placeholder {
+  color: #808080;
+  font: normal normal 600 18px/22px 'Lato', sans-serif;
+}
+
+.section-five .half-cont .one .address form .inp-char::-ms-input-placeholder {
+  color: #808080;
+  font: normal normal 600 18px/22px 'Lato', sans-serif;
+}
+
+.section-five .half-cont .one .address form .inp-char::placeholder {
+  color: #808080;
+  font: normal normal 600 18px/22px 'Lato', sans-serif;
+}
+
 .section .checks h2 {
   text-align: center;
 }
