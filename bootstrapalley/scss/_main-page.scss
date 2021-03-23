@@ -60,19 +60,13 @@
 
 .section-one{
     background: url('../assets/images/laptop-bg.png') no-repeat center center;
-    background-size: 100% 100%;   
-    // height: 619px;    
-    // padding: 72px 0 0;
+    background-size: 100% 100%;
     .black-wrapper{
         opacity: 0.8;
         background: transparent linear-gradient(0deg, #231F2033 0%, #000000 100%) 0% 0% no-repeat padding-box;
     }
     .checks{
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
         padding: 149px 0 27px;
-        // gap: 30px;
         .checks__txt{
             width: 100%;   
             margin-bottom: 40px;      
@@ -125,6 +119,7 @@
     }
 }
 .section-three{
+    padding: 35px 0 21px;
     .benefits-bullet {
         .benf-bullet{
             width: 33.33%;
@@ -151,30 +146,31 @@
     }
     .price-tags{
         margin-top: 30px;
+        .price{
+            span{
+                margin-right: 11px;
+            }
+        }
     }
     .get-started{
         margin-top: 32px;
     }
 }
 
+.section-five{
+    .half-cont{
+        .one{
+            h2{
+                font: normal normal 700 40px/48px 'Lato', sans-serif;
+            }
+        }
+    }
+}
+
 .section{
     .checks{
         h2{
-            text-align: center;
-            &.or-bottom{                
-                position: relative;
-                width: max-content;
-                margin: 0 auto 15px;          
-                &::after{
-                    position: absolute;
-                    content: "";
-                    width: 100%;
-                    height: 2px;
-                    background-color: #F16739;
-                    bottom: -5px;
-                    left: 0;
-                }
-            }
+            text-align: center;            
         }
         .heading-info{
             text-align: center;
@@ -204,6 +200,42 @@
                 }
             }
         }
+    }
+    .half-cont{
+        display: flex;        
+        .one{
+            width: 50%;
+        }
+    }
+}
+
+.or-bottom{                
+    position: relative;
+    width: max-content;
+    margin: 0 auto 15px;          
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #F16739;
+        bottom: -5px;
+        left: 0;
+    }
+}
+
+.ors-bottom{                
+    position: relative;
+    width: max-content;
+    margin: 0 auto 15px;          
+    &::after{
+        position: absolute;
+        content: "";
+        width: 103px;
+        height: 2px;
+        background-color: #F16739;
+        bottom: -5px;
+        left: 0;
     }
 }
     

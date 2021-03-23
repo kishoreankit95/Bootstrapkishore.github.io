@@ -211,6 +211,10 @@ p {
   color: #555555;
 }
 
+.section-three {
+  padding: 35px 0 21px;
+}
+
 .section-three .benefits-bullet .benf-bullet {
   width: 33.33%;
 }
@@ -238,30 +242,20 @@ p {
   margin-top: 30px;
 }
 
+.section-four .price-tags .price span {
+  margin-right: 11px;
+}
+
 .section-four .get-started {
   margin-top: 32px;
 }
 
+.section-five .half-cont .one h2 {
+  font: normal normal 700 40px/48px 'Lato', sans-serif;
+}
+
 .section .checks h2 {
   text-align: center;
-}
-
-.section .checks h2.or-bottom {
-  position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0 auto 15px;
-}
-
-.section .checks h2.or-bottom::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: #F16739;
-  bottom: -5px;
-  left: 0;
 }
 
 .section .checks .heading-info {
@@ -296,6 +290,52 @@ p {
   width: 190px;
   height: 55px;
   font: normal normal 500 22px/53px 'Lato', sans-serif;
+}
+
+.section .half-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .half-cont .one {
+  width: 50%;
+}
+
+.or-bottom {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 15px;
+}
+
+.or-bottom::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #F16739;
+  bottom: -5px;
+  left: 0;
+}
+
+.ors-bottom {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 15px;
+}
+
+.ors-bottom::after {
+  position: absolute;
+  content: "";
+  width: 103px;
+  height: 2px;
+  background-color: #F16739;
+  bottom: -5px;
+  left: 0;
 }
 
 .benefits-bullet {
