@@ -520,6 +520,18 @@ footer .footer-wrap .spread-footer .comps.comp-13 {
 .price-tags p.price {
   font-size: 69px;
   font-weight: 700;
+  line-height: normal;
+}
+
+.price-tags p.months {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.price-tags p.tax {
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
 }
 
 .price-tags p span {

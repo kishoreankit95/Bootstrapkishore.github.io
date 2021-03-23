@@ -370,6 +370,16 @@ footer{
         &.price{
             font-size: 69px;
             font-weight: 700;
+            line-height: normal;
+        }
+        &.months{
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &.tax{
+            font-size: 12px;
+            line-height: 16px;
+            color: #808080;
         }
         span{
             font-size: 25px;
