@@ -54,7 +54,7 @@
         width: 100%;
         top: 0;
         z-index: 500;
-        background: #fff;
+        background: #000000;
     }
 }
 
@@ -257,6 +257,44 @@
             width: 50%;
         }
     }
+}
+
+footer{
+    .footer-wrap{
+        padding: 36px 0 86px;
+        background-color: #333333;
+        .spread-footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .comps{
+                width: 120px;
+                p{
+                    color: #CCCCCC;
+                }
+                .img-hold{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 10px;
+                    img{
+                        margin-left: 15px;
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                    }
+                }
+                &.comp-13{
+                    width: 130px;
+                }
+            }
+        }       
+    }
+}
+
+#map{
+    height: 400px;
+    width: 100%;
 }
 
 .send{

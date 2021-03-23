@@ -147,7 +147,7 @@ p {
   width: 100%;
   top: 0;
   z-index: 500;
-  background: #fff;
+  background: #000000;
 }
 
 .section-one {
@@ -374,6 +374,61 @@ p {
 
 .section .half-cont .one {
   width: 50%;
+}
+
+footer .footer-wrap {
+  padding: 36px 0 86px;
+  background-color: #333333;
+}
+
+footer .footer-wrap .spread-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .footer-wrap .spread-footer .comps {
+  width: 120px;
+}
+
+footer .footer-wrap .spread-footer .comps p {
+  color: #CCCCCC;
+}
+
+footer .footer-wrap .spread-footer .comps .img-hold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+footer .footer-wrap .spread-footer .comps .img-hold img {
+  margin-left: 15px;
+}
+
+footer .footer-wrap .spread-footer .comps .img-hold img:first-child {
+  margin-left: 0;
+}
+
+footer .footer-wrap .spread-footer .comps.comp-13 {
+  width: 130px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }
 
 .send {
