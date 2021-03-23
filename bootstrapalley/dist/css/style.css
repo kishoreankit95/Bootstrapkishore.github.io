@@ -328,6 +328,25 @@ p {
   margin-top: 45px;
 }
 
+.section-six {
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 35px 0 114px;
+}
+
+.section-six .checks .facility-bullet {
+  margin-top: 60px;
+}
+
+.section-six .checks .facility-bullet .fac-bullet .image-holder {
+  width: 32px;
+}
+
+.section-six .checks .facility-bullet .fac-bullet .image-holder img {
+  width: 100%;
+  max-height: 23px;
+}
+
 .section .checks h2 {
   text-align: center;
 }
@@ -426,9 +445,34 @@ footer .footer-wrap .spread-footer .comps.comp-13 {
   width: 130px;
 }
 
-#map {
-  height: 400px;
-  width: 100%;
+.facility-bullet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.facility-bullet .fac-bullet {
+  width: 24%;
+  margin-bottom: 35px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.facility-bullet .fac-bullet .txt-holder {
+  margin-left: 15px;
 }
 
 .send {
