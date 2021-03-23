@@ -34,12 +34,14 @@ $(document).ready(function(){
   var benefitsc = (benefitd.offsetTop - 150);
   var facilityd = document.getElementById("facilities");
   var facilitiesc = (facilityd.offsetTop - 150);
-  var galleryd = document.getElementById("facilities");
-  var galleryc = (facilityd.offsetTop - 150);
-  var facilityd = document.getElementById("facilities");
-  var facilitiesc = (facilityd.offsetTop - 150);
-  var facilityd = document.getElementById("facilities");
-  var facilitiesc = (facilityd.offsetTop - 150);
+  var galleryd = document.getElementById("gallery");
+  var galleryc = (galleryd.offsetTop - 150);
+  var pricingd = document.getElementById("pricing");
+  var pricingc = (pricingd.offsetTop - 150);
+  var contactd = document.getElementById("contact");
+  var contactc = (contactd.offsetTop - 150);
+  var footerd = document.getElementById("footer");
+  var footerc = (footerd.offsetTop - 150);
   
   // console.log(benefitsc);
 
@@ -52,16 +54,20 @@ $(document).ready(function(){
     console.log(facilitiesc);
   });
   $(".gallery").on("click", function () {
-    $(window).scrollTop(benefitsc);
-    console.log(benefitsc);
+    $(window).scrollTop(galleryc);
+    console.log(galleryc);
   });
   $(".pricing").on("click", function () {
-    $(window).scrollTop(benefitsc);
-    console.log(benefitsc);
+    $(window).scrollTop(pricingc);
+    console.log(pricingc);
   });
   $(".contact").on("click", function () {
-    $(window).scrollTop(benefitsc);
-    console.log(benefitsc);
+    $(window).scrollTop(contactc);
+    console.log(contactc);
+  });
+  $(".down-arrow .arrow").on("click", function () {
+    $(window).scrollTop(footerc);
+    console.log(footerc);
   });
  
 
