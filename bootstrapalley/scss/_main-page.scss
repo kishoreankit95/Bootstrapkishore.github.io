@@ -158,10 +158,37 @@
 }
 
 .section-five{
+    padding: 45px 0 42px;
     .half-cont{
         .one{
             h2{
                 font: normal normal 700 40px/48px 'Lato', sans-serif;
+            }
+            .address{
+                margin-top: 60px;
+                .top{
+                    p{
+                        color: #4D4D4D;
+                        font: normal normal 600 18px/22px 'Lato', sans-serif;
+                        &.stress{
+                            font: normal normal 600 18px/22px 'Lato', sans-serif;                            
+                        }
+                    }                    
+                }
+                .bottom{
+                    margin-top: 15px;
+                    p{
+                        color: #4D4D4D;
+                        font: normal normal 600 18px/22px 'Lato', sans-serif;
+                        
+                    }  
+                }
+                .mail-adr{
+                    color: #F16739;
+                    font: normal normal 600 18px/22px 'Lato', sans-serif;
+                    margin-top: 15px;
+                    display: block;
+                }
             }
         }
     }
@@ -227,7 +254,7 @@
 .ors-bottom{                
     position: relative;
     width: max-content;
-    margin: 0 auto 15px;          
+    // margin: 0 auto 15px;          
     &::after{
         position: absolute;
         content: "";

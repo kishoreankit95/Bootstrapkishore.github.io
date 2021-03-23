@@ -250,8 +250,41 @@ p {
   margin-top: 32px;
 }
 
+.section-five {
+  padding: 45px 0 42px;
+}
+
 .section-five .half-cont .one h2 {
   font: normal normal 700 40px/48px 'Lato', sans-serif;
+}
+
+.section-five .half-cont .one .address {
+  margin-top: 60px;
+}
+
+.section-five .half-cont .one .address .top p {
+  color: #4D4D4D;
+  font: normal normal 600 18px/22px 'Lato', sans-serif;
+}
+
+.section-five .half-cont .one .address .top p.stress {
+  font: normal normal 600 18px/22px 'Lato', sans-serif;
+}
+
+.section-five .half-cont .one .address .bottom {
+  margin-top: 15px;
+}
+
+.section-five .half-cont .one .address .bottom p {
+  color: #4D4D4D;
+  font: normal normal 600 18px/22px 'Lato', sans-serif;
+}
+
+.section-five .half-cont .one .address .mail-adr {
+  color: #F16739;
+  font: normal normal 600 18px/22px 'Lato', sans-serif;
+  margin-top: 15px;
+  display: block;
 }
 
 .section .checks h2 {
@@ -325,7 +358,6 @@ p {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: 0 auto 15px;
 }
 
 .ors-bottom::after {
