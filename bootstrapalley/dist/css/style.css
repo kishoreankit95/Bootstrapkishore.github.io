@@ -187,45 +187,95 @@ p {
   text-shadow: 0px 0px 2px #444444BF;
 }
 
-.section-one .checks .checks__txt .img-hold {
-  max-width: 652px;
-  position: relative;
+.section-one .checks .down-arrow {
+  text-align: center;
+  margin-top: 96px;
 }
 
-.section-one .checks .checks__txt .img-hold::before {
-  content: "";
-  position: absolute;
-  background: url("../assets/images/blob.svg") no-repeat;
-  background-size: contain;
-  width: 572px;
-  height: 572px;
-  left: -317px;
-  top: -257px;
-  z-index: -1;
+.section-one .checks .down-arrow .arrow {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
 }
 
-.section-one .checks .checks__txt .img-hold::after {
-  content: "";
-  position: absolute;
-  background: url("../assets/images/dots.svg") no-repeat;
-  background-size: contain;
-  width: 430px;
-  height: 70px;
-  right: -100px;
-  bottom: -35px;
+.section-two {
+  padding: 34px 0 49px;
 }
 
-.section-one .checks .checks__txt .img-hold img {
+.section-two .checks .benefits-bullet .benf-bullet {
+  margin-bottom: 34px;
+}
+
+.section-two .checks .benefits-bullet .benf-bullet .text-holder h4 {
+  font: normal normal 500 18px/22px 'Lato', sans-serif;
+  color: #555555;
+}
+
+.section-three .benefits-bullet .benf-bullet {
+  width: 33.33%;
+}
+
+.section-three .benefits-bullet .benf-bullet .image-holder {
+  margin-bottom: 0;
+}
+
+.section-three .benefits-bullet .benf-bullet .image-holder img {
   width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 
-.section-one .checks .get-started {
+.section-four {
+  padding: 36px 0 94px;
+  background-color: #FDBA12;
+}
+
+.section-four .heading-info {
+  color: #fff;
+}
+
+.section-four .price-tags {
+  margin-top: 30px;
+}
+
+.section-four .get-started {
+  margin-top: 32px;
+}
+
+.section .checks h2 {
+  text-align: center;
+}
+
+.section .checks h2.or-bottom {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 15px;
+}
+
+.section .checks h2.or-bottom::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #F16739;
+  bottom: -5px;
+  left: 0;
+}
+
+.section .checks .heading-info {
+  text-align: center;
+  max-width: 642px;
+  margin: 0 auto;
+}
+
+.section .checks .get-started {
   text-align: center;
   height: 55px;
 }
 
-.section-one .checks .get-started .started {
+.section .checks .get-started .started {
   text-transform: capitalize;
   width: 165px;
   height: 48px;
@@ -242,42 +292,10 @@ p {
   transition: all 0.25s linear;
 }
 
-.section-one .checks .get-started .started:hover {
+.section .checks .get-started .started:hover {
   width: 190px;
   height: 55px;
   font: normal normal 500 22px/53px 'Lato', sans-serif;
-}
-
-.section-one .checks .down-arrow {
-  text-align: center;
-  margin-top: 96px;
-}
-
-.section-one .checks .down-arrow .arrow {
-  width: 55px;
-  height: 55px;
-  cursor: pointer;
-}
-
-.section-two {
-  padding: 34px 0 49px;
-}
-
-.section-two .checks h2 {
-  text-align: center;
-}
-
-.section-two .checks .heading-info {
-  text-align: center;
-}
-
-.section-two .checks .benefits-bullet .benf-bullet {
-  margin-bottom: 34px;
-}
-
-.section-two .checks .benefits-bullet .benf-bullet .text-holder h4 {
-  font: normal normal 500 18px/22px 'Lato', sans-serif;
-  color: #555555;
 }
 
 .benefits-bullet {
@@ -302,6 +320,32 @@ p {
 
 .benefits-bullet .benf-bullet .image-holder img {
   width: 77px;
+}
+
+.price-tags {
+  background-color: #FFE8BB;
+  padding: 72px 0 64px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.price-tags p {
+  color: #1A1A1A;
+}
+
+.price-tags p.price {
+  font-size: 69px;
+  font-weight: 700;
+}
+
+.price-tags p span {
+  font-size: 25px;
+  line-height: 69px;
+  vertical-align: top;
+  font-weight: 500;
 }
 
 .btn-primary {
