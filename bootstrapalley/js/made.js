@@ -37,7 +37,7 @@ $(document).ready(function(){
   var galleryd = document.getElementById("gallery");
   var galleryc = (galleryd.offsetTop - 150);
   var pricingd = document.getElementById("pricing");
-  var pricingc = (pricingd.offsetTop - 150);
+  var pricingc = (pricingd.offsetTop - 0);
   var contactd = document.getElementById("contact");
   var contactc = (contactd.offsetTop - 150);
   var footerd = document.getElementById("footer");
