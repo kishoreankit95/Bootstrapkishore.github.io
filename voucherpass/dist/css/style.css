@@ -78,6 +78,54 @@ p {
   padding: 20px 0;
 }
 
+.section-two {
+  width: 80%;
+  padding: 25px 0;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.section-two span {
+  font-weight: 700;
+}
+
+.section-three {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.section-three .phoneNo {
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  background: #dddddd;
+  border-radius: 18px;
+  padding: 5px 10px;
+  text-align: center;
+  outline: 0;
+}
+
+.section-three .phoneNo::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #fafafa;
+}
+
+.section-three .phoneNo:-ms-input-placeholder {
+  font-weight: 400;
+  color: #fafafa;
+}
+
+.section-three .phoneNo::-ms-input-placeholder {
+  font-weight: 400;
+  color: #fafafa;
+}
+
+.section-three .phoneNo::placeholder {
+  font-weight: 400;
+  color: #fafafa;
+}
+
 .section-card {
   width: 80%;
   margin: 0 auto;
@@ -153,13 +201,11 @@ p {
   color: #fff;
 }
 
-.btn-appr {
-  background-color: #fff;
-  color: #663399;
-  font: normal normal 600 14px/18px 'Open Sans', sans-serif;
-  border-radius: 30px;
-  width: 140px;
-  height: 40px;
+.getGift {
+  color: #fff;
+  font-size: 15px;
+  line-height: 30px;
+  height: 30px;
 }
 
 .blk-brder {
