@@ -33,11 +33,20 @@
         padding: 5px 10px;
         text-align: center;
         outline: 0;
+        
+        // -moz-appearance: textfield;
         &::placeholder{
             font-weight: 400;
             color: #fafafa;
         }
     }
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
 }
 
 .section-card{
