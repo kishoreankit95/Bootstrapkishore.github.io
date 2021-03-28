@@ -1,6 +1,44 @@
 .fullPage{
-    overflow: hidden;
-    padding-top: 27px;
+    // overflow: hidden;
+    // padding-top: 27px;
+}
+
+.section-one{
+    background-color: #141441;
+    height: 350px;
+    padding: 20px 0;
+}
+
+.head-txt{
+    width: 150px;
+    text-align: left;
+    margin: 0 auto;
+    p{
+        margin: 0;
+        color: #fff;
+        font-weight: 800;
+        text-transform: lowercase;
+        font-size: 22px;
+        line-height: 17px;
+        &:nth-child(2){
+            padding-left: 16px;
+        }
+    }
+    
+}
+
+.colourful{
+    background: #AE08BA;
+    background: -webkit-linear-gradient(to right, #AE08BA 0%, #daaf07 100%);
+    background: -moz-linear-gradient(to right, #AE08BA 0%, #daaf07 100%);
+    background: linear-gradient(to right, #AE08BA 0%, #daaf07 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 190px;
+
 }
 
 
