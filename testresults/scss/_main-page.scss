@@ -1,17 +1,48 @@
 .fullPage{
     overflow: hidden;
-    padding-top: 27px;
+    padding: 27px 0 100px;
+    background: url("../assets/images/clouds.png") no-repeat;
+    background-size: cover;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
 }
 
 .times{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 85px;
+    padding: 20px 0 50px;
     .times__bullet{
+        padding: 30px;
+        width: 120px;
+        height: 120px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 15px;
+        &:first-child{
+            margin-left: 0;
+        }
         i{
             color: #cc0000;
+            font-size: 28px;
+        }
+        p{
+            color: #cc0000;
+            margin: 10px 0 0;
         }
     }
+}
+
+.btn-holder{
+    text-align: center;
 }
 
 
@@ -21,12 +52,20 @@
 
 .btn-primary{
     // box-shadow: 0px 0px 20px #00000033;
-    border: 2px solid $color-viol1;
+    border: 1px solid #b9d8c9;
     border-radius: 24px;
     opacity: 1;
-    color: $color-viol1;
-    background-color: transparent;
-    font: normal normal 600 16px/29px 'Open Sans', sans-serif;    
+    color: #fff;
+    background-color: #95c5ad;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font: normal normal 700 16px/29px 'Open Sans', sans-serif;
+    span{
+        color: #cc0000;
+        display: inline-block;
+        margin-left: 10px;
+    }  
     &:hover{
         background: $color-viol1;
         color: $color-white1;
