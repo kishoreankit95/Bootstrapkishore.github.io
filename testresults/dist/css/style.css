@@ -126,7 +126,7 @@ h2 {
 
 .times .times__bullet i {
   color: #cc0000;
-  font-size: 28px;
+  font-size: 38px;
 }
 
 .times .times__bullet p {
@@ -148,6 +148,8 @@ h2 {
   height: 50px;
   text-align: center;
   font: normal normal 700 16px/29px 'Open Sans', sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-primary span {
@@ -157,7 +159,7 @@ h2 {
 }
 
 .btn-primary:hover {
-  background: #663399;
+  background: #74d8a6;
   color: #fff;
 }
 
