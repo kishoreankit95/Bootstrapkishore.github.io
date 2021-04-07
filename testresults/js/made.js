@@ -1,17 +1,7 @@
 
 $(document).ready(function(){
 
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 150) {
-        $('.header').addClass('fixed');
-    } else {
-        $('.header').removeClass('fixed');
-    }
-  });
-
-
-  //
-
+  
   $(window).on("load", function(){ 
     var range = $("#range").attr("value");
     $("#demo").html(range);
