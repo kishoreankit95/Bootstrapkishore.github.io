@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="dist/css/style.css" rel="stylesheet" type="text/css">
-    <title>Try It Out</title>
+    <title>String Player</title>
 </head>
 
 <body>
@@ -71,7 +71,31 @@
                     <p class="split__text"></p>
                 </div>
             </div>    
-             <!-- Text Splitting section into Small fragments -->
+            <!-- Text Splitting section into Small fragments -->
+
+
+            <!-- Difference finder in two strings -->
+             <div class="text-cont replace__txt">
+                <h3>Two Strings Difference Index Finder</h3>
+                <p>Get the point of difference in two strings - Returns index</p>
+                <div class="split__input">
+                    <div class="split__input__hold">
+                        <label for="entrtxt2">Enter First string</label>
+                        <input type="text" id="stringDiffIndx1" class="inp-smbig" placeholder="Enter your text" />
+                    </div>
+                    <div class="split__input__hold">
+                        <label for="entrgap2">Enter Second string</label>
+                        <input type="text" id="stringDiffIndx2" class="inp-smbig" placeholder="To break at??" />
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn--split" onclick="arrayDiff()">Submit</button>
+                                        
+                </div>
+                <div class="split__textCont">
+                    <p id="stringDiffIndxRes" class="split__text"></p>
+                </div>
+            </div>
+            <!-- Difference finder in two strings -->
 
 
         </div>
@@ -80,9 +104,4 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/made.js"></script>
 </body>
-
-<script>
-    
-</script>
-
 </html>
